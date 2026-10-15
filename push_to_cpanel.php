@@ -6,7 +6,7 @@
 
 require_once __DIR__ . '/config.php';
 
-$cpanelEndpoint = 'http://app.edumuslim.my.id/hub/api_push.php';
+$cpanelEndpoint = 'https://app.edumuslim.my.id/hub/api_push.php';
 $secret = DEFAULT_PIN;
 
 $contents = HubDB::getContents();

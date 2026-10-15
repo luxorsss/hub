@@ -2,4 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/wegqxcgv/subdomains/app.edumuslim.my.id/hub/
+    - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R * $DEPLOYPATH
+

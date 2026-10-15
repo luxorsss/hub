@@ -15,7 +15,7 @@ define('APP_NAME', 'EduMuslim Content & Sales Hub');
 define('APP_VERSION', '1.0.0');
 define('DEFAULT_PIN', 'bismillah100'); // Ganti sesuai kebutuhan
 define('DATA_DIR', __DIR__ . '/data');
-define('PIXELCRM_API_URL', 'http://app.edumuslim.my.id/pixelcrm/api_overview.php');
+define('PIXELCRM_API_URL', 'https://app.edumuslim.my.id/pixelcrm/api_overview.php');
 
 // Auto deteksi Base URL
 $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? "https://" : "http://";
@@ -93,8 +93,9 @@ class HubDB {
         // Coba request ke API live PixelCRM
         $defaultStats = [
             'target_sales' => 100,
-            'current_sales' => 12, // baseline estimasi
-            'total_revenue' => 564000,
+            'current_sales' => 0,
+            'total_revenue' => 0,
+            'all_time_completed' => 1038,
             'product_price' => 47000,
             'status' => 'live_sync'
         ];
@@ -102,17 +103,19 @@ class HubDB {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, PIXELCRM_API_URL);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 3);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         $res = curl_exec($ch);
         $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
 
         if ($httpCode === 200 && !empty($res)) {
-            // Jika api_overview merespons HTML atau JSON, parse jika JSON
             $json = json_decode($res, true);
-            if (is_array($json) && isset($json['total_orders'])) {
-                $defaultStats['current_sales'] = (int)$json['total_orders'];
-                $defaultStats['total_revenue'] = (int)($json['total_revenue'] ?? ($defaultStats['current_sales'] * 47000));
+            if (is_array($json) && isset($json['qila_ebook_focus'])) {
+                $qila = $json['qila_ebook_focus'];
+                $defaultStats['current_sales'] = (int)($qila['this_month_completed'] ?? 0);
+                $defaultStats['total_revenue'] = (int)($qila['this_month_revenue_idr'] ?? ($defaultStats['current_sales'] * 47000));
+                $defaultStats['all_time_completed'] = (int)($qila['all_time_completed'] ?? 1038);
             }
         }
 
