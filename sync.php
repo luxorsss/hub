@@ -94,6 +94,11 @@ foreach ($filesToProcess as $meta) {
         $hook = trim($m[1]);
     } elseif (preg_match('/Teks Utama di Tengah Layar:\s*> \*([^*]+)\*/i', $raw, $m)) {
         $hook = trim($m[1]);
+    } elseif (preg_match('/###\s*(?:\[)?Slide\s*1[^\n]*\n+([\s\S]*?)(?=(?:\n\n|\n-|\Z))/i', $raw, $m)) {
+        $cleanHook = clean_slide_text($m[1]);
+        if (!empty($cleanHook)) {
+            $hook = $cleanHook;
+        }
     }
 
     // Ekstraksi Caption
@@ -106,7 +111,7 @@ foreach ($filesToProcess as $meta) {
 
     // Ekstraksi Slides
     $slides = [];
-    preg_match_all('/###\s*(?:\[)?Slide\s*(\d+)[^:\n\]]*[:\]]?\s*([^\n]*)([\s\S]*?)(?=(?:###\s*(?:\[)?Slide|\Z|##\s*Caption))/i', $raw, $matches, PREG_SET_ORDER);
+    preg_match_all('/###\s*(?:\[)?Slide\s*(\d+)[^:\r\n\]]*[:\]]?[ \t]*([^\r\n]*)([\s\S]*?)(?=(?:###\s*(?:\[)?Slide|\Z|##\s*Caption))/i', $raw, $matches, PREG_SET_ORDER);
     
     if (!empty($matches)) {
         foreach ($matches as $sMatch) {
