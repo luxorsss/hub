@@ -1,0 +1,6 @@
+# Lindungi folder data dan file sensitif
+<FilesMatch "\.(json|sqlite|log)$">
+    Require all denied
+</FilesMatch>
+
+Options -Indexes

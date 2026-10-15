@@ -1,0 +1,178 @@
+<?php
+/**
+ * EduMuslim Hub — Sync Script
+ * Memindai file markdown di /home/fadil/edumuslim-team/ dan mengimpornya ke data/contents.json
+ */
+
+require_once __DIR__ . '/config.php';
+
+$kontenDir = '/home/fadil/edumuslim-team/konten';
+$crmDir = '/home/fadil/edumuslim-team/crm';
+
+$filesToProcess = [
+    [
+        'file' => $kontenDir . '/carousel-senin.md',
+        'channel' => 'Carousel',
+        'day' => 'Senin',
+        'funnel' => 'TOFU',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/carousel-selasa.md',
+        'channel' => 'Carousel',
+        'day' => 'Selasa',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/carousel-rabu.md',
+        'channel' => 'Carousel',
+        'day' => 'Rabu',
+        'funnel' => 'TOFU',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/carousel-kamis.md',
+        'channel' => 'Carousel',
+        'day' => 'Kamis',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/carousel-jumat.md',
+        'channel' => 'Carousel',
+        'day' => 'Jumat',
+        'funnel' => 'BOFU',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/reels-1-slide-senin.md',
+        'channel' => 'Reels 1-Slide',
+        'day' => 'Senin/Selasa',
+        'funnel' => 'TOFU/BOFU',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/story-jualan-hari-ini.md',
+        'channel' => 'Instagram Story',
+        'day' => 'Harian',
+        'funnel' => 'BOFU (Direct)',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $crmDir . '/skrip-closing-dm-qila.md',
+        'channel' => 'CRM / DM Closing',
+        'day' => 'Always-on',
+        'funnel' => 'Sales Closing',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ]
+];
+
+$syncedCount = 0;
+
+foreach ($filesToProcess as $meta) {
+    $filePath = $meta['file'];
+    if (!file_exists($filePath)) {
+        continue;
+    }
+
+    $raw = file_get_contents($filePath);
+    $filename = basename($filePath, '.md');
+    $id = $filename;
+
+    // Ekstraksi Topik / Title
+    $title = $filename;
+    if (preg_match('/\*\*Topik:\*\*\s*(.+)/i', $raw, $m)) {
+        $title = trim($m[1]);
+    } elseif (preg_match('/^#\s*(.+)/m', $raw, $m)) {
+        $title = trim($m[1]);
+    }
+
+    // Ekstraksi Hook
+    $hook = $title;
+    if (preg_match('/\[Slide 1[^\]]*\][\s\S]*?\*([^*]+)\*/i', $raw, $m)) {
+        $hook = trim($m[1]);
+    } elseif (preg_match('/Teks Utama di Tengah Layar:\s*> \*([^*]+)\*/i', $raw, $m)) {
+        $hook = trim($m[1]);
+    }
+
+    // Ekstraksi Caption
+    $caption = '';
+    if (preg_match('/(?:##\s*Caption|###\s*2\.\s*Copywriting Caption Lengkap)[\s\S]*?```(?:text)?\s*([\s\S]*?)```/i', $raw, $m)) {
+        $caption = trim($m[1]);
+    } elseif (preg_match('/(?:##\s*Caption[\s\S]*?\n\n)([\s\S]*?)(?:\n---|\Z)/i', $raw, $m)) {
+        $caption = trim($m[1]);
+    }
+
+    // Ekstraksi Slides
+    $slides = [];
+    preg_match_all('/###\s*(?:\[)?Slide\s*(\d+)[^:\n\]]*[:\]]?\s*([^\n]*)([\s\S]*?)(?=(?:###\s*(?:\[)?Slide|\Z|##\s*Caption))/i', $raw, $matches, PREG_SET_ORDER);
+    
+    if (!empty($matches)) {
+        foreach ($matches as $sMatch) {
+            $sNum = (int)$sMatch[1];
+            $sHeader = trim($sMatch[2]);
+            $sBody = trim($sMatch[3]);
+
+            $sTitle = '';
+            if (preg_match('/\[Teks Judul\]:\*?\*?\s*\*?([^*\n(]+)/i', $sBody, $tm)) {
+                $sTitle = clean_slide_text($tm[1]);
+            }
+
+            $sNote = '';
+            if (preg_match('/\[Catatan Desain\]:\*?\*?\s*([^\n]+)/i', $sBody, $nm)) {
+                $sNote = clean_slide_text($nm[1]);
+            }
+
+            $sContent = '';
+            if (preg_match('/\[Teks Isi\]:\*?\*?\s*([\s\S]*?)(?=(?:-\s*\*?\*?\[Catatan|\Z))/i', $sBody, $cm)) {
+                $sContent = clean_slide_text($cm[1]);
+            } else {
+                $sContent = clean_slide_text($sBody);
+            }
+
+            if (empty($sTitle) && !empty($sHeader)) {
+                $cleanHead = clean_slide_text($sHeader);
+                if (stripos($cleanHead, 'Visual Note') === false) {
+                    $sTitle = $cleanHead;
+                }
+            }
+
+            $slides[] = [
+                'slide_number' => $sNum,
+                'header' => $sHeader,
+                'title' => $sTitle,
+                'content' => $sContent,
+                'design_note' => $sNote
+            ];
+        }
+    }
+
+    $existing = HubDB::findContentById($id);
+    $status = $existing['status'] ?? 'ready_to_design';
+
+    $item = [
+        'id' => $id,
+        'channel' => $meta['channel'],
+        'day' => $meta['day'],
+        'funnel' => $meta['funnel'],
+        'target_product' => $meta['target_product'],
+        'title' => $title,
+        'hook' => $hook,
+        'slides' => $slides,
+        'caption' => $caption,
+        'raw_markdown' => $raw,
+        'status' => $status,
+        'audit_badge' => 'Audit Lolos (Marketing & CEO Approved)'
+    ];
+
+    HubDB::upsertContent($item);
+    $syncedCount++;
+}
+
+if (php_sapi_name() === 'cli') {
+    echo "Sync berhasil! $syncedCount dokumen konten masuk ke database.\n";
+} else {
+    header('Location: index.php?msg=sync_success');
+    exit;
+}

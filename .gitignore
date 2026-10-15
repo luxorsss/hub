@@ -1,0 +1,16 @@
+# Cache & Dynamic Data
+data/sales_cache.json
+data/*.sqlite*
+data/*.log
+
+# Logs & Temp files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+
+# Local configuration overrides (jika ada)
+config.local.php
