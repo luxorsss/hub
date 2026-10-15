@@ -346,6 +346,7 @@ if (!empty($item['caption'])) {
                 <a href="https://canva.com" target="_blank" class="btn-canva">
                     🎨 Buka Canva
                 </a>
+                <a href="daily.php" class="btn-outline">📅 Jadwal Hari Ini</a>
                 <a href="edit.php?id=<?= urlencode($item['id']) ?>" class="btn-outline">
                     ✏️ Edit
                 </a>

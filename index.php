@@ -358,9 +358,10 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 </div>
             </div>
             <div class="header-actions">
+                <a href="daily.php" class="btn-sm" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3); font-weight: 700;">📅 Jadwal & Aksi Harian</a>
                 <a href="create.php" class="btn-sm" style="background: var(--primary); color: #022c22; font-weight: 700;">+ Tambah Konten</a>
                 <a href="sync.php" class="btn-sm" title="Sinkronkan file naskah terbaru dari folder tim">🔄 Sync Naskah</a>
-                <a href="http://app.edumuslim.my.id/pixelcrm/" target="_blank" class="btn-sm">📊 Buka PixelCRM</a>
+                <a href="https://app.edumuslim.my.id/pixelcrm/" target="_blank" class="btn-sm">📊 PixelCRM</a>
                 <a href="logout.php" class="btn-sm btn-logout">Keluar</a>
             </div>
         </header>
