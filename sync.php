@@ -103,9 +103,9 @@ foreach ($filesToProcess as $meta) {
 
     // Ekstraksi Caption
     $caption = '';
-    if (preg_match('/(?:##\s*Caption|###\s*2\.\s*Copywriting Caption Lengkap)[\s\S]*?```(?:text)?\s*([\s\S]*?)```/i', $raw, $m)) {
+    if (preg_match('/(?:##[^\n]*Caption|###\s*2\.\s*Copywriting Caption Lengkap)[\s\S]*?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $m)) {
         $caption = trim($m[1]);
-    } elseif (preg_match('/(?:##\s*Caption[\s\S]*?\n\n)([\s\S]*?)(?:\n---|\Z)/i', $raw, $m)) {
+    } elseif (preg_match('/(?:##[^\n]*Caption[^\n]*\n+)([\s\S]*?)(?:\n---|\Z)/iu', $raw, $m)) {
         $caption = trim($m[1]);
     }
 
