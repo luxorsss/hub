@@ -63,7 +63,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-15 14:14:46"
+        "updated_at": "2026-10-15 17:01:18"
     },
     {
         "id": "carousel-selasa",
@@ -129,7 +129,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-15 14:14:46"
+        "updated_at": "2026-10-15 17:01:18"
     },
     {
         "id": "carousel-rabu",
@@ -195,7 +195,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-15 14:14:46"
+        "updated_at": "2026-10-15 17:01:18"
     },
     {
         "id": "carousel-kamis",
@@ -204,64 +204,64 @@
         "funnel": "MOFU",
         "target_product": "eBook Qila (Rp47rb)",
         "title": "Semua Pintu Solusi Manusia Tertutup?",
-        "hook": "Pernah di titik di mana semua pintu manusia... terkunci rapat?",
+        "hook": "Pernah gak sih lagi kepepet banget, tapi bingung mau minta tolong ke siapa?",
         "slides": [
             {
                 "slide_number": 1,
                 "header": "",
                 "title": "",
-                "content": "Pernah di titik di mana semua pintu manusia... terkunci rapat?\n\nMinta tolong ke sana ditolak. Minta bantuan ke sini cuma dijanjikan. Sampai kamu merasa sendirian di dunia ini.",
+                "content": "Pernah gak sih lagi kepepet banget, tapi bingung mau minta tolong ke siapa?\n\nMau cerita ke teman sungkan. Mau pinjam atau ngerepotin keluarga juga gak enak.",
                 "design_note": ""
             },
             {
                 "slide_number": 2,
                 "header": "",
                 "title": "",
-                "content": "Kita sering habiskan waktu siang hari mengejar orang yang kita kira punya solusi.\n\nBerharap pada tangan yang sama-sama lemah. Dan pulang dengan dada yang makin sesak.\n\nPadahal ada pintu yang gak pernah dikunci...",
+                "content": "Ujung-ujungnya masalah cuma bisa kita pendam sendiri di siang hari.\n\nBerharap ada orang yang peka dan bantu, tapi seringnya malah pulang dengan rasa kecewa.\n\nPadahal ada satu waktu yang gak pernah bikin kita kecewa.",
                 "design_note": ""
             },
             {
                 "slide_number": 3,
                 "header": "",
                 "title": "",
-                "content": "Di sepertiga malam terakhir, saat seluruh bumi sedang terlelap dan senyap...\n\nRabb semesta alam sendiri yang membuka pintu-Nya lebar-lebar:\n\nيَنْزِلُ رَبُّنَا تَبَارَكَ وَتَعَالَى كُلَّ لَيْلَةٍ إِلَى السَّمَاءِ الدُّنْيَا حِينَ يَبْقَى ثُلُثُ اللَّيْلِ الآخِرُ\n\n\"Siapa yang berdoa kepada-Ku, niscaya Aku kabulkan. Siapa yang memohon ampun, niscaya Aku ampuni.\" (HR. Bukhari no. 1145)",
+                "content": "Waktunya pas sepertiga malam terakhir, sekitar jam tiga pagi sebelum subuh.\n\nيَنْزِلُ رَبُّنَا تَبَارَكَ وَتَعَالَى كُلَّ لَيْلَةٍ إِلَى السَّمَاءِ الدُّنْيَا حِينَ يَبْقَى ثُلُثُ اللَّيْلِ الآخِرُ\n\nNabi ﷺ ngingetin, Allah sendiri yang turun ke langit dunia buat dengar hajat hamba-Nya: \"Siapa yang berdoa kepada-Ku, pasti Aku kabulkan.\" (HR. Bukhari no. 1145)",
                 "design_note": ""
             },
             {
                 "slide_number": 4,
                 "header": "",
                 "title": "",
-                "content": "Tapi sayang, pas pintu langit terbuka paling lebar, kita justru tertidur paling lelap.\n\nيَعْقِدُ الشَّيْطَانُ عَلَى قَافِيَةِ رَأْسِ أَحَدِكُمْ إِذَا هُوَ نَامَ ثَلَاثَ عُقَدٍ\n\nBukan karena kita gak butuh pertolongan Allah. Tapi karena kepala kita masih tertahan oleh tiga ikatan rasa malas yang belum terlepas (HR. Bukhari no. 1142).",
+                "content": "Masalahnya, jam tiga pagi itu godaan selimut lagi berat-beratnya.\n\nيَعْقِدُ الشَّيْطَانُ عَلَى قَافِيَةِ رَأْسِ أَحَدِكُمْ إِذَا هُوَ نَامَ ثَلَاثَ عُقَدٍ\n\nBukan karena kita gak butuh pertolongan Allah. Tapi karena setan memang pasang tiga ikatan di kepala biar kita malas bangun (HR. Bukhari no. 1142).",
                 "design_note": ""
             },
             {
                 "slide_number": 5,
                 "header": "",
                 "title": "",
-                "content": "فَإِنِ اسْتَيْقَظَ فَذَكَرَ اللَّهَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ تَوَضَّأَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ صَلَّى انْحَلَّتْ عُقْدَةٌ\n\nPadahal melepaskannya begitu sederhana:\nBuka mata dengan mengingat-Nya, basuh wajah dengan air wudhu, lalu tundukkan kening di hadapan-Nya.\n\nDi sujud itulah, beban yang seharian kamu pikul sendirian... akhirnya kamu serahkan pada Pemilik langit dan bumi.",
+                "content": "فَإِنِ اسْتَيْقَظَ فَذَكَرَ اللَّهَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ تَوَضَّأَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ صَلَّى انْحَلَّتْ عُقْدَةٌ\n\nNabi ﷺ ngajarin cara lepasnya:\nMelek langsung sebut nama Allah, basuh muka pakai air wudhu, lalu tegakkan shalat dua rakaat.\n\nBegitu kening sujud, rasa sesak yang seharian dipendam langsung plong seketika.",
                 "design_note": ""
             },
             {
                 "slide_number": 6,
                 "header": "",
                 "title": "",
-                "content": "Ketika Allah sudah turun tangan, urusan yang manusia bilang \"mustahil\", selesai lewat jalan yang bahkan gak pernah kamu duga.\n\nJangan lagi ketuk pintu yang menolakmu.\nDatangi pintu yang selalu menunggumu setiap malam.",
+                "content": "Urusan yang manusia bilang buntu, sering kali dapat jalan keluar dari arah yang gak pernah kita duga.\n\nKuncinya sederhana: jangan cuma ngandelin manusia pas siang hari.\nDatangi Allah pas sepertiga malam.",
                 "design_note": ""
             },
             {
                 "slide_number": 7,
                 "header": "",
                 "title": "",
-                "content": "Bangun jam 3 pagi bukan soal alarm kencang. Ini soal hati yang rindu ditolong.\n\nKalau kamu butuh langkah bertahap melatih tubuh bangun segar di sepertiga malam, kami rangkum panduannya di eBook Qila.\n\nKetik IKHTIAR di komentar, nanti kami kirimkan detail aksesnya langsung lewat DM.",
+                "content": "Alarm sekencang apa pun bakal mental kalau fisik kita belum siap jam tidurnya.\n\nCara mengatur jam tidur dan bangun bugar jam 3 pagi sudah saya rangkum di eBook Qila.\n\nKetik IKHTIAR di komentar, nanti saya kirimkan detailnya lewat DM.",
                 "design_note": ""
             }
         ],
         "caption": "",
-        "raw_markdown": "# Naskah Carousel Hari Kamis (@edumuslimin)\n\n- **Topik:** Semua Pintu Solusi Manusia Tertutup?\n- **Format:** Seamless Storytelling Carousel (1080x1350 \/ 7 Slide)\n- **Funnel:** MOFU (Klaster Semua Pintu Bumi Mentok)\n- **Produk Terkait:** eBook Qila (Rp47.000)\n- **CTA Trigger:** \"IKHTIAR\"\n\n---\n\n## 📱 NASKAH SLIDE-BY-SLIDE (7 SLIDE MENGALIR)\n\n### Slide 1\nPernah di titik di mana semua pintu manusia... terkunci rapat?\n\nMinta tolong ke sana ditolak. Minta bantuan ke sini cuma dijanjikan. Sampai kamu merasa sendirian di dunia ini.\n\n- **Catatan Desain:** Deep Charcoal Slate tenang, tipografi bersih warna putih gading tanpa ornamen kaku, tanpa gambar bernyawa.\n\n### Slide 2\nKita sering habiskan waktu siang hari mengejar orang yang kita kira punya solusi.\n\nBerharap pada tangan yang sama-sama lemah. Dan pulang dengan dada yang makin sesak.\n\n*Padahal ada pintu yang gak pernah dikunci...*\n\n- **Catatan Desain:** Ruang kosong luas, baris ketiga dicetak miring sebagai jembatan swipe yang menyentuh batin.\n\n### Slide 3\nDi sepertiga malam terakhir, saat seluruh bumi sedang terlelap dan senyap...\n\nRabb semesta alam sendiri yang membuka pintu-Nya lebar-lebar:\n\nيَنْزِلُ رَبُّنَا تَبَارَكَ وَتَعَالَى كُلَّ لَيْلَةٍ إِلَى السَّمَاءِ الدُّنْيَا حِينَ يَبْقَى ثُلُثُ اللَّيْلِ الآخِرُ\n\n*\"Siapa yang berdoa kepada-Ku, niscaya Aku kabulkan. Siapa yang memohon ampun, niscaya Aku ampuni.\"* (HR. Bukhari no. 1145)\n\n- **Catatan Desain:** Deep Night Navy, teks Arab berharakat rapi di atas terjemahan dengan aksen emas fajar lembut.\n\n### Slide 4\nTapi sayang, pas pintu langit terbuka paling lebar, kita justru tertidur paling lelap.\n\nيَعْقِدُ الشَّيْطَانُ عَلَى قَافِيَةِ رَأْسِ أَحَدِكُمْ إِذَا هُوَ نَامَ ثَلَاثَ عُقَدٍ\n\nBukan karena kita gak butuh pertolongan Allah. Tapi karena kepala kita masih tertahan oleh tiga ikatan rasa malas yang belum terlepas (HR. Bukhari no. 1142).\n\n- **Catatan Desain:** Potongan teks Arab hadits di atas penjelasan emosional, kontras tinggi dan minimalis.\n\n### Slide 5\nفَإِنِ اسْتَيْقَظَ فَذَكَرَ اللَّهَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ تَوَضَّأَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ صَلَّى انْحَلَّتْ عُقْدَةٌ\n\nPadahal melepaskannya begitu sederhana:\nBuka mata dengan mengingat-Nya, basuh wajah dengan air wudhu, lalu tundukkan kening di hadapan-Nya.\n\nDi sujud itulah, beban yang seharian kamu pikul sendirian... akhirnya kamu serahkan pada Pemilik langit dan bumi.\n\n- **Catatan Desain:** Teks Arab ringkas, pesan penyerahan diri yang menenangkan batin.\n\n### Slide 6\nKetika Allah sudah turun tangan, urusan yang manusia bilang \"mustahil\", selesai lewat jalan yang bahkan gak pernah kamu duga.\n\nJangan lagi ketuk pintu yang menolakmu.\nDatangi pintu yang selalu menunggumu setiap malam.\n\n- **Catatan Desain:** Dua baris terakhir semi-bold, penuh keyakinan dan harapan, siap screenshot.\n\n### Slide 7\nBangun jam 3 pagi bukan soal alarm kencang. Ini soal hati yang rindu ditolong.\n\nKalau kamu butuh langkah bertahap melatih tubuh bangun segar di sepertiga malam, kami rangkum panduannya di **eBook Qila**.\n\nKetik **IKHTIAR** di komentar, nanti kami kirimkan detail aksesnya langsung lewat DM.\n\n- **Catatan Desain:** Slide penutup teduh, aksen IKHTIAR jelas dan nyaman dibaca.\n\n---\n\n## 📝 CAPTION FEED INSTAGRAM\n\n```text\nPernah di titik di mana semua pintu manusia rasanya tertutup rapat? Minta tolong ke mana pun hasilnya cuma penolakan...\n\nWaktu lagi terhimpit masalah pelik, refleks pertama kita biasanya cari orang yang punya kuasa atau materi buat bantu. Tapi berkali-kali kita coba di siang hari, hasilnya sering kali cuma bikin batin makin lelah.\n\nManusia itu punya batas, dan hati mereka bisa berubah kapan saja.\n\nTapi ada satu pintu yang gak pernah ditutup, bahkan Pemiliknya yang aktif memanggil hamba-Nya:\n\nقَالَ رَسُولُ اللَّهِ ﷺ: «يَنْزِلُ رَبُّنَا تَبَارَكَ وَتَعَالَى كُلَّ لَيْلَةٍ إِلَى السَّمَاءِ الدُّنْيَا حِينَ يَبْقَى ثُلُثُ اللَّيْلِ الآخِرُ يَقُولُ: مَنْ يَدْعُونِي فَأَسْتَجِيبَ لَهُ، مَنْ يَسْأَلُنِي فَأُعْطِيَهُ، مَنْ يَسْتَغْفِرُنِي فَأَغْفِرَ لَهُ» (HR. Bukhari no. 1145)\n\nSayangnya, pas pintu langit terbuka paling lebar, kita justru pulas tertidur karena tiga simpul ikatan di tengkuk:\n\n«يَعْقِدُ الشَّيْطَانُ عَلَى قَافِيَةِ رَأْسِ أَحَدِكُمْ إِذَا هُوَ نَامَ ثَلَاثَ عُقَدٍ... فَإِنِ اسْتَيْقَظَ فَذَكَرَ اللَّهَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ تَوَضَّأَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ صَلَّى انْحَلَّتْ عُقْدَةٌ» (HR. Bukhari no. 1142)\n\nPutus ikatannya malam ini dengan tiga langkah mudah: sebut nama Allah pas mata terbuka, basuh air wudhu dingin, lalu tegakkan shalat dua rakaat. Saat Allah meridhai, masalah sebesar apa pun pasti ada jalan keluarnya.\n\nBiar kamu punya panduan jelas bangun malam tanpa drama lelah seharian, langkahnya sudah kami rangkum di eBook Qila. Cuma Rp47.000.\n\nKetik \"IKHTIAR\" di kolom komentar ya, nanti link aksesnya kami kirimkan ke DM. Yuk, ketuk pintu langit malam ini! 😊\n\n#pertolonganallah #tahajjud #solusihidup #edumuslimin #ikhtiarlangit\n```\n",
+        "raw_markdown": "# Naskah Carousel Hari Kamis (@edumuslimin)\n\n- **Topik:** Semua Pintu Solusi Manusia Tertutup?\n- **Format:** Seamless Storytelling Carousel (1080x1350 \/ 7 Slide)\n- **Funnel:** MOFU (Klaster Semua Pintu Bumi Mentok)\n- **Produk Terkait:** eBook Qila (Rp47.000)\n- **CTA Trigger:** \"IKHTIAR\"\n\n---\n\n## 📱 NASKAH SLIDE-BY-SLIDE (7 SLIDE MENGALIR)\n\n### Slide 1\nPernah gak sih lagi kepepet banget, tapi bingung mau minta tolong ke siapa?\n\nMau cerita ke teman sungkan. Mau pinjam atau ngerepotin keluarga juga gak enak.\n\n- **Catatan Desain:** Deep Charcoal Slate tenang, tipografi bersih warna putih gading. Tanpa gambar makhluk bernyawa.\n\n### Slide 2\nUjung-ujungnya masalah cuma bisa kita pendam sendiri di siang hari.\n\nBerharap ada orang yang peka dan bantu, tapi seringnya malah pulang dengan rasa kecewa.\n\nPadahal ada satu waktu yang gak pernah bikin kita kecewa.\n\n- **Catatan Desain:** Ruang kosong luas, baris ketiga dicetak miring sebagai jembatan swipe yang menyentuh.\n\n### Slide 3\nWaktunya pas sepertiga malam terakhir, sekitar jam tiga pagi sebelum subuh.\n\nيَنْزِلُ رَبُّنَا تَبَارَكَ وَتَعَالَى كُلَّ لَيْلَةٍ إِلَى السَّمَاءِ الدُّنْيَا حِينَ يَبْقَى ثُلُثُ اللَّيْلِ الآخِرُ\n\nNabi ﷺ ngingetin, Allah sendiri yang turun ke langit dunia buat dengar hajat hamba-Nya: *\"Siapa yang berdoa kepada-Ku, pasti Aku kabulkan.\"* (HR. Bukhari no. 1145)\n\n- **Catatan Desain:** Deep Night Navy, teks Arab berharakat rapi di atas terjemahan dengan aksen emas fajar lembut.\n\n### Slide 4\nMasalahnya, jam tiga pagi itu godaan selimut lagi berat-beratnya.\n\nيَعْقِدُ الشَّيْطَانُ عَلَى قَافِيَةِ رَأْسِ أَحَدِكُمْ إِذَا هُوَ نَامَ ثَلَاثَ عُقَدٍ\n\nBukan karena kita gak butuh pertolongan Allah. Tapi karena setan memang pasang tiga ikatan di kepala biar kita malas bangun (HR. Bukhari no. 1142).\n\n- **Catatan Desain:** Potongan teks Arab hadits di atas penjelasan santai, kontras tinggi dan minimalis.\n\n### Slide 5\nفَإِنِ اسْتَيْقَظَ فَذَكَرَ اللَّهَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ تَوَضَّأَ انْحَلَّتْ عُقْدَةٌ، فَإِنْ صَلَّى انْحَلَّتْ عُقْدَةٌ\n\nNabi ﷺ ngajarin cara lepasnya:\nMelek langsung sebut nama Allah, basuh muka pakai air wudhu, lalu tegakkan shalat dua rakaat.\n\nBegitu kening sujud, rasa sesak yang seharian dipendam langsung plong seketika.\n\n- **Catatan Desain:** Teks Arab ringkas, pesan penyerahan diri yang menenangkan batin.\n\n### Slide 6\nUrusan yang manusia bilang buntu, sering kali dapat jalan keluar dari arah yang gak pernah kita duga.\n\nKuncinya sederhana: jangan cuma ngandelin manusia pas siang hari.\nDatangi Allah pas sepertiga malam.\n\n- **Catatan Desain:** Dua baris terakhir semi-bold, penuh keyakinan dan harapan.\n\n### Slide 7\nAlarm sekencang apa pun bakal mental kalau fisik kita belum siap jam tidurnya.\n\nCara mengatur jam tidur dan bangun bugar jam 3 pagi sudah saya rangkum di **eBook Qila**.\n\nKetik **IKHTIAR** di komentar, nanti saya kirimkan detailnya lewat DM.\n\n- **Catatan Desain:** Slide penutup teduh, aksen IKHTIAR jelas dan nyaman dibaca.\n\n---\n\n## 📝 CAPTION FEED INSTAGRAM\n\n```text\nPernah gak sih ada di posisi lagi kepepet banget, tapi bingung mau minta tolong ke siapa?\n\nMau cerita ke teman rasanya sungkan. Mau ngerepotin keluarga juga gak enak hati. Ujung-ujungnya masalah cuma bisa kita pendam sendiri seharian.\n\nKadang kita lupa, manusia itu punya keterbatasan. Berharap ke manusia terlalu banyak seringnya malah bikin kecewa.\n\nPadahal ada satu waktu di mana Allah membuka pintu pertolongan-Nya selebar-lebarnya:\n\nقَالَ رَسُولُ اللَّهِ ﷺ: «يَنْزِلُ رَبُّنَا تَبَارَكَ وَتَعَالَى كُلَّ لَيْلَةٍ إِلَى السَّمَاءِ الدُّنْيَا حِينَ يَبْقَى ثُلُثُ اللَّيْلِ الآخِرُ يَقُولُ: مَنْ يَدْعُونِي فَأَسْتَجِيبَ لَهُ، مَنْ يَسْأَلُنِي فَأُعْطِيَهُ، مَنْ يَسْتَغْفِرُنِي فَأَغْفِرَ لَهُ» (HR. Bukhari no. 1145)\n\nSetiap sepertiga malam terakhir, Allah turun ke langit dunia menunggu hamba-Nya yang mau minta tolong.\n\nCuma kendalanya, jam 3 pagi kasur rasanya narik banget. Itu wajar, karena setan memang pasang 3 ikatan di kepala pas kita tidur (HR. Bukhari no. 1142).\n\nLepas ikatannya dengan 3 langkah mudah Nabi ﷺ: pas melek sebut nama Allah, basuh muka pakai wudhu, terus shalat dua rakaat. Begitu sujud, beban yang seharian bikin sesak rasanya langsung lepas.\n\nBiar kamu gak terus-terusan kalah sama alarm dan bisa bangun bugar jam 3 pagi, langkah praktisnya sudah saya susun di eBook Qila (cuma Rp47.000).\n\nKetik \"IKHTIAR\" di komentar ya, nanti saya kirimkan link aksesnya langsung ke DM. Yuk, kita ketuk pintu langit bareng-bareng malam ini! 😊\n\n#pertolonganallah #tahajjud #solusihidup #edumuslimin #ikhtiarlangit #qiyamullail\n```\n",
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-15 14:14:46"
+        "updated_at": "2026-10-15 17:14:49"
     },
     {
         "id": "carousel-jumat",
@@ -327,7 +327,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-15 14:14:46"
+        "updated_at": "2026-10-15 17:01:18"
     },
     {
         "id": "reels-1-slide-senin",
@@ -343,7 +343,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-15 14:14:46"
+        "updated_at": "2026-10-15 17:01:18"
     },
     {
         "id": "story-jualan-hari-ini",
@@ -359,7 +359,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-15 14:14:46"
+        "updated_at": "2026-10-15 17:01:18"
     },
     {
         "id": "skrip-closing-dm-qila",
@@ -375,6 +375,6 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-15 14:14:46"
+        "updated_at": "2026-10-15 17:01:18"
     }
 ]

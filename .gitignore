@@ -1,5 +1,7 @@
 # Cache & Dynamic Data
 data/sales_cache.json
+data/ig_cache.json
+data/meta_config.json
 data/*.sqlite*
 data/*.log
 

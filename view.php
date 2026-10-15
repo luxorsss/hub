@@ -340,6 +340,13 @@ if (!empty($item['caption'])) {
                 <span style="font-weight: 700; font-size: 0.9rem;"><?= htmlspecialchars($item['day']) ?>: <?= htmlspecialchars($item['channel']) ?></span>
             </div>
             <div class="bar-actions">
+                <!-- Checkbox Sudah Didesain -->
+                <?php $isDesigned = (($item['status'] ?? '') === 'designed'); ?>
+                <label class="check-design-wrapper <?= $isDesigned ? 'checked' : '' ?>" id="viewCheckWrapper" title="Centang jika naskah ini sudah selesai kamu desain di Canva" style="display: inline-flex; align-items: center; gap: 0.45rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); padding: 0.55rem 0.85rem; border-radius: 8px; cursor: pointer; user-select: none;">
+                    <input type="checkbox" onchange="toggleDesignStatusView('<?= htmlspecialchars($item['id']) ?>', this.checked)" <?= $isDesigned ? 'checked' : '' ?> style="accent-color: var(--primary); width: 16px; height: 16px;">
+                    <span id="viewCheckText" style="font-size: 0.82rem; font-weight: 600; color: <?= $isDesigned ? '#34d399' : 'var(--text-muted)' ?>;"><?= $isDesigned ? 'Sudah Didesain' : 'Tandai Didesain' ?></span>
+                </label>
+
                 <button class="btn-main-copy" onclick="copyFullContent()">
                     📋 Salin Semua Naskah
                 </button>
@@ -350,6 +357,9 @@ if (!empty($item['caption'])) {
                 <a href="edit.php?id=<?= urlencode($item['id']) ?>" class="btn-outline">
                     ✏️ Edit
                 </a>
+                <button type="button" class="btn-outline" onclick="deleteAndBack('<?= htmlspecialchars($item['id']) ?>')" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3);" title="Hapus naskah ini dari Hub">
+                    🗑️ Hapus
+                </button>
             </div>
         </div>
     </div>
@@ -448,6 +458,63 @@ if (!empty($item['caption'])) {
                 showToast('✅ ' + label + ' berhasil disalin!');
             }).catch(err => {
                 alert('Gagal menyalin: ' + err);
+            });
+        }
+
+        function toggleDesignStatusView(id, isChecked) {
+            const status = isChecked ? 'designed' : 'ready_to_design';
+            const wrapper = document.getElementById('viewCheckWrapper');
+            const text = document.getElementById('viewCheckText');
+
+            fetch('api_action.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'toggle_status', id: id, status: status })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    if (isChecked) {
+                        wrapper.classList.add('checked');
+                        text.textContent = 'Sudah Didesain';
+                        text.style.color = '#34d399';
+                        showToast('✅ Naskah ditandai: Selesai didesain!');
+                    } else {
+                        wrapper.classList.remove('checked');
+                        text.textContent = 'Tandai Didesain';
+                        text.style.color = 'var(--text-muted)';
+                        showToast('ℹ️ Status dikembalikan ke Belum Didesain');
+                    }
+                } else {
+                    showToast('Gagal update: ' + (data.error || 'Error'));
+                }
+            })
+            .catch(err => {
+                showToast('Koneksi terganggu');
+            });
+        }
+
+        function deleteAndBack(id) {
+            if (!confirm('Yakin ingin menghapus naskah ini dari Hub?')) {
+                return;
+            }
+
+            fetch('api_action.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'delete', id: id })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Naskah berhasil dihapus.');
+                    window.location.href = 'index.php';
+                } else {
+                    alert('Gagal menghapus: ' + (data.error || 'Error'));
+                }
+            })
+            .catch(err => {
+                alert('Koneksi terganggu');
             });
         }
     </script>

@@ -81,6 +81,40 @@ class HubDB {
         return true;
     }
 
+    public static function updateStatus($id, $status) {
+        $contents = self::getContents();
+        $updated = false;
+        foreach ($contents as $k => $item) {
+            if ($item['id'] === $id) {
+                $contents[$k]['status'] = $status;
+                $contents[$k]['updated_at'] = date('Y-m-d H:i:s');
+                $updated = true;
+                break;
+            }
+        }
+        if ($updated) {
+            self::saveContents($contents);
+        }
+        return $updated;
+    }
+
+    public static function deleteContent($id) {
+        $contents = self::getContents();
+        $new = [];
+        $deleted = false;
+        foreach ($contents as $item) {
+            if ($item['id'] === $id) {
+                $deleted = true;
+                continue;
+            }
+            $new[] = $item;
+        }
+        if ($deleted) {
+            self::saveContents($new);
+        }
+        return $deleted;
+    }
+
     public static function getSalesStats() {
         // Cek cache dulu (10 menit)
         if (file_exists(self::$salesFile)) {

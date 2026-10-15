@@ -6,18 +6,34 @@ $contents = HubDB::getContents();
 $sales = HubDB::getSalesStats();
 
 $filter = $_GET['filter'] ?? 'all';
+$statusFilter = $_GET['status'] ?? 'all';
 $filteredContents = [];
 
+$countAll = count($contents);
+$countPending = 0;
+$countDesigned = 0;
+
 foreach ($contents as $c) {
+    $isDesigned = (($c['status'] ?? '') === 'designed');
+    if ($isDesigned) {
+        $countDesigned++;
+    } else {
+        $countPending++;
+    }
+
     if ($filter === 'carousel' && stripos($c['channel'], 'carousel') === false) continue;
     if ($filter === 'reels' && stripos($c['channel'], 'reels') === false) continue;
     if ($filter === 'story' && stripos($c['channel'], 'story') === false) continue;
     if ($filter === 'crm' && stripos($c['channel'], 'crm') === false) continue;
+
+    if ($statusFilter === 'pending' && $isDesigned) continue;
+    if ($statusFilter === 'designed' && !$isDesigned) continue;
+
     $filteredContents[] = $c;
 }
 
 $targetSales = $sales['target_sales'] ?? 100;
-$currentSales = $sales['current_sales'] ?? 12;
+$currentSales = $sales['current_sales'] ?? 0;
 $percent = min(100, round(($currentSales / $targetSales) * 100, 1));
 $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000), 0, ',', '.');
 ?>
@@ -44,6 +60,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             --amber: #f59e0b;
             --blue: #3b82f6;
             --purple: #8b5cf6;
+            --red: #ef4444;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -99,6 +116,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             display: flex;
             gap: 0.75rem;
             align-items: center;
+            flex-wrap: wrap;
         }
         .btn-sm {
             padding: 0.5rem 0.9rem;
@@ -158,80 +176,103 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
         .sales-title h2 {
             font-size: 1.1rem;
             font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
         .sales-title p {
-            font-size: 0.85rem;
             color: var(--text-muted);
+            font-size: 0.85rem;
             margin-top: 0.25rem;
         }
         .sales-stat {
             text-align: right;
         }
         .sales-stat .number {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: 800;
             color: var(--primary);
             font-family: 'JetBrains Mono', monospace;
         }
         .sales-stat .sub {
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
         }
         .progress-bar-bg {
             background: rgba(255, 255, 255, 0.05);
-            height: 12px;
-            border-radius: 999px;
+            height: 8px;
+            border-radius: 4px;
             overflow: hidden;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
         .progress-bar-fill {
-            background: linear-gradient(90deg, #10b981, #34d399);
+            background: var(--primary);
             height: 100%;
-            border-radius: 999px;
+            border-radius: 4px;
             transition: width 0.5s ease;
         }
         .sales-footer {
             display: flex;
             justify-content: space-between;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
         }
 
-        /* Filter Tabs */
+        /* Filter Controls */
+        .filter-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
         .tabs {
             display: flex;
             gap: 0.5rem;
-            margin-bottom: 1.5rem;
-            overflow-x: auto;
-            padding-bottom: 0.25rem;
+            flex-wrap: wrap;
         }
         .tab {
             padding: 0.5rem 1rem;
             font-size: 0.85rem;
             font-weight: 600;
-            border-radius: 8px;
-            text-decoration: none;
             color: var(--text-muted);
-            background: var(--surface);
-            border: 1px solid var(--border);
-            white-space: nowrap;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            background: transparent;
             transition: all 0.2s;
         }
-        .tab:hover, .tab.active {
+        .tab:hover {
             color: var(--text);
-            background: var(--card-hover);
-            border-color: var(--primary);
+            background: var(--surface);
         }
         .tab.active {
             color: var(--primary);
-            border-color: var(--primary);
-            background: var(--primary-glow);
+            background: var(--surface);
+            border-color: var(--border);
+        }
+        .status-filter-group {
+            display: inline-flex;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 3px;
+            gap: 3px;
+        }
+        .status-pill {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s;
+        }
+        .status-pill.active {
+            background: var(--card);
+            color: var(--text);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
 
-        /* Content List */
+        /* Content Cards Grid */
         .content-grid {
             display: flex;
             flex-direction: column;
@@ -240,19 +281,28 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
         .content-card {
             background: var(--card);
             border: 1px solid var(--border);
-            border-radius: 14px;
+            border-radius: 12px;
             padding: 1.25rem 1.5rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 1.5rem;
-            transition: all 0.2s;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .content-card:hover {
-            border-color: #3b4258;
             background: var(--card-hover);
-            transform: translateY(-1px);
+            border-color: rgba(255, 255, 255, 0.15);
         }
+        .content-card.is-designed {
+            border-color: rgba(16, 185, 129, 0.4);
+            background: rgba(16, 185, 129, 0.02);
+        }
+        .content-card.fade-out {
+            opacity: 0;
+            transform: scale(0.96) translateY(-10px);
+            pointer-events: none;
+        }
+
         .card-main {
             flex: 1;
         }
@@ -295,13 +345,52 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+
+        /* Checkbox & Actions */
         .card-actions {
             display: flex;
             align-items: center;
             gap: 0.75rem;
+            flex-shrink: 0;
         }
+        .check-design-wrapper {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            padding: 0.45rem 0.85rem;
+            border-radius: 8px;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.2s;
+        }
+        .check-design-wrapper:hover {
+            border-color: var(--primary);
+            background: rgba(16, 185, 129, 0.08);
+        }
+        .check-design-wrapper input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+        .check-design-wrapper span {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: color 0.2s;
+        }
+        .check-design-wrapper.checked {
+            border-color: rgba(16, 185, 129, 0.5);
+            background: rgba(16, 185, 129, 0.12);
+        }
+        .check-design-wrapper.checked span {
+            color: #34d399;
+        }
+
         .btn-view {
-            padding: 0.65rem 1.1rem;
+            padding: 0.55rem 1rem;
             background: var(--primary);
             color: #022c22;
             font-weight: 700;
@@ -317,16 +406,47 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
         .btn-view:hover {
             background: #34d399;
             box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+            transform: translateY(-1px);
         }
-        .status-badge {
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 4px 8px;
-            border-radius: 6px;
-            background: rgba(16, 185, 129, 0.1);
-            color: var(--primary);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            white-space: nowrap;
+
+        .btn-delete {
+            background: transparent;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            padding: 0.55rem 0.75rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-delete:hover {
+            color: #ef4444;
+            border-color: rgba(239, 68, 68, 0.4);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        /* Toast Feedback */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #10b981;
+            color: #022c22;
+            padding: 0.85rem 1.5rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: none;
+            z-index: 999;
+            animation: fadeIn 0.25s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 768px) {
@@ -339,6 +459,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             .card-actions {
                 width: 100%;
                 justify-content: space-between;
+                flex-wrap: wrap;
             }
             .btn-view {
                 flex: 1;
@@ -387,51 +508,168 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             </div>
         </div>
 
-        <!-- Filter Tab -->
-        <div class="tabs">
-            <a href="index.php?filter=all" class="tab <?= $filter === 'all' ? 'active' : '' ?>">Semua Konten (<?= count($contents) ?>)</a>
-            <a href="index.php?filter=carousel" class="tab <?= $filter === 'carousel' ? 'active' : '' ?>">Carousel (5)</a>
-            <a href="index.php?filter=reels" class="tab <?= $filter === 'reels' ? 'active' : '' ?>">Reels 1-Slide (1)</a>
-            <a href="index.php?filter=story" class="tab <?= $filter === 'story' ? 'active' : '' ?>">Story Jualan (1)</a>
-            <a href="index.php?filter=crm" class="tab <?= $filter === 'crm' ? 'active' : '' ?>">DM Closing (1)</a>
+        <!-- Filter Controls -->
+        <div class="filter-section">
+            <div class="tabs">
+                <a href="index.php?filter=all&status=<?= $statusFilter ?>" class="tab <?= $filter === 'all' ? 'active' : '' ?>">Semua Format (<?= $countAll ?>)</a>
+                <a href="index.php?filter=carousel&status=<?= $statusFilter ?>" class="tab <?= $filter === 'carousel' ? 'active' : '' ?>">Carousel</a>
+                <a href="index.php?filter=reels&status=<?= $statusFilter ?>" class="tab <?= $filter === 'reels' ? 'active' : '' ?>">Reels 1-Slide</a>
+                <a href="index.php?filter=story&status=<?= $statusFilter ?>" class="tab <?= $filter === 'story' ? 'active' : '' ?>">Story Jualan</a>
+                <a href="index.php?filter=crm&status=<?= $statusFilter ?>" class="tab <?= $filter === 'crm' ? 'active' : '' ?>">DM Closing</a>
+            </div>
+            
+            <div class="status-filter-group">
+                <a href="index.php?filter=<?= $filter ?>&status=all" class="status-pill <?= $statusFilter === 'all' ? 'active' : '' ?>">Semua (<?= $countAll ?>)</a>
+                <a href="index.php?filter=<?= $filter ?>&status=pending" class="status-pill <?= $statusFilter === 'pending' ? 'active' : '' ?>">⏳ Perlu Desain (<?= $countPending ?>)</a>
+                <a href="index.php?filter=<?= $filter ?>&status=designed" class="status-pill <?= $statusFilter === 'designed' ? 'active' : '' ?>">✅ Sudah Didesain (<?= $countDesigned ?>)</a>
+            </div>
         </div>
 
         <!-- Content Grid -->
-        <div class="content-grid">
+        <div class="content-grid" id="contentGrid">
             <?php 
                 $hariMap = [1 => 'Senin', 2 => 'Selasa', 3 => 'Rabu', 4 => 'Kamis', 5 => 'Jumat', 6 => 'Sabtu', 7 => 'Minggu'];
                 $hariIni = $hariMap[date('N')] ?? 'Kamis';
             ?>
-            <?php foreach ($filteredContents as $item): ?>
-                <?php 
-                    $channelLower = strtolower($item['channel']);
-                    $tagClass = 'tag-carousel';
-                    if (strpos($channelLower, 'reels') !== false) $tagClass = 'tag-reels';
-                    if (strpos($channelLower, 'story') !== false) $tagClass = 'tag-story';
-                    if (strpos($channelLower, 'crm') !== false) $tagClass = 'tag-crm';
-                    $isToday = (stripos($item['day'], $hariIni) !== false);
-                ?>
-                <div class="content-card" style="<?= $isToday ? 'border-color: #f59e0b; background: rgba(245, 158, 11, 0.04);' : '' ?>">
-                    <div class="card-main">
-                        <div class="card-meta">
-                            <?php if ($isToday): ?>
-                                <span class="tag" style="background: #f59e0b; color: #000; font-weight: 800;">🔥 TAYANG HARI INI (<?= $hariIni ?>)</span>
-                            <?php endif; ?>
-                            <span class="tag <?= $tagClass ?>"><?= htmlspecialchars($item['channel']) ?></span>
-                            <span class="tag tag-funnel"><?= htmlspecialchars($item['day']) ?> • <?= htmlspecialchars($item['funnel']) ?></span>
-                            <span class="status-badge">✅ Siap Desain (Audited)</span>
-                        </div>
-                        <h3 class="card-title"><?= htmlspecialchars($item['title']) ?></h3>
-                        <p class="card-hook">Target: <?= htmlspecialchars($item['target_product']) ?> — <?= htmlspecialchars($item['hook']) ?></p>
-                    </div>
-                    <div class="card-actions">
-                        <a href="view.php?id=<?= urlencode($item['id']) ?>" class="btn-view" style="<?= $isToday ? 'background: #f59e0b; color: #000;' : '' ?>">
-                            📄 Buka Naskah Canva
-                        </a>
-                    </div>
+            <?php if (empty($filteredContents)): ?>
+                <div style="text-align: center; padding: 3rem; background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; color: var(--text-muted);">
+                    Tidak ada naskah yang cocok dengan filter yang dipilih.
                 </div>
-            <?php endforeach; ?>
+            <?php else: ?>
+                <?php foreach ($filteredContents as $item): ?>
+                    <?php 
+                        $channelLower = strtolower($item['channel']);
+                        $tagClass = 'tag-carousel';
+                        if (strpos($channelLower, 'reels') !== false) $tagClass = 'tag-reels';
+                        if (strpos($channelLower, 'story') !== false) $tagClass = 'tag-story';
+                        if (strpos($channelLower, 'crm') !== false) $tagClass = 'tag-crm';
+                        $isToday = (stripos($item['day'], $hariIni) !== false);
+                        $isDesigned = (($item['status'] ?? '') === 'designed');
+                    ?>
+                    <div class="content-card <?= $isDesigned ? 'is-designed' : '' ?>" id="card-<?= htmlspecialchars($item['id']) ?>" style="<?= ($isToday && !$isDesigned) ? 'border-color: #f59e0b; background: rgba(245, 158, 11, 0.04);' : '' ?>">
+                        <div class="card-main">
+                            <div class="card-meta">
+                                <?php if ($isToday): ?>
+                                    <span class="tag" style="background: #f59e0b; color: #000; font-weight: 800;">🔥 TAYANG HARI INI (<?= $hariIni ?>)</span>
+                                <?php endif; ?>
+                                <span class="tag <?= $tagClass ?>"><?= htmlspecialchars($item['channel']) ?></span>
+                                <span class="tag tag-funnel"><?= htmlspecialchars($item['day']) ?> • <?= htmlspecialchars($item['funnel']) ?></span>
+                                <span class="tag" id="status-badge-<?= htmlspecialchars($item['id']) ?>" style="<?= $isDesigned ? 'background: rgba(16, 185, 129, 0.2); color: #34d399;' : 'background: rgba(255,255,255,0.05); color: var(--text-muted);' ?>">
+                                    <?= $isDesigned ? '✅ Sudah Didesain' : '⏳ Belum Didesain' ?>
+                                </span>
+                            </div>
+                            <h3 class="card-title"><?= htmlspecialchars($item['title']) ?></h3>
+                            <p class="card-hook">Target: <?= htmlspecialchars($item['target_product']) ?> — <?= htmlspecialchars($item['hook']) ?></p>
+                        </div>
+                        <div class="card-actions">
+                            <!-- Checkbox Sudah Didesain -->
+                            <label class="check-design-wrapper <?= $isDesigned ? 'checked' : '' ?>" id="check-wrapper-<?= htmlspecialchars($item['id']) ?>" title="Tandai jika naskah ini sudah selesai kamu desain di Canva">
+                                <input type="checkbox" onchange="toggleDesignStatus('<?= htmlspecialchars($item['id']) ?>', this.checked)" <?= $isDesigned ? 'checked' : '' ?>>
+                                <span id="check-text-<?= htmlspecialchars($item['id']) ?>"><?= $isDesigned ? 'Sudah Didesain' : 'Tandai Didesain' ?></span>
+                            </label>
+
+                            <!-- Tombol Buka Naskah -->
+                            <a href="view.php?id=<?= urlencode($item['id']) ?>" class="btn-view" style="<?= ($isToday && !$isDesigned) ? 'background: #f59e0b; color: #000;' : '' ?>">
+                                📄 Naskah Canva
+                            </a>
+
+                            <!-- Tombol Hapus -->
+                            <button type="button" class="btn-delete" onclick="deleteContentItem('<?= htmlspecialchars($item['id']) ?>')" title="Hapus naskah ini dari daftar">
+                                🗑️
+                            </button>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script>
+        function showToast(text, color = '#10b981', textColor = '#022c22') {
+            const toast = document.getElementById('toast');
+            toast.textContent = text;
+            toast.style.background = color;
+            toast.style.color = textColor;
+            toast.style.display = 'block';
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3000);
+        }
+
+        function toggleDesignStatus(id, isChecked) {
+            const status = isChecked ? 'designed' : 'ready_to_design';
+            const card = document.getElementById('card-' + id);
+            const wrapper = document.getElementById('check-wrapper-' + id);
+            const badge = document.getElementById('status-badge-' + id);
+            const checkText = document.getElementById('check-text-' + id);
+
+            fetch('api_action.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'toggle_status', id: id, status: status })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    if (isChecked) {
+                        card.classList.add('is-designed');
+                        wrapper.classList.add('checked');
+                        badge.textContent = '✅ Sudah Didesain';
+                        badge.style.background = 'rgba(16, 185, 129, 0.2)';
+                        badge.style.color = '#34d399';
+                        checkText.textContent = 'Sudah Didesain';
+                        showToast('✅ Ditandai: Selesai didesain!');
+                    } else {
+                        card.classList.remove('is-designed');
+                        wrapper.classList.remove('checked');
+                        badge.textContent = '⏳ Belum Didesain';
+                        badge.style.background = 'rgba(255, 255, 255, 0.05)';
+                        badge.style.color = 'var(--text-muted)';
+                        checkText.textContent = 'Tandai Didesain';
+                        showToast('ℹ️ Status dikembalikan ke Belum Didesain', '#3b82f6', '#fff');
+                    }
+                } else {
+                    showToast('Gagal mengubah status: ' + (data.error || 'Error'), '#ef4444', '#fff');
+                }
+            })
+            .catch(err => {
+                showToast('Koneksi terganggu', '#ef4444', '#fff');
+            });
+        }
+
+        function deleteContentItem(id) {
+            if (!confirm('Yakin ingin menghapus naskah ini dari daftar Hub?')) {
+                return;
+            }
+
+            const card = document.getElementById('card-' + id);
+            card.classList.add('fade-out');
+
+            fetch('api_action.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'delete', id: id })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    setTimeout(() => {
+                        card.remove();
+                    }, 250);
+                    showToast('🗑️ Naskah berhasil dihapus dari daftar');
+                } else {
+                    card.classList.remove('fade-out');
+                    showToast('Gagal menghapus: ' + (data.error || 'Error'), '#ef4444', '#fff');
+                }
+            })
+            .catch(err => {
+                card.classList.remove('fade-out');
+                showToast('Koneksi terganggu', '#ef4444', '#fff');
+            });
+        }
+    </script>
 </body>
 </html>
