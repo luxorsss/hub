@@ -60,6 +60,13 @@ $filesToProcess = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
+        'file' => $kontenDir . '/threads-jumat.md',
+        'channel' => 'Threads',
+        'day' => 'Jumat',
+        'funnel' => 'BOFU (Utas)',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
         'file' => $crmDir . '/skrip-closing-dm-qila.md',
         'channel' => 'CRM / DM Closing',
         'day' => 'Always-on',

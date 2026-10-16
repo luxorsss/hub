@@ -26,6 +26,7 @@ foreach ($contents as $c) {
     if ($filter === 'carousel' && stripos($c['channel'], 'carousel') === false) continue;
     if ($filter === 'reels' && stripos($c['channel'], 'reels') === false) continue;
     if ($filter === 'story' && stripos($c['channel'], 'story') === false) continue;
+    if ($filter === 'threads' && stripos($c['channel'], 'threads') === false) continue;
     if ($filter === 'crm' && stripos($c['channel'], 'crm') === false) continue;
 
     if ($statusFilter === 'pending' && $isDesigned) continue;
@@ -609,6 +610,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 <a href="index.php?filter=carousel&status=<?= $statusFilter ?>" class="tab <?= $filter === 'carousel' ? 'active' : '' ?>">Carousel</a>
                 <a href="index.php?filter=reels&status=<?= $statusFilter ?>" class="tab <?= $filter === 'reels' ? 'active' : '' ?>">Reels 1-Slide</a>
                 <a href="index.php?filter=story&status=<?= $statusFilter ?>" class="tab <?= $filter === 'story' ? 'active' : '' ?>">Story Jualan</a>
+                <a href="index.php?filter=threads&status=<?= $statusFilter ?>" class="tab <?= $filter === 'threads' ? 'active' : '' ?>" style="<?= $filter === 'threads' ? '' : 'border-color: rgba(168, 85, 247, 0.4); color: #c084fc;' ?>">🧵 Threads</a>
                 <a href="index.php?filter=crm&status=<?= $statusFilter ?>" class="tab <?= $filter === 'crm' ? 'active' : '' ?>">DM Closing</a>
             </div>
             
