@@ -127,7 +127,7 @@ $schedule = [
             ],
             [
                 'time' => '19:30 - 20:00',
-                'task' => 'Upload Story 3 & 4: Cuplikan isi bab Qila + Stiker Link Direct Checkout PixelCRM.',
+                'task' => 'Upload Story 3 & 4: Cuplikan isi bab Qila + Stiker Link Landing Page Qila (https://lp.edumuslim.my.id/lpqila).',
                 'tag' => 'Instagram Story'
             ],
             [

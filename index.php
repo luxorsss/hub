@@ -4,6 +4,8 @@ check_auth();
 
 $contents = HubDB::getContents();
 $sales = HubDB::getSalesStats();
+$kaizenFile = DATA_DIR . '/kaizen.json';
+$kaizenList = file_exists($kaizenFile) ? json_decode(file_get_contents($kaizenFile), true) : [];
 
 $filter = $_GET['filter'] ?? 'all';
 $statusFilter = $_GET['status'] ?? 'all';
@@ -213,6 +215,77 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             justify-content: space-between;
             font-size: 0.75rem;
             color: var(--text-muted);
+        }
+
+        /* Kaizen Widget */
+        .kaizen-widget {
+            background: linear-gradient(135deg, #0d1527, #070b14);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            border-radius: 16px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        .kaizen-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .kaizen-header h3 {
+            font-size: 1.05rem;
+            color: #60a5fa;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0;
+        }
+        .kaizen-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 0.85rem;
+        }
+        .kaizen-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            transition: all 0.2s;
+        }
+        .kaizen-item:hover {
+            border-color: rgba(96, 165, 250, 0.4);
+            background: rgba(96, 165, 250, 0.04);
+        }
+        .kaizen-agent {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #93c5fd;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .kaizen-title {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            line-height: 1.3;
+        }
+        .kaizen-title:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+        .kaizen-desc {
+            font-size: 0.76rem;
+            color: #94a3b8;
+            line-height: 1.45;
         }
 
         /* Filter Controls */
@@ -507,6 +580,27 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 <span>Sisa: <?= max(0, $targetSales - $currentSales) ?> Penjualan Menuju Target</span>
             </div>
         </div>
+
+        <?php if (!empty($kaizenList)): ?>
+        <!-- Widget Kaizen Harian Tim -->
+        <div class="kaizen-widget">
+            <div class="kaizen-header">
+                <h3>🎓 Kaizen Belajar Harian Tim (Tokoh Bisnis Dunia)</h3>
+                <span style="font-size: 0.75rem; color: #64748b; font-family: monospace;">Kurikulum: Dan Koe · Hormozi · Huberman · McDowell · Voss</span>
+            </div>
+            <div class="kaizen-grid">
+                <?php foreach ($kaizenList as $k): ?>
+                <div class="kaizen-item">
+                    <div class="kaizen-agent"><?= htmlspecialchars($k['agent']) ?> · <?= htmlspecialchars($k['tokoh']) ?></div>
+                    <a href="<?= htmlspecialchars($k['url']) ?>" target="_blank" class="kaizen-title" title="Buka video di YouTube">
+                        📺 <?= htmlspecialchars($k['title']) ?> ↗
+                    </a>
+                    <div class="kaizen-desc"><?= htmlspecialchars($k['takeaway']) ?></div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <?php endif; ?>
 
         <!-- Filter Controls -->
         <div class="filter-section">
