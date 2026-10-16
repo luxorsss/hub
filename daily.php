@@ -115,11 +115,17 @@ $schedule = [
         'badge' => 'Closing & Rekonsiliasi',
         'is_active' => ($activeSlot === 'evening'),
         'team_activity' => [
+            'voice-copywriter menyiapkan draf utas Threads harian.',
             'account-auditor mengevaluasi metrik Save & Share postingan hari ini.',
             'sales-conversion menyiapkan pesan follow-up 6 jam untuk calon pembeli yang belum checkout.',
             'Sistem Hub merefresh counter pencapaian 100 sales eBook Qila.'
         ],
         'owner_tasks' => [
+            [
+                'time' => '16:30 - 17:00',
+                'task' => 'Posting Utas Threads: Buka tab Threads di Hub, salin 6 post draf, lalu posting beruntun di @edumuslimin.',
+                'tag' => 'Threads'
+            ],
             [
                 'time' => '17:00 - 18:00',
                 'task' => 'Follow-up DM (Skrip Alur 3): Sapa calon pembeli yang tadi siang dapat link tapi belum bayar.',
