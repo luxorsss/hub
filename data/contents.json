@@ -63,7 +63,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     },
     {
         "id": "carousel-selasa",
@@ -129,7 +129,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     },
     {
         "id": "carousel-rabu",
@@ -195,7 +195,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     },
     {
         "id": "carousel-kamis",
@@ -254,7 +254,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     },
     {
         "id": "carousel-jumat",
@@ -320,7 +320,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     },
     {
         "id": "reels-1-slide-senin",
@@ -336,7 +336,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     },
     {
         "id": "story-jualan-hari-ini",
@@ -352,7 +352,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     },
     {
         "id": "skrip-closing-dm-qila",
@@ -360,15 +360,15 @@
         "day": "Always-on",
         "funnel": "Sales Closing",
         "target_product": "eBook Qila (Rp47rb)",
-        "title": "Skrip Closing DM Otomatis \/ Manual — Kata Kunci \"QILA\"",
-        "hook": "Skrip Closing DM Otomatis \/ Manual — Kata Kunci \"QILA\"",
+        "title": "Panduan Skrip Closing DM Multi-Cabang — eBook Qila",
+        "hook": "Panduan Skrip Closing DM Multi-Cabang — eBook Qila",
         "slides": [],
         "caption": "",
-        "raw_markdown": "# Skrip Closing DM Otomatis \/ Manual — Kata Kunci \"QILA\"\n**Disusun oleh:** `sales-conversion`  \n**Status:** Siap Digunakan (Copy-Paste ke DM \/ ManyChat)\n\n---\n\n### Alur 1: Balasan Otomatis Saat Audiens Komen \"QILA\" di Feed\/Reels\n> **Pesan Balasan Komentar Publik:**  \n> *\"Siap kak, link akses eBook Qila sudah saya kirim lewat DM ya. Coba cek inbox atau folder permintaan pesan 🙌\"*\n\n---\n\n### Alur 2: Pesan DM Pertama (Pengiriman Link & Value Anchoring)\n> **Isi DM:**  \n> *\"Halo kak! Makasih ya udah respon postingan tadi.*  \n>  \n> *Sesuai janji, ini akses resmi ke **eBook Qila (Blueprint Bangun Malam Anti-Gagal)**:*  \n> 👉 [https:\/\/lp.edumuslim.my.id\/lpqila](https:\/\/lp.edumuslim.my.id\/lpqila)  \n>  \n> *Harganya cuma **Rp47.000** (setara harga satu cup kopi kekinian), tapi insyaAllah jadi panduan praktis seumur hidup biar alarm jam 3 pagi gak cuma jadi pajangan.*  \n>  \n> *Sudah termasuk bonus checklist tracker tahajud 30 hari juga. Kalau ada kendala pas buka linknya, kabarin saya di sini ya kak!\"*\n\n---\n\n### Alur 3: Follow-Up Lembut (Jika 6 Jam Belum Selesai Checkout)\n> **Isi DM Follow-Up:**  \n> *\"Assalamu'alaikum kak, cuma mau mastiin linknya tadi aman dibuka?*  \n> *Kalau ada yang mau ditanyain dulu soal isi bukunya, santai aja kak, boleh ngobrol di sini dulu 🙏\"*\n\n---\n\n### Alur 4: Jawaban Keraguan (Objection Handling)\n- **Calon Buyer:** *\"Kak, bukunya tebal gak? Takut gak sempat baca.\"*  \n  **Jawaban:**  \n  *\"Tenang kak, eBook Qila didesain ringkas, to-the-point, dan bebas basa-basi. Isinya panduan praktis langkah demi langkah yang bisa selesai dibaca dalam 25–30 menit. Jadi malam ini baca, nanti malam langsung bisa dipraktekkan sistem tidurnya.\"*\n\n- **Calon Buyer:** *\"Saya udah coba berbagai cara tetap aja susah bangun jam 3.\"*  \n  **Jawaban:**  \n  *\"Wajar banget kak, karena biasanya kita cuma ngandelin niat dan alarm. Di eBook Qila ini kita bedah kombinasi sunnah Nabi ﷺ dengan sains jam biologis (ritme sirkadian) tubuh. Jadi bukan maksain mata melek, tapi benerin polanya dari sebelum Isya.\"*\n",
+        "raw_markdown": "# Panduan Skrip Closing DM Multi-Cabang — eBook Qila\n**Kanal:** Instagram DM \/ Komentar Feed & Reels  \n**Target Konversi:** eBook Qila (Rp47.000)  \n**Tautan Resmi:** [https:\/\/lp.edumuslim.my.id\/lpqila](https:\/\/lp.edumuslim.my.id\/lpqila)  \n**Karakter Suara:** Suara Owner EduMuslim (Hangat, santai warkop, empati, tanpa formula kaku AI)\n\n---\n\n## 📌 Petunjuk Penggunaan untuk Owner (Manual via HP\/Laptop)\n1. **Identifikasi Kata Kunci:** Lihat kata kunci yang diketik audiens di kolom komentar postingan (Senin: `LUNAS`, Selasa\/Kamis: `IKHTIAR`, Rabu: `TENANG`, Jumat\/Umum: `QILA`).\n2. **Langkah 1:** Balas komentar publik mereka menggunakan template balasan komentar pendek.\n3. **Langkah 2:** Buka DM mereka (atau klik tombol DM langsung dari komentar), lalu kirim template DM Pertama yang sesuai cabangnya.\n4. **Langkah 3:** Jika setelah 6 jam belum ada konfirmasi checkout, kirimkan template follow-up lembut.\n\n---\n\n## 🗂️ 4 Cabang Respon Kontekstual\n\n### Cabang 1: Kata Kunci \"LUNAS\" (Senin — Klaster Rezeki & Amanah Hutang)\n*Konteks: Audiens sedang memikirkan beban rezeki, cicilan, atau hutang. Sambungkan bahwa rezeki langit dihamparkan di sepertiga malam, namun fisik sering terasa berat karena ikatan tidur.*\n\n* **Balasan Komentar Publik:**\n  > \"Aamiin ya Rabbal 'alamin. Link panduannya udah saya kirim lewat DM ya kak, yuk cek inbox atau folder permintaan pesannya 🙌\"\n\n* **Isi DM Pertama:**\n  > \"Assalamu'alaikum kak! Makasih ya udah mampir dan komen di postingan tadi.  \n  >  \n  > Soal urusan rezeki atau ikhtiar ngelunasin amanah, seringnya pintu rezeki langit itu dibuka lebar pas sepertiga malam. Masalahnya, fisik kita sering ngerasa berat banget dibangunin, kayak ada ikatan yang bikin mager.  \n  >  \n  > Nah, ini saya kirimin akses panduan praktisnya di **eBook Qila**:  \n  > 👉 https:\/\/lp.edumuslim.my.id\/lpqila  \n  >  \n  > Di situ kita bahas cara ngelepas ikatan berat itu lewat kombinasi adab sunnah dan ritme fisik tubuh, biar jam 3 pagi kaki bisa enteng melangkah buat jemput fajar.  \n  >  \n  > Investasinya Rp47.000 aja kok kak (setara satu cup kopi kekinian), udah lengkap sama checklist tracker 30 hari. Semoga jadi jalan ikhtiar lapang rezekinya ya kak. Kalo ada kendala buka linknya, colek saya di sini aja ya!\"\n\n---\n\n### Cabang 2: Kata Kunci \"IKHTIAR\" (Selasa & Kamis — Klaster Doa Macet & Pintu Tertutup)\n*Konteks: Audiens merasa usahanya mentok atau doanya belum kunjung tembus. Sambungkan bahwa mengetuk pintu langit di sepertiga malam adalah ikhtiar tertinggi saat pintu bumi serasa buntu.*\n\n* **Balasan Komentar Publik:**\n  > \"Bismillah, link ikhtiarnya udah meluncur ke DM ya kak. Boleh langsung dicek inbox-nya 🙌\"\n\n* **Isi DM Pertama:**\n  > \"Assalamu'alaikum kak! Makasih ya udah ikutan nimbrung di postingan tadi.  \n  >  \n  > Kadang kalo semua pintu di bumi lagi serasa buntu, jalan terbaik kita emang ngetuk pintu langit pas sepertiga malam terakhir. Waktu di mana doa langsung didengar tanpa perantara.  \n  >  \n  > Biar gak cuma niat tapi fisiknya beneran siap bangun, ini link akses ke **eBook Qila**:  \n  > 👉 https:\/\/lp.edumuslim.my.id\/lpqila  \n  >  \n  > Kita kupas langkah praktis bangun malam tanpa drama ngantuk lemas, dari persiapan tidur sampai rutinitas fajar.  \n  >  \n  > Harganya Rp47.000 aja (seharga satu cup kopi kekinian), dan udah ada bonus lembar tracker 30 hari. Kalo pas buka link ada yang bingung, kabarin saya ya kak!\"\n\n---\n\n### Cabang 3: Kata Kunci \"TENANG\" (Rabu — Klaster Burnout & Overthinking)\n*Konteks: Audiens merasa lelah mental, cemas, atau burnout. Sambungkan bahwa sujud privat di sepertiga malam adalah ruang paling teduh untuk menumpahkan isi hati.*\n\n* **Balasan Komentar Publik:**\n  > \"Semoga lekas adem hatinya kak. Panduan tenangnya udah saya kirim ke DM ya, coba intip inbox atau request message 🙌\"\n\n* **Isi DM Pertama:**\n  > \"Assalamu'alaikum kak! Makasih ya udah mampir dan komen.  \n  >  \n  > Pernah ngerasa kepala penuh banget sama beban kerjaan atau hidup? Jujur, salah satu obat paling manjur buat batin yang lagi sesak itu curhat privat berdua aja sama Allah pas sujud sepertiga malam. Suasananya sunyi, dada rasanya plong.  \n  >  \n  > Biar kita bisa rutin bangun dan nikmatin momen tenang itu, ini panduan praktisnya di **eBook Qila**:  \n  > 👉 https:\/\/lp.edumuslim.my.id\/lpqila  \n  >  \n  > Isinya langkah santai menata jam biologis tubuh biar alarm jam 3 pagi terasa ramah dan segar di badan.  \n  >  \n  > Harganya Rp47.000 aja kak, setara satu cup kopi kekinian. Sudah termasuk checklist harian juga. Semoga bisa nemenin ikhtiar jemput ketenangan batin ya kak!\"\n\n---\n\n### Cabang 4: Kata Kunci \"QILA\" (Jumat \/ Umum — Direct Solutif)\n*Konteks: Audiens merespon pilar solusi langsung atau postingan edukasi umum tentang bangun malam.*\n\n* **Balasan Komentar Publik:**\n  > \"Siap kak! Link akses eBook Qila udah meluncur ke DM ya. Coba dicek inbox atau folder permintaan pesan 🙌\"\n\n* **Isi DM Pertama:**\n  > \"Assalamu'alaikum kak! Makasih banyak ya udah respon postingan tadi.  \n  >  \n  > Sesuai janji saya, ini link resmi buat akses **eBook Qila (Blueprint Bangun Malam Anti-Gagal)**:  \n  > 👉 https:\/\/lp.edumuslim.my.id\/lpqila  \n  >  \n  > Panduan ini kita rancang buat bantu kamu yang pengen rutin tahajud jam 3 pagi tanpa lemas seharian di kantor. Memadukan sunnah Nabi ﷺ dengan sains ritme tubuh.  \n  >  \n  > Harganya terjangkau banget, cuma Rp47.000 (setara satu cup kopi kekinian), plus udah dapat bonus tracker tahajud 30 hari.  \n  >  \n  > Kalo ada kendala pas buka websitenya, langsung kabarin saya di sini ya kak!\"\n\n---\n\n## 🌿 Modul Follow-Up Lembut (Kirim Setelah 6 Jam Jika Belum Checkout)\n*Kirimkan pesan ini dengan nada santai tanpa menekan, cukup membuka pintu diskusi.*\n\n> \"Assalamu'alaikum kak, maaf ganggu waktunya sebentar. Cuma mau mastiin link panduan Qila tadi aman dibuka?  \n>  \n> Santai aja ya kak, kalo misal ada yang mau ditanyain dulu soal isinya atau mau ngobrol seputar kendala bangun malam, boleh banget cerita di sini 🙏\"\n\n---\n\n## 🛡️ Modul Penjawab Keraguan (Objection Handling Santai)\n\n### 1. Pertanyaan: *\"Kak, bukunya tebal gak? Takut gak sempat baca karena sibuk.\"*\n> **Jawaban Owner:**  \n> \"Tenang kak, santai aja. eBook Qila ini sengaja saya bikin ringkas dan to-the-point, gak bertele-tele. Rata-rata bisa tuntas dibaca sekitar 25–30 menit aja.  \n>  \n> Jadi baca sore atau malam ini, nanti jam 3 pagi langsung bisa dipraktekkan polanya.\"\n\n### 2. Pertanyaan: *\"Saya udah sering coba pasang banyak alarm tetap aja bablas terus jam 3.\"*\n> **Jawaban Owner:**  \n> \"Iya kak, wajar banget dan banyak yang ngalamin hal serupa. Masalahnya selama ini kita cuma ngandelin tekad sama dering alarm, padahal ritme tubuh kita belum disiapin dari sebelum Isya.  \n>  \n> Di eBook Qila, kita tata jam biologis dan adab tidur sesuai sunnah Nabi ﷺ, jadi bangunnya alami tanpa kaget dan gak lemas pas kerja.\"\n\n### 3. Pertanyaan: *\"Formatnya buku fisik atau digital kak? Cara belinya gimana?\"*\n> **Jawaban Owner:**  \n> \"Bentuknya eBook digital (PDF) kak. Jadi begitu transaksi beres lewat link https:\/\/lp.edumuslim.my.id\/lpqila, bukunya langsung masuk dan bisa dibaca langsung lewat HP atau laptop. Pembayarannya praktis banget, bisa lewat QRIS (Gopay, OVO, ShopeePay) atau transfer bank.\"\n",
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     },
     {
         "id": "threads-jumat",
@@ -384,6 +384,6 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-16 14:58:55",
-        "updated_at": "2026-10-16 14:58:55"
+        "updated_at": "2026-10-16 16:53:14"
     }
 ]
