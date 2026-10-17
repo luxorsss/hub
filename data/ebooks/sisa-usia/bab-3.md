@@ -4,17 +4,17 @@ Amalan Rumah
 
 Apakah bekal akhirat harus selalu berupa ibadah berat yang memakan biaya besar?
 
-Kita akan bahas disini.
+Coba perhatikan pola pikir kita selama ini.
 
-Banyak orang yang menunda-nunda beramal karena merasa belum punya modal.
+Seringkali kita merasa pahala akhirat itu hanya milik mereka yang berangkat umroh setiap tahun, orang kaya yang membangun masjid megah, atau ustadz yang ceramah keliling kota.
 
-Pikirannya selalu tertuju pada amalan raksasa: menunggu punya uang puluhan juta untuk umroh, menunggu kaya raya untuk bangun masjid, atau menunggu waktu luang berjam-jam untuk kajian ke luar kota.
+Lalu kita yang hidupnya biasa-biasa saja—yang gajinya pas-pasan dan tenaganya habis untuk mencari nafkah—merasa minder:
 
-Padahal umur terus berjalan. Dan seringkali ajal datang mendahului impian-impian besar tersebut.
+*"Bekal apa yang bisa saya bawa menghadap Allah kalau uang dan waktu saja pas-pasan?"*
 
-Jika Anda merasa waktu, tenaga, dan harta Anda terbatas di sisa usia ini, jangan berkecil hati.
+Pikiran seperti ini keliru besar.
 
-Islam tidak pernah membatasi pintu surga hanya untuk orang kaya atau orang yang punya fisik sekuat atlet.
+Islam tidak pernah menyempitkan pintu surga hanya untuk mereka yang berharta melimpah atau berfisik kuat. Justru di sisa usia ini, Allah membentangkan samudera pahala yang luar biasa luas tepat di depan mata Anda, tanpa butuh keluar biaya satu rupiah pun.
 
 ---
 

@@ -4,17 +4,17 @@ Kaidah Emas
 
 Mungkinkah dosa maksiat puluhan tahun lunas hanya dengan sisa umur yang tinggal sedikit?
 
-Kita akan bahas disini.
+Pernahkah Anda menatap cermin di tengah malam, lalu tiba-tiba terlintas rasa bersalah yang teramat dalam?
 
-Banyak orang yang ketika tersadar dari kelalaiannya, bukannya segera bangkit beramal, tapi malah tenggelam dalam rasa putus asa.
+Masa muda yang dulu terasa gagah, ternyata habis untuk hal-hal yang membuat malu jika dibuka di hadapan Allah. 
 
-Mereka merasa sudah terlanjur kotor.
+Lalu syaitan meniupkan satu jebakan yang sangat halus ke telinga kita:
 
-Ada yang berbisik di dalam hatinya:
+*"Sudahlah... dosamu sudah terlanjur segunung. Umurmu sekarang sudah berkepala empat. Mana mungkin bisa mengejar derajat orang-orang sholeh yang dari kecil sudah taat?"*
 
-*"Masa muda saya dulu hancur berantakan. Shalat sering bolong, maksiat jalan terus. Sekarang umur sudah kepala empat atau kepala lima, mana sempat mengejar pahala orang-orang sholeh?"*
+Jebakan rasa putus asa inilah racun yang paling mematikan.
 
-Jika bisikan itu pernah mampir di pikiran Anda, dengarkan baik-baik kabar gembira ini.
+Padahal, jika Anda tahu betapa mahalnya nilai sisa umur di mata Allah, Anda tidak akan menyia-nyiakan walau hanya satu detik.
 
 ---
 
