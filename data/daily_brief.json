@@ -28,11 +28,12 @@
         },
         "threads": {
             "title": "Threads (@edumuslimin)",
-            "views": null,
-            "replies": null,
-            "likes": null,
-            "reposts": null,
-            "status": "Menunggu input data Threads kemarin dari Owner (@edumuslimin)"
+            "views": 43,
+            "replies": 0,
+            "likes": 0,
+            "reposts": 0,
+            "status": "Data diverifikasi Owner. Perlu pemicu interaksi awal di jam santai sore.",
+            "diagnosa": "Views 43 dengan 0 reply menunjukkan akun butuh pancingan percakapan santai tanpa kesan menggurui. Algoritma Threads baru membuka jangkauan luas jika ada 1-2 balasan di 30 menit pertama."
         }
     },
     "riset_lintas_platform": [
