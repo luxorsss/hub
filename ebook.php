@@ -30,21 +30,27 @@ $chapters = [
     ],
     [
         'id' => 'bab-3',
-        'badge' => 'Bab 3 (Segera)',
+        'badge' => 'Bab 3',
         'title' => 'Amalan Rumah',
         'file' => 'bab-3.md'
     ],
     [
         'id' => 'bab-4',
-        'badge' => 'Bab 4 (Segera)',
+        'badge' => 'Bab 4',
         'title' => 'Pelit Waktu',
         'file' => 'bab-4.md'
     ],
     [
         'id' => 'bab-5',
-        'badge' => 'Bab 5 (Segera)',
+        'badge' => 'Bab 5',
         'title' => 'Bebas Hisab',
         'file' => 'bab-5.md'
+    ],
+    [
+        'id' => 'penutup',
+        'badge' => 'Khatimah',
+        'title' => 'Doa Akhir Hayat',
+        'file' => 'penutup.md'
     ]
 ];
 
