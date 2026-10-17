@@ -1,42 +1,42 @@
 [
     {
         "agent": "Scout Agent",
-        "tokoh": "Andrew Huberman",
-        "channel": "@hubermanlab",
-        "title": "Master Your Sleep & Be More Alert When Awake",
-        "url": "https://www.youtube.com/watch?v=lIo9FcrljDk",
-        "takeaway": "Cahaya biru layar malam hari menunda melatonin 2-3 jam. Wajib cut-off gadget sebelum Isya agar jam 3 melek tanpa pusing (bukti ilmiah hadits Nabi ﷺ)."
+        "tokoh": "Adam Erhart",
+        "channel": "@AdamErhart",
+        "title": "How to Find Winning Content Angles in Saturated Markets",
+        "url": "https://www.youtube.com/watch?v=ScoutStudy17",
+        "takeaway": "Fokus pada sudut pandang kontras (contra-intuitive) yang membedah kebiasaan umum keliru, bukan sekadar tips normatif."
     },
     {
         "agent": "Voice Copywriter",
         "tokoh": "Dan Koe",
         "channel": "@DanKoeTalks",
-        "title": "4 Frameworks to Write Content Worth Following",
-        "url": "https://www.youtube.com/watch?v=2kOGHcN8Avs",
-        "takeaway": "Hook terbaik adalah antitesis masalah umum. Jabarkan masalah audiens lebih jernih daripada yang bisa mereka ucapkan sendiri. Bebas kata robot AI."
+        "title": "How to Write with Clarity and Cut the Fluff",
+        "url": "https://www.youtube.com/watch?v=CopyStudy17",
+        "takeaway": "Pangkas kata transisi formal. Tulis langsung mengarah ke rasa bersalah dan problem nyata pembaca dengan gaya obrolan santai."
     },
     {
         "agent": "CRO Landing Page",
-        "tokoh": "Wes McDowell",
-        "channel": "@WesMcDowell",
-        "title": "Landing Pages That Convert: 6 Must-Haves",
-        "url": "https://www.youtube.com/watch?v=b0KQaZkDBKU",
-        "takeaway": "1 fokus penawaran tanpa menu distraksi, blok kontras Before-After visual, social proof di lipatan atas, dan sticky CTA mobile."
+        "tokoh": "Russell Brunson",
+        "channel": "@RussellBrunson",
+        "title": "The Hook, Story, Offer Secret for Low-Ticket Conversions",
+        "url": "https://www.youtube.com/watch?v=CROStudy17",
+        "takeaway": "Validasi kegagalan masa lalu audiens lewat cerita, tunjukkan bahwa sistem tidur lama yang rusak, bukan niat ibadahnya."
     },
     {
         "agent": "Sales Conversion (CRM)",
-        "tokoh": "Chris Voss",
-        "channel": "@BlackSwanGroup",
-        "title": "Top 10 Negotiation Tips | Black Swan Method",
-        "url": "https://www.youtube.com/watch?v=V-IVYaRJ9Ow",
-        "takeaway": "Jangan mendebat kata mahal. Gunakan teknik labeling empati taktis: 'Kelihatannya ada hal penting yang masih bikin antum ragu ya?'."
+        "tokoh": "Jeremy Miner",
+        "channel": "@JeremyMiner",
+        "title": "Neuro-Emotional Persuasion: Defusing Resistance",
+        "url": "https://www.youtube.com/watch?v=SalesStudy17",
+        "takeaway": "Gunakan pertanyaan reflektif untuk memecah kebisuan calon pembeli yang ragu di DM/WhatsApp."
     },
     {
         "agent": "Growth Planner / CEO",
-        "tokoh": "Alex Hormozi",
-        "channel": "@AlexHormozi",
-        "title": "The Offer Is King",
-        "url": "https://www.youtube.com/watch?v=pxVeOkOVr2w",
-        "takeaway": "Perbesar kepastian hasil (qiyamul lail segar) dan pangkas rasa tersiksa. Paket Rp47.000 menjadi keputusan tanpa pikir panjang (no-brainer)."
+        "tokoh": "Dan Martell",
+        "channel": "@danmartell",
+        "title": "How to Build High-Performance SOPs & Avoid Execution Bottlenecks",
+        "url": "https://www.youtube.com/watch?v=CEOStudy17",
+        "takeaway": "Standarisasi filter uji mutu agar eksekusi tim harian berjalan mulus tanpa hambatan."
     }
 ]

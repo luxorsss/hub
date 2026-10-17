@@ -39,6 +39,18 @@ $targetSales = $sales['target_sales'] ?? 100;
 $currentSales = $sales['current_sales'] ?? 0;
 $percent = min(100, round(($currentSales / $targetSales) * 100, 1));
 $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000), 0, ',', '.');
+
+$hariMap = [1 => 'Senin', 2 => 'Selasa', 3 => 'Rabu', 4 => 'Kamis', 5 => 'Jumat', 6 => 'Sabtu', 7 => 'Minggu'];
+$hariIni = $hariMap[date('N')] ?? 'Sabtu';
+$tanggalLengkap = date('d F Y');
+
+$todayCarousel = null;
+foreach ($contents as $c) {
+    if (stripos($c['channel'], 'carousel') !== false && stripos($c['day'], $hariIni) !== false) {
+        $todayCarousel = $c;
+        break;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -216,6 +228,79 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             justify-content: space-between;
             font-size: 0.75rem;
             color: var(--text-muted);
+        }
+
+        /* Today Focus Widget */
+        .today-focus-widget {
+            background: linear-gradient(135deg, #181512, #0c0a09);
+            border: 2px solid #f59e0b;
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 35px rgba(245, 158, 11, 0.15);
+        }
+        .today-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+            padding-bottom: 0.85rem;
+        }
+        .today-badge-pills {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .today-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1rem;
+        }
+        .today-item-box {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .today-item-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fbbf24;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: space-between;
+        }
+        .today-steps-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            font-size: 0.85rem;
+            color: #d1d5db;
+        }
+        .today-steps-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            line-height: 1.4;
+        }
+        .step-time {
+            background: rgba(245, 158, 11, 0.2);
+            color: #fde68a;
+            font-size: 0.72rem;
+            font-family: 'JetBrains Mono', monospace;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            white-space: nowrap;
         }
 
         /* Kaizen Widget */
@@ -582,6 +667,117 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             </div>
         </div>
 
+        <!-- Widget Fokus Posting Hari Ini (Highlight Utama) -->
+        <div class="today-focus-widget">
+            <div class="today-header">
+                <div>
+                    <div style="font-size: 0.8rem; font-weight: 700; color: #f59e0b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">
+                        ⚡ TUGAS & KONTEN TAYANG HARI INI
+                    </div>
+                    <h2 style="font-size: 1.25rem; font-weight: 800; color: #fff;">
+                        <?= $hariIni ?>, <?= $tanggalLengkap ?>
+                    </h2>
+                </div>
+                <div class="today-badge-pills">
+                    <span class="tag" style="background: #f59e0b; color: #000; font-weight: 800; font-size: 0.8rem; padding: 0.4rem 0.8rem;">
+                        🔥 HARI INI: <?= strtoupper($hariIni) ?>
+                    </span>
+                    <a href="daily.php" class="btn-sm" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: #f59e0b; font-size: 0.78rem;">
+                        📅 Detail SOP Harian ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="today-grid">
+                <!-- Card 1: Instagram Story 4-Slide -->
+                <div class="today-item-box" style="border-left: 4px solid #10b981;">
+                    <div>
+                        <div class="today-item-title">
+                            <span>📲 Instagram Story 4-Slide</span>
+                            <span class="tag tag-story" style="font-size: 0.7rem; padding: 0.2rem 0.5rem;">WAJIB HARIAN</span>
+                        </div>
+                        <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0.5rem 0 0.85rem 0;">
+                            4 slide interaksi & jualan eBook Qila tanpa jualan keras:
+                        </p>
+                        <ul class="today-steps-list">
+                            <li>
+                                <span class="step-time">07:30 - 08:30</span>
+                                <div><strong>Slide 1 (Polling Pagi):</strong> Cek jam bangun vs alarm audiens.</div>
+                            </li>
+                            <li>
+                                <span class="step-time">12:30 - 13:00</span>
+                                <div><strong>Slide 2 (Cerita Siang):</strong> Validasi lelah & rasa bersalah kasur.</div>
+                            </li>
+                            <li>
+                                <span class="step-time">19:30 - 20:00</span>
+                                <div><strong>Slide 3 & 4 (Malam):</strong> Teaser framework & stiker link eBook Qila.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <a href="view.php?id=story-jualan-hari-ini" class="btn-sm" style="background: var(--primary); color: #022c22; font-weight: 700; width: 100%; justify-content: center; padding: 0.65rem;">
+                            📋 Buka & Salin Naskah Story Hari Ini
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Feed / Weekend Fokus -->
+                <div class="today-item-box" style="border-left: 4px solid #3b82f6;">
+                    <div>
+                        <div class="today-item-title">
+                            <?php if ($todayCarousel): ?>
+                                <span>🎨 Carousel Feed Hari Ini</span>
+                                <span class="tag tag-carousel" style="font-size: 0.7rem; padding: 0.2rem 0.5rem;">FEED AKTIF</span>
+                            <?php else: ?>
+                                <span>🏖️ Feed: Weekend Maintenance</span>
+                                <span class="tag" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; font-size: 0.7rem; padding: 0.2rem 0.5rem;">FOKUS DM & CRM</span>
+                            <?php endif; ?>
+                        </div>
+                        <?php if ($todayCarousel): ?>
+                            <p style="font-size: 0.95rem; font-weight: 700; color: #fff; margin: 0.5rem 0 0.35rem 0;">
+                                <?= htmlspecialchars($todayCarousel['title']) ?>
+                            </p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                                <?= htmlspecialchars($todayCarousel['hook']) ?>
+                            </p>
+                        <?php else: ?>
+                            <p style="font-size: 0.85rem; color: #cbd5e1; margin: 0.5rem 0 0.5rem 0; line-height: 1.5;">
+                                Akhir pekan tidak ada rilis Carousel baru agar feed tidak jenuh. Fokus utama Owner hari ini:
+                            </p>
+                            <ul class="today-steps-list">
+                                <li>
+                                    <span>👉</span>
+                                    <div><strong>Fokus Story:</strong> Naikkan engagement polling & traffic link LP Qila.</div>
+                                </li>
+                                <li>
+                                    <span>👉</span>
+                                    <div><strong>Balas DM Masuk:</strong> Gunakan skrip multi-cabang (LUNAS, IKHTIAR, TENANG, QILA).</div>
+                                </li>
+                                <li>
+                                    <span>👉</span>
+                                    <div><strong>Follow-up Pending PixelCRM:</strong> Sapa pembeli yang belum transfer.</div>
+                                </li>
+                            </ul>
+                        <?php endif; ?>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <?php if ($todayCarousel): ?>
+                            <a href="view.php?id=<?= htmlspecialchars($todayCarousel['id']) ?>" class="btn-sm" style="background: #3b82f6; color: #fff; font-weight: 700; width: 100%; justify-content: center; padding: 0.65rem;">
+                                📖 Buka Naskah Carousel Hari Ini
+                            </a>
+                        <?php else: ?>
+                            <a href="view.php?id=skrip-closing-dm-qila" class="btn-sm" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border-color: rgba(59, 130, 246, 0.4); font-weight: 600; flex: 1; justify-content: center;">
+                                💬 Skrip DM Closing
+                            </a>
+                            <a href="https://app.edumuslim.my.id/pixelcrm/" target="_blank" class="btn-sm" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border-color: rgba(16, 185, 129, 0.4); font-weight: 600; flex: 1; justify-content: center;">
+                                📊 PixelCRM ↗
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <?php if (!empty($kaizenList)): ?>
         <!-- Widget Kaizen Harian Tim -->
         <div class="kaizen-widget">
@@ -639,7 +835,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                         if (strpos($channelLower, 'reels') !== false) $tagClass = 'tag-reels';
                         if (strpos($channelLower, 'story') !== false) $tagClass = 'tag-story';
                         if (strpos($channelLower, 'crm') !== false) $tagClass = 'tag-crm';
-                        $isToday = (stripos($item['day'], $hariIni) !== false);
+                        $isToday = (stripos($item['day'], $hariIni) !== false || stripos($item['day'], 'Harian') !== false);
                         $isDesigned = (($item['status'] ?? '') === 'designed');
                     ?>
                     <div class="content-card <?= $isDesigned ? 'is-designed' : '' ?>" id="card-<?= htmlspecialchars($item['id']) ?>" style="<?= ($isToday && !$isDesigned) ? 'border-color: #f59e0b; background: rgba(245, 158, 11, 0.04);' : '' ?>">
