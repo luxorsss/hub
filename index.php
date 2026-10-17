@@ -142,7 +142,7 @@ foreach ($contents as $c) {
             font-weight: 600;
             border-radius: 8px;
             text-decoration: none;
-            transition: all 0.2s;
+            transition: color 150ms cubic-bezier(0.23, 1, 0.32, 1), background-color 150ms cubic-bezier(0.23, 1, 0.32, 1), border-color 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
             cursor: pointer;
             border: 1px solid var(--border);
             color: var(--text);
@@ -154,6 +154,9 @@ foreach ($contents as $c) {
         .btn-sm:hover {
             border-color: var(--primary);
             color: var(--primary);
+        }
+        .btn-sm:active {
+            transform: scale(0.97);
         }
         .btn-logout {
             color: #ef4444;
@@ -641,7 +644,8 @@ foreach ($contents as $c) {
                 </div>
             </div>
             <div class="header-actions">
-                <a href="daily.php" class="btn-sm" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3); font-weight: 700;">📅 Jadwal & Aksi Harian</a>
+                <a href="ebook.php" class="btn-sm" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.35); font-weight: 700;">📖 Draft Ebook Live</a>
+                <a href="daily.php" class="btn-sm" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3); font-weight: 700;">📅 Jadwal Harian</a>
                 <a href="create.php" class="btn-sm" style="background: var(--primary); color: #022c22; font-weight: 700;">+ Tambah Konten</a>
                 <a href="sync.php" class="btn-sm" title="Sinkronkan file naskah terbaru dari folder tim">🔄 Sync Naskah</a>
                 <a href="https://app.edumuslim.my.id/pixelcrm/" target="_blank" class="btn-sm">📊 PixelCRM</a>
