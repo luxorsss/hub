@@ -79,6 +79,13 @@ $filesToProcess = [
         'day' => 'Always-on',
         'funnel' => 'Sales Closing',
         'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $crmDir . '/broadcast-wa-senin.md',
+        'channel' => 'WhatsApp Outreach',
+        'day' => 'Senin',
+        'funnel' => 'Direct Closing (CRM)',
+        'target_product' => 'eBook Qila (Rp47rb)'
     ]
 ];
 

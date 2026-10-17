@@ -81,9 +81,14 @@ $schedule = [
         ],
         'owner_tasks' => [
             [
-                'time' => '08:05 - 09:30',
+                'time' => '08:05 - 09:00',
                 'task' => 'Desain Canva: Buka naskah hari ini di Hub, klik Salin Semua, paste ke template Canva.',
                 'tag' => 'Canva Studio'
+            ],
+            [
+                'time' => '09:00 - 09:30',
+                'task' => '📱 WhatsApp Outreach Batch 1 (10 Kontak): Buka crm/status_pelanggan.php, kirim pesan izin Qila ke 10 alumni Ihfadz (tanpa link di awal).',
+                'tag' => 'WA Outreach'
             ],
             [
                 'time' => '11:00 - 11:30',
@@ -101,7 +106,12 @@ $schedule = [
                 'tag' => 'Instagram Story'
             ],
             [
-                'time' => '13:00 - 14:00',
+                'time' => '13:00 - 13:30',
+                'task' => '📱 WhatsApp Outreach Batch 2 (10 Kontak): Lanjut 10 kontak berikutnya di CRM + kirim link LP ke yang balas "Mau".',
+                'tag' => 'WA Outreach'
+            ],
+            [
+                'time' => '13:30 - 14:00',
                 'task' => 'DM Sprint: Kirim penawaran Qila ke pemilih polling & komentator feed. Cek update PixelCRM.',
                 'tag' => 'Closing Sales'
             ]
@@ -121,6 +131,11 @@ $schedule = [
             'Sistem Hub merefresh counter pencapaian 100 sales eBook Qila.'
         ],
         'owner_tasks' => [
+            [
+                'time' => '16:00 - 16:30',
+                'task' => '📱 WhatsApp Outreach Batch 3 (10 Kontak): Sesi penutup 10 kontak di CRM (Total 30 kontak hari ini) & rekap respon.',
+                'tag' => 'WA Outreach'
+            ],
             [
                 'time' => '16:30 - 17:00',
                 'task' => 'Posting Utas Threads: Buka tab Threads di Hub, salin 6 post draf, lalu posting beruntun di @edumuslimin.',
