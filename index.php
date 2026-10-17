@@ -45,10 +45,13 @@ $hariIni = $hariMap[date('N')] ?? 'Sabtu';
 $tanggalLengkap = date('d F Y');
 
 $todayCarousel = null;
+$todayThreads = null;
 foreach ($contents as $c) {
     if (stripos($c['channel'], 'carousel') !== false && stripos($c['day'], $hariIni) !== false) {
         $todayCarousel = $c;
-        break;
+    }
+    if (stripos($c['channel'], 'threads') !== false && stripos($c['day'], $hariIni) !== false) {
+        $todayThreads = $c;
     }
 }
 ?>
@@ -721,13 +724,16 @@ foreach ($contents as $c) {
                     </div>
                 </div>
 
-                <!-- Card 2: Feed / Weekend Fokus -->
-                <div class="today-item-box" style="border-left: 4px solid #3b82f6;">
+                <!-- Card 2: Feed / Threads / Weekend Fokus -->
+                <div class="today-item-box" style="border-left: 4px solid <?= $todayCarousel ? '#3b82f6' : ($todayThreads ? '#a855f7' : '#3b82f6') ?>;">
                     <div>
                         <div class="today-item-title">
                             <?php if ($todayCarousel): ?>
                                 <span>🎨 Carousel Feed Hari Ini</span>
                                 <span class="tag tag-carousel" style="font-size: 0.7rem; padding: 0.2rem 0.5rem;">FEED AKTIF</span>
+                            <?php elseif ($todayThreads): ?>
+                                <span style="color: #c084fc;">🧵 Utas Threads Hari Ini</span>
+                                <span class="tag" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe; font-size: 0.7rem; padding: 0.2rem 0.5rem;">16.30 WIB · BEBAS LINK</span>
                             <?php else: ?>
                                 <span>🏖️ Feed: Weekend Maintenance</span>
                                 <span class="tag" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; font-size: 0.7rem; padding: 0.2rem 0.5rem;">FOKUS DM & CRM</span>
@@ -740,6 +746,24 @@ foreach ($contents as $c) {
                             <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem;">
                                 <?= htmlspecialchars($todayCarousel['hook']) ?>
                             </p>
+                        <?php elseif ($todayThreads): ?>
+                            <p style="font-size: 0.95rem; font-weight: 700; color: #fff; margin: 0.5rem 0 0.35rem 0;">
+                                <?= htmlspecialchars($todayThreads['title']) ?>
+                            </p>
+                            <ul class="today-steps-list" style="margin-top: 0.5rem;">
+                                <li>
+                                    <span class="step-time" style="background: rgba(168, 85, 247, 0.25); color: #e9d5ff;">16:30 - 17:30</span>
+                                    <div><strong>Jadwal Tayang:</strong> Utas 5 post balasan, santai & reflektif.</div>
+                                </li>
+                                <li>
+                                    <span>🛡️</span>
+                                    <div><strong>Aturan Algoritma:</strong> 100% tanpa link eksternal (anti drop views).</div>
+                                </li>
+                                <li>
+                                    <span>🎯</span>
+                                    <div><strong>CTA Closing:</strong> Ajak balas ketik "TENANG" untuk kirim link via DM.</div>
+                                </li>
+                            </ul>
                         <?php else: ?>
                             <p style="font-size: 0.85rem; color: #cbd5e1; margin: 0.5rem 0 0.5rem 0; line-height: 1.5;">
                                 Akhir pekan tidak ada rilis Carousel baru agar feed tidak jenuh. Fokus utama Owner hari ini:
@@ -764,6 +788,13 @@ foreach ($contents as $c) {
                         <?php if ($todayCarousel): ?>
                             <a href="view.php?id=<?= htmlspecialchars($todayCarousel['id']) ?>" class="btn-sm" style="background: #3b82f6; color: #fff; font-weight: 700; width: 100%; justify-content: center; padding: 0.65rem;">
                                 📖 Buka Naskah Carousel Hari Ini
+                            </a>
+                        <?php elseif ($todayThreads): ?>
+                            <a href="view.php?id=<?= htmlspecialchars($todayThreads['id']) ?>" class="btn-sm" style="background: #8b5cf6; color: #fff; font-weight: 700; flex: 1; justify-content: center; padding: 0.65rem;">
+                                📖 Buka & Salin Naskah Threads
+                            </a>
+                            <a href="view.php?id=skrip-closing-dm-qila" class="btn-sm" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe; border-color: rgba(168, 85, 247, 0.4); font-weight: 600; justify-content: center;">
+                                💬 Skrip DM
                             </a>
                         <?php else: ?>
                             <a href="view.php?id=skrip-closing-dm-qila" class="btn-sm" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border-color: rgba(59, 130, 246, 0.4); font-weight: 600; flex: 1; justify-content: center;">
