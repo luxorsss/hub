@@ -35,8 +35,39 @@ $err = curl_error($ch);
 curl_close($ch);
 
 if ($httpCode === 200) {
-    echo "✅ Berhasil push ke cPanel!\nResponse: " . $res . "\n";
+    echo "✅ Berhasil push naskah ke cPanel!\n";
 } else {
-    echo "⚠️ Gagal mengirim (HTTP $httpCode):\n$err\nResponse: $res\n";
-    echo "Catatan: Pastikan folder /hub/ sudah ada di server cPanel Anda.\n";
+    echo "⚠️ Gagal mengirim naskah (HTTP $httpCode):\n$err\nResponse: $res\n";
 }
+
+// Push Daily Brief jika ada
+$briefFile = DATA_DIR . '/daily_brief.json';
+if (file_exists($briefFile)) {
+    $briefData = json_decode(file_get_contents($briefFile), true);
+    $briefPayload = [
+        'type' => 'daily_brief',
+        'data' => $briefData
+    ];
+
+    echo "Mengirim daily_brief ke $cpanelEndpoint ...\n";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $cpanelEndpoint);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($briefPayload, JSON_UNESCAPED_UNICODE));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Content-Type: application/json',
+        'X-Hub-Secret: ' . $secret
+    ]);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 15);
+    $resBrief = curl_exec($ch);
+    $httpCodeBrief = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($httpCodeBrief === 200) {
+        echo "✅ Berhasil push daily_brief ke cPanel!\n";
+    } else {
+        echo "⚠️ Gagal mengirim daily_brief (HTTP $httpCodeBrief):\nResponse: $resBrief\n";
+    }
+}
+

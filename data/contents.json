@@ -63,7 +63,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
     },
     {
         "id": "carousel-selasa",
@@ -129,7 +129,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
     },
     {
         "id": "carousel-rabu",
@@ -195,7 +195,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
     },
     {
         "id": "carousel-kamis",
@@ -254,7 +254,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
     },
     {
         "id": "carousel-jumat",
@@ -320,7 +320,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
     },
     {
         "id": "reels-1-slide-senin",
@@ -336,7 +336,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
     },
     {
         "id": "story-jualan-hari-ini",
@@ -344,15 +344,15 @@
         "day": "Harian",
         "funnel": "BOFU (Direct)",
         "target_product": "eBook Qila (Rp47rb)",
-        "title": "Skenario 4-Slide Instagram Story Penjualan Hari Ini",
-        "hook": "Skenario 4-Slide Instagram Story Penjualan Hari Ini",
+        "title": "Skenario 4-Slide Instagram Story Penjualan Hari Ini (Minggu, 18 Oktober 2026)",
+        "hook": "Skenario 4-Slide Instagram Story Penjualan Hari Ini (Minggu, 18 Oktober 2026)",
         "slides": [],
         "caption": "",
-        "raw_markdown": "# Skenario 4-Slide Instagram Story Penjualan Hari Ini\n\n- **Disusun oleh:** Voice Copywriter EduMuslim (@edumuslimin)\n- **Objektif:** Penjualan eBook Qila (Warm Audience) lewat pendekatan empati keseharian & curiosity gap\n- **Produk:** eBook Qila\n- **Landing Page Resmi:** `https:\/\/lp.edumuslim.my.id\/lpqila`\n- **Aturan Visual:** Background foto suasana kamar redup \/ jam meja kayu \/ sajadah \/ buku catatan (tanpa gambar makhluk bernyawa).\n\n---\n\n### Story 1: Polling Jam Bangun vs Alarm\n**Jadwal Upload:** [UPLOAD PAGI — 07.30 - 08.00 WIB]\n\n- **Aturan Stiker Polling:** Maksimal 6–7 kata (35–45 karakter) agar teks besar & tidak terpotong.\n- **Pertanyaan di Kotak Stiker:**  \n  *Alarm jam 3, melek jam berapa?*\n- **Pilihan Jawaban:**\n  - Pilihan A: *Jam 3 melek*\n  - Pilihan B: *Kalah selimut*\n\n---\n\n### Story 2: Cerita Empati Santai\n**Jadwal Upload:** [UPLOAD SIANG — 12.30 - 13.00 WIB]\n\n- **Teks di Layar:**  \n  *Wajar banget kalo kasur rasanya narik banget pas jam 3 pagi.*  \n  *Dulu saya juga sering kalah sama selimut.*  \n  *Soalnya tubuh kita memang butuh ritme yang pas dari sebelum Isya, jadi gak bisa cuma modal pasang alarm doang.*\n\n---\n\n### Story 3: Teaser Solusi eBook Qila\n**Jadwal Upload:** [UPLOAD MALAM — 19.30 - 20.00 WIB]\n\n- **Teks di Layar:**  \n  *Di eBook Qila, kita bahas langkah simpel latih jam biologis biar bangun malam terasa ringan.*  \n  *Mulai dari cut-off kafein, adab rebahan, sampai rahasia melepas 3 ikatan tidur setan (HR. Bukhari no. 1142).*\n\n---\n\n### Story 4: Penawaran Nilai & Akses Cepat\n**Jadwal Upload:** [UPLOAD MALAM — 19.30 - 20.00 WIB (Tayang beruntun setelah Story 3)]\n\n- **Teks di Layar:**  \n  *Panduan praktis ini bisa kamu pakai seumur hidup buat perbaiki ibadah malammu.*  \n  *Klik tautan di bawah atau balas story ini ketik \"QILA\", langsung saya kirim aksesnya ya 🙌*\n- **Stiker Tautan Resmi IG:**  \n  - **Teks Stiker:** `Buka Panduan Qila 👇`  \n  - **URL Stiker:** `https:\/\/lp.edumuslim.my.id\/lpqila`\n",
+        "raw_markdown": "# Skenario 4-Slide Instagram Story Penjualan Hari Ini (Minggu, 18 Oktober 2026)\n\n- **Disusun oleh:** Voice Copywriter EduMuslim (@edumuslimin)\n- **Tema Hari Ini:** Sunday Scaries, Reset Sirkadian Akhir Pekan, & Sambut Senin Tenang\n- **Objektif:** Penjualan eBook Qila lewat solusi kecemasan menghadapi hari Senin\n- **Produk:** eBook Qila (Blueprint Bangun Malam Anti-Gagal)\n- **Landing Page Resmi:** `https:\/\/lp.edumuslim.my.id\/lpqila`\n- **Aturan Visual:** Background foto suasana kamar teduh \/ kopi pagi \/ sajadah terlipat \/ buku catatan (tanpa gambar makhluk bernyawa).\n\n---\n\n### Story 1: Polling Santai Minggu Pagi\n**Jadwal Upload:** [UPLOAD PAGI — 07.30 - 08.30 WIB]\n\n- **Aturan Stiker Polling:** Maksimal 6–7 kata agar teks besar & terbaca jelas di layar HP.\n- **Pertanyaan di Kotak Stiker:**  \n  *Minggu pagi: baru melek atau bangun subuh?*\n- **Pilihan Jawaban:**\n  - Pilihan A: *Baru melek nih*\n  - Pilihan B: *Melek dari subuh*\n\n---\n\n### Story 2: Cerita Empati Santai (Sunday Scaries & Jam Tidur)\n**Jadwal Upload:** [UPLOAD SIANG — 12.30 - 13.00 WIB]\n\n- **Teks di Layar:**  \n  *Sering ngerasa gak, tiap Minggu sore dada mulai gelisah mikirin kerjaan Senin besok?*  \n  *Biang kerok aslinya ada di ritme tidur weekend kemarin yang berantakan.*  \n  *Siang ini jangan tidur kelamaan ya. Cukup qailulah 20 menit sebelum dzuhur biar nanti malam jam 10 bisa langsung merem pulas.*\n\n---\n\n### Story 3: Teaser Solusi Sepertiga Malam\n**Jadwal Upload:** [UPLOAD SORE — 17.00 - 17.30 WIB]\n\n- **Teks di Layar:**  \n  *Cara paling ampuh ngatasin rasa takut ketemu hari Senin:*  \n  *Jangan mulai Senin jam 8 pagi saat jalanan macet.*  \n  *Mulai dari jam 3 pagi di sepertiga malam terakhir, saat dunia masih sunyi dan Allah buka pintu pengabulan doa.*  \n  *Dua rakaat tenang bikin mental kita siap hadapi apapun seharian.*\n\n---\n\n### Story 4: Penawaran Nilai & Akses Cepat eBook Qila\n**Jadwal Upload:** [UPLOAD MALAM — 20.30 - 21.00 WIB]\n\n- **Teks di Layar:**  \n  *Biar malam ini tidurnya tenang dan besok Senin bisa bangun jam 3 pagi tanpa disiksa alarm, pelajari sistemnya di eBook Qila.*  \n  *Sudah dirangkum lengkap adab tidur Sunnah + sains sirkadian biar bangunnya segar.*  \n  *Klik tautan di bawah atau balas story ini ketik \"QILA\", nanti saya kirim aksesnya ya 🙌*\n- **Stiker Tautan Resmi IG:**  \n  - **Teks Stiker:** `Buka Panduan Qila 👇`  \n  - **URL Stiker:** `https:\/\/lp.edumuslim.my.id\/lpqila`\n",
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
     },
     {
         "id": "skrip-closing-dm-qila",
@@ -368,7 +368,7 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-15 06:59:05",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
     },
     {
         "id": "threads-jumat",
@@ -384,6 +384,54 @@
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
         "created_at": "2026-10-16 14:58:55",
-        "updated_at": "2026-10-16 16:53:14"
+        "updated_at": "2026-10-18 06:32:06"
+    },
+    {
+        "id": "threads-sabtu",
+        "channel": "Threads",
+        "day": "Sabtu",
+        "funnel": "MOFU\/BOFU (Utas)",
+        "target_product": "eBook Qila (Rp47rb)",
+        "title": "Lelah Mental Pekerja Modern & Waktu Tenang Jam 3 Pagi (Klaster Overthinking)",
+        "hook": "Lelah Mental Pekerja Modern & Waktu Tenang Jam 3 Pagi (Klaster Overthinking)",
+        "slides": [],
+        "caption": "",
+        "raw_markdown": "# Utas Threads Hari Sabtu (@edumuslimin)\n\n- **Topik:** Lelah Mental Pekerja Modern & Waktu Tenang Jam 3 Pagi (Klaster Overthinking)\n- **Format:** Utas Bersambung (5 Post Balasan)\n- **Tujuan:** Edukasi empati batin & penawaran eBook Qila via keyword DM \"TENANG\"\n- **Status Link:** TANPA LINK EKSTERNAL (Sesuai Aturan Algoritma Threads ERR-010)\n- **Catatan Suara:** Gaya obrolan santai warkop Owner, bebas formula klise AI (bukan X tapi Y), tanpa nominal harga.\n\n---\n\n### Post 1 (Hook Utama)\nPernah gak, seharian rebahan di kasur pas weekend, tapi pas malam batin tetap ngerasa capek dan dada sesak?\n\nBadan mungkin udah kenyang rebahan.\nMasalahnya, pikiran sama batin kita gak pernah diajak istirahat.\n\n---\n\n### Post 2 (Validasi Rutinitas Lelah)\nSenin sampai Jumat kita habiskan buat kejar target, balas chat kerjaan, dan dengerin keluhan orang.\n\nMalamnya, kita paksain scroll sosmed sampai jam 12 dengan dalih \"balas dendam me-time\".\n\nHasilnya? Pas bangun tidur, kepala malah berat dan cemas mikirin hari esok.\n\n---\n\n### Post 3 (The Turning Point \/ Solusi Waktu Hening)\nDulu saya kira obat lelah batin itu jalan-jalan jauh atau tidur 10 jam.\n\nRupanya, waktu paling ampuh buat refresh pikiran itu di sepertiga malam terakhir.\n\nGak perlu muluk-muluk sholat berjam-jam kalo fisik belum kuat.\nMulai aja 2 rakaat pelan, duduk di lantai, lalu tumpahkan semua unek-unek yang gak bisa kita ceritakan ke manusia.\n\n---\n\n### Post 4 (Konteks Dalil & Ketenangan Jiwa)\nNabi ﷺ dulu pernah bilang ke sahabat Bilal:\n*\"Wahai Bilal, berdirilah, istirahatkan kami dengan sholat.\"* (HR. Abu Daud no. 4985)\n\nSuasananya hening, notifikasi HP mati, dunia lagi tidur lelap. Di situ batin kita beneran ngerasa plong.\n\n---\n\n### Post 5 (CTA Pemicu Balasan Kata Kunci)\nKalo kamu pengen mulai tata ritme tidur biar bisa bangun jam 3 dengan kepala enteng dan dada lega, saya ada rangkuman panduan praktisnya di eBook Qila.\n\nMau saya kirim intisarinya?\nBalas aja ketik \"TENANG\", nanti saya kirim aksesnya langsung ke DM 🙌\n",
+        "status": "ready_to_design",
+        "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
+        "created_at": "2026-10-17 21:12:47",
+        "updated_at": "2026-10-18 06:32:06"
+    },
+    {
+        "id": "broadcast-wa-senin",
+        "channel": "WhatsApp Outreach",
+        "day": "Senin",
+        "funnel": "Direct Closing (CRM)",
+        "target_product": "eBook Qila (Rp47rb)",
+        "title": "SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)",
+        "hook": "SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)",
+        "slides": [],
+        "caption": "",
+        "raw_markdown": "# SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)\n\n- **Target Database:** Alumni Pembeli eBook Ihfadz \/ DaQo di CRM (`app.edumuslim.my.id\/crm`)\n- **Metode:** Permission-Based Direct Outreach (To The Point, Bebas Basa-Basi, Tanpa Link di Awal)\n- **Kapasitas Batch:** 10 orang per sesi (Anti-Banned WA)\n- **Jadwal Kirim:**\n  - 🌅 **Batch 1:** 09.00 - 09.30 WIB (10 Kontak)\n  - ☀️ **Batch 2:** 13.00 - 13.30 WIB (10 Kontak)\n  - 🌇 **Batch 3:** 16.00 - 16.30 WIB (10 Kontak)\n  - *Total Target:* 30 Kontak \/ Hari\n\n---\n\n## 1. Naskah Chat 1: Tanya Izin (PILIH SALAH SATU SESUAI PRODUK MEREKA)\n\n### Variasi A: Khusus Pembeli eBook Ihfadz\n```text\nAssalamu'alaikum Kak [Nama], ini Fadil dari EduMuslim yang dulu Kakak sempat pesan eBook Ihfadz 🙏\n\nSemoga berkah selalu ya kak.\n\nSekadar info singkat, sekarang EduMuslim rilis panduan baru namanya \"eBook Qila\" — blueprint praktis jam tidur biologis & sains sirkadian biar bisa bangun jam 3 malam dengan bugar tanpa drama disiksa alarm.\n\nKira-kira Kakak mau saya kirimkan link detail pembahasannya? 😊\n```\n\n### Variasi B: Khusus Pembeli eBook DaQo \/ Produk Lain\n```text\nAssalamu'alaikum Kak [Nama], ini Fadil dari EduMuslim 🙏\n\nSemoga urusan dan rezekinya dilancarkan selalu ya kak.\n\nSekadar info, EduMuslim baru saja rilis panduan praktis baru namanya \"eBook Qila\" — blueprint menata ritme tidur biar bisa bangun sepertiga malam dengan enteng tanpa rasa lemas.\n\nKira-kira Kakak berkenan saya kirimkan detail rangkumannya? 😊\n```\n\n---\n\n## 2. Naskah Chat 2: Balasan Setelah Mereka Menjawab\n\n### Skenario A: Jika Dibalas \"Mau\" \/ \"Boleh mas\" \/ \"Boleh kirim\" \/ \"Boleh\"\n*(Langsung kirim link LP tanpa berbelit-belit)*\n```text\nAlhamdulillah, ini link rangkuman dan daftar isi lengkapnya ya Kak:\n👉 https:\/\/lp.edumuslim.my.id\/lpqila\n\nBisa dibaca santai kak. Kalau ada bab yang mau ditanyakan atau mau dibantu order, kabari saya di sini ya 🙌\n```\n\n### Skenario B: Jika Dibalas \"Berapa harganya mas?\"\n*(Sampaikan nilai kontras kopi sebelum menyebut harga)*\n```text\nHarganya sangat terjangkau kak, cuma Rp47.000 (setara 1 cup kopi kekinian).\n\nSudah dapat buku utama Blueprint Bangun Malam + 3 bonus praktis (aplikasi tracker, ebook berkah waktu, dan ebook lunas).\n\nDetail dan form aksesnya ada di sini ya kak:\n👉 https:\/\/lp.edumuslim.my.id\/lpqila\n```\n\n### Skenario C: Jika Dibalas \"Nanti dulu ya mas \/ Belum butuh\"\n*(Empati santai, tidak mendebat, jaga silaturahmi)*\n```text\nSiap kak, santai saja. Terima kasih banyak sudah merespon ya. Semoga berkah dan sehat selalu buat Kakak sekeluarga 🙏\n```\n\n---\n\n## 3. Checklist Eksekusi Owner di CRM:\n1. Buka `https:\/\/app.edumuslim.my.id\/crm\/status_pelanggan.php`.\n2. Filter produk: `Ebook Ihfadz` dan status: `Selesai`.\n3. Ambil 10 nomor teratas untuk jam 09.00, beri tanda\/catatan agar tidak dobel kirim.\n4. Ulangi untuk 10 nomor berikutnya di jam 13.00 dan 16.00.\n",
+        "status": "ready_to_design",
+        "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
+        "created_at": "2026-10-17 21:12:47",
+        "updated_at": "2026-10-18 06:32:06"
+    },
+    {
+        "id": "threads-minggu",
+        "channel": "Threads",
+        "day": "Minggu",
+        "funnel": "MOFU\/BOFU (Utas)",
+        "target_product": "eBook Qila (Rp47rb)",
+        "title": "Sunday Scaries & Solusi Jam Hening Biar Senin Gak Terasa Neraka",
+        "hook": "Sunday Scaries & Solusi Jam Hening Biar Senin Gak Terasa Neraka",
+        "slides": [],
+        "caption": "",
+        "raw_markdown": "# Utas Threads Hari Minggu (@edumuslimin)\n\n- **Topik:** Sunday Scaries & Solusi Jam Hening Biar Senin Gak Terasa Neraka\n- **Format:** Utas Bersambung (5 Post Balasan)\n- **Tujuan:** Edukasi empati batin & pembukaan jalur konversi eBook Qila via keyword DM \"QILA\"\n- **Status Link:** TANPA LINK EKSTERNAL (Sesuai Aturan Algoritma Threads ERR-010)\n- **Catatan Suara:** Gaya santai warkop Owner, bebas formula klise AI (tanpa \"bukan X tapi Y\"), tanpa nominal rupiah.\n\n---\n\n### Post 1 (Hook Utama)\nMinggu sore kayak gini, sering gak tiba-tiba dada ngerasa sesak padahal besok belum tentu ada masalah besar di kantor?\n\nOrang modern nyebutnya *Sunday Scaries*.\nRasa cemas menyambut hari Senin yang datangnya pelan-pelan tapi bikin gelisah.\n\n---\n\n### Post 2 (Akar Masalah Nyata)\nBiasanya biang keroknya sederhana:\nJumat sama Sabtu malam kita balas dendam begadang scrolling layar sampai jam 1 pagi.\n\nGiliran Minggu malam, mata dipaksa merem jam 10 tapi otak masih melek liar.\nAkhirnya tidur cuma 4 jam, terus bangun Senin pagi sambil grusah-grusuh ngejar absen.\n\n---\n\n### Post 3 (The Turning Point \/ Pengalaman Nyata)\nDulu saya juga langganan ngerasa Senin itu hari paling berat di bumi.\n\nKuncinya berubah pas saya coba balik urutannya:\nHari Senin jangan dimulai pas jam kantor jam 8 atau 9 pagi.\nMulai Senin dari jam 3 pagi di sepertiga malam terakhir.\n\nSaat seisi kota masih lelap, kita ambil wudhu, sholat 2 rakaat pelan, dan serahkan semua beban target sepekan ke depan langsung ke Allah.\n\n---\n\n### Post 4 (Konteks Dalil & Energi Pagi)\nNabi ﷺ mendoakan umatnya secara khusus:\n*\"Ya Allah, berkahilah umatku di waktu pagi mereka.\"* (HR. At-Tirmidzi no. 1212 & Abu Daud no. 2606, Shahih)\n\nNabi gak ngecualikan hari Senin.\nBegitu Subuh selesai, hati udah tenang, pikiran jernih, dan energi udah 100% sebelum orang lain sempat mengeluh soal macet.\n\n---\n\n### Post 5 (CTA Pemicu Balasan Kata Kunci)\nKalo kamu pengen malam ini tidur lebih pulas dan besok Senin bisa melek jam 3 pagi dengan badan enteng, saya ada rangkuman panduan praktisnya di eBook Qila.\n\nMau saya bagi intisarinya?\nBalas aja ketik \"QILA\", nanti saya kirim aksesnya langsung ke DM 🙌\n",
+        "status": "ready_to_design",
+        "audit_badge": "Audit Lolos (Marketing & CEO Approved)",
+        "created_at": "2026-10-18 06:31:56",
+        "updated_at": "2026-10-18 06:32:06"
     }
 ]

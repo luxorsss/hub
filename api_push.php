@@ -37,6 +37,12 @@ if (empty($payload)) {
     exit;
 }
 
+if (isset($payload['type']) && $payload['type'] === 'daily_brief') {
+    file_put_contents(DATA_DIR . '/daily_brief.json', json_encode($payload['data'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    echo json_encode(['status' => 'success', 'message' => 'Daily brief berhasil disimpan']);
+    exit;
+}
+
 $items = isset($payload[0]) ? $payload : [$payload];
 $updatedCount = 0;
 

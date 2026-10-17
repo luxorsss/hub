@@ -1,42 +1,42 @@
 [
     {
         "agent": "Scout Agent",
-        "tokoh": "Adam Erhart",
-        "channel": "@AdamErhart",
-        "title": "How to Find Winning Content Angles in Saturated Markets",
-        "url": "https://www.youtube.com/watch?v=ScoutStudy17",
-        "takeaway": "Fokus pada sudut pandang kontras (contra-intuitive) yang membedah kebiasaan umum keliru, bukan sekadar tips normatif."
+        "tokoh": "Andrew Huberman",
+        "channel": "@hubermanlab",
+        "title": "Optimizing Sleep Architecture & Circadian Clock for Peak Morning Alertness",
+        "url": "https://www.youtube.com/watch?v=ScoutStudy18",
+        "takeaway": "Reset jam sirkadian di Minggu sore dengan pangkas kafein dan redupkan layar demi cegah Sunday insomnia dan picu bangun dini hari."
     },
     {
         "agent": "Voice Copywriter",
-        "tokoh": "Dan Koe",
-        "channel": "@DanKoeTalks",
-        "title": "How to Write with Clarity and Cut the Fluff",
-        "url": "https://www.youtube.com/watch?v=CopyStudy17",
-        "takeaway": "Pangkas kata transisi formal. Tulis langsung mengarah ke rasa bersalah dan problem nyata pembaca dengan gaya obrolan santai."
+        "tokoh": "Alex Hormozi",
+        "channel": "@AlexHormozi",
+        "title": "The 1-Sentence Hook That Eliminates Boredom",
+        "url": "https://www.youtube.com/watch?v=CopyStudy18",
+        "takeaway": "Kalimat pertama tolak asumsi keliru dan langsung sebut rasa frustrasi nyata tanpa basa-basi klise."
     },
     {
         "agent": "CRO Landing Page",
-        "tokoh": "Russell Brunson",
-        "channel": "@RussellBrunson",
-        "title": "The Hook, Story, Offer Secret for Low-Ticket Conversions",
-        "url": "https://www.youtube.com/watch?v=CROStudy17",
-        "takeaway": "Validasi kegagalan masa lalu audiens lewat cerita, tunjukkan bahwa sistem tidur lama yang rusak, bukan niat ibadahnya."
+        "tokoh": "Wes McDowell",
+        "channel": "@WesMcDowell",
+        "title": "Mobile Conversion Optimization: The Thumb-Zone CTA",
+        "url": "https://www.youtube.com/watch?v=CROStudy18",
+        "takeaway": "Tombol aksi dan garansi resiko wajib terlihat langsung di jangkauan jempol pertama tanpa perlu scroll berlebihan."
     },
     {
         "agent": "Sales Conversion (CRM)",
-        "tokoh": "Jeremy Miner",
-        "channel": "@JeremyMiner",
-        "title": "Neuro-Emotional Persuasion: Defusing Resistance",
-        "url": "https://www.youtube.com/watch?v=SalesStudy17",
-        "takeaway": "Gunakan pertanyaan reflektif untuk memecah kebisuan calon pembeli yang ragu di DM/WhatsApp."
+        "tokoh": "Chris Voss",
+        "channel": "@BlackSwanGroup",
+        "title": "Mirrors and Labels to Defuse Skepticism",
+        "url": "https://www.youtube.com/watch?v=SalesStudy18",
+        "takeaway": "Cerminkan 2-3 kata terakhir calon pembeli yang ragu untuk memvalidasi keberatan tanpa nada mendebat."
     },
     {
         "agent": "Growth Planner / CEO",
-        "tokoh": "Dan Martell",
-        "channel": "@danmartell",
-        "title": "How to Build High-Performance SOPs & Avoid Execution Bottlenecks",
-        "url": "https://www.youtube.com/watch?v=CEOStudy17",
-        "takeaway": "Standarisasi filter uji mutu agar eksekusi tim harian berjalan mulus tanpa hambatan."
+        "tokoh": "Alex Hormozi",
+        "channel": "@AlexHormozi",
+        "title": "Volume Negates Luck: Funnel Pipeline Hygiene",
+        "url": "https://www.youtube.com/watch?v=CEOStudy18",
+        "takeaway": "Hilangkan faktor keberuntungan lewat disiplin volume: buka jalur konversi tiap hari lewat Threads, Story, dan DM interaktif."
     }
 ]

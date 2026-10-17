@@ -1,0 +1,119 @@
+{
+    "date": "2026-10-18",
+    "day": "Minggu",
+    "updated_at": "2026-10-18 06:41:00",
+    "evaluasi": {
+        "pixelcrm": {
+            "title": "PixelCRM Sales Pipeline",
+            "sales_yesterday": 0,
+            "sales_this_month": 0,
+            "pending_orders": 1,
+            "target_sales": 100,
+            "all_time_completed": 1038,
+            "status": "Jalur konversi harus dibuka hari ini lewat Story & Threads"
+        },
+        "instagram_24h": {
+            "title": "Instagram Feed/Reels (24 Jam Terakhir)",
+            "posts_count": 0,
+            "note": "Tidak ada postingan tayang dalam 24 jam terakhir.",
+            "baseline_post": {
+                "timestamp": "2026-10-16T05:52:57+0000",
+                "caption_snippet": "Pantesan jam 9 pagi udah lemas, bisa jadi ikatan tidur semalam belum lepas tuntas...",
+                "reach": 14,
+                "saved": 0,
+                "shares": 1,
+                "views": 32
+            },
+            "status": "Algoritma membutuhkan pemanasan lewat Story interaktif dan rilis kalender Senin"
+        },
+        "threads": {
+            "title": "Threads (@edumuslimin)",
+            "views": null,
+            "replies": null,
+            "likes": null,
+            "reposts": null,
+            "status": "Menunggu input data Threads kemarin dari Owner (@edumuslimin)"
+        }
+    },
+    "riset_lintas_platform": [
+        {
+            "platform": "YouTube",
+            "icon": "📺",
+            "temon_kunci": "Outlier Masalah 'Pasang Banyak Alarm Tapi Tetap Gagal'",
+            "detail": "Video 'Kenapa saya susah sekali bangun shalat tahajud? Padahal Alarm dari jam 1 pagi' (Jejak Wali) tembus 26.000 views. Ini membuktikan audiens merasa bersalah dan lelah disiksa bunyi dering alarm. Solusi yang mereka cari bukan alarm baru, melainkan cara memutus rasa kantuk biologis sebelum tidur.",
+            "dampak_ke_konten": "Sudut pandang ini dijadikan fondasi naskah penawaran eBook Qila di Story dan Threads hari ini."
+        },
+        {
+            "platform": "Instagram",
+            "icon": "📸",
+            "temon_kunci": "Audit Reach Organik Akun (Baseline 14 Reach)",
+            "detail": "Postingan 16 Oktober hanya menyentuh 14 reach dengan 0 save. Akun @edumuslimin sedang dalam fase *cold audience*. Memposting teks kaku berparagraf tidak akan mengangkat feed.",
+            "dampak_ke_konten": "Gunakan Stiker Polling 2 opsi di Story Pagi dan kemas slide pertama dengan hook kontras tinggi agar rasio interaksi melonjak."
+        },
+        {
+            "platform": "Threads",
+            "icon": "🧵",
+            "temon_kunci": "Algoritma Prioritas Balasan & Larangan Link Eksternal",
+            "detail": "Data ekosistem Threads membuktikan postingan yang menyertakan link eksternal di teks utama langsung ditenggelamkan jangkauannya (ERR-010). Sebaliknya, utas yang memancing balasan obrolan santai mendapatkan distribusi luas.",
+            "dampak_ke_konten": "Utas Minggu dibuat murni cerita empati warkop tanpa link, dengan penutup ajakan reply 'QILA' untuk dikirimi akses via DM."
+        }
+    ],
+    "kaizen": [
+        {
+            "agent": "Scout Agent",
+            "mentor": "Andrew Huberman (@hubermanlab)",
+            "materi": "Optimizing Sleep Architecture & Circadian Clock for Peak Morning Alertness",
+            "insight": "Reset jam tubuh pada Minggu sore dengan memangkas kafein dan paparan cahaya redup untuk mencegah Sunday night insomnia dan memicu refleks bangun dini hari."
+        },
+        {
+            "agent": "Voice Copywriter",
+            "mentor": "Alex Hormozi (@AlexHormozi)",
+            "materi": "The 1-Sentence Hook That Eliminates Boredom",
+            "insight": "Kalimat pertama harus menolak asumsi umum yang salah, langsung sebut rasa frustrasi tanpa basa-basi klise."
+        },
+        {
+            "agent": "CRO Landing Page",
+            "mentor": "Wes McDowell (@WesMcDowell)",
+            "materi": "Mobile Conversion Optimization: The Thumb-Zone CTA",
+            "insight": "Pembeli low-ticket di smartphone memutuskan dalam 5 detik; tombol CTA dan garansi resiko harus langsung terlihat di area jempol pertama tanpa scroll panjang."
+        },
+        {
+            "agent": "Sales Conversion",
+            "mentor": "Chris Voss (@BlackSwanGroup)",
+            "materi": "Mirrors and Labels to Defuse Skepticism",
+            "insight": "Cerminkan 2-3 kata terakhir calon pembeli yang ragu untuk menggali hambatan sesungguhnya tanpa adu argumen ('Gak sempat baca ya kak?')."
+        },
+        {
+            "agent": "Growth Planner / CEO",
+            "mentor": "Alex Hormozi (@AlexHormozi)",
+            "materi": "Volume Negates Luck: Funnel Pipeline Hygiene",
+            "insight": "Menghilangkan faktor keberuntungan dengan disiplin volume: 1 utas Threads harian + 4 slide Story + respons DM interaktif membuka jalur konversi harian secara konsisten."
+        }
+    ],
+    "plan_dan_arahan": [
+        {
+            "prioritas": 1,
+            "aksi": "Input Data Threads Kemarin",
+            "pelaksana": "Owner (@edumuslimin)",
+            "catatan": "Ketik jumlah Tayangan (Views), Balasan (Replies), dan Suka (Likes) Utas kemarin untuk melengkapi database performa."
+        },
+        {
+            "prioritas": 2,
+            "aksi": "Upload Instagram Story 1 (Pagi)",
+            "pelaksana": "Owner (@edumuslimin)",
+            "catatan": "Gunakan stiker polling 6 kata: 'Minggu pagi: baru melek atau bangun subuh?' (Jadwal: 07.30 - 08.30 WIB)."
+        },
+        {
+            "prioritas": 3,
+            "aksi": "Posting Utas Threads Minggu (5 Post)",
+            "pelaksana": "Owner (@edumuslimin)",
+            "catatan": "Salin langsung teks dari Hub tab 'Hari Ini'. Jadwal rilis optimal: 16.30 - 18.00 WIB menyasar momen Sunday Scaries."
+        },
+        {
+            "prioritas": 4,
+            "aksi": "Standby Closing DM Multi-Cabang",
+            "pelaksana": "Owner / CRM Team",
+            "catatan": "Kunci keyword balasan 'QILA' menggunakan Skrip Cabang 4 (Ebook Qila Rp47rb bundling 3 bonus)."
+        }
+    ]
+}

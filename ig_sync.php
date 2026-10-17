@@ -40,18 +40,13 @@ $mediaList = json_decode($resMedia, true)['data'] ?? [];
 
 // 3. Ambil Insights untuk tiap media
 $detailedMedia = [];
-$todayDate = date('Y-m-d');
-$hasPostedToday = false;
-$todayPost = null;
+$now = time();
+$postsLast24h = [];
 
 foreach ($mediaList as $item) {
     $mediaId = $item['id'];
-    $postDate = substr($item['timestamp'], 0, 10);
-    
-    if ($postDate === $todayDate) {
-        $hasPostedToday = true;
-        $todayPost = $item;
-    }
+    $postTimestamp = strtotime($item['timestamp']);
+    $isLast24Hours = (($now - $postTimestamp) <= 86400 && ($now - $postTimestamp) >= 0);
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, "https://graph.facebook.com/v22.0/{$mediaId}/insights?metric=reach,saved,shares,total_interactions,views&access_token=" . urlencode($token));
@@ -77,14 +72,22 @@ foreach ($mediaList as $item) {
     }
 
     $item['insights'] = $metrics;
+    $item['is_last_24h'] = $isLast24Hours;
     $detailedMedia[] = $item;
+
+    if ($isLast24Hours) {
+        $postsLast24h[] = $item;
+    }
 }
+
+$latestPost = $detailedMedia[0] ?? null;
 
 $cacheData = [
     'synced_at' => date('Y-m-d H:i:s'),
     'profile' => $profile,
-    'has_posted_today' => $hasPostedToday,
-    'today_post' => $todayPost,
+    'has_posts_last_24h' => !empty($postsLast24h),
+    'posts_last_24h' => $postsLast24h,
+    'latest_post' => $latestPost,
     'latest_posts' => $detailedMedia
 ];
 
@@ -93,8 +96,12 @@ file_put_contents($igCacheFile, json_encode($cacheData, JSON_PRETTY_PRINT | JSON
 echo "✅ Sync Instagram Berhasil!\n";
 echo "Username: @" . ($profile['username'] ?? 'edumuslimin') . "\n";
 echo "Followers: " . ($profile['followers_count'] ?? 0) . "\n";
-echo "Posting Hari Ini: " . ($hasPostedToday ? "SUDAH TAYANG" : "BELUM ADA POSTINGAN HARI INI") . "\n";
-if (!empty($detailedMedia[0])) {
-    $latest = $detailedMedia[0];
-    echo "Postingan Terakhir: " . $latest['timestamp'] . " (Reach: " . $latest['insights']['reach'] . ", Saves: " . $latest['insights']['saved'] . ", Shares: " . $latest['insights']['shares'] . ")\n";
+echo "Postingan 24 Jam Terakhir: " . (!empty($postsLast24h) ? count($postsLast24h) . " postingan tayang" : "Tidak ada postingan dalam 24 jam terakhir") . "\n";
+if (!empty($postsLast24h)) {
+    foreach ($postsLast24h as $p) {
+        echo "- Post " . $p['timestamp'] . " (Reach: " . $p['insights']['reach'] . ", Saves: " . $p['insights']['saved'] . ", Shares: " . $p['insights']['shares'] . ")\n";
+    }
+} elseif ($latestPost) {
+    echo "Postingan Terakhir (Baseline): " . $latestPost['timestamp'] . " (Reach: " . $latestPost['insights']['reach'] . ", Saves: " . $latestPost['insights']['saved'] . ", Shares: " . $latestPost['insights']['shares'] . ")\n";
 }
+

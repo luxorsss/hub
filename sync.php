@@ -74,6 +74,13 @@ $filesToProcess = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
+        'file' => $kontenDir . '/threads-minggu.md',
+        'channel' => 'Threads',
+        'day' => 'Minggu',
+        'funnel' => 'MOFU/BOFU (Utas)',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
         'file' => $crmDir . '/skrip-closing-dm-qila.md',
         'channel' => 'CRM / DM Closing',
         'day' => 'Always-on',
@@ -100,6 +107,20 @@ foreach ($filesToProcess as $meta) {
     $raw = file_get_contents($filePath);
     $filename = basename($filePath, '.md');
     $id = $filename;
+
+    // Anti-Slop Linter Gate (ERR-006 & ERR-011)
+    $slopPatterns = [
+        'Bukan X tapi Y' => '/\bBukan\s+[^\n.,!?]+,\s*(?:tapi|melainkan)\s+[^\n.,!?]+/iu',
+        'Formula Trio Tanpa' => '/Tanpa\s+[^,]+,\s*tanpa\s+[^,]+,\s*tanpa\s+/iu',
+        'Kosakata Hampa AI' => '/\b(unlock|elevate|empower|delve|game-changer|robust|revolutionize|next-level)\b/iu',
+        'Klise Pembuka AI' => '/\b(Tahukah Anda|Di era (?:modern )?yang serba cepat|Mari kita renungkan|Tanpa berlama-lama)\b/iu'
+    ];
+
+    foreach ($slopPatterns as $ruleName => $pattern) {
+        if (preg_match($pattern, $raw, $slopMatch)) {
+            echo "⚠️ [ANTI-SLOP WARNING] Berkas $filename melanggar aturan '$ruleName': \"{$slopMatch[0]}\"\n";
+        }
+    }
 
     // Ekstraksi Topik / Title
     $title = $filename;
