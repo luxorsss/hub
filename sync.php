@@ -11,6 +11,11 @@ $crmDir = '/home/fadil/edumuslim-team/crm';
 
 $hariMap = [1 => 'Senin', 2 => 'Selasa', 3 => 'Rabu', 4 => 'Kamis', 5 => 'Jumat', 6 => 'Sabtu', 7 => 'Minggu'];
 $hariIni = $hariMap[date('N')] ?? 'Minggu';
+if (!empty($argv[1])) {
+    $hariIni = ucfirst(strtolower($argv[1]));
+} elseif (!empty($_GET['day'])) {
+    $hariIni = ucfirst(strtolower($_GET['day']));
+}
 
 $allMasterFiles = [
     [
@@ -63,6 +68,13 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
+        'file' => $kontenDir . '/threads-senin.md',
+        'channel' => 'Threads',
+        'day' => 'Senin',
+        'funnel' => 'MOFU/BOFU (Utas)',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
         'file' => $kontenDir . '/threads-jumat.md',
         'channel' => 'Threads',
         'day' => 'Jumat',
@@ -81,13 +93,6 @@ $allMasterFiles = [
         'channel' => 'Threads',
         'day' => 'Minggu',
         'funnel' => 'MOFU/BOFU (Utas)',
-        'target_product' => 'eBook Qila (Rp47rb)'
-    ],
-    [
-        'file' => $crmDir . '/broadcast-wa-senin.md',
-        'channel' => 'WhatsApp Outreach',
-        'day' => 'Senin',
-        'funnel' => 'Direct Closing (CRM)',
         'target_product' => 'eBook Qila (Rp47rb)'
     ]
 ];

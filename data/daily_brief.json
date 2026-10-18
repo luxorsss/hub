@@ -75,60 +75,72 @@
     ],
     "kaizen": [
         {
-            "agent": "Scout Agent",
-            "mentor": "Andrew Huberman (@hubermanlab)",
-            "materi": "Optimizing Sleep Architecture & Circadian Clock for Peak Morning Alertness",
-            "insight": "Reset jam tubuh pada Minggu sore dengan memangkas kafein dan paparan cahaya redup untuk mencegah Sunday night insomnia dan memicu refleks bangun dini hari."
+            "agent": "Growth Planner / CEO",
+            "mentor": "Russell Brunson (@russellbrunson)",
+            "materi": "Self-Liquidating Offer (SLO) & The Two-Door Business Architecture",
+            "insight": "Ebook Qila di front-end bertugas merekrut pembeli baru sekaligus melunasi biaya operasional/iklan. Keuntungan sejati (100% margin) dipanen saat meluncurkan produk baru (Sisa Usia) ke grup WA pembeli tanpa biaya iklan."
+        },
+        {
+            "agent": "Sales Conversion",
+            "mentor": "Dewa Eka Prayoga (@dewaekaprayoga)",
+            "materi": "Covert Selling di WhatsApp: Kolam Sehat, Panen Dahsyat",
+            "insight": "Grup WhatsApp jangan dijadikan tempat jualan harian agar tidak memicu link fatigue. Kirim faidah bernilai tinggi murni tanpa link, lalu buka penawaran eksklusif hanya saat momentum gajian (payday)."
+        },
+        {
+            "agent": "CRO & Offer Agent",
+            "mentor": "Alex Hormozi (@AlexHormozi)",
+            "materi": "Maximizing Cart Value: The Order Bump Profit Multiplier",
+            "insight": "Order bump DaQo (+Rp7.000) di checkout Qila adalah laba kotor 100% yang langsung mempertebal amunisi modal putaran berikutnya."
         },
         {
             "agent": "Voice Copywriter",
             "mentor": "Alex Hormozi (@AlexHormozi)",
-            "materi": "The 1-Sentence Hook That Eliminates Boredom",
-            "insight": "Kalimat pertama harus menolak asumsi umum yang salah, langsung sebut rasa frustrasi tanpa basa-basi klise."
+            "materi": "Monday Work Frame: Rezeki Mengalir ke Jiwa yang Tenang",
+            "insight": "Patahkan anggapan bahwa Senin itu hari sengsara; geser fokus audiens dari lelahnya kerja keras ke ketenangan sepertiga malam sebelum fajar."
         },
         {
-            "agent": "CRO Landing Page",
-            "mentor": "Wes McDowell (@WesMcDowell)",
-            "materi": "Mobile Conversion Optimization: The Thumb-Zone CTA",
-            "insight": "Pembeli low-ticket di smartphone memutuskan dalam 5 detik; tombol CTA dan garansi resiko harus langsung terlihat di area jempol pertama tanpa scroll panjang."
-        },
-        {
-            "agent": "Sales Conversion",
-            "mentor": "Chris Voss (@BlackSwanGroup)",
-            "materi": "Mirrors and Labels to Defuse Skepticism",
-            "insight": "Cerminkan 2-3 kata terakhir calon pembeli yang ragu untuk menggali hambatan sesungguhnya tanpa adu argumen ('Gak sempat baca ya kak?')."
-        },
-        {
-            "agent": "Growth Planner / CEO",
-            "mentor": "Alex Hormozi (@AlexHormozi)",
-            "materi": "Volume Negates Luck: Funnel Pipeline Hygiene",
-            "insight": "Menghilangkan faktor keberuntungan dengan disiplin volume: 1 utas Threads harian + 4 slide Story + respons DM interaktif membuka jalur konversi harian secara konsisten."
+            "agent": "Scout Agent",
+            "mentor": "Andrew Huberman (@hubermanlab)",
+            "materi": "Resetting Focus on Monday: Qailulah & Circadian Alignment",
+            "insight": "Tidur siang 15-20 menit (qailulah) mengembalikan ketajaman dopamin dan fokus kerja Senin siang tanpa perlu konsumsi kafein berlebihan."
         }
     ],
     "plan_dan_arahan": [
         {
             "prioritas": 1,
-            "aksi": "Input Data Threads Kemarin",
+            "aksi": "Posting Carousel Instagram Senin",
             "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Ketik jumlah Tayangan (Views), Balasan (Replies), dan Suka (Likes) Utas kemarin untuk melengkapi database performa."
+            "catatan": "Salin naskah dari Hub 'Carousel Senin': 'Kerja Keras Siang Malam Tapi Rezeki Bocor?'. Pantau komentar keyword 'LUNAS'."
         },
         {
             "prioritas": 2,
-            "aksi": "Upload Instagram Story 1 (Pagi)",
+            "aksi": "Upload 4-Slide Instagram Story (Terjadwal)",
             "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Gunakan stiker polling 6 kata: 'Minggu pagi: baru melek atau bangun subuh?' (Jadwal: 07.30 - 08.30 WIB)."
+            "catatan": "Slide 1 Polling (07.30-08.30 WIB), Slide 2 Siang Qailulah (12.30 WIB), Slide 3 Sore Ritme Tidur (17.00 WIB), Slide 4 Malam Promo Qila (20.30 WIB)."
         },
         {
             "prioritas": 3,
-            "aksi": "Posting Utas Threads Minggu (5 Post)",
+            "aksi": "Posting Utas Threads Senin (5 Post)",
             "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Salin langsung teks dari Hub tab 'Hari Ini'. Jadwal rilis optimal: 16.30 - 18.00 WIB menyasar momen Sunday Scaries."
+            "catatan": "Rilis jam 12.00 atau 17.00 WIB. Tema: 'Senin Pagi Tanpa Grusah-Grusuh'. Tanpa link eksternal, ajak balas 'QILA'."
         },
         {
             "prioritas": 4,
-            "aksi": "Standby Closing DM Multi-Cabang",
+            "aksi": "Kirim 1 Sharing Faidah Murni di Grup WA",
+            "pelaksana": "Owner / sendgrup",
+            "catatan": "Kirim materi hikmah/adab murni TANPA LINK jualan untuk menghangatkan kolam dan membangun trust anggota grup."
+        },
+        {
+            "prioritas": 5,
+            "aksi": "Standby Closing DM (Keyword QILA & LUNAS)",
             "pelaksana": "Owner / CRM Team",
-            "catatan": "Kunci keyword balasan 'QILA' menggunakan Skrip Cabang 4 (Ebook Qila Rp47rb bundling 3 bonus)."
+            "catatan": "Respon cepat prospek DM menggunakan Skrip Cabang 1 (LUNAS) dan Cabang 4 (QILA)."
+        },
+        {
+            "prioritas": 6,
+            "aksi": "Lanjut Review Draft Ebook 'Sisa Usia'",
+            "pelaksana": "Fadil Muhammad (Author)",
+            "catatan": "Finalisasi pembacaan Bab 1-5 di folder ebooks/sisa-usia/ untuk persiapan rilis gajian 25-28 Oktober."
         }
     ],
     "audit_cro_lp_qila": {
