@@ -9,7 +9,10 @@ require_once __DIR__ . '/config.php';
 $kontenDir = '/home/fadil/edumuslim-team/konten';
 $crmDir = '/home/fadil/edumuslim-team/crm';
 
-$filesToProcess = [
+$hariMap = [1 => 'Senin', 2 => 'Selasa', 3 => 'Rabu', 4 => 'Kamis', 5 => 'Jumat', 6 => 'Sabtu', 7 => 'Minggu'];
+$hariIni = $hariMap[date('N')] ?? 'Minggu';
+
+$allMasterFiles = [
     [
         'file' => $kontenDir . '/carousel-senin.md',
         'channel' => 'Carousel',
@@ -81,13 +84,6 @@ $filesToProcess = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $crmDir . '/skrip-closing-dm-qila.md',
-        'channel' => 'CRM / DM Closing',
-        'day' => 'Always-on',
-        'funnel' => 'Sales Closing',
-        'target_product' => 'eBook Qila (Rp47rb)'
-    ],
-    [
         'file' => $crmDir . '/broadcast-wa-senin.md',
         'channel' => 'WhatsApp Outreach',
         'day' => 'Senin',
@@ -96,6 +92,15 @@ $filesToProcess = [
     ]
 ];
 
+// ATURAN MUTLAK: Hanya proses naskah yang wajib tayang HARI INI
+$filesToProcess = [];
+foreach ($allMasterFiles as $m) {
+    if ($m['day'] === 'Harian' || stripos($m['day'], $hariIni) !== false) {
+        $filesToProcess[] = $m;
+    }
+}
+
+$syncedContents = [];
 $syncedCount = 0;
 
 foreach ($filesToProcess as $meta) {
@@ -213,12 +218,15 @@ foreach ($filesToProcess as $meta) {
         'audit_badge' => 'Audit Lolos (Marketing & CEO Approved)'
     ];
 
-    HubDB::upsertContent($item);
+    $syncedContents[] = $item;
     $syncedCount++;
 }
 
+// SIMPAN HANYA KONTEN HARI INI (HAPUS KONTEN HARI LAIN)
+HubDB::saveContents($syncedContents);
+
 if (php_sapi_name() === 'cli') {
-    echo "Sync berhasil! $syncedCount dokumen konten masuk ke database.\n";
+    echo "Sync berhasil! $syncedCount dokumen konten HARI INI ($hariIni) masuk ke database (naskah hari lain dibersihkan).\n";
 } else {
     header('Location: index.php?msg=sync_success');
     exit;

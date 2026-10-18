@@ -27,7 +27,7 @@ $igCache = file_exists($igCacheFile) ? json_decode(file_get_contents($igCacheFil
 
 // Tab aktif (default: 'today')
 $currentTab = $_GET['tab'] ?? 'today';
-$validTabs = ['today', 'brief', 'archive'];
+$validTabs = ['today', 'brief'];
 if (!in_array($currentTab, $validTabs)) {
     $currentTab = 'today';
 }
@@ -564,9 +564,6 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 <a href="index.php?tab=brief" class="nav-item <?= ($currentTab === 'brief') ? 'active' : '' ?>">
                     <span>📋 Brief Harian & Riset</span>
                 </a>
-                <a href="index.php?tab=archive" class="nav-item <?= ($currentTab === 'archive') ? 'active' : '' ?>">
-                    <span>🗃️ Arsip Seluruh Naskah</span>
-                </a>
             </nav>
 
             <div class="nav-group-label">Aset & Platform</div>
@@ -849,33 +846,6 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                         <?php endforeach; ?>
                     </div>
                 <?php endif; ?>
-            </div>
-
-        <?php elseif ($currentTab === 'archive'): ?>
-            <!-- TAB 3: ARSIP SELURUH NASKAH (CADANGAN & HARI LAIN) -->
-            <div class="page-header">
-                <div class="page-title">
-                    <h2>🗃️ Arsip Seluruh Naskah Konten & CRM</h2>
-                    <p>Daftar lengkap naskah mingguan (Senin–Jumat) serta skrip follow-up CRM.</p>
-                </div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-                <?php foreach ($contents as $c): ?>
-                    <div class="content-card" style="padding: 1.25rem;">
-                        <div class="card-top">
-                            <div>
-                                <span class="channel-pill"><?= htmlspecialchars($c['channel']) ?></span>
-                                <span style="font-size: 0.8rem; color: var(--text-muted); margin-left: 0.4rem;">Hari: <?= htmlspecialchars($c['day'] ?? '-') ?></span>
-                            </div>
-                            <a href="view.php?id=<?= urlencode($c['id']) ?>" class="btn-action" target="_blank">
-                                Buka Naskah ↗
-                            </a>
-                        </div>
-                        <div class="card-title" style="font-size: 1rem;"><?= htmlspecialchars($c['title'] ?? 'Naskah') ?></div>
-                        <div class="card-hook" style="font-size: 0.82rem;"><?= htmlspecialchars($c['hook'] ?? '') ?></div>
-                    </div>
-                <?php endforeach; ?>
             </div>
 
         <?php endif; ?>
