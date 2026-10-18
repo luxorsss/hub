@@ -57,6 +57,20 @@
             "temon_kunci": "Algoritma Prioritas Balasan & Larangan Link Eksternal",
             "detail": "Data ekosistem Threads membuktikan postingan yang menyertakan link eksternal di teks utama langsung ditenggelamkan jangkauannya (ERR-010). Sebaliknya, utas yang memancing balasan obrolan santai mendapatkan distribusi luas.",
             "dampak_ke_konten": "Utas Minggu dibuat murni cerita empati warkop tanpa link, dengan penutup ajakan reply 'QILA' untuk dikirimi akses via DM."
+        },
+        {
+            "platform": "Reddit (r/islam & r/MuslimLounge)",
+            "icon": "💬",
+            "temon_kunci": "Sustainable Micro-Window & Reframing 'Divine Invite'",
+            "detail": "Komunitas Reddit menyepakati matematika jam tidur tidak masuk akal jika begadang tapi memaksakan bangun jam 3. Mayoritas menyarankan memulai dari jendela kecil 15-20 menit sebelum Subuh agar tidak merusak energi kerja seharian. Mereka juga memandang terbangun malam hari secara alami sebagai undangan khusus dari Allah, bukan sekadar beban teknis.",
+            "dampak_ke_konten": "Terapkan sudut pandang 'mulai dari 2 rakaat 15 menit santai' di naskah Ebook Qila agar pemula tidak merasa terintimidasi."
+        },
+        {
+            "platform": "X / Twitter",
+            "icon": "🐦",
+            "temon_kunci": "Fenomena 'Tangan Refleks Matikan Alarm Lalu Bablas'",
+            "detail": "Curhatan paling viral di linimasa X adalah refleks mematikan 5 deret alarm dalam kondisi setengah sadar, berujung rasa bersalah saat terbangun jam 6 pagi. Warganet mengonfirmasi bahwa menaruh HP jauh dari kasur dan stop scrolling malam adalah benteng pertahanan terbaik.",
+            "dampak_ke_konten": "Gunakan hook validasi 'refleks geser snooze' pada konten Reels dan Carousel untuk mengikat empati pembaca."
         }
     ],
     "kaizen": [
