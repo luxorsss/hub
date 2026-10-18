@@ -96,7 +96,7 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $kontenDir . '/grup-wa-fudhail.md',
+        'file' => $kontenDir . '/grup-wa-sakhr.md',
         'channel' => 'Grup WhatsApp',
         'day' => 'Harian',
         'funnel' => 'Nurturing (Turath)',
