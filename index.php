@@ -27,7 +27,7 @@ $igCache = file_exists($igCacheFile) ? json_decode(file_get_contents($igCacheFil
 
 // Tab aktif (default: 'today')
 $currentTab = $_GET['tab'] ?? 'today';
-$validTabs = ['today', 'brief'];
+$validTabs = ['today', 'wa', 'brief'];
 if (!in_array($currentTab, $validTabs)) {
     $currentTab = 'today';
 }
@@ -36,12 +36,18 @@ $hariMap = [1 => 'Senin', 2 => 'Selasa', 3 => 'Rabu', 4 => 'Kamis', 5 => 'Jumat'
 $hariIni = $hariMap[date('N')] ?? 'Minggu';
 $tanggalLengkap = date('d F Y');
 
-// Filter HANYA konten yang wajib tayang HARI INI
+// Filter HANYA konten yang wajib tayang HARI INI & Bank WA
 $todayContents = [];
+$waContents = [];
+
 foreach ($contents as $c) {
     $cDay = $c['day'] ?? '';
     $cId = $c['id'] ?? '';
     $isToday = false;
+
+    if (stripos($cId, 'grup-wa') !== false || stripos($c['channel'] ?? '', 'whatsapp') !== false) {
+        $waContents[] = $c;
+    }
 
     // Kecocokan hari eksplisit
     if (stripos($cDay, $hariIni) !== false) {
@@ -662,6 +668,10 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                     <span>🎯 Tugas Hari Ini</span>
                     <span class="badge"><?= count($todayContents) ?> Draft</span>
                 </a>
+                <a href="index.php?tab=wa" class="nav-item <?= ($currentTab === 'wa') ? 'active' : '' ?>">
+                    <span>📱 Bank Faedah WA</span>
+                    <span class="badge" style="background: rgba(37, 211, 102, 0.2); color: #25d366;"><?= count($waContents) ?> Naskah</span>
+                </a>
                 <a href="index.php?tab=brief" class="nav-item <?= ($currentTab === 'brief') ? 'active' : '' ?>">
                     <span>📋 Brief Harian & Riset</span>
                 </a>
@@ -787,6 +797,71 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 <span>Sudah Siap / Tayang</span>
             </label>
         </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+
+        <?php elseif ($currentTab === 'wa'): ?>
+            <!-- TAB WA: BANK FAEDAH GRUP WHATSAPP (TURATH KLASIK) -->
+            <div class="page-header">
+                <div class="page-title">
+                    <h2>📱 Bank Faedah Grup WhatsApp (Turath)</h2>
+                    <p>Kumpulan materi faedah murni dari kitab salaf klasik. Format tanda baca WA siap kirim kapan saja secara acak.</p>
+                </div>
+                <div class="header-actions">
+                    <span style="font-size: 0.8rem; background: rgba(37, 211, 102, 0.15); color: #4ade80; border: 1px solid rgba(37, 211, 102, 0.3); padding: 0.4rem 0.75rem; border-radius: 8px; font-weight: 700;">
+                        Tersedia: <?= count($waContents) ?> Naskah Faedah
+                    </span>
+                </div>
+            </div>
+
+            <?php if (empty($waContents)): ?>
+                <div class="content-card" style="text-align: center; padding: 3rem 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem;">Belum ada naskah di Bank Faedah WA</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem;">Jalankan sinkronisasi untuk memuat materi.</p>
+                </div>
+            <?php else: ?>
+                <?php foreach ($waContents as $c): ?>
+                    <div class="content-card" id="card-<?= htmlspecialchars($c['id']) ?>">
+                        <div class="card-top">
+                            <div>
+                                <span class="channel-pill whatsapp">
+                                    Grup WhatsApp
+                                </span>
+                                <span style="font-size: 0.78rem; color: var(--text-muted); margin-left: 0.5rem;">
+                                    Tipe: <strong>Faedah Turath Acak</strong>
+                                </span>
+                            </div>
+                            <div>
+                                <span style="font-size: 0.78rem; background: rgba(34, 197, 94, 0.1); padding: 0.25rem 0.5rem; border-radius: 5px; color: #4ade80; font-weight: 600;">
+                                    🎯 <?= htmlspecialchars($c['target_product'] ?? 'Komunitas') ?>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="card-title"><?= htmlspecialchars($c['title'] ?? 'Naskah Faedah') ?></div>
+                        <?php if (!empty($c['hook']) && $c['hook'] !== $c['title']): ?>
+                            <div class="card-hook"><?= htmlspecialchars($c['hook']) ?></div>
+                        <?php endif; ?>
+
+                        <div class="script-box" id="script-<?= htmlspecialchars($c['id']) ?>"><?= htmlspecialchars(trim($c['wa_message'] ?? $c['raw_content'] ?? '')) ?></div>
+
+                        <div class="card-bottom-actions">
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <button class="btn-copy" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border-color: rgba(34, 197, 94, 0.4);" onclick="copyFullContentDirect('<?= htmlspecialchars($c['id']) ?>', this)">
+                                    📋 Salin Naskah WA
+                                </button>
+                                <a href="view.php?id=<?= urlencode($c['id']) ?>" class="btn-action">
+                                    Lihat Tampilan Penuh ↗
+                                </a>
+                            </div>
+
+                            <label style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; cursor: pointer; color: var(--text-muted);">
+                                <input type="checkbox" onchange="toggleStatus('<?= htmlspecialchars($c['id']) ?>', this.checked)" <?= (($c['status'] ?? '') === 'designed') ? 'checked' : '' ?> style="accent-color: var(--primary);">
+                                <span>Sudah Pernah Dishare</span>
+                            </label>
+                        </div>
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>

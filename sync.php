@@ -96,9 +96,30 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $kontenDir . '/grup-wa-minggu.md',
+        'file' => $kontenDir . '/grup-wa-fudhail.md',
         'channel' => 'Grup WhatsApp',
-        'day' => 'Minggu',
+        'day' => 'Harian',
+        'funnel' => 'Nurturing (Turath)',
+        'target_product' => 'Komunitas (Faedah Murni)'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa-hatim.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Harian',
+        'funnel' => 'Nurturing (Turath)',
+        'target_product' => 'Komunitas (Faedah Murni)'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa-salaf.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Harian',
+        'funnel' => 'Nurturing (Turath)',
+        'target_product' => 'Komunitas (Faedah Murni)'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa-hasan.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Harian',
         'funnel' => 'Nurturing (Turath)',
         'target_product' => 'Komunitas (Faedah Murni)'
     ],
@@ -106,13 +127,6 @@ $allMasterFiles = [
         'file' => $kontenDir . '/grup-wa-senin.md',
         'channel' => 'Grup WhatsApp',
         'day' => 'Senin',
-        'funnel' => 'Nurturing (Turath)',
-        'target_product' => 'Komunitas (Faedah Murni)'
-    ],
-    [
-        'file' => $kontenDir . '/grup-wa.md',
-        'channel' => 'Grup WhatsApp',
-        'day' => 'Harian',
         'funnel' => 'Nurturing (Turath)',
         'target_product' => 'Komunitas (Faedah Murni)'
     ]
