@@ -389,6 +389,103 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             background: var(--primary);
             color: #022c22;
         }
+        .channel-pill.whatsapp { border-color: rgba(34, 197, 94, 0.4); color: #4ade80; }
+        .btn-copy-small {
+            padding: 0.25rem 0.55rem;
+            background: rgba(16, 185, 129, 0.12);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 5px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-copy-small:hover {
+            background: var(--primary);
+            color: #022c22;
+        }
+        .parts-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+            margin-bottom: 1rem;
+        }
+        .part-card {
+            background: #0d0f15;
+            border: 1px solid #1a1e2b;
+            border-radius: 8px;
+            padding: 0.75rem 0.9rem;
+            transition: border-color 0.15s;
+        }
+        .part-card:hover {
+            border-color: #2e354a;
+        }
+        .part-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            padding-bottom: 0.35rem;
+        }
+        .part-title {
+            font-size: 0.76rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .part-text {
+            font-size: 0.82rem;
+            color: #d1d5db;
+            line-height: 1.55;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .quick-actions-bar {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.85rem;
+        }
+        .wa-preview-box {
+            background: #0b141a;
+            border: 1px solid #1f2c34;
+            border-radius: 10px;
+            padding: 1.1rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 0.86rem;
+            line-height: 1.6;
+            color: #e9edef;
+            white-space: pre-wrap;
+            margin-bottom: 1rem;
+            border-left: 4px solid #25d366;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .hub-toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #064e3b;
+            color: #6ee7b7;
+            border: 1px solid #059669;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: all 0.25s ease;
+            pointer-events: none;
+        }
+        .hub-toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
         /* BRIEF HARIAN TAB STYLES */
         .brief-grid {
@@ -622,7 +719,14 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                     <div class="content-card" id="card-<?= htmlspecialchars($c['id']) ?>">
                         <div class="card-top">
                             <div>
-                                <span class="channel-pill <?= (stripos($c['channel'], 'threads') !== false) ? 'threads' : ((stripos($c['channel'], 'story') !== false) ? 'story' : 'carousel') ?>">
+                                <?php
+                                    $ch = strtolower($c['channel'] ?? '');
+                                    $chClass = 'carousel';
+                                    if (strpos($ch, 'threads') !== false) $chClass = 'threads';
+                                    elseif (strpos($ch, 'story') !== false) $chClass = 'story';
+                                    elseif (strpos($ch, 'whatsapp') !== false) $chClass = 'whatsapp';
+                                ?>
+                                <span class="channel-pill <?= $chClass ?>">
                                     <?= htmlspecialchars($c['channel']) ?>
                                 </span>
                                 <span style="font-size: 0.78rem; color: var(--text-muted); margin-left: 0.5rem;">
@@ -637,29 +741,111 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                         </div>
 
                         <div class="card-title"><?= htmlspecialchars($c['title'] ?? 'Naskah Tanpa Judul') ?></div>
-                        <div class="card-hook"><?= htmlspecialchars($c['hook'] ?? '') ?></div>
+                        <?php if (!empty($c['hook']) && $c['hook'] !== $c['title']): ?>
+                            <div class="card-hook"><?= htmlspecialchars($c['hook']) ?></div>
+                        <?php endif; ?>
 
-                        <!-- Kotak Teks Naskah Siap Posting -->
-                        <?php
-                            $fullScript = "";
-                            if (!empty($c['slides'])) {
-                                foreach ($c['slides'] as $idx => $s) {
-                                    $num = $idx + 1;
-                                    $fullScript .= "Slide $num: " . ($s['title'] ?? '') . "\n" . ($s['content'] ?? '') . "\n\n";
-                                }
-                            } elseif (!empty($c['raw_content'])) {
-                                $fullScript = $c['raw_content'];
-                            } else {
-                                $fullScript = $c['caption'] ?? '';
-                            }
-                        ?>
-                        <div class="script-box" id="script-<?= htmlspecialchars($c['id']) ?>"><?= htmlspecialchars($fullScript) ?></div>
+                        <?php if (!empty($c['slides'])): ?>
+                            <!-- TAMPILAN CAROUSEL: Tombol Copas Semua + Per Slide -->
+                            <div class="quick-actions-bar">
+                                <button class="btn-copy" onclick="copyFullSlides('<?= htmlspecialchars($c['id']) ?>', this)">
+                                    📋 Salin Semua Slide (<?= count($c['slides']) ?> Slide)
+                                </button>
+                                <?php if (!empty($c['caption'])): ?>
+                                    <button class="btn-action" onclick="copyCaption('<?= htmlspecialchars($c['id']) ?>', this)">
+                                        📋 Salin Caption IG
+                                    </button>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="parts-container">
+                                <?php foreach ($c['slides'] as $sIdx => $s): ?>
+                                    <div class="part-card">
+                                        <div class="part-header">
+                                            <span class="part-title">Slide <?= $s['slide_number'] ?><?= !empty($s['title']) ? ': ' . htmlspecialchars($s['title']) : '' ?></span>
+                                            <button class="btn-copy-small" onclick="copySlidePart('<?= htmlspecialchars($c['id']) ?>', <?= $sIdx ?>, this)">
+                                                📋 Salin Slide <?= $s['slide_number'] ?>
+                                            </button>
+                                        </div>
+                                        <div class="part-text"><?= htmlspecialchars($s['content']) ?></div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+
+                        <?php elseif (!empty($c['posts'])): ?>
+                            <!-- TAMPILAN THREADS: Tombol Copas Semua Utas + Per Post -->
+                            <div class="quick-actions-bar">
+                                <button class="btn-copy" onclick="copyFullThreads('<?= htmlspecialchars($c['id']) ?>', this)">
+                                    📋 Salin Seluruh Utas (<?= count($c['posts']) ?> Post)
+                                </button>
+                            </div>
+
+                            <div class="parts-container">
+                                <?php foreach ($c['posts'] as $pIdx => $p): ?>
+                                    <div class="part-card">
+                                        <div class="part-header">
+                                            <span class="part-title">Post <?= $p['post_number'] ?><?= !empty($p['header']) ? ' (' . htmlspecialchars($p['header']) . ')' : '' ?></span>
+                                            <button class="btn-copy-small" onclick="copyPostPart('<?= htmlspecialchars($c['id']) ?>', <?= $pIdx ?>, this)">
+                                                📋 Salin Post <?= $p['post_number'] ?>
+                                            </button>
+                                        </div>
+                                        <div class="part-text"><?= htmlspecialchars($p['content']) ?></div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+
+                        <?php elseif (!empty($c['stories'])): ?>
+                            <!-- TAMPILAN INSTAGRAM STORY: Tombol Copas Semua Story + Per Story -->
+                            <div class="quick-actions-bar">
+                                <button class="btn-copy" onclick="copyFullStories('<?= htmlspecialchars($c['id']) ?>', this)">
+                                    📋 Salin Semua Story (<?= count($c['stories']) ?> Slide)
+                                </button>
+                            </div>
+
+                            <div class="parts-container">
+                                <?php foreach ($c['stories'] as $stIdx => $st): ?>
+                                    <div class="part-card">
+                                        <div class="part-header">
+                                            <span class="part-title">Story <?= $st['story_number'] ?><?= !empty($st['title']) ? ': ' . htmlspecialchars($st['title']) : '' ?></span>
+                                            <button class="btn-copy-small" onclick="copyStoryPart('<?= htmlspecialchars($c['id']) ?>', <?= $stIdx ?>, this)">
+                                                📋 Salin Story <?= $st['story_number'] ?>
+                                            </button>
+                                        </div>
+                                        <div class="part-text"><?= htmlspecialchars($st['content']) ?></div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+
+                        <?php elseif (!empty($c['wa_message'])): ?>
+                            <!-- TAMPILAN GRUP WHATSAPP: Tanda baca WA (*bold*, _miring_, >quote) + Tombol Copas -->
+                            <div class="quick-actions-bar">
+                                <button class="btn-copy" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border-color: rgba(34, 197, 94, 0.4);" onclick="copyWaText('<?= htmlspecialchars($c['id']) ?>', this)">
+                                    📋 Salin Pesan WA (Format Siap Kirim)
+                                </button>
+                            </div>
+
+                            <div class="wa-preview-box"><?= htmlspecialchars($c['wa_message']) ?></div>
+
+                        <?php else: ?>
+                            <!-- TAMPILAN UMUM / REELS -->
+                            <?php
+                                $fullScript = !empty($c['raw_content']) ? $c['raw_content'] : ($c['caption'] ?? '');
+                            ?>
+                            <div class="quick-actions-bar">
+                                <button class="btn-copy" onclick="copyFromElement('script-<?= htmlspecialchars($c['id']) ?>', this, 'Naskah berhasil disalin!')">
+                                    📋 Salin Naskah
+                                </button>
+                                <?php if (!empty($c['caption'])): ?>
+                                    <button class="btn-action" onclick="copyCaption('<?= htmlspecialchars($c['id']) ?>', this)">
+                                        📋 Salin Caption
+                                    </button>
+                                <?php endif; ?>
+                            </div>
+                            <div class="script-box" id="script-<?= htmlspecialchars($c['id']) ?>"><?= htmlspecialchars($fullScript) ?></div>
+                        <?php endif; ?>
 
                         <div class="card-bottom-actions">
                             <div style="display: flex; gap: 0.5rem;">
-                                <button class="btn-copy" onclick="copyToClipboard('script-<?= htmlspecialchars($c['id']) ?>')">
-                                    📋 Salin Naskah
-                                </button>
                                 <a href="view.php?id=<?= urlencode($c['id']) ?>" class="btn-action" target="_blank">
                                     Lihat Tampilan Penuh ↗
                                 </a>
@@ -898,16 +1084,131 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
 
     </main>
 
+    <div id="hub-toast" class="hub-toast"></div>
+
     <script>
-        function copyToClipboard(elementId) {
-            const el = document.getElementById(elementId);
-            if (!el) return;
-            const text = el.innerText || el.textContent;
+        const contentsData = <?= json_encode($todayContents, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE) ?>;
+
+        function getHubItem(id) {
+            return contentsData.find(item => item.id === id);
+        }
+
+        function showToast(msg) {
+            let toast = document.getElementById('hub-toast');
+            if (!toast) {
+                toast = document.createElement('div');
+                toast.id = 'hub-toast';
+                toast.className = 'hub-toast';
+                document.body.appendChild(toast);
+            }
+            toast.innerText = msg;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyText(text, btnElement, successMsg = 'Berhasil disalin ke clipboard!') {
+            if (!text) {
+                showToast('⚠️ Teks kosong!');
+                return;
+            }
+            if (!navigator.clipboard) {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                showToast('✅ ' + successMsg);
+                return;
+            }
             navigator.clipboard.writeText(text).then(() => {
-                alert('✅ Teks naskah berhasil disalin ke clipboard!');
+                showToast('✅ ' + successMsg);
+                if (btnElement) {
+                    const orig = btnElement.innerHTML;
+                    btnElement.innerHTML = '✅ Tersalin!';
+                    btnElement.style.borderColor = 'var(--primary)';
+                    btnElement.style.color = '#34d399';
+                    setTimeout(() => {
+                        btnElement.innerHTML = orig;
+                        btnElement.style.borderColor = '';
+                        btnElement.style.color = '';
+                    }, 1800);
+                }
             }).catch(err => {
                 console.error('Gagal menyalin:', err);
             });
+        }
+
+        function copyFromElement(elementId, btnElement, msg) {
+            const el = document.getElementById(elementId);
+            if (!el) return;
+            copyText(el.innerText || el.textContent, btnElement, msg || 'Teks berhasil disalin!');
+        }
+
+        function copyFullSlides(id, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.slides) return;
+            let full = '';
+            item.slides.forEach(s => {
+                full += `[Slide ${s.slide_number}]\n${s.title ? s.title + '\n' : ''}${s.content}\n\n`;
+            });
+            copyText(full.trim(), btn, 'Semua slide berhasil disalin!');
+        }
+
+        function copySlidePart(id, idx, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.slides || !item.slides[idx]) return;
+            const s = item.slides[idx];
+            const text = (s.title ? s.title + '\n' : '') + s.content;
+            copyText(text.trim(), btn, `Slide ${s.slide_number} berhasil disalin!`);
+        }
+
+        function copyCaption(id, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.caption) return;
+            copyText(item.caption.trim(), btn, 'Caption Instagram berhasil disalin!');
+        }
+
+        function copyFullThreads(id, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.posts) return;
+            let full = '';
+            item.posts.forEach(p => {
+                full += `[Post ${p.post_number}]\n${p.content}\n\n`;
+            });
+            copyText(full.trim(), btn, 'Seluruh utas Threads berhasil disalin!');
+        }
+
+        function copyPostPart(id, idx, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.posts || !item.posts[idx]) return;
+            const p = item.posts[idx];
+            copyText(p.content.trim(), btn, `Post ${p.post_number} berhasil disalin!`);
+        }
+
+        function copyFullStories(id, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.stories) return;
+            let full = '';
+            item.stories.forEach(st => {
+                full += `[Story ${st.story_number}: ${st.title}]\n${st.content}\n\n`;
+            });
+            copyText(full.trim(), btn, 'Semua Instagram Story berhasil disalin!');
+        }
+
+        function copyStoryPart(id, idx, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.stories || !item.stories[idx]) return;
+            const st = item.stories[idx];
+            copyText(st.content.trim(), btn, `Story ${st.story_number} berhasil disalin!`);
+        }
+
+        function copyWaText(id, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.wa_message) return;
+            copyText(item.wa_message.trim(), btn, 'Pesan WhatsApp berhasil disalin!');
         }
 
         function toggleStatus(id, isChecked) {
@@ -917,7 +1218,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ action: 'toggle_status', id: id, status: newStatus })
             }).then(r => r.json()).then(data => {
-                console.log('Status updated:', data);
+                showToast(isChecked ? '✅ Ditandai: Selesai / Tayang' : '↩ Ditandai: Belum Tayang');
             });
         }
     </script>

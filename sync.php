@@ -94,6 +94,20 @@ $allMasterFiles = [
         'day' => 'Minggu',
         'funnel' => 'MOFU/BOFU (Utas)',
         'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa-senin.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Senin',
+        'funnel' => 'Nurturing (Turath)',
+        'target_product' => 'Komunitas (Faedah Murni)'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Harian',
+        'funnel' => 'Nurturing (Turath)',
+        'target_product' => 'Komunitas (Faedah Murni)'
     ]
 ];
 
@@ -161,7 +175,7 @@ foreach ($filesToProcess as $meta) {
         $caption = trim($m[1]);
     }
 
-    // Ekstraksi Slides
+    // 1. Ekstraksi Slides (Carousel)
     $slides = [];
     preg_match_all('/###\s*(?:\[)?Slide\s*(\d+)[^:\r\n\]]*[:\]]?[ \t]*([^\r\n]*)([\s\S]*?)(?=(?:###\s*(?:\[)?Slide|\Z|##\s*Caption))/i', $raw, $matches, PREG_SET_ORDER);
     
@@ -205,6 +219,49 @@ foreach ($filesToProcess as $meta) {
         }
     }
 
+    // 2. Ekstraksi Posts / Utas (Threads)
+    $posts = [];
+    if (stripos($meta['channel'], 'Threads') !== false || stripos($filename, 'threads') !== false) {
+        preg_match_all('/###\s*Post\s*(\d+)[^:\r\n]*[:\]]?[ \t]*([^\r\n]*)\n+([\s\S]*?)(?=(?:###\s*Post|\Z|---))/i', $raw, $pMatches, PREG_SET_ORDER);
+        foreach ($pMatches as $pm) {
+            $pNum = (int)$pm[1];
+            $pHeader = trim($pm[2]);
+            $pBody = trim($pm[3]);
+            $posts[] = [
+                'post_number' => $pNum,
+                'header' => $pHeader,
+                'content' => $pBody
+            ];
+        }
+    }
+
+    // 3. Ekstraksi Stories (Instagram Story)
+    $stories = [];
+    if (stripos($meta['channel'], 'Story') !== false || stripos($filename, 'story') !== false) {
+        preg_match_all('/###\s*Story\s*(\d+)[^:\r\n]*[:\]]?[ \t]*([^\r\n]*)\n+([\s\S]*?)(?=(?:###\s*Story|\Z|---))/i', $raw, $stMatches, PREG_SET_ORDER);
+        foreach ($stMatches as $stm) {
+            $stNum = (int)$stm[1];
+            $stTitle = trim($stm[2]);
+            $stBody = trim($stm[3]);
+            $stories[] = [
+                'story_number' => $stNum,
+                'title' => $stTitle,
+                'content' => $stBody
+            ];
+        }
+    }
+
+    // 4. Ekstraksi Pesan Grup WhatsApp
+    $waMessage = '';
+    if (stripos($meta['channel'], 'WhatsApp') !== false || stripos($filename, 'grup-wa') !== false) {
+        if (preg_match('/```(?:whatsapp)?\s*([\s\S]*?)```/iu', $raw, $wm)) {
+            $waMessage = trim($wm[1]);
+        } else {
+            $parts = explode('---', $raw);
+            $waMessage = trim(end($parts));
+        }
+    }
+
     $existing = HubDB::findContentById($id);
     $status = $existing['status'] ?? 'ready_to_design';
 
@@ -217,6 +274,9 @@ foreach ($filesToProcess as $meta) {
         'title' => $title,
         'hook' => $hook,
         'slides' => $slides,
+        'posts' => $posts,
+        'stories' => $stories,
+        'wa_message' => $waMessage,
         'caption' => $caption,
         'raw_markdown' => $raw,
         'status' => $status,

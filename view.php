@@ -11,9 +11,20 @@ if (!$item) {
 }
 
 // Format full text untuk "Salin Semua Naskah" yang 100% bersih untuk Canva
-$fullTextForCanva = $item['title'] . "\n\n";
-
-if (!empty($item['slides'])) {
+if (!empty($item['wa_message'])) {
+    $fullTextForCanva = $item['wa_message'];
+} elseif (!empty($item['posts'])) {
+    $fullTextForCanva = $item['title'] . "\n\n";
+    foreach ($item['posts'] as $p) {
+        $fullTextForCanva .= "[Post " . $p['post_number'] . "]\n" . $p['content'] . "\n\n";
+    }
+} elseif (!empty($item['stories'])) {
+    $fullTextForCanva = $item['title'] . "\n\n";
+    foreach ($item['stories'] as $st) {
+        $fullTextForCanva .= "[Story " . $st['story_number'] . ": " . $st['title'] . "]\n" . $st['content'] . "\n\n";
+    }
+} elseif (!empty($item['slides'])) {
+    $fullTextForCanva = $item['title'] . "\n\n";
     foreach ($item['slides'] as $s) {
         $cleanTitle = clean_slide_text($s['title']);
         $cleanBody = clean_slide_text($s['content']);
@@ -24,10 +35,10 @@ if (!empty($item['slides'])) {
         $fullTextForCanva .= $cleanBody . "\n\n";
     }
 } else {
-    $fullTextForCanva .= clean_slide_text($item['raw_markdown']) . "\n\n";
+    $fullTextForCanva = clean_slide_text($item['raw_markdown']) . "\n\n";
 }
 
-if (!empty($item['caption'])) {
+if (!empty($item['caption']) && empty($item['wa_message'])) {
     $fullTextForCanva .= "[CAPTION INSTAGRAM]\n" . trim($item['caption']) . "\n";
 }
 ?>
@@ -383,8 +394,48 @@ if (!empty($item['caption'])) {
             <strong>🎨 Panduan Desain Canva:</strong> Naskah di bawah sudah disaring bersih dari kata-kata AI generik. Gunakan visual minimalis, tipografi kontras tebal, dan <strong>100% tanpa gambar makhluk bernyawa</strong>.
         </div>
 
-        <!-- Slides List as Clean Document -->
-        <?php if (!empty($item['slides'])): ?>
+        <?php if (!empty($item['wa_message'])): ?>
+            <!-- WhatsApp View -->
+            <div class="slide-article-section" style="border-left: 4px solid #25d366; background: #0b141a;">
+                <div class="slide-top">
+                    <div class="slide-num" style="color: #25d366;">📱 Pesan WhatsApp (Format Tanda Baca Siap Kirim)</div>
+                    <button class="btn-copy-part" style="color: #25d366; border-color: rgba(37, 211, 102, 0.4);" onclick="copySnippet(<?= htmlspecialchars(json_encode($item['wa_message'])) ?>, 'Pesan WhatsApp')">
+                        Salin Pesan WA
+                    </button>
+                </div>
+                <div class="slide-body" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #e9edef; font-size: 0.95rem;"><?= nl2br(htmlspecialchars($item['wa_message'])) ?></div>
+            </div>
+
+        <?php elseif (!empty($item['posts'])): ?>
+            <!-- Threads Posts View -->
+            <?php foreach ($item['posts'] as $p): ?>
+                <div class="slide-article-section" id="post-<?= $p['post_number'] ?>">
+                    <div class="slide-top">
+                        <div class="slide-num">Post <?= $p['post_number'] ?><?= !empty($p['header']) ? ': ' . htmlspecialchars($p['header']) : '' ?></div>
+                        <button class="btn-copy-part" onclick="copySnippet(<?= htmlspecialchars(json_encode($p['content'])) ?>, 'Post <?= $p['post_number'] ?>')">
+                            Salin Post Ini
+                        </button>
+                    </div>
+                    <div class="slide-body"><?= nl2br(htmlspecialchars($p['content'])) ?></div>
+                </div>
+            <?php endforeach; ?>
+
+        <?php elseif (!empty($item['stories'])): ?>
+            <!-- Instagram Stories View -->
+            <?php foreach ($item['stories'] as $st): ?>
+                <div class="slide-article-section" id="story-<?= $st['story_number'] ?>">
+                    <div class="slide-top">
+                        <div class="slide-num">Story <?= $st['story_number'] ?><?= !empty($st['title']) ? ': ' . htmlspecialchars($st['title']) : '' ?></div>
+                        <button class="btn-copy-part" onclick="copySnippet(<?= htmlspecialchars(json_encode($st['content'])) ?>, 'Story <?= $st['story_number'] ?>')">
+                            Salin Story Ini
+                        </button>
+                    </div>
+                    <div class="slide-body"><?= nl2br(htmlspecialchars($st['content'])) ?></div>
+                </div>
+            <?php endforeach; ?>
+
+        <?php elseif (!empty($item['slides'])): ?>
+            <!-- Carousel Slides View -->
             <?php foreach ($item['slides'] as $s): ?>
                 <?php 
                     $cleanTitle = clean_slide_text($s['title']);
