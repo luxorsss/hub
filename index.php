@@ -848,6 +848,52 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 <?php endif; ?>
             </div>
 
+            <!-- BAGIAN 5: AUDIT KONVERSI (CRO) LANDING PAGE QILA -->
+            <?php if (!empty($dailyBrief['audit_cro_lp_qila'])): ?>
+                <div class="kaizen-block" style="border-left: 4px solid var(--amber);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+                        <h3 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0;">
+                            🎯 Audit Konversi (CRO) Landing Page Qila
+                        </h3>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <span style="font-size: 0.78rem; background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); padding: 0.2rem 0.5rem; border-radius: 6px; font-weight: 700;">
+                                Skor: <?= $dailyBrief['audit_cro_lp_qila']['skor_keseluruhan'] ?>
+                            </span>
+                            <a href="<?= htmlspecialchars($dailyBrief['audit_cro_lp_qila']['url']) ?>" target="_blank" class="btn-action" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">
+                                Buka LP ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.75rem; margin-bottom: 1.25rem;">
+                        <?php foreach ($dailyBrief['audit_cro_lp_qila']['ringkasan_audit'] as $audit): ?>
+                            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem;">
+                                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 700; margin-bottom: 0.3rem;">
+                                    <span style="color: #fff;"><?= htmlspecialchars($audit['aspek']) ?></span>
+                                    <span style="color: <?= ($audit['status'] === 'Kritis') ? 'var(--red)' : (($audit['status'] === 'Kuat') ? 'var(--primary)' : 'var(--amber)') ?>; font-family: 'JetBrains Mono', monospace;">
+                                        <?= htmlspecialchars($audit['skor']) ?>
+                                    </span>
+                                </div>
+                                <p style="font-size: 0.76rem; color: var(--text-muted); line-height: 1.4;">
+                                    <?= htmlspecialchars($audit['catatan']) ?>
+                                </p>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+
+                    <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 8px; padding: 1rem;">
+                        <strong style="font-size: 0.82rem; color: #34d399; display: block; margin-bottom: 0.5rem;">
+                            ⚡ 4 Perbaikan Prioritas Tinggi untuk Meraih 100 Sales:
+                        </strong>
+                        <ul style="padding-left: 1.25rem; font-size: 0.8rem; color: #d1d5db; line-height: 1.6;">
+                            <?php foreach ($dailyBrief['audit_cro_lp_qila']['top_4_perbaikan'] as $fix): ?>
+                                <li><?= htmlspecialchars($fix) ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+            <?php endif; ?>
+
         <?php endif; ?>
 
     </main>
