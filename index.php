@@ -55,6 +55,10 @@ foreach ($contents as $c) {
     if (stripos($cId, 'threads-' . strtolower($hariIni)) !== false) {
         $isToday = true;
     }
+    // Grup WhatsApp sesuai hari atau Harian
+    if (stripos($cId, 'grup-wa-' . strtolower($hariIni)) !== false || (stripos($cId, 'grup-wa') !== false && ($cDay === 'Harian' || stripos($cDay, $hariIni) !== false))) {
+        $isToday = true;
+    }
 
     if ($isToday) {
         $todayContents[] = $c;
@@ -745,117 +749,44 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                             <div class="card-hook"><?= htmlspecialchars($c['hook']) ?></div>
                         <?php endif; ?>
 
-                        <?php if (!empty($c['slides'])): ?>
-                            <!-- TAMPILAN CAROUSEL: Tombol Copas Semua + Per Slide -->
-                            <div class="quick-actions-bar">
-                                <button class="btn-copy" onclick="copyFullSlides('<?= htmlspecialchars($c['id']) ?>', this)">
-                                    📋 Salin Semua Slide (<?= count($c['slides']) ?> Slide)
-                                </button>
-                                <?php if (!empty($c['caption'])): ?>
-                                    <button class="btn-action" onclick="copyCaption('<?= htmlspecialchars($c['id']) ?>', this)">
-                                        📋 Salin Caption IG
-                                    </button>
-                                <?php endif; ?>
-                            </div>
+        <!-- Preview Naskah Ringkas di Dashboard -->
+        <?php
+            $previewText = "";
+            if (!empty($c['wa_message'])) {
+                $previewText = $c['wa_message'];
+            } elseif (!empty($c['slides'])) {
+                foreach ($c['slides'] as $s) {
+                    $previewText .= "Slide {$s['slide_number']}: " . (!empty($s['title']) ? $s['title'] . "\n" : "") . $s['content'] . "\n\n";
+                }
+            } elseif (!empty($c['posts'])) {
+                foreach ($c['posts'] as $p) {
+                    $previewText .= "Post {$p['post_number']}:\n" . $p['content'] . "\n\n";
+                }
+            } elseif (!empty($c['stories'])) {
+                foreach ($c['stories'] as $st) {
+                    $previewText .= "Story {$st['story_number']} (" . (!empty($st['title']) ? $st['title'] : '') . "):\n" . $st['content'] . "\n\n";
+                }
+            } else {
+                $previewText = !empty($c['raw_content']) ? $c['raw_content'] : ($c['caption'] ?? '');
+            }
+        ?>
+        <div class="script-box" id="script-<?= htmlspecialchars($c['id']) ?>"><?= htmlspecialchars(trim($previewText)) ?></div>
 
-                            <div class="parts-container">
-                                <?php foreach ($c['slides'] as $sIdx => $s): ?>
-                                    <div class="part-card">
-                                        <div class="part-header">
-                                            <span class="part-title">Slide <?= $s['slide_number'] ?><?= !empty($s['title']) ? ': ' . htmlspecialchars($s['title']) : '' ?></span>
-                                            <button class="btn-copy-small" onclick="copySlidePart('<?= htmlspecialchars($c['id']) ?>', <?= $sIdx ?>, this)">
-                                                📋 Salin Slide <?= $s['slide_number'] ?>
-                                            </button>
-                                        </div>
-                                        <div class="part-text"><?= htmlspecialchars($s['content']) ?></div>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
+        <div class="card-bottom-actions">
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button class="btn-copy" onclick="copyFullContentDirect('<?= htmlspecialchars($c['id']) ?>', this)">
+                    📋 Salin Naskah
+                </button>
+                <a href="view.php?id=<?= urlencode($c['id']) ?>" class="btn-action">
+                    Lihat Tampilan Penuh ↗
+                </a>
+            </div>
 
-                        <?php elseif (!empty($c['posts'])): ?>
-                            <!-- TAMPILAN THREADS: Tombol Copas Semua Utas + Per Post -->
-                            <div class="quick-actions-bar">
-                                <button class="btn-copy" onclick="copyFullThreads('<?= htmlspecialchars($c['id']) ?>', this)">
-                                    📋 Salin Seluruh Utas (<?= count($c['posts']) ?> Post)
-                                </button>
-                            </div>
-
-                            <div class="parts-container">
-                                <?php foreach ($c['posts'] as $pIdx => $p): ?>
-                                    <div class="part-card">
-                                        <div class="part-header">
-                                            <span class="part-title">Post <?= $p['post_number'] ?><?= !empty($p['header']) ? ' (' . htmlspecialchars($p['header']) . ')' : '' ?></span>
-                                            <button class="btn-copy-small" onclick="copyPostPart('<?= htmlspecialchars($c['id']) ?>', <?= $pIdx ?>, this)">
-                                                📋 Salin Post <?= $p['post_number'] ?>
-                                            </button>
-                                        </div>
-                                        <div class="part-text"><?= htmlspecialchars($p['content']) ?></div>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-
-                        <?php elseif (!empty($c['stories'])): ?>
-                            <!-- TAMPILAN INSTAGRAM STORY: Tombol Copas Semua Story + Per Story -->
-                            <div class="quick-actions-bar">
-                                <button class="btn-copy" onclick="copyFullStories('<?= htmlspecialchars($c['id']) ?>', this)">
-                                    📋 Salin Semua Story (<?= count($c['stories']) ?> Slide)
-                                </button>
-                            </div>
-
-                            <div class="parts-container">
-                                <?php foreach ($c['stories'] as $stIdx => $st): ?>
-                                    <div class="part-card">
-                                        <div class="part-header">
-                                            <span class="part-title">Story <?= $st['story_number'] ?><?= !empty($st['title']) ? ': ' . htmlspecialchars($st['title']) : '' ?></span>
-                                            <button class="btn-copy-small" onclick="copyStoryPart('<?= htmlspecialchars($c['id']) ?>', <?= $stIdx ?>, this)">
-                                                📋 Salin Story <?= $st['story_number'] ?>
-                                            </button>
-                                        </div>
-                                        <div class="part-text"><?= htmlspecialchars($st['content']) ?></div>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-
-                        <?php elseif (!empty($c['wa_message'])): ?>
-                            <!-- TAMPILAN GRUP WHATSAPP: Tanda baca WA (*bold*, _miring_, >quote) + Tombol Copas -->
-                            <div class="quick-actions-bar">
-                                <button class="btn-copy" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border-color: rgba(34, 197, 94, 0.4);" onclick="copyWaText('<?= htmlspecialchars($c['id']) ?>', this)">
-                                    📋 Salin Pesan WA (Format Siap Kirim)
-                                </button>
-                            </div>
-
-                            <div class="wa-preview-box"><?= htmlspecialchars($c['wa_message']) ?></div>
-
-                        <?php else: ?>
-                            <!-- TAMPILAN UMUM / REELS -->
-                            <?php
-                                $fullScript = !empty($c['raw_content']) ? $c['raw_content'] : ($c['caption'] ?? '');
-                            ?>
-                            <div class="quick-actions-bar">
-                                <button class="btn-copy" onclick="copyFromElement('script-<?= htmlspecialchars($c['id']) ?>', this, 'Naskah berhasil disalin!')">
-                                    📋 Salin Naskah
-                                </button>
-                                <?php if (!empty($c['caption'])): ?>
-                                    <button class="btn-action" onclick="copyCaption('<?= htmlspecialchars($c['id']) ?>', this)">
-                                        📋 Salin Caption
-                                    </button>
-                                <?php endif; ?>
-                            </div>
-                            <div class="script-box" id="script-<?= htmlspecialchars($c['id']) ?>"><?= htmlspecialchars($fullScript) ?></div>
-                        <?php endif; ?>
-
-                        <div class="card-bottom-actions">
-                            <div style="display: flex; gap: 0.5rem;">
-                                <a href="view.php?id=<?= urlencode($c['id']) ?>" class="btn-action" target="_blank">
-                                    Lihat Tampilan Penuh ↗
-                                </a>
-                            </div>
-
-                            <label style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; cursor: pointer; color: var(--text-muted);">
-                                <input type="checkbox" onchange="toggleStatus('<?= htmlspecialchars($c['id']) ?>', this.checked)" <?= (($c['status'] ?? '') === 'designed') ? 'checked' : '' ?> style="accent-color: var(--primary);">
-                                <span>Sudah Siap / Tayang</span>
-                            </label>
-                        </div>
+            <label style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; cursor: pointer; color: var(--text-muted);">
+                <input type="checkbox" onchange="toggleStatus('<?= htmlspecialchars($c['id']) ?>', this.checked)" <?= (($c['status'] ?? '') === 'designed') ? 'checked' : '' ?> style="accent-color: var(--primary);">
+                <span>Sudah Siap / Tayang</span>
+            </label>
+        </div>
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>
@@ -1145,6 +1076,24 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             const el = document.getElementById(elementId);
             if (!el) return;
             copyText(el.innerText || el.textContent, btnElement, msg || 'Teks berhasil disalin!');
+        }
+
+        function copyFullContentDirect(id, btn) {
+            const item = getHubItem(id);
+            if (!item) return;
+            let full = '';
+            if (item.wa_message) {
+                full = item.wa_message;
+            } else if (item.posts && item.posts.length > 0) {
+                item.posts.forEach(p => full += `[Post ${p.post_number}]\n${p.content}\n\n`);
+            } else if (item.stories && item.stories.length > 0) {
+                item.stories.forEach(st => full += `[Story ${st.story_number}: ${st.title}]\n${st.content}\n\n`);
+            } else if (item.slides && item.slides.length > 0) {
+                item.slides.forEach(s => full += `[Slide ${s.slide_number}]\n${s.title ? s.title + '\n' : ''}${s.content}\n\n`);
+            } else {
+                full = item.raw_content || item.raw_markdown || item.caption || '';
+            }
+            copyText(full.trim(), btn, 'Naskah berhasil disalin!');
         }
 
         function copyFullSlides(id, btn) {

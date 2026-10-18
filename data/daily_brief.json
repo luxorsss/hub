@@ -108,39 +108,33 @@
     "plan_dan_arahan": [
         {
             "prioritas": 1,
-            "aksi": "Posting Carousel Instagram Senin",
+            "aksi": "Upload Instagram Story 4 (Malam)",
             "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Salin naskah dari Hub 'Carousel Senin': 'Kerja Keras Siang Malam Tapi Rezeki Bocor?'. Pantau komentar keyword 'LUNAS'."
+            "catatan": "Rilis jam 20.30 - 21.30 WIB: Naskah Story 4 di Hub (solusi bangun malam + stiker link LP Qila / DM 'QILA')."
         },
         {
             "prioritas": 2,
-            "aksi": "Upload 4-Slide Instagram Story (Terjadwal)",
-            "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Slide 1 Polling (07.30-08.30 WIB), Slide 2 Siang Qailulah (12.30 WIB), Slide 3 Sore Ritme Tidur (17.00 WIB), Slide 4 Malam Promo Qila (20.30 WIB)."
+            "aksi": "Kirim Faidah Murni di Grup WA Malam Ini",
+            "pelaksana": "Owner / sendgrup",
+            "catatan": "Salin pesan WA di Hub: 'Obat Penenang Jiwa Sebelum Tidur Malam Ini' (Atsar Al-Fudhail bin 'Iyadh). Murni tanpa link jualan."
         },
         {
             "prioritas": 3,
-            "aksi": "Posting Utas Threads Senin (5 Post)",
+            "aksi": "Posting Utas Threads Minggu (5 Post)",
             "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Rilis jam 12.00 atau 17.00 WIB. Tema: 'Senin Pagi Tanpa Grusah-Grusuh'. Tanpa link eksternal, ajak balas 'QILA'."
+            "catatan": "Salin dari Hub: 'Sunday Scaries & Solusi Jam Hening'. Tanpa link eksternal, kunci balasan keyword 'QILA'."
         },
         {
             "prioritas": 4,
-            "aksi": "Kirim 1 Sharing Faidah Murni di Grup WA",
-            "pelaksana": "Owner / sendgrup",
-            "catatan": "Kirim materi hikmah/adab murni TANPA LINK jualan untuk menghangatkan kolam dan membangun trust anggota grup."
+            "aksi": "Standby Closing DM Keyword QILA",
+            "pelaksana": "Owner / CRM Team",
+            "catatan": "Balas chat prospek yang masuk menggunakan Skrip DM Cabang 4 (Direct Qila Rp47rb bundling 3 bonus)."
         },
         {
             "prioritas": 5,
-            "aksi": "Standby Closing DM (Keyword QILA & LUNAS)",
-            "pelaksana": "Owner / CRM Team",
-            "catatan": "Respon cepat prospek DM menggunakan Skrip Cabang 1 (LUNAS) dan Cabang 4 (QILA)."
-        },
-        {
-            "prioritas": 6,
-            "aksi": "Lanjut Review Draft Ebook 'Sisa Usia'",
-            "pelaksana": "Fadil Muhammad (Author)",
-            "catatan": "Finalisasi pembacaan Bab 1-5 di folder ebooks/sisa-usia/ untuk persiapan rilis gajian 25-28 Oktober."
+            "aksi": "Persiapan Materi Tayang Senin",
+            "pelaksana": "Tim EduMuslim",
+            "catatan": "Naskah Carousel Senin, Threads Senin, dan Grup WA Senin (Atsar Sakhr Al-Ghamidi) sudah siap di repository."
         }
     ],
     "audit_cro_lp_qila": {

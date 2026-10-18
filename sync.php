@@ -96,6 +96,13 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
+        'file' => $kontenDir . '/grup-wa-minggu.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Minggu',
+        'funnel' => 'Nurturing (Turath)',
+        'target_product' => 'Komunitas (Faedah Murni)'
+    ],
+    [
         'file' => $kontenDir . '/grup-wa-senin.md',
         'channel' => 'Grup WhatsApp',
         'day' => 'Senin',
