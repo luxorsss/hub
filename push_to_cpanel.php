@@ -71,3 +71,24 @@ if (file_exists($briefFile)) {
     }
 }
 
+// Direct SSH/SCP sync to guarantee cPanel files & DB match local 100%
+echo "Melakukan sinkronisasi langsung file Hub & DB ke cPanel via SSH...\n";
+$remoteHost = 'wegqxcgv@digitalprofit.my.id';
+$remotePort = 30524;
+$remotePath = '/home/wegqxcgv/subdomains/app.edumuslim.my.id/hub';
+
+$scpFiles = [
+    __DIR__ . '/index.php' => "$remotePath/index.php",
+    __DIR__ . '/api_action.php' => "$remotePath/api_action.php",
+    __DIR__ . '/sync.php' => "$remotePath/sync.php",
+    __DIR__ . '/data/contents.json' => "$remotePath/data/contents.json",
+    __DIR__ . '/data/daily_brief.json' => "$remotePath/data/daily_brief.json",
+];
+
+foreach ($scpFiles as $src => $dest) {
+    if (file_exists($src)) {
+        exec("scp -P $remotePort " . escapeshellarg($src) . " " . escapeshellarg("$remoteHost:$dest") . " 2>&1", $output, $code);
+    }
+}
+
+echo "✅ Sinkronisasi langsung ke server cPanel selesai!\n";

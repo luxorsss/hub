@@ -61,9 +61,9 @@ foreach ($contents as $c) {
     if (stripos($cId, 'threads-' . strtolower($hariIni)) !== false) {
         $isToday = true;
     }
-    // Grup WhatsApp sesuai hari atau Harian
-    if (stripos($cId, 'grup-wa-' . strtolower($hariIni)) !== false || (stripos($cId, 'grup-wa') !== false && ($cDay === 'Harian' || stripos($cDay, $hariIni) !== false))) {
-        $isToday = true;
+    // Grup WhatsApp TIDAK dimasukkan ke Tugas Hari Ini (Khusus tab Bank WA)
+    if (stripos($cId, 'grup-wa') !== false || stripos($c['channel'] ?? '', 'whatsapp') !== false) {
+        $isToday = false;
     }
 
     if ($isToday) {
@@ -857,10 +857,9 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                                 </a>
                             </div>
 
-                            <label style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; cursor: pointer; color: var(--text-muted);">
-                                <input type="checkbox" onchange="toggleStatus('<?= htmlspecialchars($c['id']) ?>', this.checked)" <?= (($c['status'] ?? '') === 'designed') ? 'checked' : '' ?> style="accent-color: var(--primary);">
-                                <span>Sudah Pernah Dishare</span>
-                            </label>
+                            <button class="btn-action" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3); font-weight: 600;" onclick="markSharedAndDelete('<?= htmlspecialchars($c['id']) ?>', this)">
+                                🗑️ Sudah Dishare (Hapus dari Hub)
+                            </button>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -1243,6 +1242,36 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 body: JSON.stringify({ action: 'toggle_status', id: id, status: newStatus })
             }).then(r => r.json()).then(data => {
                 showToast(isChecked ? '✅ Ditandai: Selesai / Tayang' : '↩ Ditandai: Belum Tayang');
+            });
+        }
+
+        function markSharedAndDelete(id, btn) {
+            if (!confirm('Tandai naskah ini sudah dishare dan hapus permanen dari daftar Hub?')) return;
+            btn.disabled = true;
+            btn.innerText = 'Menghapus...';
+            fetch('api_action.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'delete', id: id })
+            }).then(r => r.json()).then(data => {
+                if (data.success) {
+                    showToast('🗑️ Naskah berhasil dishare & dihapus dari Hub');
+                    const card = document.getElementById('card-' + id);
+                    if (card) {
+                        card.style.transition = 'all 0.3s ease';
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(-10px)';
+                        setTimeout(() => card.remove(), 300);
+                    }
+                } else {
+                    showToast('❌ Gagal: ' + (data.error || 'Terjadi kesalahan'));
+                    btn.disabled = false;
+                    btn.innerText = '🗑️ Sudah Dishare (Hapus dari Hub)';
+                }
+            }).catch(err => {
+                showToast('❌ Gagal menghubungi server');
+                btn.disabled = false;
+                btn.innerText = '🗑️ Sudah Dishare (Hapus dari Hub)';
             });
         }
     </script>

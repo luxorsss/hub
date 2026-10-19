@@ -96,46 +96,32 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $kontenDir . '/grup-wa-sakhr.md',
-        'channel' => 'Grup WhatsApp',
-        'day' => 'Harian',
-        'funnel' => 'Nurturing (Turath)',
-        'target_product' => 'Komunitas (Faedah Murni)'
-    ],
-    [
         'file' => $kontenDir . '/grup-wa-hatim.md',
         'channel' => 'Grup WhatsApp',
-        'day' => 'Harian',
+        'day' => 'Senin',
         'funnel' => 'Nurturing (Turath)',
         'target_product' => 'Komunitas (Faedah Murni)'
     ],
     [
         'file' => $kontenDir . '/grup-wa-salaf.md',
         'channel' => 'Grup WhatsApp',
-        'day' => 'Harian',
+        'day' => 'Bank',
         'funnel' => 'Nurturing (Turath)',
         'target_product' => 'Komunitas (Faedah Murni)'
     ],
     [
         'file' => $kontenDir . '/grup-wa-hasan.md',
         'channel' => 'Grup WhatsApp',
-        'day' => 'Harian',
-        'funnel' => 'Nurturing (Turath)',
-        'target_product' => 'Komunitas (Faedah Murni)'
-    ],
-    [
-        'file' => $kontenDir . '/grup-wa-senin.md',
-        'channel' => 'Grup WhatsApp',
-        'day' => 'Senin',
+        'day' => 'Bank',
         'funnel' => 'Nurturing (Turath)',
         'target_product' => 'Komunitas (Faedah Murni)'
     ]
 ];
 
-// ATURAN MUTLAK: Hanya proses naskah yang wajib tayang HARI INI
+// ATURAN MUTLAK: Proses naskah HARI INI + Bank WA cadangan
 $filesToProcess = [];
 foreach ($allMasterFiles as $m) {
-    if ($m['day'] === 'Harian' || stripos($m['day'], $hariIni) !== false) {
+    if ($m['day'] === 'Harian' || stripos($m['day'], $hariIni) !== false || $m['day'] === 'Bank') {
         $filesToProcess[] = $m;
     }
 }
