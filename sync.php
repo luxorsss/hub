@@ -115,6 +115,13 @@ $allMasterFiles = [
         'day' => 'Bank',
         'funnel' => 'Nurturing (Turath)',
         'target_product' => 'Komunitas (Faedah Murni)'
+    ],
+    [
+        'file' => $crmDir . '/broadcast-wa-senin.md',
+        'channel' => 'CRM Outreach',
+        'day' => 'Senin',
+        'funnel' => 'BOFU (Direct Outreach)',
+        'target_product' => 'Alumni Ihfadz/DaQo'
     ]
 ];
 
@@ -269,6 +276,18 @@ foreach ($filesToProcess as $meta) {
         }
     }
 
+    // 5. Ekstraksi Pesan CRM Outreach
+    $outreachMessages = [];
+    if (stripos($filename, 'broadcast') !== false || stripos($meta['channel'], 'Outreach') !== false) {
+        preg_match_all('/###\s*([^\n\r]+)\n+(?:[^\n`]*\n+)?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $omMatches, PREG_SET_ORDER);
+        foreach ($omMatches as $om) {
+            $outreachMessages[] = [
+                'title' => trim($om[1]),
+                'content' => trim($om[2])
+            ];
+        }
+    }
+
     $existing = HubDB::findContentById($id);
     $status = $existing['status'] ?? 'ready_to_design';
 
@@ -284,6 +303,7 @@ foreach ($filesToProcess as $meta) {
         'posts' => $posts,
         'stories' => $stories,
         'wa_message' => $waMessage,
+        'outreach_messages' => $outreachMessages,
         'caption' => $caption,
         'raw_markdown' => $raw,
         'status' => $status,

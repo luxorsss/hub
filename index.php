@@ -738,7 +738,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                                     $chClass = 'carousel';
                                     if (strpos($ch, 'threads') !== false) $chClass = 'threads';
                                     elseif (strpos($ch, 'story') !== false) $chClass = 'story';
-                                    elseif (strpos($ch, 'whatsapp') !== false) $chClass = 'whatsapp';
+                                    elseif (strpos($ch, 'whatsapp') !== false || strpos($ch, 'outreach') !== false) $chClass = 'whatsapp';
                                 ?>
                                 <span class="channel-pill <?= $chClass ?>">
                                     <?= htmlspecialchars($c['channel']) ?>
@@ -777,10 +777,26 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                     $previewText .= "Story {$st['story_number']} (" . (!empty($st['title']) ? $st['title'] : '') . "):\n" . $st['content'] . "\n\n";
                 }
             } else {
-                $previewText = !empty($c['raw_content']) ? $c['raw_content'] : ($c['caption'] ?? '');
+                $previewText = !empty($c['raw_content']) ? $c['raw_content'] : (!empty($c['raw_markdown']) ? $c['raw_markdown'] : ($c['caption'] ?? ''));
             }
         ?>
-        <div class="script-box" id="script-<?= htmlspecialchars($c['id']) ?>"><?= htmlspecialchars(trim($previewText)) ?></div>
+        <?php if (!empty($c['outreach_messages'])): ?>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem;">
+                <?php foreach ($c['outreach_messages'] as $oIdx => $om): ?>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 0.85rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <strong style="font-size: 0.85rem; color: #10b981; font-weight: 700;">💬 <?= htmlspecialchars($om['title']) ?></strong>
+                            <button class="btn-copy" style="font-size: 0.75rem; padding: 0.25rem 0.6rem; background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.3);" onclick="copyOutreachPart('<?= htmlspecialchars($c['id']) ?>', <?= $oIdx ?>, this)">
+                                📋 Salin Pesan
+                            </button>
+                        </div>
+                        <div style="font-size: 0.85rem; white-space: pre-wrap; color: var(--text); line-height: 1.5; background: rgba(0,0,0,0.25); padding: 0.6rem; border-radius: 6px; font-family: inherit;"><?= htmlspecialchars($om['content']) ?></div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php else: ?>
+            <div class="script-box" id="script-<?= htmlspecialchars($c['id']) ?>"><?= htmlspecialchars(trim($previewText)) ?></div>
+        <?php endif; ?>
 
         <div class="card-bottom-actions">
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
@@ -1232,6 +1248,13 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             const item = getHubItem(id);
             if (!item || !item.wa_message) return;
             copyText(item.wa_message.trim(), btn, 'Pesan WhatsApp berhasil disalin!');
+        }
+
+        function copyOutreachPart(id, idx, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.outreach_messages || !item.outreach_messages[idx]) return;
+            const om = item.outreach_messages[idx];
+            copyText(om.content.trim(), btn, `Pesan "${om.title}" berhasil disalin!`);
         }
 
         function toggleStatus(id, isChecked) {
