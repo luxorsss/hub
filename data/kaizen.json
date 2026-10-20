@@ -1,42 +1,47 @@
 [
     {
-        "agent": "Scout Agent",
-        "tokoh": "Andrew Huberman",
-        "channel": "@hubermanlab",
-        "title": "Optimizing Sleep Architecture & Circadian Clock for Peak Morning Alertness",
-        "url": "https://www.youtube.com/watch?v=ScoutStudy18",
-        "takeaway": "Reset jam sirkadian di Minggu sore dengan pangkas kafein dan redupkan layar demi cegah Sunday insomnia dan picu bangun dini hari."
+        "agent": "scout",
+        "agent_name": "Scout Agent",
+        "topic": "Sleep Inertia: Why Waking Up to Multiple Alarms Makes You Groggy",
+        "mentor": "Andrew Huberman (@hubermanlab)",
+        "source_url": "https://www.youtube.com/watch?v=ScoutStudy20",
+        "insight": "Menekan tombol snooze berulang kali memicu fenomena neurobiologis sleep inertia. Setiap siklus tidur baru yang terputus membanjiri otak dengan adenosin, melumpuhkan kesadaran dan memicu refleks mematikan alarm. Solusi bangun malam bukan memperbanyak deret alarm, melainkan menata adab dan biologi tidur sebelum masuk kasur.",
+        "date": "2026-10-20"
     },
     {
-        "agent": "Voice Copywriter",
-        "tokoh": "Alex Hormozi",
-        "channel": "@AlexHormozi",
-        "title": "The 1-Sentence Hook That Eliminates Boredom",
-        "url": "https://www.youtube.com/watch?v=CopyStudy18",
-        "takeaway": "Kalimat pertama tolak asumsi keliru dan langsung sebut rasa frustrasi nyata tanpa basa-basi klise."
+        "agent": "voice-copywriter",
+        "agent_name": "Voice Copywriter",
+        "topic": "How to Eliminate Boring Copy with Pattern Interrupts",
+        "mentor": "Dan Koe (@DanKoeTalks)",
+        "source_url": "https://www.youtube.com/watch?v=CopyStudy20",
+        "insight": "Hook scroll-stopping terbaik merusak asumsi umum pembaca (pattern interrupt): stop pasang 7 alarm karena itu justru menyiksa tubuh. Bahasa wajib membumi, ringkas, dan fokus pada rasa bersalah yang dialami audiens tanpa menghakimi.",
+        "date": "2026-10-20"
     },
     {
-        "agent": "CRO Landing Page",
-        "tokoh": "Wes McDowell",
-        "channel": "@WesMcDowell",
-        "title": "Mobile Conversion Optimization: The Thumb-Zone CTA",
-        "url": "https://www.youtube.com/watch?v=CROStudy18",
-        "takeaway": "Tombol aksi dan garansi resiko wajib terlihat langsung di jangkauan jempol pertama tanpa perlu scroll berlebihan."
+        "agent": "cro-lp",
+        "agent_name": "CRO Specialist",
+        "topic": "The Epiphany Bridge in Low-Ticket Funnel",
+        "mentor": "Russell Brunson (@RussellBrunson)",
+        "source_url": "https://www.youtube.com/watch?v=CROStudy20",
+        "insight": "Cerita hadits 3 ikatan di tengkuk dan fakta medis sleep inertia menjadi epiphany bridge. Audiens sadar kegagalan mereka bukan karena malas, melainkan karena ketiadaan 'Sistem Tidur'. eBook Qila hadir sebagai jembatan sistem tersebut.",
+        "date": "2026-10-20"
     },
     {
-        "agent": "Sales Conversion (CRM)",
-        "tokoh": "Chris Voss",
-        "channel": "@BlackSwanGroup",
-        "title": "Mirrors and Labels to Defuse Skepticism",
-        "url": "https://www.youtube.com/watch?v=SalesStudy18",
-        "takeaway": "Cerminkan 2-3 kata terakhir calon pembeli yang ragu untuk memvalidasi keberatan tanpa nada mendebat."
+        "agent": "sales-conversion",
+        "agent_name": "Sales Conversion",
+        "topic": "Handling Pending Checkouts with Calibrated Questions",
+        "mentor": "Chris Voss (@BlackSwanGroup)",
+        "source_url": "https://www.youtube.com/watch?v=SalesStudy20",
+        "insight": "Follow-up order pending (Rafidaini Sazarni Ratiyun Rp77.000) harus menggunakan empati taktis dan pertanyaan terkalibrasi, bukan menagih: 'Assalamu\\'alaikum kak, sempat checkout paket Qila semalam ya? Mau tanya, apakah ada kendala di metode pembayaran semalam?'.",
+        "date": "2026-10-20"
     },
     {
-        "agent": "Growth Planner / CEO",
-        "tokoh": "Alex Hormozi",
-        "channel": "@AlexHormozi",
-        "title": "Volume Negates Luck: Funnel Pipeline Hygiene",
-        "url": "https://www.youtube.com/watch?v=CEOStudy18",
-        "takeaway": "Hilangkan faktor keberuntungan lewat disiplin volume: buka jalur konversi tiap hari lewat Threads, Story, dan DM interaktif."
+        "agent": "growth-planner",
+        "agent_name": "Growth Planner & CEO",
+        "topic": "Audience Trust & The Power of Targeted Outbound",
+        "mentor": "Alex Hormozi (@AlexHormozi)",
+        "source_url": "https://www.youtube.com/watch?v=CEOStudy20",
+        "insight": "Konversi pembeli DaQo (Nina Lazmiza membeli Ebook Qila kemarin) memvalidasi bahwa database warm customer 122 kontak adalah tambang emas konversi. Jalankan pengiriman Batch 2 DaQo (10 kontak berikutnya) secara disiplin sambil mengamankan order inbound baru dari komentar feed 'QILA' dan Story malam untuk mengakselerasi target 100 sales.",
+        "date": "2026-10-20"
     }
 ]

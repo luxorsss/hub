@@ -6,6 +6,21 @@
 
 require_once __DIR__ . '/config.php';
 
+$remoteHost = 'wegqxcgv@digitalprofit.my.id';
+$remotePort = 30524;
+$remotePath = '/home/wegqxcgv/subdomains/app.edumuslim.my.id/hub';
+
+// 1. Tarik daftar naskah yang dihapus Owner di cPanel (Tombstone synchronization)
+$remoteDeletedJson = shell_exec("ssh -o ConnectTimeout=2 -o BatchMode=yes -p $remotePort $remoteHost 'cat $remotePath/data/deleted_ids.json 2>/dev/null' 2>/dev/null");
+if (!empty($remoteDeletedJson)) {
+    $remoteDeleted = json_decode($remoteDeletedJson, true);
+    if (is_array($remoteDeleted)) {
+        foreach ($remoteDeleted as $dId) {
+            HubDB::addDeletedId($dId);
+        }
+    }
+}
+
 $cpanelEndpoint = 'https://app.edumuslim.my.id/hub/api_push.php';
 $secret = DEFAULT_PIN;
 
@@ -71,18 +86,46 @@ if (file_exists($briefFile)) {
     }
 }
 
-// Direct SSH/SCP sync to guarantee cPanel files & DB match local 100%
+// Direct SSH/SCP sync to guarantee cPanel files & DB match local 100% (hanya jika SSH aktif)
+echo "Mengecek konektivitas SSH ke cPanel...\n";
+$sshCheck = @fsockopen('digitalprofit.my.id', $remotePort, $errno, $errstr, 2);
+
+if (!$sshCheck) {
+    echo "ℹ️ Port SSH ($remotePort) tidak dapat diakses langsung. Naskah & brief tetap sukses terkirim via HTTPS API.\n";
+    exit(0);
+}
+fclose($sshCheck);
+
 echo "Melakukan sinkronisasi langsung file Hub & DB ke cPanel via SSH...\n";
-$remoteHost = 'wegqxcgv@digitalprofit.my.id';
-$remotePort = 30524;
-$remotePath = '/home/wegqxcgv/subdomains/app.edumuslim.my.id/hub';
+
+// Safe merge for crm_batch_status.json: preserve completed batches from remote
+$remoteBatchJson = shell_exec("ssh -p $remotePort $remoteHost 'cat $remotePath/data/crm_batch_status.json 2>/dev/null'");
+if (!empty($remoteBatchJson)) {
+    $remoteBatch = json_decode($remoteBatchJson, true);
+    if (!empty($remoteBatch['batches']) && file_exists(__DIR__ . '/data/crm_batch_status.json')) {
+        $localBatch = json_decode(file_get_contents(__DIR__ . '/data/crm_batch_status.json'), true);
+        foreach ($remoteBatch['batches'] as $bId => $bData) {
+            if (!empty($bData['completed'])) {
+                if (isset($localBatch['batches'][$bId])) {
+                    $localBatch['batches'][$bId]['completed'] = true;
+                    $localBatch['batches'][$bId]['completed_at'] = $bData['completed_at'] ?? date('Y-m-d H:i:s');
+                }
+            }
+        }
+        file_put_contents(__DIR__ . '/data/crm_batch_status.json', json_encode($localBatch, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    }
+}
 
 $scpFiles = [
+    __DIR__ . '/config.php' => "$remotePath/config.php",
     __DIR__ . '/index.php' => "$remotePath/index.php",
+    __DIR__ . '/view.php' => "$remotePath/view.php",
     __DIR__ . '/api_action.php' => "$remotePath/api_action.php",
     __DIR__ . '/sync.php' => "$remotePath/sync.php",
     __DIR__ . '/data/contents.json' => "$remotePath/data/contents.json",
     __DIR__ . '/data/daily_brief.json' => "$remotePath/data/daily_brief.json",
+    __DIR__ . '/data/crm_batch_status.json' => "$remotePath/data/crm_batch_status.json",
+    __DIR__ . '/data/deleted_ids.json' => "$remotePath/data/deleted_ids.json",
 ];
 
 foreach ($scpFiles as $src => $dest) {
@@ -90,5 +133,14 @@ foreach ($scpFiles as $src => $dest) {
         exec("scp -P $remotePort " . escapeshellarg($src) . " " . escapeshellarg("$remoteHost:$dest") . " 2>&1", $output, $code);
     }
 }
+
+// Sync ebook files to cPanel
+$localEbookDir = '/home/fadil/edumuslim-team/ebooks/sisa-usia';
+if (is_dir($localEbookDir)) {
+    exec("scp -P $remotePort $localEbookDir/*.md $localEbookDir/*.html " . escapeshellarg("$remoteHost:$remotePath/data/ebooks/sisa-usia/") . " 2>&1");
+}
+
+// Mirror contents.json to root
+exec("ssh -p $remotePort $remoteHost " . escapeshellarg("cp $remotePath/data/contents.json $remotePath/contents.json 2>/dev/null") . " 2>&1");
 
 echo "✅ Sinkronisasi langsung ke server cPanel selesai!\n";

@@ -33,6 +33,23 @@ if (!is_dir(DATA_DIR)) {
 class HubDB {
     private static $jsonFile = DATA_DIR . '/contents.json';
     private static $salesFile = DATA_DIR . '/sales_cache.json';
+    private static $deletedFile = DATA_DIR . '/deleted_ids.json';
+
+    public static function getDeletedIds() {
+        if (!file_exists(self::$deletedFile)) {
+            return [];
+        }
+        $data = json_decode(file_get_contents(self::$deletedFile), true);
+        return is_array($data) ? $data : [];
+    }
+
+    public static function addDeletedId($id) {
+        $ids = self::getDeletedIds();
+        if (!in_array($id, $ids)) {
+            $ids[] = $id;
+            file_put_contents(self::$deletedFile, json_encode(array_values($ids), JSON_PRETTY_PRINT));
+        }
+    }
 
     public static function getContents() {
         if (!file_exists(self::$jsonFile)) {
@@ -40,10 +57,30 @@ class HubDB {
             return [];
         }
         $data = json_decode(file_get_contents(self::$jsonFile), true);
-        return is_array($data) ? $data : [];
+        if (!is_array($data)) return [];
+
+        // Auto-filter konten yang sudah pernah dihapus permanen oleh Owner
+        $deletedIds = self::getDeletedIds();
+        if (!empty($deletedIds)) {
+            $filtered = array_values(array_filter($data, function($item) use ($deletedIds) {
+                return !in_array($item['id'] ?? '', $deletedIds);
+            }));
+            if (count($filtered) !== count($data)) {
+                self::saveContents($filtered);
+                return $filtered;
+            }
+        }
+        return $data;
     }
 
     public static function saveContents($contents) {
+        // Jangan pernah simpan konten yang ada di daftar deleted_ids
+        $deletedIds = self::getDeletedIds();
+        if (!empty($deletedIds)) {
+            $contents = array_values(array_filter($contents, function($item) use ($deletedIds) {
+                return !in_array($item['id'] ?? '', $deletedIds);
+            }));
+        }
         return file_put_contents(self::$jsonFile, json_encode($contents, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     }
 
@@ -99,6 +136,7 @@ class HubDB {
     }
 
     public static function deleteContent($id) {
+        self::addDeletedId($id); // Catat permanen di daftar blacklist terhapus
         $contents = self::getContents();
         $new = [];
         $deleted = false;

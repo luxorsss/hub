@@ -16,12 +16,15 @@ if (!empty($item['wa_message'])) {
 } elseif (!empty($item['posts'])) {
     $fullTextForCanva = $item['title'] . "\n\n";
     foreach ($item['posts'] as $p) {
-        $fullTextForCanva .= "[Post " . $p['post_number'] . "]\n" . $p['content'] . "\n\n";
+        $body = !empty($p['content']) ? $p['content'] : ($p['text'] ?? '');
+        $fullTextForCanva .= "[Post " . $p['post_number'] . "]\n" . $body . "\n\n";
     }
 } elseif (!empty($item['stories'])) {
     $fullTextForCanva = $item['title'] . "\n\n";
     foreach ($item['stories'] as $st) {
-        $fullTextForCanva .= "[Story " . $st['story_number'] . ": " . $st['title'] . "]\n" . $st['content'] . "\n\n";
+        $body = !empty($st['content']) ? $st['content'] : ($st['text'] ?? '');
+        $title = !empty($st['title']) ? $st['title'] : ($st['type'] ?? '');
+        $fullTextForCanva .= "[Story " . $st['story_number'] . (!empty($title) ? ": " . $title : "") . "]\n" . $body . "\n\n";
     }
 } elseif (!empty($item['slides'])) {
     $fullTextForCanva = $item['title'] . "\n\n";

@@ -1,0 +1,88 @@
+{
+    "updated_at": "2026-10-20 09:25:06",
+    "segment": "Customer eBook DaQo (121 Kontak non-Qila - Live cPanel)",
+    "sorting_rule": "ORDER BY p.id ASC (Sesuai modul broadcast PixelCRM)",
+    "total_contacts": 121,
+    "total_sent": 30,
+    "remaining_contacts": 91,
+    "batches": {
+        "1": {
+            "name": "Batch 1 (No. Urut 1 - 10)",
+            "contacts": "Surya Hadi Kusuma (65), Toto Jatmiko (118), UNTUNG (210), Nurul Fajri (264), Cepi sugih (270), Zaid (401), Deris Arista Saputra (422), Sumedi (425), Amala Solecha (427), Asrizal (540)",
+            "completed": true,
+            "completed_at": "2026-10-19 18:00:00"
+        },
+        "2": {
+            "name": "Batch 2 (No. Urut 11 - 20)",
+            "contacts": "Fitri Chairany (591), Titik Wahyuningsih (643), Kasdadi (788), M. Arfian Pilar (822), Adryan Alfarabi (877), Muh Iskandar (895), Doddy Tisna Wirta Atmaja (905), Irfan (907), Wasikin (966), Lusiana Sulastri (978)",
+            "completed": true,
+            "completed_at": "2026-10-19 18:00:00"
+        },
+        "3": {
+            "name": "Batch 3 (No. Urut 21 - 30)",
+            "contacts": "Fajar (998), Dra. Susi Suharyani  M.Sc (1000), GandaPurnomo (1008), Heni (1018), Murtiningsih (1031), Yanto Suharto (1076), ADE SULAEMAN (1108), Wanto (1145), Santi Elvia (1156), Asep Saepul Bahri (1187)",
+            "completed": true,
+            "completed_at": "2026-10-19 18:00:00"
+        },
+        "4": {
+            "name": "Batch 4 (No. Urut 31 - 40)",
+            "contacts": "Ali Mufrod (1190), Nining (1195), Irawadi (1266), SITI KOMARIYAH (1295), Siti aliyah (1318), Ahmad Taufik (1333), Muflikhun (1418), Nurhayati (1446), Rara (1453), Asmini Yuddin (1536)",
+            "completed": false,
+            "completed_at": null
+        },
+        "5": {
+            "name": "Batch 5 (No. Urut 41 - 50)",
+            "contacts": "Sidik Aprizar (1616), Agus Riyanto (1628), Tati Sumiarti (1764), Nurdien (1880), Kayamuddin (1965), Iriawan (2117), Ahmad Wahyudi (2167), Fikri Zaenudin (2175), Muhammad Mahyudin (2203), Gilang Ardiana Putri (2224)",
+            "completed": false,
+            "completed_at": null
+        },
+        "6": {
+            "name": "Batch 6 (No. Urut 51 - 60)",
+            "contacts": "Yanita Savitri (2283), Endang (2286), Abdul Rahman (2365), Eli Rusnilawati (2387), Suparno Yazid (3210), M,Syaghir (3251), Noegroho Eko Widiharjo (3376), Muhammad Syukri Mahmud (3433), Priyono (3478), Desrias (3479)",
+            "completed": false,
+            "completed_at": null
+        },
+        "7": {
+            "name": "Batch 7 (No. Urut 61 - 70)",
+            "contacts": "Zainul (3485), Azmi athoilah (3497), Mar atussholeha (3498), Nur Aini (3502), RAYAN (3509), Maya (3510), Fitriani (3511), Suhartono (3513), Zam (3514), Afriyeni (3521)",
+            "completed": false,
+            "completed_at": null
+        },
+        "8": {
+            "name": "Batch 8 (No. Urut 71 - 80)",
+            "contacts": "ilham wahyu (3524), Suryo Suratman (3525), Prawoto (3527), Lely Amelia (3530), Elke (3531), Indah (3553), Istyanto Gunawan (3554), Lutfia (3567), Rini A (3568), Siti hawa (3569)",
+            "completed": false,
+            "completed_at": null
+        },
+        "9": {
+            "name": "Batch 9 (No. Urut 81 - 90)",
+            "contacts": "Nurul Akriliyati (3570), Neffy deswita (3571), Neng Vera (3588), Uma Sari (3590), Ikhsan Hidayat (3591), Fifi (3594), Muhammad Abdurrahman (3596), Kusuma (3600), ANDI FIRNAH SARI (3601), Budi Santoso (3602)",
+            "completed": false,
+            "completed_at": null
+        },
+        "10": {
+            "name": "Batch 10 (No. Urut 91 - 100)",
+            "contacts": "Rahman (3603), Bundo (3605), Ibu Dini (3608), Devi Susanti (3609), Norma (3611), Rangga (3612), Defi Silvia (3614), Giri Sari (3615), Triss (3618), Iwan Ichwanudin (3621)",
+            "completed": false,
+            "completed_at": null
+        },
+        "11": {
+            "name": "Batch 11 (No. Urut 101 - 110)",
+            "contacts": "Prasetya (3623), badrua (3626), Musthofa (3775), Metha ketaren (3968), Fitri Yani (4065), Ristianti (4482), Dimas Elita Rahma (4650), Adrianto (4765), Akhmad Adiwijaya (4767), Anwar Hanif (4768)",
+            "completed": false,
+            "completed_at": null
+        },
+        "12": {
+            "name": "Batch 12 (No. Urut 111 - 120)",
+            "contacts": "Yusran (4779), Aji kisowo (4780), Hasya Abida (4799), Agus Purnomo (4862), Ana Ilyani (4866), Sigit Kusumanto (4875), Herman Kristanto (4881), Didi sukardi (4907), Rica syarif (4908), Muhammad idris (4909)",
+            "completed": false,
+            "completed_at": null
+        },
+        "13": {
+            "name": "Batch 13 (No. Urut 121 - 121)",
+            "contacts": "Nana (4925)",
+            "completed": false,
+            "completed_at": null
+        }
+    }
+}

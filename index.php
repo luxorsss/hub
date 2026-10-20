@@ -24,6 +24,8 @@ $briefFile = DATA_DIR . '/daily_brief.json';
 $dailyBrief = file_exists($briefFile) ? json_decode(file_get_contents($briefFile), true) : null;
 $igCacheFile = DATA_DIR . '/ig_cache.json';
 $igCache = file_exists($igCacheFile) ? json_decode(file_get_contents($igCacheFile), true) : null;
+$crmBatchFile = DATA_DIR . '/crm_batch_status.json';
+$crmBatchData = file_exists($crmBatchFile) ? json_decode(file_get_contents($crmBatchFile), true) : null;
 
 // Tab aktif (default: 'today')
 $currentTab = $_GET['tab'] ?? 'today';
@@ -770,17 +772,103 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 }
             } elseif (!empty($c['posts'])) {
                 foreach ($c['posts'] as $p) {
-                    $previewText .= "Post {$p['post_number']}:\n" . $p['content'] . "\n\n";
+                    $body = !empty($p['content']) ? $p['content'] : ($p['text'] ?? '');
+                    $previewText .= "Post {$p['post_number']}:\n" . $body . "\n\n";
                 }
             } elseif (!empty($c['stories'])) {
                 foreach ($c['stories'] as $st) {
-                    $previewText .= "Story {$st['story_number']} (" . (!empty($st['title']) ? $st['title'] : '') . "):\n" . $st['content'] . "\n\n";
+                    $body = !empty($st['content']) ? $st['content'] : ($st['text'] ?? '');
+                    $title = !empty($st['title']) ? $st['title'] : ($st['type'] ?? '');
+                    $previewText .= "Story {$st['story_number']}" . (!empty($title) ? " ({$title})" : "") . ":\n" . $body . "\n\n";
                 }
             } else {
                 $previewText = !empty($c['raw_content']) ? $c['raw_content'] : (!empty($c['raw_markdown']) ? $c['raw_markdown'] : ($c['caption'] ?? ''));
             }
         ?>
-        <?php if (!empty($c['outreach_messages'])): ?>
+        <?php if ($c['id'] === 'broadcast-wa-senin' && !empty($crmBatchData)): ?>
+            <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 8px; padding: 1rem; margin-bottom: 1.25rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+                    <strong style="color: #34d399; font-size: 0.88rem; display: flex; align-items: center; gap: 0.4rem;">
+                        📦 Antrean Broadcast Customer eBook DaQo (122 Kontak non-Qila)
+                    </strong>
+                    <span style="font-size: 0.75rem; color: #93c5fd; background: rgba(59, 130, 246, 0.15); padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 600;">
+                        Kirim via PixelCRM WA Gateway
+                    </span>
+                </div>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.85rem; line-height: 1.4;">
+                    Kirim pesan broadcast otomatis dari PixelCRM. Centang tombol di bawah jika antrean nomor sudah dieksekusi:
+                </p>
+
+                <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <?php foreach ($crmBatchData['batches'] as $bNum => $bInfo): ?>
+                        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 6px; padding: 0.65rem 0.85rem; gap: 0.75rem;">
+                            <div style="flex: 1;">
+                                <div style="font-weight: 700; font-size: 0.84rem; color: #fff;">
+                                    <?= htmlspecialchars($bInfo['name']) ?>
+                                </div>
+                                <div style="font-size: 0.74rem; color: var(--text-muted); margin-top: 0.15rem; line-height: 1.3;">
+                                    <strong>Nama Kontak:</strong> <?= htmlspecialchars($bInfo['contacts']) ?>
+                                </div>
+                                <?php if (!empty($bInfo['completed']) && !empty($bInfo['completed_at'])): ?>
+                                    <div style="font-size: 0.7rem; color: #34d399; margin-top: 0.25rem; font-weight: 600;">
+                                        ✓ Selesai dikirim: <?= date('d M Y H:i', strtotime($bInfo['completed_at'])) ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                            <label style="display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.8rem; cursor: pointer; color: <?= !empty($bInfo['completed']) ? '#34d399' : 'var(--text-muted)' ?>; font-weight: 700; flex-shrink: 0; background: rgba(255, 255, 255, 0.03); padding: 0.35rem 0.65rem; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.08);">
+                                <input type="checkbox" onchange="toggleCrmBatch(<?= $bNum ?>, this.checked)" <?= !empty($bInfo['completed']) ? 'checked' : '' ?> style="accent-color: var(--primary); width: 18px; height: 18px; cursor: pointer;">
+                                <span><?= !empty($bInfo['completed']) ? 'Sudah Terkirim' : 'Belum' ?></span>
+                            </label>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if (!empty($c['slides'])): ?>
+            <!-- 7 SLIDE CAROUSEL VIEW DI HUB -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); padding: 0.6rem 0.85rem; border-radius: 8px;">
+                    <span style="font-size: 0.82rem; color: #93c5fd; font-weight: 700;">
+                        📸 Format: 7 Slide Seamless Carousel (1080x1350)
+                    </span>
+                    <button class="btn-copy" style="font-size: 0.75rem; padding: 0.25rem 0.65rem;" onclick="copyFullCarousel('<?= htmlspecialchars($c['id']) ?>', this)">
+                        📋 Salin Semua 7 Slide
+                    </button>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.65rem;">
+                    <?php foreach ($c['slides'] as $sIdx => $sl): ?>
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 0.85rem; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                                    <strong style="font-size: 0.82rem; color: #60a5fa; font-weight: 800;">
+                                        Slide <?= $sl['slide_number'] ?> / <?= count($c['slides']) ?>
+                                    </strong>
+                                    <button class="btn-copy" style="font-size: 0.72rem; padding: 0.2rem 0.5rem; background: rgba(59, 130, 246, 0.15); color: #93c5fd; border-color: rgba(59, 130, 246, 0.3);" onclick="copySlidePart('<?= htmlspecialchars($c['id']) ?>', <?= $sIdx ?>, this)">
+                                        📋 Salin Slide
+                                    </button>
+                                </div>
+                                <div style="font-size: 0.82rem; white-space: pre-wrap; color: var(--text); line-height: 1.5; background: rgba(0,0,0,0.25); padding: 0.6rem; border-radius: 6px; font-family: inherit; min-height: 80px;"><?= htmlspecialchars(trim($sl['content'])) ?></div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- CAPTION 1 BARIS -->
+                <?php if (!empty($c['caption'])): ?>
+                    <div style="background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 8px; padding: 0.75rem 0.85rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                            <strong style="font-size: 0.8rem; color: #fbbf24; font-weight: 700;">📝 Caption Instagram (1 Baris Ringkas):</strong>
+                            <button class="btn-copy" style="font-size: 0.72rem; padding: 0.2rem 0.5rem; background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3);" onclick="copyCaptionDirect('<?= htmlspecialchars($c['id']) ?>', this)">
+                                📋 Salin Caption
+                            </button>
+                        </div>
+                        <div style="font-size: 0.82rem; color: #e5e7eb; font-weight: 500; font-family: inherit;"><?= htmlspecialchars(trim($c['caption'])) ?></div>
+                    </div>
+                <?php endif; ?>
+            </div>
+        <?php elseif (!empty($c['outreach_messages'])): ?>
             <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem;">
                 <?php foreach ($c['outreach_messages'] as $oIdx => $om): ?>
                     <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 0.85rem;">
@@ -989,6 +1077,73 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 </div>
             </div>
 
+            <!-- BAGIAN 1.5: KPI & EVALUASI STRATEGI BISNIS SPRINT 7 HARI -->
+            <?php if (!empty($dailyBrief['kpi_sprint_7_hari'])): 
+                $kpi = $dailyBrief['kpi_sprint_7_hari'];
+            ?>
+                <div class="kaizen-block" style="border-left: 4px solid var(--purple); background: linear-gradient(180deg, rgba(168, 85, 247, 0.05) 0%, rgba(18, 20, 29, 0.6) 100%);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+                        <div>
+                            <h3 style="font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.2rem;">
+                                🎯 <?= htmlspecialchars($kpi['nama_sprint']) ?>
+                            </h3>
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">
+                                Target: <?= htmlspecialchars($kpi['target_total']) ?> • Sisa Waktu: <strong style="color: #c084fc;"><?= htmlspecialchars($kpi['tenggat_waktu']) ?></strong>
+                            </span>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <span style="font-size: 0.8rem; background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 700;">
+                                Realisasi: <?= htmlspecialchars($kpi['realisasi_saat_ini']) ?>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 3 Jalur Eksekusi -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-bottom: 1.25rem;">
+                        <?php foreach ($kpi['jalur_eksekusi'] as $jalur): ?>
+                            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); border-radius: 8px; padding: 0.85rem;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                                    <strong style="color: #fff; font-size: 0.85rem;"><?= htmlspecialchars($jalur['kanal']) ?></strong>
+                                    <span style="font-size: 0.75rem; color: #34d399; font-weight: 700; background: rgba(16, 185, 129, 0.15); padding: 0.15rem 0.4rem; border-radius: 4px;">
+                                        Est. <?= htmlspecialchars($jalur['konversi_harapan']) ?>
+                                    </span>
+                                </div>
+                                <div style="font-size: 0.78rem; color: #93c5fd; margin-bottom: 0.3rem;">
+                                    📌 Target: <?= htmlspecialchars($jalur['target']) ?>
+                                </div>
+                                <p style="font-size: 0.76rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 0.4rem;">
+                                    <?= htmlspecialchars($jalur['keterangan']) ?>
+                                </p>
+                                <div style="font-size: 0.74rem; color: #a78bfa; font-weight: 600;">
+                                    ⚡ Status: <?= htmlspecialchars($jalur['status']) ?>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+
+                    <!-- Tolok Ukur Keberhasilan / Pivot -->
+                    <div style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; padding: 0.9rem;">
+                        <strong style="font-size: 0.82rem; color: #e2e8f0; display: block; margin-bottom: 0.6rem;">
+                            ⚖️ Threshold & Tolok Ukur Keberhasilan Strategi:
+                        </strong>
+                        <div style="display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.78rem; line-height: 1.5;">
+                            <div style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: #34d399; font-weight: 700; min-width: 70px;">🟢 SKALA:</span>
+                                <span style="color: #d1d5db;"><?= htmlspecialchars($kpi['threshold_evaluasi']['skala']) ?></span>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: #fbbf24; font-weight: 700; min-width: 70px;">🟡 WASPADA:</span>
+                                <span style="color: #d1d5db;"><?= htmlspecialchars($kpi['threshold_evaluasi']['waspada']) ?></span>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: #f87171; font-weight: 700; min-width: 70px;">🔴 PIVOT:</span>
+                                <span style="color: #d1d5db;"><?= htmlspecialchars($kpi['threshold_evaluasi']['pivot']) ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+
             <!-- BAGIAN 2: HASIL RISET LINTAS PLATFORM -->
             <div class="kaizen-block">
                 <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: #fff;">
@@ -1175,9 +1330,9 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             if (item.wa_message) {
                 full = item.wa_message;
             } else if (item.posts && item.posts.length > 0) {
-                item.posts.forEach(p => full += `[Post ${p.post_number}]\n${p.content}\n\n`);
+                item.posts.forEach(p => full += `[Post ${p.post_number}]\n${p.content || p.text || ''}\n\n`);
             } else if (item.stories && item.stories.length > 0) {
-                item.stories.forEach(st => full += `[Story ${st.story_number}: ${st.title}]\n${st.content}\n\n`);
+                item.stories.forEach(st => full += `[Story ${st.story_number}: ${st.title || st.type || ''}]\n${st.content || st.text || ''}\n\n`);
             } else if (item.slides && item.slides.length > 0) {
                 item.slides.forEach(s => full += `[Slide ${s.slide_number}]\n${s.title ? s.title + '\n' : ''}${s.content}\n\n`);
             } else {
@@ -1210,12 +1365,20 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             copyText(item.caption.trim(), btn, 'Caption Instagram berhasil disalin!');
         }
 
+        function copyFullCarousel(id, btn) {
+            copyFullSlides(id, btn);
+        }
+
+        function copyCaptionDirect(id, btn) {
+            copyCaption(id, btn);
+        }
+
         function copyFullThreads(id, btn) {
             const item = getHubItem(id);
             if (!item || !item.posts) return;
             let full = '';
             item.posts.forEach(p => {
-                full += `[Post ${p.post_number}]\n${p.content}\n\n`;
+                full += `[Post ${p.post_number}]\n${p.content || p.text || ''}\n\n`;
             });
             copyText(full.trim(), btn, 'Seluruh utas Threads berhasil disalin!');
         }
@@ -1265,6 +1428,23 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 body: JSON.stringify({ action: 'toggle_status', id: id, status: newStatus })
             }).then(r => r.json()).then(data => {
                 showToast(isChecked ? '✅ Ditandai: Selesai / Tayang' : '↩ Ditandai: Belum Tayang');
+            });
+        }
+
+        function toggleCrmBatch(batchNum, isChecked) {
+            fetch('api_action.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'toggle_crm_batch', batch: batchNum, checked: isChecked })
+            }).then(r => r.json()).then(data => {
+                if (data.success) {
+                    showToast(isChecked ? `✅ Batch ${batchNum} (DaQo) ditandai sudah dikirim via PixelCRM!` : `↩ Batch ${batchNum} ditandai belum.`);
+                    setTimeout(() => location.reload(), 600);
+                } else {
+                    alert('Gagal update batch: ' + (data.error || 'Terjadi kesalahan'));
+                }
+            }).catch(e => {
+                alert('Koneksi gagal: ' + e);
             });
         }
 

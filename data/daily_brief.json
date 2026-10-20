@@ -1,178 +1,133 @@
 {
-    "date": "2026-10-19",
-    "day": "Senin",
-    "updated_at": "2026-10-19 07:56:00",
+    "date": "2026-10-20",
+    "day": "Selasa",
+    "updated_at": "2026-10-20 08:00:00",
     "evaluasi": {
         "pixelcrm": {
             "title": "PixelCRM Sales Pipeline",
-            "sales_today": 1,
-            "sales_yesterday": 0,
-            "sales_this_month": 1,
+            "sales_today": 0,
+            "sales_yesterday": 2,
+            "sales_this_month": 2,
             "pending_orders": 1,
             "target_sales": 100,
-            "all_time_completed": 1039,
-            "latest_order": "dr. Ariani Windaastuti (Ebook Qila + DaQo Rp55.000)",
-            "status": "Order pecah telur pagi ini! Order bump DaQo sukses mendongkrak cart value."
+            "all_time_completed": 1040,
+            "latest_orders": [
+                "Nina Lazmiza (ID 6211, Ebook Qila Rp47.000, Selesai 19 Okt 18:25) - Hasil Outreach DaQo Batch 1!",
+                "Rafidaini Sazarni Ratiyun (ID 6210, Qila + DaQo + Ihfadz Rp77.000, PENDING 19 Okt 18:18)",
+                "dr. Ariani Windaastuti (ID 6209, Qila + DaQo Rp55.000, Selesai 19 Okt 06:29)"
+            ],
+            "status": "Dua konversi Qila sukses kemarin (Total Rp102.000). Ada 1 pending order Rp77.000 butuh follow-up empati taktis."
         },
         "instagram_24h": {
             "title": "Instagram Feed/Reels (24 Jam Terakhir)",
-            "posts_count": 0,
+            "posts_count": 2,
             "followers": 476,
-            "note": "Tidak ada postingan tayang dalam 24 jam terakhir.",
-            "baseline_post": {
-                "timestamp": "2026-10-16T05:52:57+0000",
-                "caption_snippet": "Pantesan jam 9 pagi udah lemas, bisa jadi ikatan tidur semalam belum lepas tuntas...",
-                "reach": 17,
-                "saved": 0,
-                "shares": 1,
-                "views": 32
-            },
-            "status": "Reaktivasi feed siang ini jam 11:45 WIB dengan Carousel Senin 7 Slide (Klaster Rezeki)."
+            "note": "2 postingan tayang kemarin.",
+            "posts_detail": [
+                {
+                    "timestamp": "2026-10-19T10:40:53+0000",
+                    "reach": 10,
+                    "saved": 0,
+                    "shares": 0
+                },
+                {
+                    "timestamp": "2026-10-19T10:06:59+0000",
+                    "reach": 11,
+                    "saved": 0,
+                    "shares": 0
+                }
+            ],
+            "status": "Reach masih terbatas di angka 10-11. Rilis Carousel Selasa 10 Slide MOFU (11:45 WIB) dengan Hook Myth Buster 'Stop Pasang 7 Alarm Buat Tahajud!'."
         },
         "threads": {
             "title": "Threads (@edumuslimin)",
-            "views": 9,
+            "views": 23,
             "replies": 0,
             "likes": 0,
             "reposts": 0,
-            "status": "DATA RESMI OWNER DITERIMA: Sinyal Darurat Algoritma (9 Views, 0 Reply).",
-            "diagnosa": "Drop tajam ke 9 views membuktikan format utas Minggu (topik refleksi pasif) diabaikan total oleh algoritma Threads. Threads menuntut 'obrolan aktif' di 30 menit pertama. CEO MENOLAK pengulangan format pasif. Utas Senin (12.15 WIB) wajib menggunakan hook kontras tajam jam mulai kerja vs jam mulai fajar, serta memprovokasi balasan langsung di Post 5."
+            "status": "DATA RESMI OWNER DITERIMA: 23 Views, 0 Reply, 0 Like, 0 Repost.",
+            "diagnosa": "Naik dari baseline 9 views ke 23 views (+155%), tapi engagement masih 0. Algoritma Threads butuh interaksi di 30 menit pertama. Utas Selasa jam 12:15 WIB wajib dikawal: Owner balas atau pancing komentar pertama."
         }
     },
     "riset_lintas_platform": [
         {
             "platform": "YouTube",
             "icon": "📺",
-            "temon_kunci": "Outlier Masalah 'Kerja Keras Banting Tulang Tapi Rezeki Numpang Lewat'",
-            "detail": "Kajian seputar hubungan shalat malam dan kelapangan rezeki mendapatkan respon sangat tinggi di awal pekan. Audiens pekerja merasa lelah dengan ikhtiar otot siang hari dan mendambakan pintu rezeki langit yang dijanjikan di sepertiga malam.",
-            "dampak_ke_konten": "Diangkat menjadi tema utama Carousel Senin (7 slide) dan Story Sore hari ini."
+            "temuan": "Outlier judul video dengan impresi tinggi: 'Kenapa saya susah sekali bangun shalat tahajud? Padahal Alarm dari jam 1 pagi' (26.117 views). Audiens merasakan keputusasaan yang sama: alarm banyak justru bikin pusing.",
+            "sains_pendukung": "Huberman Lab: Menekan snooze berulang kali memicu sleep inertia berat karena otak dipaksa masuk ke siklus tidur baru yang terputus.",
+            "relevansi_qila": "Menjadi materi inti Carousel Selasa Slide 2 & 3 dan Utas Threads."
         },
         {
-            "platform": "Instagram",
-            "icon": "📸",
-            "temon_kunci": "Audit Interaksi Feed (Followers 476, Baseline Reach 17)",
-            "detail": "Ketiadaan postingan sejak 16 Oktober membuat jangkauan organik akun turun ke level baseline. Butuh kickstart interaksi berjenjang: Story Polling di pagi hari untuk menaikkan sinyal akun, disusul Carousel bernilai tinggi jam 11:45 WIB.",
-            "dampak_ke_konten": "Story 1 pagi ini memuat stiker polling 2 opsi singkat agar persentase interaksi langsung melonjak."
+            "platform": "Turath",
+            "icon": "📖",
+            "temuan": "HR. Bukhari no. 1142 & HR. Muslim no. 776: Setan mengikat 3 ikatan di tengkuk saat tidur. Tiga kunci pelepasnya: Dzikir, Wudhu, Shalat.",
+            "faedah_wa": "Atsar Salaf Ibrahim bin Adham rahimahullah: Resep bangun malam adalah menjauhi maksiat di siang hari agar layak berdiri menghadap Allah di malam hari (Sifatush Shafwah & Hilyatul Auliya').",
+            "relevansi_qila": "Mengunci keotentikan syar'i Carousel, Threads, dan Grup WhatsApp hari ini tanpa rekayasa."
         },
         {
-            "platform": "Threads",
-            "icon": "🧵",
-            "temon_kunci": "Algoritma Anti-Link Eksternal & Dwell Time Diskusi",
-            "detail": "Data ekosistem Threads membuktikan postingan yang menyertakan link eksternal langsung dipangkas impresinya (ERR-010). Utas yang berfokus pada cerita empati santai dengan CTA balasan kata kunci menghasilkan interaksi tertinggi.",
-            "dampak_ke_konten": "Utas Senin 5 post bebas link eksternal, dengan penutup balasan ketik 'QILA' untuk akses via DM."
-        },
-        {
-            "platform": "Reddit (r/islam & r/productivity)",
+            "platform": "Reddit & X (Twitter)",
             "icon": "💬",
-            "temon_kunci": "Monday Anxiety & Mental Clarity Before Fajr",
-            "detail": "Banyak profesional di forum produktivitas mengakui bahwa memulai hari lebih awal (sebelum jam sibuk) memotong tingkat stres hingga 70%. Shalat malam memberikan ketenangan mental sebelum deru pekerjaan kantor dimulai.",
-            "dampak_ke_konten": "Diselipkan ke narasi Utas Threads Post 3 dan Story Sore."
-        },
-        {
-            "platform": "X / Twitter",
-            "icon": "🐦",
-            "temon_kunci": "Fenomena 'Lemas Jam 1 Siang & Kopi Gak Mempan'",
-            "detail": "Keluhan paling sering di linimasa Senin siang adalah kantuk berat setelah makan siang (post-lunch dip) yang tidak mempan diatasi kopi. Solusi sains dan sunnah: tidur singkat 15-20 menit (qailulah).",
-            "dampak_ke_konten": "Menjadi materi edukasi utama di Instagram Story 2 (Siang 12.30 WIB)."
+            "temuan": "Banyak keluhan warganet tentang 'alarm fatigue' dan rasa bersalah bangun kesiangan padahal sudah menyetel alarm tiap 5 menit.",
+            "relevansi_qila": "Divalidasi dalam naskah Story 1 & Story 2 hari ini."
         }
     ],
-    "kaizen": [
+    "kaizen_harian": [
         {
-            "agent": "Growth Planner & CEO (Strategi Bisnis)",
-            "mentor": "Alex Hormozi (@AlexHormozi)",
-            "materi": "The 2-Step Funnel: Self-Liquidating Offer (SLO) & Ascension Architecture",
-            "insight": "Ebook Qila (Rp47.000) adalah Customer Acquisition Tool untuk membangun 100 buyer VIP dengan zero CAC. Order bump DaQo (+Rp7.000) mendongkrak AOV ke Rp55.000 dengan margin 100%. Profit sesungguhnya dipanen saat meluncurkan produk back-end (Sisa Usia) ke grup WA pembeli tanpa biaya iklan."
-        },
-        {
-            "agent": "Voice Copywriter",
-            "mentor": "Dan Koe (@DanKoeTalks)",
-            "materi": "How to Hook Working Professionals with Counter-Intuitive Truths",
-            "insight": "Target pekerja Senin tidak butuh motivasi 'semangat kerja' klise. Mereka butuh validasi rasa lelah dan solusi konkret yang mengubah jam mulai hari mereka."
-        },
-        {
-            "agent": "CRO & Offer Agent",
-            "mentor": "Alex Hormozi (@AlexHormozi)",
-            "materi": "The Order Bump Revenue Engine: Frictionless Upsells",
-            "insight": "Bukti nyata PixelCRM hari ini: order bump DaQo (+Rp7rb) dieksekusi pembeli Qila (total Rp55rb). Order bump mendongkrak AOV tanpa biaya akuisisi tambahan."
-        },
-        {
-            "agent": "Sales Conversion (CRM)",
-            "mentor": "Jeremy Miner (@JeremyMiner)",
-            "materi": "Problem Awareness Questions for Inbound Keyword Leads",
-            "insight": "Begitu prospek membalas 'QILA' atau 'LUNAS', respon pertama bukan langsung jualan kaku, melainkan pertanyaan empati: 'Lagi ikhtiar biar bisa bangun malam rutin atau sering terhambat alarm nih kak?'."
-        },
-        {
-            "agent": "Scout Agent",
+            "agen": "Scout Agent",
             "mentor": "Andrew Huberman (@hubermanlab)",
-            "materi": "Optimizing Circadian Focus on Monday & The Science of Qailulah",
-            "insight": "Post-lunch dip Senin adalah respon biologis penurunan suhu tubuh. Tidur singkat (qailulah) 15-20 menit mereset adenosin tanpa masuk ke fase deep sleep."
-        }
-    ],
-    "plan_dan_arahan": [
-        {
-            "prioritas": 1,
-            "aksi": "Upload Instagram Story 1 (Pagi)",
-            "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Rilis jam 07.30 - 08.30 WIB: Naskah Story 1 di Hub (Polling 2 opsi: Udah sampai / Masih di jalan)."
+            "insight": "Sleep Inertia: Tombol snooze membanjiri otak dengan adenosin dan memicu rasa pusing."
         },
         {
-            "prioritas": 2,
-            "aksi": "Eksekusi Broadcast WA Outreach Senin (Batch 1)",
-            "pelaksana": "Owner / CRM Team",
-            "catatan": "SEKARANG (09.55 - 10.30 WIB): Kirim Permission-Based Outreach ke 10 alumni Ihfadz/DaQo di CRM. Batch 2 jam 13.00 (10 kontak), Batch 3 jam 16.00 (10 kontak). Naskah di crm/broadcast-wa-senin.md."
+            "agen": "Voice Copywriter",
+            "mentor": "Dan Koe (@DanKoeTalks)",
+            "insight": "Pattern Interrupt: Buka naskah dengan merusak asumsi salah pembaca (stop pasang 7 alarm)."
         },
         {
-            "prioritas": 3,
-            "aksi": "Posting Carousel Feed Senin (7 Slide)",
-            "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Rilis jam 11.45 WIB: Topik 'Kerja Keras Siang Malam Tapi Rezeki Bocor?'. CTA komentar 'LUNAS'."
+            "agen": "CRO Specialist",
+            "mentor": "Russell Brunson (@RussellBrunson)",
+            "insight": "Epiphany Bridge: Mengaitkan sains tidur & hadits agar pembaca sadar butuh sistem utuh (eBook Qila)."
         },
         {
-            "prioritas": 4,
-            "aksi": "Posting Utas Threads Senin (5 Post)",
-            "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Rilis jam 12.15 WIB: 'Senin Pagi Tanpa Grusah-Grusuh'. Hook jam mulai kerja vs sepertiga malam, CTA reply 'QILA'."
+            "agen": "Sales Conversion",
+            "mentor": "Chris Voss (@BlackSwanGroup)",
+            "insight": "Calibrated Questions: Follow-up pending order Rafidaini Sazarni Ratiyun (Rp77.000) dengan empati santai."
         },
         {
-            "prioritas": 5,
-            "aksi": "Upload Instagram Story 2 (Siang)",
-            "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Rilis jam 12.30 - 13.00 WIB: Edukasi Qailulah 15-20 menit reset fokus Senin."
-        },
-        {
-            "prioritas": 6,
-            "aksi": "Kirim Faedah Murni dari Bank WA (Opsional)",
-            "pelaksana": "Owner / sendgrup",
-            "catatan": "Rilis jam 15.30 - 16.30 WIB: Pilih dari Bank Konten WA di Hub (Atsar Hatim Al-Asham). Murni tanpa link jualan."
-        },
-        {
-            "prioritas": 7,
-            "aksi": "Upload Instagram Story 3 (Sore) & Story 4 (Malam)",
-            "pelaksana": "Owner (@edumuslimin)",
-            "catatan": "Story 3 jam 17.00 WIB & Story 4 jam 20.30 WIB (Stiker Link LP Qila + Keyword QILA)."
-        },
-        {
-            "prioritas": 8,
-            "aksi": "Standby Closing DM Keyword LUNAS & QILA",
-            "pelaksana": "Owner / CRM Team",
-            "catatan": "Balas chat prospek yang masuk menggunakan Skrip DM Cabang 4 (Direct Qila Rp47rb bundling 3 bonus)."
+            "agen": "Growth Planner & CEO",
+            "mentor": "Alex Hormozi (@AlexHormozi)",
+            "insight": "Outbound Warm Base: Database DaQo terbukti menghasilkan sales (Nina Lazmiza). Disiplin kirim Batch 2."
         }
     ],
     "audit_cro_lp_qila": {
-        "url": "https://lp.edumuslim.my.id/lpqila",
-        "skor_keseluruhan": "9.2 / 10 (OPTIMASI SELESAI)",
-        "potensi_lonjakan": "Siap Konversi Trafik Organik & Iklan",
-        "ringkasan_audit": [
-            { "aspek": "Value Proposition & Hook", "skor": "9.5/10", "status": "Kuat", "catatan": "Headline tajam emosional tanpa AI slop. 100% natural gaya bahasa santai Owner." },
-            { "aspek": "CTA Placement & Alur Baca", "skor": "9.0/10", "status": "Kuat", "catatan": "Floating button ditolak agar tidak ganggu fokus baca. Diganti 2 CTA inline: tengah halaman & penutup." },
-            { "aspek": "Visual Offer & 3 Bonus", "skor": "9.0/10", "status": "Kuat", "catatan": "Struktur 3 bonus terangkum jelas (Audio Relaksasi, Checklist Subuh, Habit Tracker 30 Hari)." },
-            { "aspek": "FAQ & Penawar Keraguan", "skor": "9.2/10", "status": "Kuat", "catatan": "4 FAQ interaktif lengkap: file WA instan, penderita asam lambung, pemula, dan QRIS otomatis." }
-        ],
-        "top_4_perbaikan": [
-            "2 CTA inline terpasang di posisi natural (setelah kurikulum & setelah FAQ), bebas tombol mengambang.",
-            "Eliminasi total AI slop ke bahasa santai ala obrolan Fadil (lulus uji human voice).",
-            "4 FAQ accordion interaktif aktif menepis keraguan beli (akses WA, asam lambung, QRIS).",
-            "Skrip HTML mobile-first final selesai dirilis di cro-lp/lp-qila-final-mobile.html."
+        "status_evaluasi": "Lolos Verifikasi",
+        "catatan": "Link resmi IG Story dan Bio terkunci ke https://lp.edumuslim.my.id/lpqila. Bebas kebocoran harga di feed depan."
+    },
+    "kpi_sprint_7_hari": {
+        "nama_sprint": "Sprint 7 Hari Menuju 100 Sales Qila (19 - 25 Okt 2026)",
+        "target_total": "100 Sales (Gross: Rp4.700.000)",
+        "target_harian": "14 - 15 sales / hari",
+        "realisasi_saat_ini": "2 sales (dr. Ariani Windaastuti Rp55.000 & Nina Lazmiza Rp47.000)",
+        "sisa_target": "98 sales (Rp4.598.000)",
+        "tenggat_waktu": "25 Oktober 2026 (5 Hari Tersisa)",
+        "jalur_eksekusi": [
+            {
+                "kanal": "WA Outreach Alumni DaQo (Database PixelCRM)",
+                "target": "Batch 2 (No. Urut 11 - 20, 10 kontak)",
+                "status": "Batch 1 terbukti convert (Nina Lazmiza). Siap eksekusi Batch 2.",
+                "keterangan": "Naskah broadcast-wa-senin.md terkunci permanen per ERR-013."
+            },
+            {
+                "kanal": "Instagram Organik (@edumuslimin)",
+                "target": "Carousel Selasa (11:45 WIB) + 4 Story interaktif",
+                "status": "Naskah siap di Hub & lulus linter anti-slop.",
+                "keterangan": "Trigger 'QILA' di komentar dialirkan ke DM sales."
+            },
+            {
+                "kanal": "Threads Edukasi & Diskusi (@edumuslimin)",
+                "target": "1 Utas 5 Postingan (12:15 WIB)",
+                "status": "Siap tayang, bebas link eksternal.",
+                "keterangan": "Pancing balasan 'QILA' di balasan."
+            }
         ]
     }
 }

@@ -279,7 +279,7 @@ foreach ($filesToProcess as $meta) {
     // 5. Ekstraksi Pesan CRM Outreach
     $outreachMessages = [];
     if (stripos($filename, 'broadcast') !== false || stripos($meta['channel'], 'Outreach') !== false) {
-        preg_match_all('/###\s*([^\n\r]+)\n+(?:[^\n`]*\n+)?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $omMatches, PREG_SET_ORDER);
+        preg_match_all('/(?:###|##)\s*([^\n\r]+)\n+(?:[^\n`]*\n+)?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $omMatches, PREG_SET_ORDER);
         foreach ($omMatches as $om) {
             $outreachMessages[] = [
                 'title' => trim($om[1]),

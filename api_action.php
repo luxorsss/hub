@@ -21,6 +21,28 @@ if (empty($data)) {
 }
 
 $action = $data['action'] ?? '';
+
+if ($action === 'toggle_crm_batch') {
+    $batch = intval($data['batch'] ?? 1);
+    $checked = !empty($data['checked']);
+    $batchFile = DATA_DIR . '/crm_batch_status.json';
+    $batchData = file_exists($batchFile) ? json_decode(file_get_contents($batchFile), true) : ['batches' => []];
+    if (!isset($batchData['batches'][$batch])) {
+        $batchData['batches'][$batch] = [
+            'name' => "Batch $batch",
+            'contacts' => '',
+            'completed' => false,
+            'completed_at' => null
+        ];
+    }
+    $batchData['batches'][$batch]['completed'] = $checked;
+    $batchData['batches'][$batch]['completed_at'] = $checked ? date('Y-m-d H:i:s') : null;
+    $batchData['updated_at'] = date('Y-m-d H:i:s');
+    file_put_contents($batchFile, json_encode($batchData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    echo json_encode(['success' => true, 'batch' => $batch, 'completed' => $checked]);
+    exit;
+}
+
 $id = trim($data['id'] ?? '');
 
 if (empty($id)) {
