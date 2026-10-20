@@ -10,81 +10,53 @@
     "slides": [
       {
         "slide_number": 1,
-        "header": "",
-        "title": "",
-        "content": "Stop Pasang 7 Alarm Buat Tahajud!\n\nKenapa makin banyak alarm disetel, badan malah makin berat kayak ditimpa batu?",
-        "design_note": "Latar Charcoal Slate gelap tenang, headline kontras krem hangat, font sans-serif tebal bersih tanpa elemen makhluk hidup."
+        "header": "Hook Headline",
+        "title": "Hook Headline",
+        "content": "Stop pasang 7 alarm buat tahajud!\n\nMakin banyak alarm, badan malah makin berat.",
+        "design_note": "Latar Charcoal Slate hening, headline kontras krem hangat (font tebal 54-64pt di tengah kanvas)."
       },
       {
         "slide_number": 2,
-        "header": "",
-        "title": "",
-        "content": "03.00, 03.15, 03.30, 04.00, 04.30...\n\nUjung-ujungnya tangan otomatis geser \"Snooze\", lalu melek jam 06.15 sambil menyesal seharian.\n\nAlarm bukan solusi masalahmu.",
-        "design_note": "Deretan jam alarm disusun vertikal ala layar smartphone, teks bawah berwarna kuning fajar lembut."
+        "header": "Validasi Masalah",
+        "title": "Validasi Masalah",
+        "content": "Tiap jam 3 pagi tangan otomatis geser snooze,\nlalu melek jam 6 sambil nyesel seharian.\n\nAlarm bukan solusi masalahmu.",
+        "design_note": "Deretan ikon jam alarm smartphone vertikal minimalis, tipografi bernapas lega."
       },
       {
         "slide_number": 3,
-        "header": "",
-        "title": "",
-        "content": "Tiap kali tombol snooze dipencet 10 menit, otak kita kayak dipaksa mati-hidup berulang kali.\n\nBaterai otak langsung soak, kepala pusing, dan mata sepet luar biasa.\n\nTidur nanggung 10 menit ini yang bikin badan remuk kayak ditimpa batu pas bangun kedua kalinya.",
-        "design_note": "Tipografi lapang dengan penekanan kalimat \"Baterai Otak Langsung Soak\" menggunakan aksen warna kuning fajar."
+        "header": "Sains Baterai Otak",
+        "title": "Sains Baterai Otak",
+        "content": "Tidur nanggung 10 menit berulang kali\nbikin baterai otak langsung soak dan kepala pening.\n\nBadan remuk bukan karena kurang tidur.",
+        "design_note": "Teks 3 baris renggang, penekanan warna kuning fajar pada kata \"Baterai Otak Langsung Soak\"."
       },
       {
         "slide_number": 4,
-        "header": "",
-        "title": "",
-        "content": "Rasulullah ﷺ bersabda:\n\n\"Setan mengikat tiga ikatan di tengkuk kepala salah seorang di antara kalian saat tidur. Pada setiap ikatan ia meniupkan: 'Malam masih panjang, tidurlah!'...\"\n\n(HR. Bukhari no. 1142 & Muslim no. 776)",
-        "design_note": "Teks hadits terjemahan rapi di tengah, nomor perawi Bukhari-Muslim dicetak kecil elegan di bawah."
+        "header": "Intisari Hadits",
+        "title": "Intisari Hadits",
+        "content": "Alarm cuma berisik di telinga.\n\nKata Nabi ﷺ, ada 3 ikatan rasa malas yang dipasang di tengkuk saat tidur.\n(HR. Bukhari 1142)",
+        "design_note": "Teks hadits terjemahan rapi di tengah, nomor perawi dicetak kecil elegan di baris bawah."
       },
       {
         "slide_number": 5,
-        "header": "",
-        "title": "",
-        "content": "Alarm HP cuma bikin bising telinga. Alarm tidak memutus ikatan spiritual di kepala.\n\nTangan kita refleks mematikan dering dalam keadaan mata masih terpejam rapat.",
-        "design_note": "Latar kontras dengan ilustrasi audio off minimalis warna abu terang."
+        "header": "Solusi Enteng",
+        "title": "Solusi Enteng",
+        "content": "Pelepasnya bukan dering alarm kencang.\n\nMelek langsung ingat Allah, ambil wudhu, shalat 2 rakaat.\nTiga ikatan putus, jiwa segar seketika.",
+        "design_note": "Checklist 3 langkah rapi berjarak lega, aksen warna hijau sage lembut pada kata aksi."
       },
       {
         "slide_number": 6,
-        "header": "",
-        "title": "",
-        "content": "Kelanjutan hadits tadi memberi 3 urutan pasti:\n\n1. Begitu melek, langsung ingat Allah / dzikir -> lepas ikatan pertama.\n2. Berdiri dan berwudhu -> lepas ikatan kedua.\n3. Shalat -> lepas ikatan ketiga.\n\nJiwa jadi bersih dan penuh semangat.",
-        "design_note": "Format penomoran 1-2-3 berjarak lega, aksen warna hijau sage lembut pada kata aksi."
-      },
-      {
-        "slide_number": 7,
-        "header": "",
-        "title": "",
-        "content": "Banyak orang melek jam 3, tapi tangannya malah meraih layar HP buat scroll sosmed di kasur.\n\nCahaya layar mengejutkan retina sementara saraf motorik masih rebahan.\n\nAkhirnya tubuh hanyut dan bablas tidur lagi.",
-        "design_note": "Garis batas tipis pemisah antar bait, tipografi tegas."
-      },
-      {
-        "slide_number": 8,
-        "header": "",
-        "title": "",
-        "content": "Supaya melek malam terasa enteng tanpa siksaan alarm:\n\n- Hindari makan berat 3 jam sebelum tidur biar lambung tenang.\n- Siapkan segelas air di samping kasur.\n- Tidur miring ke kanan sesuai Sunnah agar pernapasan plong.",
-        "design_note": "Checklist bersih, warna krem lembut mudah dibaca sekilas."
-      },
-      {
-        "slide_number": 9,
-        "header": "",
-        "title": "",
-        "content": "Bangun malam bukan adu kuat menahan kantuk.\n\nBangun malam adalah buah dari adab tidur yang dipersiapkan secara rapi dan syar'i beberapa jam sebelumnya.",
-        "design_note": "Kutipan reflektif besar di tengah kanvas, tata letak bernapas."
-      },
-      {
-        "slide_number": 10,
-        "header": "",
-        "title": "",
-        "content": "Mau pelajari panduan lengkap menata jam tidur dan bangun malam segar tanpa disiksa alarm?\n\nKetik \"QILA\" di kolom komentar sekarang.\n\nNanti saya kirimkan intisari Blueprint Bangun Malam langsung ke DM kamu.\n\n(Atau klik tautan di bio @edumuslimin)",
-        "design_note": "Teks trigger 'QILA' dicetak tebal dengan tombol panduan profil yang jelas."
+        "header": "CTA Konversi",
+        "title": "CTA Konversi",
+        "content": "Panduan menata ritme bangun malam segar tanpa disiksa alarm ada di eBook Qila.\n\nKetik \"QILA\" di kolom komentar ya.",
+        "design_note": "Mockup buku Ebook Qila minimalis di tengah, teks trigger \"QILA\" dicetak tebal mencolok."
       }
     ],
     "posts": [],
     "stories": [],
     "wa_message": "",
     "outreach_messages": [],
-    "caption": "Makin banyak alarm disetel, kenapa badan malah makin remuk? Geser 10 slide ini, lalu ketik \"QILA\" di komentar ya.",
-    "raw_markdown": "# Naskah Carousel Hari Selasa (@edumuslimin)\n\n- **Topik:** Stop Pasang 7 Alarm Buat Tahajud! (Audit Biologis Sleep Inertia & Ikatan Setan)\n- **Format:** Seamless Carousel (1080x1350 / 10 Slide)\n- **Funnel:** MOFU (Akar Masalah Kegagalan Bangun Malam)\n- **Produk Terkait:** eBook Qila\n- **CTA Trigger:** \"QILA\"\n- **Validasi Turath:** HR. Bukhari no. 1142 & HR. Muslim no. 776 (Lolos Uji Hadits Shahih)\n\n---\n\n## 📱 NASKAH SLIDE-BY-SLIDE (10 SLIDE MENGALIR)\n\n### Slide 1\nStop Pasang 7 Alarm Buat Tahajud!\n\nKenapa makin banyak alarm disetel, badan malah makin berat kayak ditimpa batu?\n\n- **Catatan Desain:** Latar Charcoal Slate gelap tenang, headline kontras krem hangat, font sans-serif tebal bersih tanpa elemen makhluk hidup.\n\n### Slide 2\n03.00, 03.15, 03.30, 04.00, 04.30...\n\nUjung-ujungnya tangan otomatis geser \"Snooze\", lalu melek jam 06.15 sambil menyesal seharian.\n\nAlarm bukan solusi masalahmu.\n\n- **Catatan Desain:** Deretan jam alarm disusun vertikal ala layar smartphone, teks bawah berwarna kuning fajar lembut.\n\n### Slide 3\nTiap kali tombol snooze dipencet 10 menit, otak dipaksa masuk ke siklus tidur baru yang terputus (*fragmented sleep*).\n\nEfeknya: fenomena *Sleep Inertia*.\n\nBanjir adenosin bikin kepala pening, mata perih, dan badan lemas luar biasa saat bangun kedua kalinya.\n\n- **Catatan Desain:** Tipografi lapang dengan penekanan kata \"Sleep Inertia\" menggunakan box aksen tipis.\n\n### Slide 4\nRasulullah ﷺ bersabda:\n\n*\"Setan mengikat tiga ikatan di tengkuk kepala salah seorang di antara kalian saat tidur. Pada setiap ikatan ia meniupkan: 'Malam masih panjang, tidurlah!'...\"*\n\n(HR. Bukhari no. 1142 & Muslim no. 776)\n\n- **Catatan Desain:** Teks hadits terjemahan rapi di tengah, nomor perawi Bukhari-Muslim dicetak kecil elegan di bawah.\n\n### Slide 5\nAlarm HP cuma bikin bising telinga. Alarm tidak memutus ikatan spiritual di kepala.\n\nTangan kita refleks mematikan dering dalam keadaan mata masih terpejam rapat.\n\n- **Catatan Desain:** Latar kontras dengan ilustrasi audio off minimalis warna abu terang.\n\n### Slide 6\nKelanjutan hadits tadi memberi 3 urutan pasti:\n\n1. Begitu melek, langsung ingat Allah / dzikir -> lepas ikatan pertama.\n2. Berdiri dan berwudhu -> lepas ikatan kedua.\n3. Shalat -> lepas ikatan ketiga.\n\nJiwa jadi bersih dan penuh semangat.\n\n- **Catatan Desain:** Format penomoran 1-2-3 berjarak lega, aksen warna hijau sage lembut pada kata aksi.\n\n### Slide 7\nBanyak orang melek jam 3, tapi tangannya malah meraih layar HP buat scroll sosmed di kasur.\n\nCahaya layar mengejutkan retina sementara saraf motorik masih rebahan.\n\nAkhirnya tubuh hanyut dan bablas tidur lagi.\n\n- **Catatan Desain:** Garis batas tipis pemisah antar bait, tipografi tegas.\n\n### Slide 8\nSupaya melek malam terasa enteng tanpa siksaan alarm:\n\n- Hindari makan berat 3 jam sebelum tidur biar lambung tenang.\n- Siapkan segelas air di samping kasur.\n- Tidur miring ke kanan sesuai Sunnah agar pernapasan plong.\n\n- **Catatan Desain:** Checklist bersih, warna krem lembut mudah dibaca sekilas.\n\n### Slide 9\nBangun malam bukan adu kuat menahan kantuk.\n\nBangun malam adalah buah dari adab tidur yang dipersiapkan secara rapi dan syar'i beberapa jam sebelumnya.\n\n- **Catatan Desain:** Kutipan reflektif besar di tengah kanvas, tata letak bernapas.\n\n### Slide 10\nMau pelajari panduan lengkap menata jam tidur dan bangun malam segar tanpa disiksa alarm?\n\nKetik \"QILA\" di kolom komentar sekarang.\n\nNanti saya kirimkan intisari Blueprint Bangun Malam langsung ke DM kamu.\n\n*(Atau klik tautan di bio @edumuslimin)*\n\n- **Catatan Desain:** Teks trigger \"QILA\" dicetak tebal dengan tombol panduan profil yang jelas.\n\n---\n\n## 📝 CAPTION POSTINGAN HARI INI\n\n```text\n03.00, 03.15, 03.30, 04.00, 04.30...\nPernah gak ngalamin layar HP penuh deretan alarm, tapi pas jam 3 tangan refleks geser snooze lalu melek jam 6 pagi sambil nyesel?\n\nSecara medis, kebiasaan snooze ini memicu \"Sleep Inertia\" — otak dipaksa masuk ke siklus tidur baru yang nanggung, bikin kepala pusing dan mata sepet seharian.\n\nSecara ruhiyah, Rasulullah ﷺ udah ngingetin ada 3 ikatan di tengkuk kepala kita saat tidur (HR. Bukhari no. 1142). Alarm HP cuma bunyi di telinga, gak bisa ngelepas ikatan di kepala.\n\nKunci bangun malam itu ada di adab sebelum tidur dan urutan refleks saat pertama kali buka mata: langsung ingat Allah, ambil wudhu, lalu tegakkan shalat.\n\nLangkah detail menata ritme bangun malam tanpa disiksa alarm udah saya susun di Blueprint Bangun Malam.\n\nMau panduannya? Ketik \"QILA\" di kolom komentar ya. Nanti saya kirim materinya langsung ke DM kamu. 😊\n\n#tahajud #qiyamullail #edumuslimin #produktivitasmuslim #kebiasaanbaik #bangunsubuh\n```\n",
+    "caption": "Makin banyak alarm disetel, kenapa badan malah makin remuk? Geser 6 slide ini, lalu ketik \"QILA\" di komentar ya.",
+    "raw_markdown": "# Naskah Carousel Hari Selasa (@edumuslimin)\n\n- **Topik:** Stop Pasang 7 Alarm Buat Tahajud!\n- **Format:** Seamless Carousel Ramping (1080x1350 / 6 Slide)\n- **Model:** Format Ramping Kuro (<20 kata per slide)\n- **Funnel:** MOFU (Akar Masalah Kegagalan Bangun Malam)\n- **Produk Terkait:** eBook Qila\n- **CTA Trigger:** \"QILA\"\n- **Validasi Turath:** HR. Bukhari no. 1142 & HR. Muslim no. 776 (Shahih)\n\n---\n\n## 📱 NASKAH 6 SLIDE CAROUSEL (RAMPING & MENANCAP)\n\n### Slide 1\nStop pasang 7 alarm buat tahajud!\n\nMakin banyak alarm, badan malah makin berat.\n\n- **Catatan Desain:** Latar Charcoal Slate hening, headline kontras krem hangat (font tebal 54-64pt di tengah kanvas).\n\n### Slide 2\nTiap jam 3 pagi tangan otomatis geser snooze,\nlalu melek jam 6 sambil nyesel seharian.\n\nAlarm bukan solusi masalahmu.\n\n- **Catatan Desain:** Deretan ikon jam alarm smartphone vertikal minimalis, tipografi bernapas lega.\n\n### Slide 3\nTidur nanggung 10 menit berulang kali\nbikin baterai otak langsung soak dan kepala pening.\n\nBadan remuk bukan karena kurang tidur.\n\n- **Catatan Desain:** Teks 3 baris renggang, penekanan warna kuning fajar pada kata \"Baterai Otak Langsung Soak\".\n\n### Slide 4\nAlarm cuma berisik di telinga.\n\nKata Nabi ﷺ, ada 3 ikatan rasa malas yang dipasang di tengkuk saat tidur.\n*(HR. Bukhari 1142)*\n\n- **Catatan Desain:** Teks hadits terjemahan rapi di tengah, nomor perawi dicetak kecil elegan di baris bawah.\n\n### Slide 5\nPelepasnya bukan dering alarm kencang.\n\nMelek langsung ingat Allah, ambil wudhu, shalat 2 rakaat.\nTiga ikatan putus, jiwa segar seketika.\n\n- **Catatan Desain:** Checklist 3 langkah rapi berjarak lega, aksen warna hijau sage lembut pada kata aksi.\n\n### Slide 6\nPanduan menata ritme bangun malam segar tanpa disiksa alarm ada di eBook Qila.\n\nKetik \"QILA\" di kolom komentar ya.\n\n- **Catatan Desain:** Mockup buku Ebook Qila minimalis di tengah, teks trigger \"QILA\" dicetak tebal mencolok.\n\n---\n\n## 📝 CAPTION FEED INSTAGRAM (1 BARIS MODEL KURO)\n\n```text\nMakin banyak alarm disetel, kenapa badan malah makin remuk? Geser 6 slide ini, lalu ketik \"QILA\" di komentar ya.\n```\n",
     "status": "ready_to_design",
     "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
   },
