@@ -94,22 +94,22 @@
     "day": "Selasa",
     "funnel": "MOFU",
     "target_product": "eBook Qila",
-    "title": "Naskah Reels 2-Slide (Model Format Kuro)",
-    "hook": "Pasang 7 deret alarm dari jam 3 pagi... tapi melek jam 6 sambil nyesel seharian. Kamu gak sendirian.",
+    "title": "Naskah Reels 2-Slide (Bukan Salah Alarmmu)",
+    "hook": "Bukan salah alarmmu.",
     "slides": [
       {
         "slide_number": 1,
-        "header": "Hook / Tamparan Realita (0 – 3 Detik)",
-        "title": "Hook Tamparan Realita",
-        "content": "Pasang 7 deret alarm dari jam 3 pagi... tapi melek jam 6 sambil nyesel seharian.\n\nKamu gak sendirian.",
-        "design_note": "Latar Charcoal Slate gelap tenang, headline kontras krem hangat, font sans-serif tebal bersih di tengah layar."
+        "header": "Hook Headline (0 – 3 Detik)",
+        "title": "Hook Headline 3 Kata",
+        "content": "Bukan salah alarmmu.",
+        "design_note": "Latar Charcoal Slate gelap tenang, teks font sans-serif tebal (54–64 pt) warna krem hangat tepat di tengah layar."
       },
       {
         "slide_number": 2,
-        "header": "Poin Solusi Konkret (Detik 4 – 15)",
-        "title": "3 Poin Solusi Konkret",
-        "content": "Besok pagi coba 3 langkah ini:\n1. Stop pencet snooze (bikin baterai otak soak).\n2. Taruh segelas air putih persis di samping kasur.\n3. Pas melek langsung ingat Allah, jangan sentuh layar HP.\n\n(Panduan jam tidur sunnah ada di bio @edumuslimin)",
-        "design_note": "Transisi geser halus ke foto cangkir air putih dan sajadah terlipat rapi, teks bullet point bersih."
+        "header": "Poin Solusi (Detik 4 – 15)",
+        "title": "Poin Solusi Konkret",
+        "content": "Alarm cuma bunyi di telinga, gak bisa ngelepas 3 ikatan di kepala.\n\nBesok pagi coba 3 hal ini:\n1. Stop pencet snooze (bikin baterai otak soak).\n2. Taruh segelas air putih persis di samping kasur.\n3. Pas melek langsung ingat Allah, jangan sentuh layar HP.\n\n(Panduan jam tidur sunnah ada di bio @edumuslimin)",
+        "design_note": "Transisi geser halus ke foto cangkir air putih dan sajadah terlipat rapi, teks bernapas lega."
       }
     ],
     "posts": [],
@@ -117,7 +117,7 @@
     "wa_message": "",
     "outreach_messages": [],
     "caption": "Tidur jam 1 malam, pasang alarm jam 3 pagi, lalu berharap bangun segar bugar? Kasihan badanmu.\n\nNabi ﷺ adalah orang paling rajin shalat malam, tapi beliau juga yang paling tertib tidur setelah Isya. Bangun malam itu dibangun dari adab tidur yang benar, bukan modal nekat pasang 7 alarm.\n\nKalo kamu sering gagal melek jam 3 pagi, ketik \"QILA\" di komentar ya.\n\nNanti saya kirimkan intisari Blueprint Bangun Malam langsung ke DM kamu. 😊\n\n#tahajud #qiyamullail #edumuslimin #produktivitasmuslim #kebiasaanbaik #bangunsubuh",
-    "raw_markdown": "# Naskah Reels 2-Slide (Model Format Kuro) @edumuslimin\n**Disusun oleh:** `voice-copywriter` & `growth-planner`  \n**Format:** Reels 2-Slide Ringkas (Slide 1: Hook, Slide 2: Poin Aksi)  \n**Tujuan Algoritma:** Retensi tontonan tinggi & Save Rate tinggi  \n**Target Penjualan:** Trigger komentar \"QILA\" untuk dialirkan ke DM sales\n\n---\n\n### Slide 1: Hook / Tamparan Realita (0 – 3 Detik)\n**Teks di Layar (Tengah Besar):**\n> *\"Pasang 7 deret alarm dari jam 3 pagi... tapi melek jam 6 sambil nyesel seharian.*  \n> *Kamu gak sendirian.\"*\n\n- **Visual:** Background hening foto meja kamar tidur, jam weker di samping Al-Qur'an (nuansa gelap/charcoal slate, tanpa elemen makhluk bernyawa).\n- **Audio:** Suara hening malam / detak jarum jam halus.\n\n---\n\n### Slide 2: Poin-Poin Solusi Konkret (Detik 4 – 15)\n**Teks di Layar (Rapi 3 Poin):**\n> *\"Besok pagi coba 3 langkah ini:*  \n> *1. Stop pencet snooze (bikin baterai otak soak).*  \n> *2. Taruh segelas air putih persis di samping kasur.*  \n> *3. Pas melek langsung ingat Allah, jangan sentuh layar HP.*  \n>  \n> *(Panduan jam tidur sunnah ada di bio @edumuslimin)\"*\n\n- **Visual:** Transisi geser halus ke foto cangkir air putih dan sajadah terlipat rapi.\n- **Audio:** Nada reflektif tenang.\n\n---\n\n## 📝 Copywriting Caption (Model Kuro: Tajam, Bernapas & Relatable)\n\n```text\nTidur jam 1 malam, pasang alarm jam 3 pagi, lalu berharap bangun segar bugar? Kasihan badanmu.\n\nNabi ﷺ adalah orang paling rajin shalat malam, tapi beliau juga yang paling tertib tidur setelah Isya. Bangun malam itu dibangun dari adab tidur yang benar, bukan modal nekat pasang 7 alarm.\n\nKalo kamu sering gagal melek jam 3 pagi, ketik \"QILA\" di komentar ya.\n\nNanti saya kirimkan intisari Blueprint Bangun Malam langsung ke DM kamu. 😊\n\n#tahajud #qiyamullail #edumuslimin #produktivitasmuslim #kebiasaanbaik #bangunsubuh\n```\n",
+    "raw_markdown": "# Naskah Reels 2-Slide (Model Format Kuro) @edumuslimin\n**Disusun oleh:** Rembuk Tim (`voice-copywriter`, `growth-planner`, & `CEO`)  \n**Format:** Reels 2-Slide Ringkas (Slide 1: Headline 3 Kata, Slide 2: Poin Solusi)  \n**Tujuan Algoritma:** Retensi tontonan >200% & Save Rate tinggi  \n**Target Penjualan:** Trigger komentar \"QILA\" untuk dialirkan ke DM sales\n\n---\n\n### Slide 1: Hook / Headline (0 – 3 Detik)\n**Teks di Layar (Font Raksasa Tebal di Tengah):**\n> *\"Bukan salah alarmmu.\"*\n\n- **Visual:** Background hening foto meja kamar tidur, jam weker di samping Al-Qur'an (nuansa charcoal slate gelap tenang, tanpa elemen makhluk hidup).\n- **Safe Zone:** Margin aman 250px atas & bawah, font sans-serif tebal krem hangat (54–64 pt).\n- **Audio:** Suara hening malam / detak jarum jam halus.\n\n---\n\n### Slide 2: Poin-Poin Solusi Konkret (Detik 4 – 15)\n**Teks di Layar (Rapi 3 Poin Solusi):**\n> *\"Alarm cuma bunyi di telinga, gak bisa ngelepas 3 ikatan di kepala.*  \n>  \n> *Besok pagi coba 3 hal ini:*  \n> *1. Stop pencet snooze (bikin baterai otak soak).*  \n> *2. Taruh segelas air putih persis di samping kasur.*  \n> *3. Pas melek langsung ingat Allah, jangan sentuh layar HP.*  \n>  \n> *(Panduan jam tidur sunnah ada di bio @edumuslimin)\"*\n\n- **Visual:** Transisi geser halus ke foto cangkir air putih dan sajadah terlipat rapi.\n- **Audio:** Nada reflektif tenang.\n\n---\n\n## 📝 Copywriting Caption (Model Kuro: Tajam, Bernapas & Relatable)\n\n```text\nTidur jam 1 malam, pasang alarm jam 3 pagi, lalu berharap bangun segar bugar? Kasihan badanmu.\n\nNabi ﷺ adalah orang paling rajin shalat malam, tapi beliau juga yang paling tertib tidur setelah Isya. Bangun malam itu dibangun dari adab tidur yang benar, bukan modal nekat pasang 7 alarm.\n\nKalo kamu sering gagal melek jam 3 pagi, ketik \"QILA\" di komentar ya.\n\nNanti saya kirimkan intisari Blueprint Bangun Malam langsung ke DM kamu. 😊\n\n#tahajud #qiyamullail #edumuslimin #produktivitasmuslim #kebiasaanbaik #bangunsubuh\n```\n",
     "status": "designed",
     "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
   },
