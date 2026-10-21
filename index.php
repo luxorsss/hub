@@ -29,7 +29,7 @@ $crmBatchData = file_exists($crmBatchFile) ? json_decode(file_get_contents($crmB
 
 // Tab aktif (default: 'today')
 $currentTab = $_GET['tab'] ?? 'today';
-$validTabs = ['today', 'wa', 'brief'];
+$validTabs = ['today', 'wa', 'brief', 'cover'];
 if (!in_array($currentTab, $validTabs)) {
     $currentTab = 'today';
 }
@@ -53,6 +53,10 @@ foreach ($contents as $c) {
 
     // Kecocokan hari eksplisit
     if (stripos($cDay, $hariIni) !== false) {
+        $isToday = true;
+    }
+    // CRM Outreach DaQo selalu aktif tiap hari sampai tuntas
+    if (stripos($cId, 'broadcast') !== false || stripos($c['channel'] ?? '', 'crm') !== false) {
         $isToday = true;
     }
     // Story harian tayang tiap hari
@@ -677,6 +681,10 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 <a href="index.php?tab=brief" class="nav-item <?= ($currentTab === 'brief') ? 'active' : '' ?>">
                     <span>📋 Brief Harian & Riset</span>
                 </a>
+                <a href="index.php?tab=cover" class="nav-item <?= ($currentTab === 'cover') ? 'active' : '' ?>">
+                    <span>🎨 Prompt Cover Ebook</span>
+                    <span class="badge" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">Gemini Web</span>
+                </a>
             </nav>
 
             <div class="nav-group-label">Aset & Platform</div>
@@ -1255,6 +1263,125 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                     </div>
                 </div>
             <?php endif; ?>
+
+        <?php elseif ($currentTab === 'cover'): ?>
+            <!-- TAB COVER: GENERATOR PROMPT COVER EBOOK SISA USIA -->
+            <div class="page-header">
+                <div class="page-title">
+                    <h2>🎨 Generator Prompt Cover Ebook (Gemini Web)</h2>
+                    <p>Prompt presisi tinggi untuk di-copy ke <strong>Gemini Web</strong>. Sudah disesuaikan agar tipografi judul, subjudul, dan nama penulis tampil tajam, menjual, dan 100% syar'i tanpa makhluk bernyawa.</p>
+                </div>
+            </div>
+
+            <!-- Specs Card -->
+            <div class="content-card" style="border-left: 4px solid var(--amber); margin-bottom: 1.5rem;">
+                <div class="card-top">
+                    <div>
+                        <span class="channel-pill" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3);">
+                            Spesifikasi Desain Cover
+                        </span>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); margin-left: 0.5rem;">
+                            Ebook: <strong>Sisa Usia</strong>
+                        </span>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.78rem; background: rgba(16, 185, 129, 0.1); padding: 0.25rem 0.5rem; border-radius: 5px; color: #4ade80; font-weight: 600;">
+                            ✨ Bestseller Editorial Aesthetic
+                        </span>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px;">
+                    <div>
+                        <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Headline (Judul Utama)</div>
+                        <div style="font-size: 1.15rem; font-weight: 800; color: #fff; letter-spacing: 0.05em;">SISA USIA</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Sub-Headline</div>
+                        <div style="font-size: 0.85rem; font-weight: 600; color: #fbbf24; line-height: 1.4;">Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Nama Penulis</div>
+                        <div style="font-size: 1rem; font-weight: 700; color: #38bdf8;">Fadil Muhammad</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Aturan Khusus</div>
+                        <div style="font-size: 0.82rem; color: #ef4444; font-weight: 600;">❌ Tanpa tulisan EduMuslim<br>❌ Tanpa gambar makhluk hidup</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROMPT 1 -->
+            <div class="content-card" style="margin-bottom: 1.5rem;">
+                <div class="card-top">
+                    <div>
+                        <span class="channel-pill" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.3);">
+                            Opsi 1 (Rekomendasi Utama)
+                        </span>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); margin-left: 0.5rem;">
+                            Konsep: <strong>Jam Pasir Waktu & Berkas Fajar Keemasan</strong>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-title" style="margin-top: 0.5rem;">Jam Pasir Bercahaya dalam Gelap (Filosofis & Sangat Menjual)</div>
+                <div class="card-hook" style="margin-bottom: 0.8rem;">Cocok untuk Gemini Web Imagen 3 / Ideogram. Melambangkan butir pasir waktu sisa umur yang terus bergulir, namun disinari fajar taubat.</div>
+
+                <div class="script-box" id="prompt-opt-1" style="max-height: none; font-size: 0.82rem; font-family: 'JetBrains Mono', monospace; background: #07090e; color: #e2e8f0; border-color: #2a3147;">A premium, bestselling book cover design for an Islamic self-improvement and spiritual book. Dark luxury aesthetic, deep midnight obsidian and charcoal background with subtle ethereal warm golden dawn light rays beaming from above. In the center, a minimalist glowing glass hourglass where glowing golden sand of time gently slips through, creating a calm yet urgent atmosphere. Elegant typography: at the top in large bold sophisticated white modern serif font reads "SISA USIA", below it in clean readable gold sans-serif font reads "Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian", and at the very bottom in dignified small white font reads "Fadil Muhammad". No other text, no publisher logos, no animate faces, no living creatures, strictly clean, cinematic lighting, 8k resolution, photorealistic book cover mockup, award-winning editorial design, aspect ratio 2:3.</div>
+
+                <div class="card-bottom-actions">
+                    <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+                        <button class="btn-copy" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border-color: rgba(16, 185, 129, 0.4); font-weight: 700;" onclick="copyText(document.getElementById('prompt-opt-1').innerText, this, 'Prompt Opsi 1 berhasil disalin!')">
+                            📋 Salin Prompt Opsi 1
+                        </button>
+                        <a href="https://gemini.google.com/app" target="_blank" class="btn-action" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); font-weight: 600;">
+                            🚀 Buka Gemini Web ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROMPT 2 -->
+            <div class="content-card" style="margin-bottom: 1.5rem;">
+                <div class="card-top">
+                    <div>
+                        <span class="channel-pill" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
+                            Opsi 2 (Arsitektural Minimalis)
+                        </span>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); margin-left: 0.5rem;">
+                            Konsep: <strong>Cahaya Fajar Menembus Kegelapan</strong>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-title" style="margin-top: 0.5rem;">Sinar Fajar di Keheningan (Mewah & Berwibawa)</div>
+                <div class="card-hook" style="margin-bottom: 0.8rem;">Memberikan visual kontras tinggi yang sangat menonjol saat dijadikan iklan / thumbnail feed Instagram.</div>
+
+                <div class="script-box" id="prompt-opt-2" style="max-height: none; font-size: 0.82rem; font-family: 'JetBrains Mono', monospace; background: #07090e; color: #e2e8f0; border-color: #2a3147;">A striking, highly marketable book cover design. Deep matte charcoal black canvas with an architectural sliver of warm ambient morning dawn light piercing through darkness. Minimalist, dignified, and serene spiritual atmosphere. High contrast clean layout: the main title in bold prominent elegant white typography reads "SISA USIA", sub-headline in crisp warm amber lettering reads "Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian", at the bottom center cleanly written "Fadil Muhammad". Clean negative space, strictly zero illustrations of living beings or faces, premium texture, bestseller book layout, photorealistic 8k, aspect ratio 2:3.</div>
+
+                <div class="card-bottom-actions">
+                    <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+                        <button class="btn-copy" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; border-color: rgba(56, 189, 248, 0.4); font-weight: 700;" onclick="copyText(document.getElementById('prompt-opt-2').innerText, this, 'Prompt Opsi 2 berhasil disalin!')">
+                            📋 Salin Prompt Opsi 2
+                        </button>
+                        <a href="https://gemini.google.com/app" target="_blank" class="btn-action" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); font-weight: 600;">
+                            🚀 Buka Gemini Web ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cara Pakai -->
+            <div style="background: #0d0f17; border: 1px solid #1e2436; border-radius: 12px; padding: 1.25rem;">
+                <h4 style="font-size: 0.9rem; color: #f0f2f8; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+                    💡 Cara Praktis Pakai di Gemini Web:
+                </h4>
+                <ol style="padding-left: 1.25rem; font-size: 0.82rem; color: #94a3b8; line-height: 1.6;">
+                    <li>Klik tombol <strong>📋 Salin Prompt Opsi 1</strong> atau <strong>Opsi 2</strong> di atas.</li>
+                    <li>Klik tombol <strong>🚀 Buka Gemini Web</strong> (membuka <a href="https://gemini.google.com/app" target="_blank" style="color: #38bdf8;">gemini.google.com</a>).</li>
+                    <li>Paste prompt di kotak chat Gemini, lalu kirim. Gemini akan membuatkan variasi gambar cover ebook yang tajam dan menjual!</li>
+                </ol>
+            </div>
 
         <?php endif; ?>
 

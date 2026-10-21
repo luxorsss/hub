@@ -7,6 +7,21 @@
 date_default_timezone_set('Asia/Jakarta');
 
 if (session_status() === PHP_SESSION_NONE) {
+    // Session tahan 90 hari (3 bulan)
+    $lifetime = 86400 * 90;
+    ini_set('session.gc_maxlifetime', $lifetime);
+    ini_set('session.cookie_lifetime', $lifetime);
+    if (PHP_VERSION_ID >= 70300) {
+        session_set_cookie_params([
+            'lifetime' => $lifetime,
+            'path' => '/',
+            'secure' => (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'),
+            'httponly' => true,
+            'samesite' => 'Lax'
+        ]);
+    } else {
+        session_set_cookie_params($lifetime, '/');
+    }
     session_start();
 }
 
