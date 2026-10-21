@@ -1,245 +1,245 @@
 [
-    {
-        "id": "broadcast-wa-senin",
-        "channel": "CRM Outreach",
-        "day": "Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, Minggu (Aktif Outreach DaQo)",
-        "funnel": "BOFU (Direct Outreach)",
-        "target_product": "Alumni Ihfadz\/DaQo",
-        "title": "SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)",
-        "hook": "SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)",
-        "slides": [],
-        "posts": [],
-        "stories": [],
-        "wa_message": "",
-        "outreach_messages": [
-            {
-                "title": "Pesan 1 (Broadcast Utama): Tanya Izin (Khusus Alumni eBook DaQo)",
-                "content": "Assalamu'alaikum Kak [Nama], ini Fadil dari EduMuslim yang dulu Kakak sempat pesan eBook DaQo 🙏\n\nSemoga urusan dan rezekinya selalu dilancarkan ya kak.\n\nSekadar info, sekarang EduMuslim rilis panduan praktis baru namanya \"eBook Qila\" — panduan melatih badan dan adab tidur sunnah Rasulullah ﷺ biar bisa bangun sepertiga malam dengan enteng tanpa rasa lemas.\n\nKira-kira Kakak berkenan saya kirimkan detail rangkumannya? 😊"
-            },
-            {
-                "title": "Balasan Skenario A: Jika Dibalas \"Mau\" \/ \"Boleh mas\" \/ \"Boleh kirim\" \/ \"Boleh\"",
-                "content": "Alhamdulillah, ini link rangkuman dan daftar isi lengkapnya ya Kak:\n👉 https:\/\/lp.edumuslim.my.id\/lpqila\n\nBisa dibaca santai kak. Kalau ada bab yang mau ditanyakan atau mau dibantu order, kabari saya di sini ya 🙌"
-            },
-            {
-                "title": "Balasan Skenario B: Jika Dibalas \"Berapa harganya mas?\"",
-                "content": "Harganya sangat terjangkau kak, cuma Rp47.000 (setara 1 cup kopi kekinian).\n\nSudah dapat buku utama Blueprint Bangun Malam + 3 bonus praktis (aplikasi tracker, ebook berkah waktu, dan ebook lunas).\n\nDetail dan form aksesnya ada di sini ya kak:\n👉 https:\/\/lp.edumuslim.my.id\/lpqila"
-            },
-            {
-                "title": "Skenario C: Jika Dibalas \"Nanti dulu ya mas \/ Belum butuh\"",
-                "content": "Siap kak, santai saja. Terima kasih banyak sudah merespon ya. Semoga berkah dan sehat selalu buat Kakak sekeluarga 🙏"
-            }
-        ],
-        "caption": "",
-        "raw_markdown": "# SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)\n\n- **Target Database Prioritas:** Alumni Pembeli **eBook DaQo** (Total: 122 kontak terverifikasi BELUM beli Qila)\n- **Kanal Eksekusi:** Otomatis via **PixelCRM WA Gateway \/ Onesender** (`https:\/\/app.edumuslim.my.id\/pixelcrm\/modules\/broadcast\/`)\n- **Pelacak di Hub:** Checklist tombol centang per batch 10 kontak (No Urut 1 - 10, dst)\n- **Metode:** Permission-Based Direct Outreach (Sapaan santai alumni DaQo, to the point, tanpa link di awal)\n- **Kapasitas Batch:** 10 kontak per batch\n- **Jadwal Eksekusi Hari Ini:**\n  - 🌅 **Batch 1 (No Urut 1 - 10):** Jam 09.00 - 12.00 WIB\n  - ☀️ **Batch 2 (No Urut 11 - 20):** Jam 13.00 - 15.00 WIB (Opsional)\n  - 🌇 **Batch 3 (No Urut 21 - 30):** Jam 16.00 - 18.00 WIB (Opsional)\n\n---\n\n### Pesan 1 (Broadcast Utama): Tanya Izin (Khusus Alumni eBook DaQo)\n```text\nAssalamu'alaikum Kak [Nama], ini Fadil dari EduMuslim yang dulu Kakak sempat pesan eBook DaQo 🙏\n\nSemoga urusan dan rezekinya selalu dilancarkan ya kak.\n\nSekadar info, sekarang EduMuslim rilis panduan praktis baru namanya \"eBook Qila\" — panduan melatih badan dan adab tidur sunnah Rasulullah ﷺ biar bisa bangun sepertiga malam dengan enteng tanpa rasa lemas.\n\nKira-kira Kakak berkenan saya kirimkan detail rangkumannya? 😊\n```\n\n---\n\n## 2. Naskah Chat 2: Balasan Setelah Mereka Menjawab\n\n### Balasan Skenario A: Jika Dibalas \"Mau\" \/ \"Boleh mas\" \/ \"Boleh kirim\" \/ \"Boleh\"\n*(Langsung kirim link LP tanpa berbelit-belit)*\n```text\nAlhamdulillah, ini link rangkuman dan daftar isi lengkapnya ya Kak:\n👉 https:\/\/lp.edumuslim.my.id\/lpqila\n\nBisa dibaca santai kak. Kalau ada bab yang mau ditanyakan atau mau dibantu order, kabari saya di sini ya 🙌\n```\n\n### Balasan Skenario B: Jika Dibalas \"Berapa harganya mas?\"\n*(Sampaikan nilai kontras kopi sebelum menyebut harga)*\n```text\nHarganya sangat terjangkau kak, cuma Rp47.000 (setara 1 cup kopi kekinian).\n\nSudah dapat buku utama Blueprint Bangun Malam + 3 bonus praktis (aplikasi tracker, ebook berkah waktu, dan ebook lunas).\n\nDetail dan form aksesnya ada di sini ya kak:\n👉 https:\/\/lp.edumuslim.my.id\/lpqila\n```\n\n### Skenario C: Jika Dibalas \"Nanti dulu ya mas \/ Belum butuh\"\n*(Empati santai, tidak mendebat, jaga silaturahmi)*\n```text\nSiap kak, santai saja. Terima kasih banyak sudah merespon ya. Semoga berkah dan sehat selalu buat Kakak sekeluarga 🙏\n```\n\n---\n\n## 3. Daftar Kontak Batch 1 (No Urut 1 - 10 Customer DaQo - Live PixelCRM):\n*(Diurutkan persis sesuai modul broadcast PixelCRM: `ORDER BY p.id ASC`)*\n1. **Surya Hadi Kusuma** (ID 65) - `6281295427326`\n2. **Toto Jatmiko** (ID 118) - `6287843292276`\n3. **UNTUNG** (ID 210) - `6281220151119`\n4. **Nurul Fajri** (ID 264) - `628119255943`\n5. **Cepi sugih** (ID 270) - `6283875003355`\n6. **Zaid** (ID 401) - `6285246476688`\n7. **Deris Arista Saputra** (ID 422) - `6285347438880`\n8. **Sumedi** (ID 425) - `6285892706070`\n9. **Amala Solecha** (ID 427) - `6282134067194`\n10. **Nina Lazmiza** (ID 533) - `6282389709001`\n",
-        "status": "ready_to_design",
-        "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
-    },
-    {
-        "id": "carousel-rabu",
-        "channel": "Carousel",
-        "day": "Rabu",
-        "funnel": "MOFU",
-        "target_product": "eBook Qila",
-        "title": "Dada Sering Sesak Hadapi Masalah Hidup?",
-        "hook": "Dada Sering Sesak Hadapi Masalah Hidup? Kenapa scrolling medsos berjam-jam gak bikin tenang?",
-        "slides": [
-            {
-                "slide_number": 1,
-                "header": "Hook Curhat",
-                "title": "Hook Curhat",
-                "content": "Dada sering sesak hadapi masalah hidup?\n\nPadahal kamu gak lagi lari maraton.",
-                "design_note": "Latar Charcoal Slate hening, headline kontras krem hangat (font tebal 54-64pt di tengah kanvas)."
-            },
-            {
-                "slide_number": 2,
-                "header": "Validasi Pelarian",
-                "title": "Validasi Pelarian",
-                "content": "Di siang hari kita sibuk scrolling cari pelarian.\n\nTapi pas malam hening, rasa cemas itu malah makin bising.",
-                "design_note": "Ruang kosong lapang, tipografi bernapas lega tanpa elemen berjejal."
-            },
-            {
-                "slide_number": 3,
-                "header": "Dalil Hadits",
-                "title": "Dalil Hadits",
-                "content": "Batin kita rindu sujud panjang di hadapan-Nya.\n\nNabi ﷺ bersabda:\n\"Wahai Bilal, istirahatkan jiwa kami dengan shalat.\"\n(HR. Abu Daud 4985)",
-                "design_note": "Teks hadits terjemahan rapi di tengah, nomor perawi dicetak kecil elegan di baris bawah."
-            },
-            {
-                "slide_number": 4,
-                "header": "Ruang Curhat Privat",
-                "title": "Ruang Curhat Privat",
-                "content": "Di sepertiga malam, saat bumi senyap...\n\nBeban yang seharian kamu pikul sendirian akhirnya punya tempat untuk ditumpahkan.",
-                "design_note": "Tipografi menenangkan batin, layout minimalis."
-            },
-            {
-                "slide_number": 5,
-                "header": "Pelepas Beban",
-                "title": "Pelepas Beban",
-                "content": "Melek jam 3 pagi, basuh wudhu, lalu bersujud.\n\nTiga ikatan malas di kepalamu luruh seketika, berganti ketenangan nyata.",
-                "design_note": "Aksen warna hijau sage lembut pada kata aksi wudhu dan sujud."
-            },
-            {
-                "slide_number": 6,
-                "header": "Ketenangan Batin",
-                "title": "Ketenangan Batin",
-                "content": "Masalahmu mungkin belum beres semua besok pagi.\n\nTapi hatimu sudah jauh lebih lapang dan gak merasa sendirian lagi.",
-                "design_note": "Tipografi teduh penuh harapan dan ketenangan."
-            },
-            {
-                "slide_number": 7,
-                "header": "CTA Konversi",
-                "title": "CTA Konversi",
-                "content": "Cara melatih ritme bangun malam yang menenangkan ada di eBook Qila.\n\nKetik \"TENANG\" di komentar ya.",
-                "design_note": "Mockup buku Ebook Qila minimalis di tengah, kata TENANG kontras tebal mencolok."
-            }
-        ],
-        "caption": "Dada sering sesak padahal gak kerja fisik berat? Geser 7 slide ini, lalu ketik \"TENANG\" di komentar ya.",
-        "status": "ready"
-    },
-    {
-        "id": "reels-rabu",
-        "channel": "Reels 2-Slide",
-        "day": "Rabu",
-        "funnel": "MOFU",
-        "target_product": "eBook Qila",
-        "title": "Naskah Reels 2-Slide: Tidur Miring ke Kanan",
-        "hook": "Tidur miring ke kanan. Kenapa Nabi ﷺ selalu tidur bertumpu pada lambung kanan?",
-        "slides": [
-            {
-                "slide_number": 1,
-                "header": "Hook Raksasa",
-                "title": "Hook Raksasa",
-                "content": "Tidur miring ke kanan.",
-                "design_note": "Font raksasa tebal krem 54-64pt di tengah, visual kamar tidur temaram minimalis."
-            },
-            {
-                "slide_number": 2,
-                "header": "3 Bukti Medis & Sunnah",
-                "title": "3 Bukti Medis & Sunnah",
-                "content": "Nabi ﷺ selalu tidur bertumpu pada sisi kanan tubuh (HR. Bukhari 247).\n\nSecara medis terbukti:\n1. Jantung bebas dari tekanan berat paru-paru kiri.\n2. Lambung mengalir lancar, cegah asam lambung naik.\n3. Saluran napas plong, bangun subuh gak lemas.\n\n(Detail adab tidur biologis ada di eBook Qila)",
-                "design_note": "Transisi ke foto cangkir air putih dan sajadah terlipat rapi."
-            }
-        ],
-        "caption": "Tidur telentang bikin ngorok, tengkurap dilarang Nabi ﷺ. Mau rahasia bangun bugar jam 3 pagi? Ketik \"QILA\" di komentar ya.",
-        "status": "ready"
-    },
-    {
-        "id": "story-rabu",
-        "channel": "Instagram Story",
-        "day": "Rabu",
-        "funnel": "MOFU",
-        "target_product": "eBook Qila",
-        "title": "Skenario 4-Slide Instagram Story (Rabu)",
-        "hook": "Pernah dada tiba-tiba sesak mikirin hidup? Polling & edukasi qiyamul lail.",
-        "slides": [
-            {
-                "slide_number": 1,
-                "header": "Story 1 (Pagi 07.30 WIB)",
-                "title": "Story 1 (Pagi 07.30 WIB)",
-                "content": "Stiker Polling:\nPernah dada tiba-tiba sesak mikirin hidup?\n\nPilihan A: Sering banget\nPilihan B: Alhamdulillah jarang",
-                "design_note": "Stiker polling kontras tinggi, background cangkir kopi\/air putih hangat."
-            },
-            {
-                "slide_number": 2,
-                "header": "Story 2 (Siang 12.30 WIB)",
-                "title": "Story 2 (Siang 12.30 WIB)",
-                "content": "Di siang hari kita sibuk cari distraksi: kerja maraton atau scrolling layar HP.\nTapi saat kamar hening di malam hari, bising di kepala balik lagi.\n\nNabi ﷺ kalau lagi ada masalah berat, beliau bilang ke Bilal:\n«أَرِحْنَا بِهَا يَا بِلَالُ»\n“Istirahatkan jiwa kami dengan shalat, wahai Bilal.” (HR. Abu Daud no. 4985)\n\nShalat malam menjadi tempat peristirahatan paling teduh untuk jiwa.",
-                "design_note": "Teks Arab elegan di tengah kanvas."
-            },
-            {
-                "slide_number": 3,
-                "header": "Story 3 (Sore 17.00 WIB)",
-                "title": "Story 3 (Sore 17.00 WIB)",
-                "content": "Curhat ke manusia kadang bikin nyesel atau malah dihakimi.\nTapi di sepertiga malam, saat seisi bumi senyap...\n\nKamu punya ruang paling aman buat tumpahkan air mata.\nMasalahmu mungkin belum selesai besok pagi, tapi hatimu sudah jauh lebih lapang.",
-                "design_note": "Foto langit sore teduh \/ sajadah terlipat."
-            },
-            {
-                "slide_number": 4,
-                "header": "Story 4 (Malam 20.30 WIB)",
-                "title": "Story 4 (Malam 20.30 WIB)",
-                "content": "Ingin bangun jam 3 pagi dengan hati tenang dan badan bugar tanpa tersiksa lemas?\n\nCara melatih jam biologis tidur dan adab qiyamul lail sudah saya tulis lengkap di eBook Qila.\n\nKlik tautan di bawah atau balas story ini ketik \"TENANG\", nanti saya kirim aksesnya ke DM ya 🙌\n\nStiker Tautan: Buka Panduan Qila 👇\nURL: https:\/\/lp.edumuslim.my.id\/lpqila",
-                "design_note": "Stiker link resmi https:\/\/lp.edumuslim.my.id\/lpqila terpasang jelas."
-            }
-        ],
-        "caption": "",
-        "status": "ready"
-    },
-    {
-        "id": "threads-rabu",
-        "channel": "Threads",
-        "day": "Rabu",
-        "funnel": "MOFU",
-        "target_product": "eBook Qila",
-        "title": "Utas Threads: Revenge Bedtime Procrastination",
-        "hook": "Badan sudah remuk tapi tangan tetap scrolling HP sampai jam 1 malam. Kenapa kita suka menyiksa diri sendiri?",
-        "slides": [
-            {
-                "slide_number": 1,
-                "header": "Post 1 (Hook Pembuka)",
-                "title": "Post 1 (Hook Pembuka)",
-                "content": "Badan sudah remuk, mata sudah perih, tapi tangan tetap scrolling layar HP sampai jam 1 malam.\n\nPsikologi menyebutnya: Revenge Bedtime Procrastination.\n\nKenapa kita suka menyiksa diri sendiri di atas kasur? 🧵👇",
-                "design_note": "Hook psikologis menusuk"
-            },
-            {
-                "slide_number": 2,
-                "header": "Post 2 (Akar Masalah)",
-                "title": "Post 2 (Akar Masalah)",
-                "content": "Di siang hari, seluruh waktu kita habis disita orang lain: tuntutan kerjaan, perintah atasan, urusan keluarga.\n\nPas malam tiba dan lampu kamar mati, alam bawah sadar kita memberontak: \"Ini satu-satunya waktu bebas milik saya.\"",
-                "design_note": "Validasi rasa frustrasi siang hari"
-            },
-            {
-                "slide_number": 3,
-                "header": "Post 3 (Dopamine Murah)",
-                "title": "Post 3 (Dopamine Murah)",
-                "content": "Akhirnya kita balas dendam dengan menukar jam tidur berharga demi dopamine murah dari medsos.\n\nHasilnya besok pagi? Kepala pening, shalat subuh terancam bablas, dan siklus lemas seharian berulang lagi.",
-                "design_note": "Konsekuensi lingkaran setan"
-            },
-            {
-                "slide_number": 4,
-                "header": "Post 4 (Solusi Sunnah)",
-                "title": "Post 4 (Solusi Sunnah)",
-                "content": "Nabi ﷺ punya cara memutus lingkaran setan ini:\n\nBeliau membenci tidur sebelum Isya dan membenci begadang mengobrol setelah Isya. (HR. Bukhari no. 568)\n\nMalam hari diciptakan untuk mengistirahatkan raga, agar batin kita siap bersua dengan Allah di sepertiga malam.",
-                "design_note": "Hadits penyejuk & rem malam"
-            },
-            {
-                "slide_number": 5,
-                "header": "Post 5 (Trigger Komentar)",
-                "title": "Post 5 (Trigger Komentar)",
-                "content": "Cara menata ulang jam tidur tanpa rasa tersiksa sudah saya rangkum bertahap di eBook Qila.\n\nMau panduannya? Balas utas ini ketik \"QILA\" ya. Semoga malam ini kita bisa tidur lebih tertib.",
-                "design_note": "Trigger komentar QILA"
-            }
-        ],
-        "caption": "",
-        "status": "ready"
-    },
-    {
-        "id": "grup-wa-rabu",
-        "channel": "Grup WhatsApp",
-        "day": "Rabu",
-        "funnel": "COMMUNITY",
-        "target_product": "None (Pure Sharing)",
-        "title": "Faedah Turath: Ketika Dada Tiba-Tiba Terasa Sempit (Ibnul Qayyim)",
-        "hook": "Rahasia Shalat Sebagai Pelapang Dada yang Sempit (Zadul Ma'ad Jilid 4, hlm. 304)",
-        "slides": [],
-        "caption": "",
-        "status": "ready",
-        "wa_message": "*Ketika Dada Tiba-Tiba Terasa Begitu Sempit...*\n\nLagi gak ada masalah besar, tapi dada tiba-tiba terasa sesak dan pikiran kalut.\n\nIbnul Qayyim Al-Jauziyyah رحمه الله dalam kitab _Zadul Ma'ad_ pernah menulis kalimat yang sangat indah tentang rahasia shalat:\n\n> _\"Shalat adalah penarik rezeki, penjaga nikmat, penolak bala, pengusir rasa malas, dan pelapang bagi dada yang sempit.\"_\n\nBeliau juga menjelaskan:\nBanyak orang mengira shalat itu cuma menggugurkan kewajiban. Padahal bagi orang yang paham, shalat adalah tempat peristirahatan jiwa dari hiruk-pikuk dunia.\n\nMakanya Nabi ﷺ bersabda:\n«وَجُعِلَتْ قُرَّةُ عَيْنِي فِي الصَّلَاةِ»\n_\"Dan dijadikan penyejuk hatiku berada di dalam shalat.\"_ (HR. Ahmad & An-Nasa'i)\n\nKalau siang ini dadamu terasa berat atau banyak pikiran numpuk...\nJangan buru-buru cari pelarian ke hal yang sia-sia.\n\nAmbil air wudhu, lalu hamparkan sajadahmu.\nTumpahkan semua bebanmu di sana.\n\n_Semoga Allah lapangkan setiap dada yang hari ini sedang memikul beban sendirian._",
-        "raw_content": "*Ketika Dada Tiba-Tiba Terasa Begitu Sempit...*\n\nLagi gak ada masalah besar, tapi dada tiba-tiba terasa sesak dan pikiran kalut.\n\nIbnul Qayyim Al-Jauziyyah رحمه الله dalam kitab _Zadul Ma'ad_ pernah menulis kalimat yang sangat indah tentang rahasia shalat:\n\n> _\"Shalat adalah penarik rezeki, penjaga nikmat, penolak bala, pengusir rasa malas, dan pelapang bagi dada yang sempit.\"_\n\nBeliau juga menjelaskan:\nBanyak orang mengira shalat itu cuma menggugurkan kewajiban. Padahal bagi orang yang paham, shalat adalah tempat peristirahatan jiwa dari hiruk-pikuk dunia.\n\nMakanya Nabi ﷺ bersabda:\n«وَجُعِلَتْ قُرَّةُ عَيْنِي فِي الصَّلَاةِ»\n_\"Dan dijadikan penyejuk hatiku berada di dalam shalat.\"_ (HR. Ahmad & An-Nasa'i)\n\nKalau siang ini dadamu terasa berat atau banyak pikiran numpuk...\nJangan buru-buru cari pelarian ke hal yang sia-sia.\n\nAmbil air wudhu, lalu hamparkan sajadahmu.\nTumpahkan semua bebanmu di sana.\n\n_Semoga Allah lapangkan setiap dada yang hari ini sedang memikul beban sendirian._"
-    },
-    {
-        "id": "cover-ebook-sisa-usia",
-        "channel": "Cover Ebook",
-        "day": "Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, Minggu (Aktif Setiap Hari)",
-        "funnel": "ASSET",
-        "target_product": "eBook Sisa Usia",
-        "title": "🎨 Prompt Cover Ebook: Sisa Usia (Gemini Web)",
-        "hook": "Prompt siap copas ke Gemini Web untuk generate cover buku Sisa Usia",
-        "slides": [],
-        "posts": [],
-        "stories": [],
-        "wa_message": "🎨 PROMPT GENERATE COVER EBOOK SISA USIA (GEMINI WEB \/ IMAGEN 3)\n\nSpesifikasi:\n- Headline: SISA USIA\n- Sub-headline: Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\n- Penulis: Fadil Muhammad\n- Tanpa logo\/tulisan EduMuslim\n- 100% tanpa gambar makhluk bernyawa\n\n--------------------------------------------------\nOPSI 1: Jam Pasir Emas & Fajar (Rekomendasi Utama)\n--------------------------------------------------\nA premium, bestselling book cover design for an Islamic self-improvement and spiritual book. Dark luxury aesthetic, deep midnight obsidian and charcoal background with subtle ethereal warm golden dawn light rays beaming from above. In the center, a minimalist glowing glass hourglass where glowing golden sand of time gently slips through, creating a calm yet urgent atmosphere. Elegant typography: at the top in large bold sophisticated white modern serif font reads \"SISA USIA\", below it in clean readable gold sans-serif font reads \"Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\", and at the very bottom in dignified small white font reads \"Fadil Muhammad\". No other text, no publisher logos, no animate faces, no living creatures, strictly clean, cinematic lighting, 8k resolution, photorealistic book cover mockup, award-winning editorial design, aspect ratio 2:3.\n\n--------------------------------------------------\nOPSI 2: Sinar Fajar Menembus Gelap (Minimalis)\n--------------------------------------------------\nA striking, highly marketable book cover design. Deep matte charcoal black canvas with an architectural sliver of warm ambient morning dawn light piercing through darkness. Minimalist, dignified, and serene spiritual atmosphere. High contrast clean layout: the main title in bold prominent elegant white typography reads \"SISA USIA\", sub-headline in crisp warm amber lettering reads \"Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\", at the bottom center cleanly written \"Fadil Muhammad\". Clean negative space, strictly zero illustrations of living beings or faces, premium texture, bestseller book layout, photorealistic 8k, aspect ratio 2:3.",
-        "raw_content": "🎨 PROMPT GENERATE COVER EBOOK SISA USIA (GEMINI WEB \/ IMAGEN 3)\n\nSpesifikasi:\n- Headline: SISA USIA\n- Sub-headline: Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\n- Penulis: Fadil Muhammad\n- Tanpa logo\/tulisan EduMuslim\n- 100% tanpa gambar makhluk bernyawa\n\n--------------------------------------------------\nOPSI 1: Jam Pasir Emas & Fajar (Rekomendasi Utama)\n--------------------------------------------------\nA premium, bestselling book cover design for an Islamic self-improvement and spiritual book. Dark luxury aesthetic, deep midnight obsidian and charcoal background with subtle ethereal warm golden dawn light rays beaming from above. In the center, a minimalist glowing glass hourglass where glowing golden sand of time gently slips through, creating a calm yet urgent atmosphere. Elegant typography: at the top in large bold sophisticated white modern serif font reads \"SISA USIA\", below it in clean readable gold sans-serif font reads \"Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\", and at the very bottom in dignified small white font reads \"Fadil Muhammad\". No other text, no publisher logos, no animate faces, no living creatures, strictly clean, cinematic lighting, 8k resolution, photorealistic book cover mockup, award-winning editorial design, aspect ratio 2:3.\n\n--------------------------------------------------\nOPSI 2: Sinar Fajar Menembus Gelap (Minimalis)\n--------------------------------------------------\nA striking, highly marketable book cover design. Deep matte charcoal black canvas with an architectural sliver of warm ambient morning dawn light piercing through darkness. Minimalist, dignified, and serene spiritual atmosphere. High contrast clean layout: the main title in bold prominent elegant white typography reads \"SISA USIA\", sub-headline in crisp warm amber lettering reads \"Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\", at the bottom center cleanly written \"Fadil Muhammad\". Clean negative space, strictly zero illustrations of living beings or faces, premium texture, bestseller book layout, photorealistic 8k, aspect ratio 2:3.",
-        "caption": "",
-        "status": "ready"
-    }
+  {
+    "id": "broadcast-wa-senin",
+    "channel": "CRM Outreach",
+    "day": "Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, Minggu (Aktif Outreach DaQo)",
+    "funnel": "BOFU (Direct Outreach)",
+    "target_product": "Alumni Ihfadz/DaQo",
+    "title": "SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)",
+    "hook": "SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)",
+    "slides": [],
+    "posts": [],
+    "stories": [],
+    "wa_message": "",
+    "outreach_messages": [
+      {
+        "title": "Pesan 1 (Broadcast Utama): Tanya Izin (Khusus Alumni eBook DaQo)",
+        "content": "Assalamu'alaikum Kak [Nama], ini Fadil dari EduMuslim yang dulu Kakak sempat pesan eBook DaQo 🙏\n\nSemoga urusan dan rezekinya selalu dilancarkan ya kak.\n\nSekadar info, sekarang EduMuslim rilis panduan praktis baru namanya \"eBook Qila\" — panduan melatih badan dan adab tidur sunnah Rasulullah ﷺ biar bisa bangun sepertiga malam dengan enteng tanpa rasa lemas.\n\nKira-kira Kakak berkenan saya kirimkan detail rangkumannya? 😊"
+      },
+      {
+        "title": "Balasan Skenario A: Jika Dibalas \"Mau\" / \"Boleh mas\" / \"Boleh kirim\" / \"Boleh\"",
+        "content": "Alhamdulillah, ini link rangkuman dan daftar isi lengkapnya ya Kak:\n👉 https://lp.edumuslim.my.id/lpqila\n\nBisa dibaca santai kak. Kalau ada bab yang mau ditanyakan atau mau dibantu order, kabari saya di sini ya 🙌"
+      },
+      {
+        "title": "Balasan Skenario B: Jika Dibalas \"Berapa harganya mas?\"",
+        "content": "Harganya sangat terjangkau kak, cuma Rp47.000 (setara 1 cup kopi kekinian).\n\nSudah dapat buku utama Blueprint Bangun Malam + 3 bonus praktis (aplikasi tracker, ebook berkah waktu, dan ebook lunas).\n\nDetail dan form aksesnya ada di sini ya kak:\n👉 https://lp.edumuslim.my.id/lpqila"
+      },
+      {
+        "title": "Skenario C: Jika Dibalas \"Nanti dulu ya mas / Belum butuh\"",
+        "content": "Siap kak, santai saja. Terima kasih banyak sudah merespon ya. Semoga berkah dan sehat selalu buat Kakak sekeluarga 🙏"
+      }
+    ],
+    "caption": "",
+    "raw_markdown": "# SOP & Naskah WhatsApp Outreach Hari Senin (19 Oktober 2026)\n\n- **Target Database Prioritas:** Alumni Pembeli **eBook DaQo** (Total: 122 kontak terverifikasi BELUM beli Qila)\n- **Kanal Eksekusi:** Otomatis via **PixelCRM WA Gateway / Onesender** (`https://app.edumuslim.my.id/pixelcrm/modules/broadcast/`)\n- **Pelacak di Hub:** Checklist tombol centang per batch 10 kontak (No Urut 1 - 10, dst)\n- **Metode:** Permission-Based Direct Outreach (Sapaan santai alumni DaQo, to the point, tanpa link di awal)\n- **Kapasitas Batch:** 10 kontak per batch\n- **Jadwal Eksekusi Hari Ini:**\n  - 🌅 **Batch 1 (No Urut 1 - 10):** Jam 09.00 - 12.00 WIB\n  - ☀️ **Batch 2 (No Urut 11 - 20):** Jam 13.00 - 15.00 WIB (Opsional)\n  - 🌇 **Batch 3 (No Urut 21 - 30):** Jam 16.00 - 18.00 WIB (Opsional)\n\n---\n\n### Pesan 1 (Broadcast Utama): Tanya Izin (Khusus Alumni eBook DaQo)\n```text\nAssalamu'alaikum Kak [Nama], ini Fadil dari EduMuslim yang dulu Kakak sempat pesan eBook DaQo 🙏\n\nSemoga urusan dan rezekinya selalu dilancarkan ya kak.\n\nSekadar info, sekarang EduMuslim rilis panduan praktis baru namanya \"eBook Qila\" — panduan melatih badan dan adab tidur sunnah Rasulullah ﷺ biar bisa bangun sepertiga malam dengan enteng tanpa rasa lemas.\n\nKira-kira Kakak berkenan saya kirimkan detail rangkumannya? 😊\n```\n\n---\n\n## 2. Naskah Chat 2: Balasan Setelah Mereka Menjawab\n\n### Balasan Skenario A: Jika Dibalas \"Mau\" / \"Boleh mas\" / \"Boleh kirim\" / \"Boleh\"\n*(Langsung kirim link LP tanpa berbelit-belit)*\n```text\nAlhamdulillah, ini link rangkuman dan daftar isi lengkapnya ya Kak:\n👉 https://lp.edumuslim.my.id/lpqila\n\nBisa dibaca santai kak. Kalau ada bab yang mau ditanyakan atau mau dibantu order, kabari saya di sini ya 🙌\n```\n\n### Balasan Skenario B: Jika Dibalas \"Berapa harganya mas?\"\n*(Sampaikan nilai kontras kopi sebelum menyebut harga)*\n```text\nHarganya sangat terjangkau kak, cuma Rp47.000 (setara 1 cup kopi kekinian).\n\nSudah dapat buku utama Blueprint Bangun Malam + 3 bonus praktis (aplikasi tracker, ebook berkah waktu, dan ebook lunas).\n\nDetail dan form aksesnya ada di sini ya kak:\n👉 https://lp.edumuslim.my.id/lpqila\n```\n\n### Skenario C: Jika Dibalas \"Nanti dulu ya mas / Belum butuh\"\n*(Empati santai, tidak mendebat, jaga silaturahmi)*\n```text\nSiap kak, santai saja. Terima kasih banyak sudah merespon ya. Semoga berkah dan sehat selalu buat Kakak sekeluarga 🙏\n```\n\n---\n\n## 3. Daftar Kontak Batch 1 (No Urut 1 - 10 Customer DaQo - Live PixelCRM):\n*(Diurutkan persis sesuai modul broadcast PixelCRM: `ORDER BY p.id ASC`)*\n1. **Surya Hadi Kusuma** (ID 65) - `6281295427326`\n2. **Toto Jatmiko** (ID 118) - `6287843292276`\n3. **UNTUNG** (ID 210) - `6281220151119`\n4. **Nurul Fajri** (ID 264) - `628119255943`\n5. **Cepi sugih** (ID 270) - `6283875003355`\n6. **Zaid** (ID 401) - `6285246476688`\n7. **Deris Arista Saputra** (ID 422) - `6285347438880`\n8. **Sumedi** (ID 425) - `6285892706070`\n9. **Amala Solecha** (ID 427) - `6282134067194`\n10. **Nina Lazmiza** (ID 533) - `6282389709001`\n",
+    "status": "ready_to_design",
+    "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
+  },
+  {
+    "id": "carousel-rabu",
+    "channel": "Carousel",
+    "day": "Rabu",
+    "funnel": "MOFU",
+    "target_product": "eBook Qila",
+    "title": "Dada Sering Sesak Hadapi Masalah Hidup?",
+    "hook": "Dada Sering Sesak Hadapi Masalah Hidup? Kenapa scrolling medsos berjam-jam gak bikin tenang?",
+    "slides": [
+      {
+        "slide_number": 1,
+        "header": "Hook Curhat",
+        "title": "Hook Curhat",
+        "content": "Dada sering sesak hadapi masalah hidup?\n\nPadahal kamu gak lagi lari maraton.",
+        "design_note": "Latar Charcoal Slate hening, headline kontras krem hangat (font tebal 54-64pt di tengah kanvas)."
+      },
+      {
+        "slide_number": 2,
+        "header": "Validasi Pelarian",
+        "title": "Validasi Pelarian",
+        "content": "Di siang hari kita sibuk scrolling cari pelarian.\n\nTapi pas malam hening, rasa cemas itu malah makin bising.",
+        "design_note": "Ruang kosong lapang, tipografi bernapas lega tanpa elemen berjejal."
+      },
+      {
+        "slide_number": 3,
+        "header": "Dalil Hadits",
+        "title": "Dalil Hadits",
+        "content": "Batin kita rindu sujud panjang di hadapan-Nya.\n\nNabi ﷺ bersabda:\n\"Wahai Bilal, istirahatkan jiwa kami dengan shalat.\"\n(HR. Abu Daud 4985)",
+        "design_note": "Teks hadits terjemahan rapi di tengah, nomor perawi dicetak kecil elegan di baris bawah."
+      },
+      {
+        "slide_number": 4,
+        "header": "Ruang Curhat Privat",
+        "title": "Ruang Curhat Privat",
+        "content": "Di sepertiga malam, saat bumi senyap...\n\nBeban yang seharian kamu pikul sendirian akhirnya punya tempat untuk ditumpahkan.",
+        "design_note": "Tipografi menenangkan batin, layout minimalis."
+      },
+      {
+        "slide_number": 5,
+        "header": "Pelepas Beban",
+        "title": "Pelepas Beban",
+        "content": "Melek jam 3 pagi, basuh wudhu, lalu bersujud.\n\nTiga ikatan malas di kepalamu luruh seketika, berganti ketenangan nyata.",
+        "design_note": "Aksen warna hijau sage lembut pada kata aksi wudhu dan sujud."
+      },
+      {
+        "slide_number": 6,
+        "header": "Ketenangan Batin",
+        "title": "Ketenangan Batin",
+        "content": "Masalahmu mungkin belum beres semua besok pagi.\n\nTapi hatimu sudah jauh lebih lapang dan gak merasa sendirian lagi.",
+        "design_note": "Tipografi teduh penuh harapan dan ketenangan."
+      },
+      {
+        "slide_number": 7,
+        "header": "CTA Konversi",
+        "title": "CTA Konversi",
+        "content": "Cara melatih ritme bangun malam yang menenangkan ada di eBook Qila.\n\nKetik \"TENANG\" di komentar ya.",
+        "design_note": "Mockup buku Ebook Qila minimalis di tengah, kata TENANG kontras tebal mencolok."
+      }
+    ],
+    "caption": "Dada sering sesak padahal gak kerja fisik berat? Geser 7 slide ini, lalu ketik \"TENANG\" di komentar ya.",
+    "status": "ready"
+  },
+  {
+    "id": "reels-rabu",
+    "channel": "Reels 2-Slide",
+    "day": "Rabu",
+    "funnel": "MOFU",
+    "target_product": "eBook Qila",
+    "title": "Naskah Reels 2-Slide: Tidur Miring ke Kanan",
+    "hook": "Tidur miring ke kanan. Kenapa Nabi ﷺ selalu tidur bertumpu pada lambung kanan?",
+    "slides": [
+      {
+        "slide_number": 1,
+        "header": "Hook Raksasa",
+        "title": "Hook Raksasa",
+        "content": "Tidur miring ke kanan.",
+        "design_note": "Font raksasa tebal krem 54-64pt di tengah, visual kamar tidur temaram minimalis."
+      },
+      {
+        "slide_number": 2,
+        "header": "3 Bukti Medis & Sunnah",
+        "title": "3 Bukti Medis & Sunnah",
+        "content": "Nabi ﷺ selalu tidur bertumpu pada sisi kanan tubuh (HR. Bukhari 247).\n\nSecara medis terbukti:\n1. Jantung bebas dari tekanan berat paru-paru kiri.\n2. Lambung mengalir lancar, cegah asam lambung naik.\n3. Saluran napas plong, bangun subuh gak lemas.\n\n(Detail adab tidur biologis ada di eBook Qila)",
+        "design_note": "Transisi ke foto cangkir air putih dan sajadah terlipat rapi."
+      }
+    ],
+    "caption": "Tidur telentang bikin ngorok, tengkurap dilarang Nabi ﷺ. Mau rahasia bangun bugar jam 3 pagi? Ketik \"QILA\" di komentar ya.",
+    "status": "ready"
+  },
+  {
+    "id": "story-rabu",
+    "channel": "Instagram Story",
+    "day": "Rabu",
+    "funnel": "MOFU",
+    "target_product": "eBook Qila",
+    "title": "Skenario 4-Slide Instagram Story (Rabu)",
+    "hook": "Pernah dada tiba-tiba sesak mikirin hidup? Polling & edukasi qiyamul lail.",
+    "slides": [
+      {
+        "slide_number": 1,
+        "header": "Story 1 (Pagi 07.30 WIB)",
+        "title": "Story 1 (Pagi 07.30 WIB)",
+        "content": "Stiker Polling:\nPernah dada tiba-tiba sesak mikirin hidup?\n\nPilihan A: Sering banget\nPilihan B: Alhamdulillah jarang",
+        "design_note": "Stiker polling kontras tinggi, background cangkir kopi/air putih hangat."
+      },
+      {
+        "slide_number": 2,
+        "header": "Story 2 (Siang 12.30 WIB)",
+        "title": "Story 2 (Siang 12.30 WIB)",
+        "content": "Di siang hari kita sibuk cari distraksi: kerja maraton atau scrolling layar HP.\nTapi saat kamar hening di malam hari, bising di kepala balik lagi.\n\nNabi ﷺ kalau lagi ada masalah berat, beliau bilang ke Bilal:\n«أَرِحْنَا بِهَا يَا بِلَالُ»\n“Istirahatkan jiwa kami dengan shalat, wahai Bilal.” (HR. Abu Daud no. 4985)\n\nShalat malam menjadi tempat peristirahatan paling teduh untuk jiwa.",
+        "design_note": "Teks Arab elegan di tengah kanvas."
+      },
+      {
+        "slide_number": 3,
+        "header": "Story 3 (Sore 17.00 WIB)",
+        "title": "Story 3 (Sore 17.00 WIB)",
+        "content": "Curhat ke manusia kadang bikin nyesel atau malah dihakimi.\nTapi di sepertiga malam, saat seisi bumi senyap...\n\nKamu punya ruang paling aman buat tumpahkan air mata.\nMasalahmu mungkin belum selesai besok pagi, tapi hatimu sudah jauh lebih lapang.",
+        "design_note": "Foto langit sore teduh / sajadah terlipat."
+      },
+      {
+        "slide_number": 4,
+        "header": "Story 4 (Malam 20.30 WIB)",
+        "title": "Story 4 (Malam 20.30 WIB)",
+        "content": "Ingin bangun jam 3 pagi dengan hati tenang dan badan bugar tanpa tersiksa lemas?\n\nCara melatih jam biologis tidur dan adab qiyamul lail sudah saya tulis lengkap di eBook Qila.\n\nKlik tautan di bawah atau balas story ini ketik \"TENANG\", nanti saya kirim aksesnya ke DM ya 🙌\n\nStiker Tautan: Buka Panduan Qila 👇\nURL: https://lp.edumuslim.my.id/lpqila",
+        "design_note": "Stiker link resmi https://lp.edumuslim.my.id/lpqila terpasang jelas."
+      }
+    ],
+    "caption": "",
+    "status": "ready"
+  },
+  {
+    "id": "threads-rabu",
+    "channel": "Threads",
+    "day": "Rabu",
+    "funnel": "MOFU",
+    "target_product": "eBook Qila",
+    "title": "Utas Threads: Revenge Bedtime Procrastination",
+    "hook": "Badan sudah remuk tapi tangan tetap scrolling HP sampai jam 1 malam. Kenapa kita suka menyiksa diri sendiri?",
+    "slides": [
+      {
+        "slide_number": 1,
+        "header": "Post 1 (Hook Pembuka)",
+        "title": "Post 1 (Hook Pembuka)",
+        "content": "Badan sudah remuk, mata sudah perih, tapi tangan tetap scrolling layar HP sampai jam 1 malam.\n\nPsikologi menyebutnya: Revenge Bedtime Procrastination.\n\nKenapa kita suka menyiksa diri sendiri di atas kasur? 🧵👇",
+        "design_note": "Hook psikologis menusuk"
+      },
+      {
+        "slide_number": 2,
+        "header": "Post 2 (Akar Masalah)",
+        "title": "Post 2 (Akar Masalah)",
+        "content": "Di siang hari, seluruh waktu kita habis disita orang lain: tuntutan kerjaan, perintah atasan, urusan keluarga.\n\nPas malam tiba dan lampu kamar mati, alam bawah sadar kita memberontak: \"Ini satu-satunya waktu bebas milik saya.\"",
+        "design_note": "Validasi rasa frustrasi siang hari"
+      },
+      {
+        "slide_number": 3,
+        "header": "Post 3 (Dopamine Murah)",
+        "title": "Post 3 (Dopamine Murah)",
+        "content": "Akhirnya kita balas dendam dengan menukar jam tidur berharga demi dopamine murah dari medsos.\n\nHasilnya besok pagi? Kepala pening, shalat subuh terancam bablas, dan siklus lemas seharian berulang lagi.",
+        "design_note": "Konsekuensi lingkaran setan"
+      },
+      {
+        "slide_number": 4,
+        "header": "Post 4 (Solusi Sunnah)",
+        "title": "Post 4 (Solusi Sunnah)",
+        "content": "Nabi ﷺ punya cara memutus lingkaran setan ini:\n\nBeliau membenci tidur sebelum Isya dan membenci begadang mengobrol setelah Isya. (HR. Bukhari no. 568)\n\nMalam hari diciptakan untuk mengistirahatkan raga, agar batin kita siap bersua dengan Allah di sepertiga malam.",
+        "design_note": "Hadits penyejuk & rem malam"
+      },
+      {
+        "slide_number": 5,
+        "header": "Post 5 (Trigger Komentar)",
+        "title": "Post 5 (Trigger Komentar)",
+        "content": "Cara menata ulang jam tidur tanpa rasa tersiksa sudah saya rangkum bertahap di eBook Qila.\n\nMau panduannya? Balas utas ini ketik \"QILA\" ya. Semoga malam ini kita bisa tidur lebih tertib.",
+        "design_note": "Trigger komentar QILA"
+      }
+    ],
+    "caption": "",
+    "status": "ready"
+  },
+  {
+    "id": "grup-wa-rabu",
+    "channel": "Grup WhatsApp",
+    "day": "Rabu",
+    "funnel": "COMMUNITY",
+    "target_product": "None (Pure Sharing)",
+    "title": "Faedah Turath: Ketika Dada Tiba-Tiba Terasa Sempit (Ibnul Qayyim)",
+    "hook": "Rahasia Shalat Sebagai Pelapang Dada yang Sempit (Zadul Ma'ad Jilid 4, hlm. 304)",
+    "slides": [],
+    "caption": "",
+    "status": "ready",
+    "wa_message": "*Ketika Dada Tiba-Tiba Terasa Begitu Sempit...*\n\nLagi gak ada masalah besar, tapi dada tiba-tiba terasa sesak dan pikiran kalut.\n\nIbnul Qayyim Al-Jauziyyah رحمه الله dalam kitab _Zadul Ma'ad_ pernah menulis kalimat yang sangat indah tentang rahasia shalat:\n\n> _\"Shalat adalah penarik rezeki, penjaga nikmat, penolak bala, pengusir rasa malas, dan pelapang bagi dada yang sempit.\"_\n\nBeliau juga menjelaskan:\nBanyak orang mengira shalat itu cuma menggugurkan kewajiban. Padahal bagi orang yang paham, shalat adalah tempat peristirahatan jiwa dari hiruk-pikuk dunia.\n\nMakanya Nabi ﷺ bersabda:\n«وَجُعِلَتْ قُرَّةُ عَيْنِي فِي الصَّلَاةِ»\n_\"Dan dijadikan penyejuk hatiku berada di dalam shalat.\"_ (HR. Ahmad & An-Nasa'i)\n\nKalau siang ini dadamu terasa berat atau banyak pikiran numpuk...\nJangan buru-buru cari pelarian ke hal yang sia-sia.\n\nAmbil air wudhu, lalu hamparkan sajadahmu.\nTumpahkan semua bebanmu di sana.\n\n_Semoga Allah lapangkan setiap dada yang hari ini sedang memikul beban sendirian._",
+    "raw_content": "*Ketika Dada Tiba-Tiba Terasa Begitu Sempit...*\n\nLagi gak ada masalah besar, tapi dada tiba-tiba terasa sesak dan pikiran kalut.\n\nIbnul Qayyim Al-Jauziyyah رحمه الله dalam kitab _Zadul Ma'ad_ pernah menulis kalimat yang sangat indah tentang rahasia shalat:\n\n> _\"Shalat adalah penarik rezeki, penjaga nikmat, penolak bala, pengusir rasa malas, dan pelapang bagi dada yang sempit.\"_\n\nBeliau juga menjelaskan:\nBanyak orang mengira shalat itu cuma menggugurkan kewajiban. Padahal bagi orang yang paham, shalat adalah tempat peristirahatan jiwa dari hiruk-pikuk dunia.\n\nMakanya Nabi ﷺ bersabda:\n«وَجُعِلَتْ قُرَّةُ عَيْنِي فِي الصَّلَاةِ»\n_\"Dan dijadikan penyejuk hatiku berada di dalam shalat.\"_ (HR. Ahmad & An-Nasa'i)\n\nKalau siang ini dadamu terasa berat atau banyak pikiran numpuk...\nJangan buru-buru cari pelarian ke hal yang sia-sia.\n\nAmbil air wudhu, lalu hamparkan sajadahmu.\nTumpahkan semua bebanmu di sana.\n\n_Semoga Allah lapangkan setiap dada yang hari ini sedang memikul beban sendirian._"
+  },
+  {
+    "id": "cover-ebook-sisa-usia",
+    "channel": "Cover Ebook",
+    "day": "Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, Minggu (Aktif Setiap Hari)",
+    "funnel": "ASSET",
+    "target_product": "eBook Sisa Usia",
+    "title": "🎨 Prompt Cover Ebook Anti-Slop: Sisa Usia (Gemini Web)",
+    "hook": "Prompt bebas AI slop (35mm editorial still life) siap copas ke Gemini Web",
+    "slides": [],
+    "posts": [],
+    "stories": [],
+    "wa_message": "🎨 PROMPT GENERATE COVER EBOOK SISA USIA (ANTI-SLOP EDITORIAL)\n\nSpesifikasi Wajib:\n- Headline: SISA USIA\n- Sub-headline: Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\n- Penulis: Fadil Muhammad\n- BRANDING: TANPA kata / logo EduMuslim\n\n---\n\nOPSI 1: JAM PASIR MATTE & SINAR PAGI (Fotografi Editorial 35mm — Urgensi Waktu)\n(Copy-paste ke Gemini Web):\n35mm editorial still-life book cover photograph, vertical 9:16 layout. Subject: An authentic vintage matte brass hourglass with subtle aged patina, sitting on dark rustic walnut wood. Inside, coarse natural desert sand is almost entirely in the bottom chamber; only a tiny trickle of single sand grains remains at the top. Lighting: Real directional morning sunlight streaming through an off-camera window at a low raking angle (chiaroscuro shadow falloff), catching natural atmospheric dust motes. Deep rich charcoal-black and umber shadows. Physical feel: Raw tactile textures, matte surfaces, realistic glass refraction, subtle film grain (Kodak Portra tones). Absolutely NO living beings, NO human silhouettes, NO faces. NO neon lighting, NO CGI look, NO magical sparkles, NO plastic glossy 3D renders. Typography: Title in large, dignified embossed gold foil serif typography: \"SISA USIA\". Sub-title in clean, crisp modern sans-serif: \"Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\". Author name at bottom center in tracked uppercase: \"FADIL MUHAMMAD\". Absolutely NO other publisher names or logos.\n\n---\n\nOPSI 2: DINDING BATU & FAJAR (Medium Format Minimalis — Bestseller Non-Fiksi)\n(Copy-paste ke Gemini Web):\nEditorial non-fiction book cover photograph, vertical 9:16 layout, minimalist aesthetic. Subject: A textured wall of deep slate-gray natural limestone with subtle, elegant Islamic geometric relief carved into the stone. A single shaft of warm, natural early dawn sunlight cuts vertically across the stone surface, highlighting the authentic chiselled stone texture. Color palette: Deep muted slate, dark umber, and a warm natural golden sunlight streak. Organic, earthy, quiet dignity. Physical feel: Shot on medium format camera, natural contrast, authentic material textures. Strictly ZERO living beings, NO human forms, NO animals. Avoid: neon gradients, futuristic glows, fantasy art, digital vector art, glossy plastic finishes. Typography: Large centered Title in heavy, premium gold leaf debossed serif: \"SISA USIA\". Sub-title in sharp, legible white minimalist typography: \"Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\". Bottom Author name: \"FADIL MUHAMMAD\". No other text or emblems.\n",
+    "raw_content": "🎨 PROMPT GENERATE COVER EBOOK SISA USIA (ANTI-SLOP EDITORIAL)\n\nSpesifikasi Wajib:\n- Headline: SISA USIA\n- Sub-headline: Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\n- Penulis: Fadil Muhammad\n- BRANDING: TANPA kata / logo EduMuslim\n\n---\n\nOPSI 1: JAM PASIR MATTE & SINAR PAGI (Fotografi Editorial 35mm — Urgensi Waktu)\n(Copy-paste ke Gemini Web):\n35mm editorial still-life book cover photograph, vertical 9:16 layout. Subject: An authentic vintage matte brass hourglass with subtle aged patina, sitting on dark rustic walnut wood. Inside, coarse natural desert sand is almost entirely in the bottom chamber; only a tiny trickle of single sand grains remains at the top. Lighting: Real directional morning sunlight streaming through an off-camera window at a low raking angle (chiaroscuro shadow falloff), catching natural atmospheric dust motes. Deep rich charcoal-black and umber shadows. Physical feel: Raw tactile textures, matte surfaces, realistic glass refraction, subtle film grain (Kodak Portra tones). Absolutely NO living beings, NO human silhouettes, NO faces. NO neon lighting, NO CGI look, NO magical sparkles, NO plastic glossy 3D renders. Typography: Title in large, dignified embossed gold foil serif typography: \"SISA USIA\". Sub-title in clean, crisp modern sans-serif: \"Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\". Author name at bottom center in tracked uppercase: \"FADIL MUHAMMAD\". Absolutely NO other publisher names or logos.\n\n---\n\nOPSI 2: DINDING BATU & FAJAR (Medium Format Minimalis — Bestseller Non-Fiksi)\n(Copy-paste ke Gemini Web):\nEditorial non-fiction book cover photograph, vertical 9:16 layout, minimalist aesthetic. Subject: A textured wall of deep slate-gray natural limestone with subtle, elegant Islamic geometric relief carved into the stone. A single shaft of warm, natural early dawn sunlight cuts vertically across the stone surface, highlighting the authentic chiselled stone texture. Color palette: Deep muted slate, dark umber, and a warm natural golden sunlight streak. Organic, earthy, quiet dignity. Physical feel: Shot on medium format camera, natural contrast, authentic material textures. Strictly ZERO living beings, NO human forms, NO animals. Avoid: neon gradients, futuristic glows, fantasy art, digital vector art, glossy plastic finishes. Typography: Large centered Title in heavy, premium gold leaf debossed serif: \"SISA USIA\". Sub-title in sharp, legible white minimalist typography: \"Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian\". Bottom Author name: \"FADIL MUHAMMAD\". No other text or emblems.\n",
+    "caption": "",
+    "status": "ready"
+  }
 ]
