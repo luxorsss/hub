@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preview: Sisa Usia - Ebook EduMuslim</title>
+    <title>Preview Ebook: SISA USIA — Fadil Muhammad</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #f8fafc;
+            background-color: #f5f4ef;
             color: #1e293b;
         }
         .arabic-text {
@@ -17,132 +19,152 @@
             line-height: 2.2;
         }
         @media print {
-            .no-print { display: none; }
-            body { background: white; }
-            .book-card { box-shadow: none; border: none; padding: 0; margin-bottom: 2rem; page-break-after: always; }
+            .no-print { display: none !important; }
+            body { background: white !important; }
+            .book-card { page-break-after: always; }
+            .chapter-cover { page-break-before: always; page-break-after: avoid; border: none !important; }
         }
     </style>
 </head>
 <body class="antialiased min-h-screen">
-    <!-- Top Floating Navigation -->
-    <header class="no-print sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200 px-4 py-3 shadow-sm">
+    <header class="no-print sticky top-0 z-50 bg-[#faf9f6]/95 backdrop-blur border-b border-gray-300 px-4 py-3 shadow-sm">
         <div class="max-w-4xl mx-auto flex items-center justify-between">
             <div>
-                <span class="text-xs font-bold text-amber-700 uppercase tracking-wider block">EduMuslim Ebook Live Preview</span>
-                <h1 class="text-lg font-extrabold text-gray-900 leading-tight">SISA USIA <span class="text-sm font-normal text-gray-600 hidden sm:inline">- Rahasia Menyelamatkan Akhir Hayat</span></h1>
+                <span class="text-xs font-bold text-amber-800 uppercase tracking-widest block">Format Bestseller Atomic Habits</span>
+                <h1 class="text-base font-extrabold text-gray-900 leading-tight">SISA USIA — Fadil Muhammad</h1>
             </div>
             <div class="flex items-center space-x-2">
-                <button onclick="window.print()" class="text-xs font-semibold px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg shadow-sm transition">
+                <button onclick="window.print()" class="text-xs font-semibold px-3 py-2 bg-gray-900 hover:bg-black text-white rounded-lg shadow-sm transition">
                     🖨️ Cetak / Simpan PDF
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Reading Container -->
-    <main class="max-w-3xl mx-auto px-4 py-8">
-        <!-- Book Cover / Hero -->
-        <div class="bg-gradient-to-br from-emerald-900 via-emerald-800 to-gray-900 text-white rounded-3xl p-8 md:p-12 mb-10 text-center shadow-2xl relative overflow-hidden">
-            <div class="inline-block bg-amber-400 text-emerald-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
-                Draft Naskah Resmi
-            </div>
-            <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-3 text-amber-300">SISA USIA</h1>
-            <p class="text-lg md:text-xl text-emerald-100 font-medium max-w-xl mx-auto italic">
+    <main class="max-w-3xl mx-auto px-4 py-10">
+        <!-- COVER UTAMA GAYA ATOMIC HABITS -->
+        <div class="bg-[#faf9f5] border border-gray-300 rounded-3xl p-8 md:p-16 mb-14 text-center shadow-md relative overflow-hidden">
+            <span class="text-xs font-bold tracking-widest text-gray-500 uppercase block mb-6">BUKU PANDUAN PRAKTIS</span>
+            
+            <h1 class="text-5xl md:text-6xl font-black text-gray-950 tracking-tight mb-4">SISA USIA</h1>
+            
+            <p class="text-base md:text-lg text-gray-700 font-medium max-w-lg mx-auto mb-8">
                 Rahasia Menyelamatkan Akhir Hayat Meski Masa Muda Penuh Kelalaian
             </p>
-            <div class="mt-8 pt-6 border-t border-emerald-700/60 flex justify-center items-center space-x-6 text-sm text-emerald-200">
-                <span>Penulis: <strong>Fadil Muhammad</strong></span>
-                <span>•</span>
-                <span>Penerbit: <strong>EduMuslim</strong></span>
+
+            <!-- Abstract Dots Arc Metaphor -->
+            <svg width="260" height="70" viewBox="0 0 260 70" fill="none" class="mx-auto my-8">
+                <circle cx="20" cy="55" r="3" fill="#cbd5e1"/>
+                <circle cx="45" cy="50" r="3" fill="#cbd5e1"/>
+                <circle cx="70" cy="44" r="3.5" fill="#cbd5e1"/>
+                <circle cx="95" cy="38" r="4" fill="#94a3b8"/>
+                <circle cx="120" cy="31" r="4.5" fill="#64748b"/>
+                <circle cx="145" cy="24" r="5.5" fill="#d97706"/>
+                <circle cx="175" cy="18" r="7" fill="#f59e0b"/>
+                <circle cx="210" cy="18" r="9" fill="#f59e0b" filter="drop-shadow(0 4px 12px rgba(245, 158, 11, 0.5))"/>
+                <circle cx="245" cy="24" r="11" fill="#b45309" filter="drop-shadow(0 4px 12px rgba(180, 83, 9, 0.4))"/>
+            </svg>
+
+            <div class="mt-8 pt-6 border-t border-gray-200 flex justify-center items-center text-xs tracking-widest uppercase font-bold text-gray-800">
+                <span>FADIL MUHAMMAD</span>
             </div>
         </div>
 
-        <!-- Contents -->
         
-            <section class="book-card bg-white shadow-xl shadow-gray-100 border border-gray-200/70 rounded-2xl p-6 md:p-12 mb-12">
-                <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between">
-                    <span class="text-xs font-mono text-gray-600 bg-gray-100 px-2 py-1 rounded">📄 kata-pengantar.md</span>
-                    <span class="text-xs text-emerald-700 font-semibold bg-emerald-50 px-2.5 py-1 rounded-full">Draft Terkini</span>
+            <section class="book-card mb-12">
+                
+                <div class="chapter-cover bg-[#faf9f5] border border-gray-200 rounded-2xl p-6 md:p-10 mb-8 text-center shadow-sm">
+                    <span class="text-xs font-extrabold tracking-widest text-gray-500 uppercase">PEMBUKA</span>
+                    <h2 class="text-2xl md:text-3xl font-black text-gray-950 tracking-tight mt-2">KATA PENGANTAR</h2>
                 </div>
-                <span class='text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-amber-100 text-amber-800 rounded-full inline-block mb-2'>Kata Pengantar</span>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Banyak orang dari kalangan kaum muslimin yang berharap di akhir hidupnya bisa husnul khatimah.</p>
+                
+                <div class="bg-white shadow-sm border border-gray-200/80 rounded-2xl p-6 md:p-12">
+                    <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between no-print">
+                        <span class="text-xs font-mono text-gray-500">📄 kata-pengantar.md</span>
+                        <span class="text-xs text-amber-800 font-semibold bg-amber-50 px-2.5 py-1 rounded-full">Selesai Ditulis</span>
+                    </div>
+                    <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Banyak orang dari kalangan kaum muslimin yang berharap di akhir hidupnya bisa husnul khatimah.</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tapi kebanyakan dari mereka menghabiskan sisa harinya dengan scrolling HP tanpa henti. Dan tidak sedikit juga yang menunda taubat dengan alasan: &quot;Nanti saja kalau sudah tua.&quot;</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jika Anda orang yang mendambakan sisa umur yang berkah dan penuh pahala di hadapan Allah, maka selamat, Anda diberi taufik oleh Allah untuk menginginkan kebaikan.</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Buku ini berisi intisari yang sudah saya pelajari, renungkan, dan rangkum untuk diri saya pribadi dan kaum muslimin, tentu semua atas izin dari Allah ﷻ.</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Berhasil disini maksudnya:</p>
-<div class="flex items-start my-2"><span class="font-bold text-amber-700 mr-2">1.</span><span>Batin Anda merasa tenang dan bebas dari rasa bersalah masa lalu</span></div>
-<div class="flex items-start my-2"><span class="font-bold text-amber-700 mr-2">2.</span><span>Anda memiliki sistem amalan harian yang ringan tapi bernilai raksasa di sisi Allah</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">1.</span><span>Batin Anda merasa tenang dan bebas dari rasa bersalah masa lalu</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">2.</span><span>Anda memiliki sistem amalan harian yang ringan tapi bernilai raksasa di sisi Allah</span></div>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Semoga setelah Anda menerapkan ilmu di buku ini, sisa hidup Anda menjadi masa-masa paling berkah dan menjadi saksi kebaikan di akhirat kelak. Aamiin.</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Di akhir saya berpesan untuk tidak menyebarluaskan buku ini secara gratis.</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ada pembaca lain yang merasa terdzolimi karena mereka harus mengeluarkan uang untuk mendapat buku ini.</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ingat, berkah adalah hal yang penting dalam hidup kita.</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jika Anda sekarang membaca ebook ini secara ilegal, Anda bisa lakukan salah satu dari 2 hal berikut:</p>
-<div class="flex items-start my-2"><span class="font-bold text-amber-700 mr-2">1.</span><span>Tutup ebook ini dan hapus filenya</span></div>
-<div class="flex items-start my-2"><span class="font-bold text-amber-700 mr-2">2.</span><span>Halalkan ebook ini dengan membelinya disini</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">1.</span><span>Tutup ebook ini dan hapus filenya</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">2.</span><span>Halalkan ebook ini dengan membelinya disini</span></div>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Selamat membaca dan semoga bermanfaat.</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Barakallahu fiik</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Fadil Muhammad</p>
+                </div>
             </section>
             
-            <section class="book-card bg-white shadow-xl shadow-gray-100 border border-gray-200/70 rounded-2xl p-6 md:p-12 mb-12">
-                <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between">
-                    <span class="text-xs font-mono text-gray-600 bg-gray-100 px-2 py-1 rounded">📄 pendahuluan.md</span>
-                    <span class="text-xs text-emerald-700 font-semibold bg-emerald-50 px-2.5 py-1 rounded-full">Draft Terkini</span>
+            <section class="book-card mb-12">
+                
+                <div class="chapter-cover bg-[#faf9f5] border border-gray-200 rounded-2xl p-8 md:p-14 mb-8 text-center shadow-sm">
+                    <span class="text-xs font-extrabold tracking-widest text-amber-800 uppercase bg-amber-100/80 px-3 py-1 rounded-full inline-block">BAB 01</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-950 tracking-tight mt-4 mb-2">HAMPIR SAMPAI</h2>
+                    <svg width="240" height="46" viewBox="0 0 240 46" fill="none" class="mx-auto my-6">
+  <circle cx="15" cy="23" r="3" fill="#cbd5e1"/>
+  <circle cx="35" cy="23" r="3" fill="#cbd5e1"/>
+  <circle cx="55" cy="23" r="3.5" fill="#cbd5e1"/>
+  <circle cx="75" cy="23" r="3.5" fill="#94a3b8"/>
+  <circle cx="95" cy="23" r="4" fill="#94a3b8"/>
+  <circle cx="115" cy="23" r="4" fill="#64748b"/>
+  <circle cx="135" cy="23" r="4.5" fill="#475569"/>
+  <circle cx="155" cy="23" r="5.5" fill="#d97706"/>
+  <circle cx="178" cy="23" r="7" fill="#f59e0b"/>
+  <circle cx="205" cy="23" r="9.5" fill="#f59e0b" filter="drop-shadow(0 2px 8px rgba(245, 158, 11, 0.45))"/>
+  <line x1="228" y1="10" x2="228" y2="36" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
                 </div>
-                <span class='text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-amber-100 text-amber-800 rounded-full inline-block mb-2'>Pendahuluan</span>
-<h2 class='text-2xl md:text-3xl font-extrabold text-gray-900 mb-6'>Titik Balik Sebelum Pintu Tertutup</h2>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Setiap kita pasti pernah melakukan kesalahan di masa lalu.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ada masa-masa di mana kita begitu lalai, begitu tenggelam dalam kesibukan dunia, hingga shalat sering tertunda dan Al-Qur&#x27;an berdebu di sudut lemari.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Dan ketika umur mulai bertambah—ketika rambut putih mulai muncul satu per satu, tenaga tidak sekuat dulu, atau kabar wafatnya teman sebaya mulai sering terdengar di grup WhatsApp—ada rasa cemas yang tiba-tiba menyelinap di dada:</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">&quot;Apakah dosa-dosa masa lalu saya bisa diampuni?&quot;</em></p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">&quot;Apakah sisa umur saya ini masih cukup untuk mengejar ketertinggalan?&quot;</em></p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Untuk itulah buku ini ada di hadapan Anda.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Buku ini bukan ditulis untuk menghakimi masa lalu Anda.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Buku ini ditulis untuk merangkul Anda, menenangkan hati yang gundah, dan menunjukkan satu kabar gembira yang luar biasa besar dari Allah dan Rasul-Nya:</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bahwa Allah tidak pernah melihat seberapa kelam masa lalu seorang hamba ketika dia mau bersungguh-sungguh memperbaiki sisa umurnya.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Dalam Islam, garis akhir adalah penentu segalanya.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Rasulullah ﷺ bersabda:</p>
-<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-emerald-950 bg-emerald-50/50 p-4 rounded-lg border border-emerald-100' dir='rtl'>وَإِنَّمَا الأَعْمَالُ بِالْخَوَاتِيمِ</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Sesungguhnya setiap amalan itu dinilai dari akhirnya.&quot; (HR. Bukhari No. 6607)</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Di dalam buku ini, Anda akan mempelajari rahasia bagaimana sisa umur yang singkat—bahkan jika tinggal beberapa bulan atau beberapa tahun lagi—bisa menghapus tumpukan dosa puluhan tahun yang lalu, dan mengubah catatan akhir hidup Anda menjadi husnul khatimah.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jangan biarkan rasa putus asa membuat Anda tetap diam di tempat.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mari kita mulai perjalanan ini bersama-sama, selangkah demi selangkah, dengan penuh harap akan rahmat Allah ﷻ.</p>
-            </section>
-            
-            <section class="book-card bg-white shadow-xl shadow-gray-100 border border-gray-200/70 rounded-2xl p-6 md:p-12 mb-12">
-                <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between">
-                    <span class="text-xs font-mono text-gray-600 bg-gray-100 px-2 py-1 rounded">📄 bab-1.md</span>
-                    <span class="text-xs text-emerald-700 font-semibold bg-emerald-50 px-2.5 py-1 rounded-full">Draft Terkini</span>
-                </div>
-                <span class='text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-amber-100 text-amber-800 rounded-full inline-block mb-2'>Bab 1</span>
-<h2 class='text-2xl md:text-3xl font-extrabold text-gray-900 mb-6'>Tamparan 60 Tahun & Ilusi "Masih Banyak Waktu"</h2>
-<p class='text-lg font-semibold text-amber-900 my-4 pl-3 border-l-2 border-amber-400'>Bukankah ajal itu rahasia Allah?</p>
-<p class='text-lg font-semibold text-amber-900 my-4 pl-3 border-l-2 border-amber-400'>Kalau ajal itu rahasia Allah, apa perlu kita pusing memikirkannya sekarang?</p>
+                
+                <div class="bg-white shadow-sm border border-gray-200/80 rounded-2xl p-6 md:p-12">
+                    <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between no-print">
+                        <span class="text-xs font-mono text-gray-500">📄 bab-1.md</span>
+                        <span class="text-xs text-amber-800 font-semibold bg-amber-50 px-2.5 py-1 rounded-full">Selesai Ditulis</span>
+                    </div>
+                    <p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Bukankah ajal itu rahasia Allah?</p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Kalau ajal itu rahasia Allah, apa perlu kita pusing memikirkannya sekarang?</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kita akan bahas disini.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Memang benar, ajal adalah perkara gaib yang disimpan rapat oleh Allah ﷻ.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tidak ada satu manusia pun yang tahu apa yang akan terjadi besok, dan tidak ada yang tahu di tanah mana dia akan meninggal dunia.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Allah ﷻ berfirman:</p>
-<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-emerald-950 bg-emerald-50/50 p-4 rounded-lg border border-emerald-100' dir='rtl'>وَمَا تَدْرِي نَفْسٌ مَاذَا تَكْسِبُ غَدًا ۖ وَمَا تَدْرِي نَفْسٌ بِأَيِّ أَرْضٍ تَمُوتُ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Memang benar, kapan kita meninggal adalah rahasia mutlak Allah ﷻ. Tidak ada satu orang pun yang tahu besok dia masih hidup atau tidak.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tapi justru karena rahasia itulah, memikirkan kematian jadi hal yang sangat mendesak.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Saya pernah mengalami satu kejadian yang sangat membekas di hati saya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Waktu itu hari Ahad. Sekitar jam 10 pagi, saya ikut menshalatkan jenazah seorang warga.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Selesai pemakaman, kami pulang dan melanjutkan aktivitas seperti biasa.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ternyata sore harinya, pas selesai shalat Ashar di masjid, ada pengumuman lelayu lagi. Kami berdiri lagi merapatkan shaf untuk shalat jenazah yang kedua.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Belum selesai rasa kaget saya, keesokan harinya, di hari Senin setelah shalat Maghrib, kami kembali berdiri menshalatkan jenazah yang ketiga.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bayangkan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Dalam rentang waktu tidak sampai dua hari, tiga kali saya berdiri di depan keranda jenazah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tiga orang yang kemarinnya mungkin masih punya rencana panjang untuk minggu depan, bulan depan, atau tahun depan. Tiba-tiba semua rencana itu terputus begitu saja.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kematian tidak pernah menunggu kita siap. Dia datang tanpa ketuk pintu dan tanpa pemberitahuan.</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bukan hanya masalah waktu, tempat kematian pun adalah rahasia mutlak Allah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Saya mengenal seseorang yang asalnya tinggal di daerah yang sangat jauh di luar pulau.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Suatu hari, karena ada suatu urusan, beliau pindah dan menetap di tanah Jawa. Beliau baru tinggal di sini selama beberapa bulan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Siapa sangka, kepindahannya menyeberang pulau itu ternyata adalah langkah kakinya menjemput liang kuburnya sendiri. Baru beberapa bulan tinggal di Jawa, Allah memanggil nyawanya di tanah ini.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kejadian ini persis seperti yang Allah tegaskan di dalam Al-Qur&#x27;an:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>وَمَا تَدْرِي نَفْسٌ بِأَيِّ أَرْضٍ تَمُوتُ</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Dan tidak ada seorang pun yang dapat mengetahui (dengan pasti) apa yang akan dikerjakannya besok. Dan tidak ada seorang pun yang dapat mengetahui di bumi mana dia akan mati.&quot; (QS. Luqman: 34)</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tapi justru karena kita tidak tahu kapan waktu kita habis, memikirkan sisa umur menjadi hal yang sangat penting.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Coba perhatikan di sekitar kita hari ini.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Betapa sering kita mendengar kabar kematian yang datang tiba-tiba.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kemarin orangnya masih terlihat sangat bugar berolahraga, tiba-tiba pagi ini dikabarkan sudah wafat.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kemarin dia baru saja diangkat menjadi pejabat atau baru membeli rumah baru, tahu-tahu sore harinya nyawanya sudah dipanggil.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Seorang keluar dari pintu rumahnya tanpa terbetik sedikit pun di pikirannya bahwa hari itu adalah hari terakhirnya di dunia.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Nabi Muhammad ﷺ pernah mengingatkan bahwa salah satu tanda dekatnya hari kiamat adalah banyaknya <em class="italic text-gray-800 font-medium">Mautul Faja&#x27;ah</em> (kematian yang datang mendadak).</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Maka betapa ruginya orang yang terus menunda-nunda taubat dengan anggapan: &quot;Saya masih muda, nanti saja kalau sudah pensiun.&quot;</p>
-<hr class='my-8 border-amber-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Dan tidak ada seorang pun yang dapat mengetahui di bumi mana dia akan mati.&quot; (QS. Luqman: 34)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Nabi Muhammad ﷺ juga pernah bersabda:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>إِذَا قَضَى اللَّهُ لِعَبْدٍ أَنْ يَمُوتَ بِأَرْضٍ جَعَلَ لَهُ إِلَيْهَا حَاجَةً</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Jika Allah telah menetapkan kematian seorang hamba di suatu negeri, maka Allah akan jadikan ada suatu kebutuhan baginya untuk pergi ke tempat tersebut.&quot; (HR. Tirmidzi No. 2146)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Terkadang kita merasa tanah kubur kita masih jauh, padahal kaki kita sendiri yang sedang melangkah mendatanginya.</p>
+<hr class='my-8 border-gray-200'>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ada sebuah kisah yang sangat menampar hati saya.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kisah ini diceritakan oleh para ulama tentang seorang tabi&#x27;in yang mulia bernama Al-Fudhail bin &#x27;Iyadh rahimahullah.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Suatu hari, beliau bertemu dengan seorang kakek tua, lalu Al-Fudhail bertanya kepadanya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kisah ini diceritakan para ulama tentang seorang tabi&#x27;in yang mulia bernama Al-Fudhail bin &#x27;Iyadh rahimahullah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Suatu hari beliau bertemu dengan seorang kakek tua, lalu Al-Fudhail bertanya kepadanya:</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Sudah berapa umurmu sekarang?&quot;</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Orang tua itu menjawab: &quot;Enam puluh tahun.&quot;</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mendengar jawaban itu, Al-Fudhail bin &#x27;Iyadh berkata:</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Engkau sejak enam puluh tahun yang lalu sudah mulai berjalan menuju Rabbmu, dan sebentar lagi engkau hampir sampai.&quot;</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mendengar kalimat tersebut, orang tua itu tersentak dan gemetar, lalu ia berucap:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mendengar kalimat itu, orang tua itu tersentak dan gemetar, lalu ia berucap:</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Inna lillahi wa inna ilaihi raji&#x27;un...&quot;</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Al-Fudhail kemudian bertanya lagi:</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Tahukah engkau apa makna kalimat yang baru saja engkau ucapkan?&quot;</p>
@@ -154,22 +176,397 @@
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Kalau begitu, apa solusinya wahai Abu Ali?&quot;</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Al-Fudhail tersenyum dan memberikan jawaban yang sangat melegakan hati:</p>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Solusinya sangat mudah...&quot;</p>
-<hr class='my-8 border-amber-200'>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jawaban dan rahasia solusi dari Al-Fudhail bin &#x27;Iyadh inilah yang akan menjadi kunci utama pembahasan kita di Bab 2.</p>
-<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tapi sebelum kita melangkah ke bab berikutnya, mari kita sejenak berhenti dan merenungi diri kita masing-masing.</p>
-<hr class='my-8 border-amber-200'>
-<div class='worksheet p-6 my-6 rounded-xl border-2 border-emerald-300 bg-emerald-50'><h3 class='text-xl font-bold text-emerald-800 mb-4'>Lembar Evaluasi Diri (Bab 1)</h3>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jawaban dan rahasia solusi dari Al-Fudhail bin &#x27;Iyadh inilah yang akan kita bedah di Bab 2.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tapi sebelum lanjut ke bab berikutnya, mari sejenak kita evaluasi diri kita masing-masing.</p>
+<hr class='my-8 border-gray-200'>
+<div class='worksheet p-6 my-6 rounded-xl border border-amber-300/80 bg-[#fffdfa] shadow-sm'><h3 class='text-lg font-bold text-amber-900 mb-3'>Lembar Evaluasi Diri (Bab 1)</h3>
 <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ambil waktu hening 2 menit, lalu jawab pertanyaan berikut di hati Anda:</p>
-<div class="flex items-start my-2"><span class="font-bold text-amber-700 mr-2">1.</span><span>Berapa usia Anda saat membaca halaman ini?</span></div>
-<div class="flex items-start my-2"><span class="font-bold text-amber-700 mr-2">2.</span><span>Jika rata-rata umur umat Nabi Muhammad ﷺ adalah antara 60 sampai 70 tahun, berapa estimasi tahun yang masih tersisa untuk Anda?</span></div>
-<div class="flex items-start my-2"><span class="font-bold text-amber-700 mr-2">3.</span><span>Andai malam ini Allah memanggil nama Anda, amalan apa yang paling Anda banggakan untuk Anda tunjukkan di hadapan-Nya?</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">1.</span><span>Berapa usia Anda saat membaca halaman ini?</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">2.</span><span>Jika rata-rata umur umat Nabi Muhammad ﷺ adalah antara 60 sampai 70 tahun, berapa estimasi tahun yang masih tersisa untuk Anda?</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">3.</span><span>Andai malam ini giliran nama Anda yang diumumkan di pengeras suara masjid, bekal apa yang sudah Anda siapkan untuk menghadap Allah?</span></div>
+                </div>
+            </section>
+            
+            <section class="book-card mb-12">
+                
+                <div class="chapter-cover bg-[#faf9f5] border border-gray-200 rounded-2xl p-8 md:p-14 mb-8 text-center shadow-sm">
+                    <span class="text-xs font-extrabold tracking-widest text-amber-800 uppercase bg-amber-100/80 px-3 py-1 rounded-full inline-block">BAB 02</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-950 tracking-tight mt-4 mb-2">KAIDAH EMAS</h2>
+                    <svg width="220" height="66" viewBox="0 0 220 66" fill="none" class="mx-auto my-6">
+  <path d="M 20 54 Q 110 6 195 36" stroke="#f59e0b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="35" cy="50" r="3" fill="#cbd5e1"/>
+  <circle cx="60" cy="44" r="3" fill="#cbd5e1"/>
+  <circle cx="85" cy="38" r="3.5" fill="#94a3b8"/>
+  <circle cx="110" cy="24" r="5" fill="#f59e0b"/>
+  <circle cx="138" cy="23" r="6" fill="#f59e0b"/>
+  <circle cx="165" cy="28" r="7.5" fill="#d97706"/>
+  <circle cx="195" cy="36" r="9" fill="#b45309" filter="drop-shadow(0 2px 8px rgba(217, 119, 6, 0.45))"/>
+</svg>
+                </div>
+                
+                <div class="bg-white shadow-sm border border-gray-200/80 rounded-2xl p-6 md:p-12">
+                    <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between no-print">
+                        <span class="text-xs font-mono text-gray-500">📄 bab-2.md</span>
+                        <span class="text-xs text-amber-800 font-semibold bg-amber-50 px-2.5 py-1 rounded-full">Selesai Ditulis</span>
+                    </div>
+                    <p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Mungkinkah dosa maksiat puluhan tahun lunas hanya dengan sisa umur yang tinggal sedikit?</p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Pernahkah Anda menatap cermin di tengah malam, lalu tiba-tiba terlintas rasa bersalah yang teramat dalam?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Masa muda yang dulu terasa gagah, ternyata habis untuk hal-hal yang membuat malu jika dibuka di hadapan Allah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Lalu syaitan meniupkan satu jebakan yang sangat halus ke telinga kita:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">&quot;Sudahlah... dosamu sudah terlanjur segunung. Umurmu sekarang sudah berkepala empat. Mana mungkin bisa mengejar derajat orang-orang sholeh yang dari kecil sudah taat?&quot;</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jebakan rasa putus asa inilah racun yang paling mematikan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Padahal, jika Anda tahu betapa mahalnya nilai sisa umur di mata Allah, Anda tidak akan menyia-nyiakan walau hanya satu detik.</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kita lanjutkan dialog Al-Fudhail bin &#x27;Iyadh dengan kakek berusia 60 tahun di Bab 1 tadi.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ketika kakek itu menyadari dirinya sudah berjalan 60 tahun menuju Allah dan hampir sampai di garis akhir, ia ketakutan dan bertanya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Kalau begitu, apa solusinya wahai Abu Ali?&quot;</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Al-Fudhail bin &#x27;Iyadh rahimahullah menjawab dengan sebuah kaidah emas yang sangat menyejukkan dada:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>تُحْسِنُ فِيمَا بَقِيَ، يُغْفَرْ لَكَ مَا مَضَى وَمَا بَقِيَ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Engkau berbuat baiklah pada sisa umurmu yang ada, niscaya dosa-dosamu di masa lalu dan di sisa umurmu akan diampuni.&quot;</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Perhatikan kalimat di atas.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Al-Fudhail tidak menyuruh kakek itu kembali ke masa mudanya untuk mengulang waktu. Beliau tidak menyuruh kakek itu menangisi penyesalan siang dan malam sampai jatuh sakit.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Syaratnya cuma satu: <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Perbaiki sisa umur yang ada sekarang.</strong></p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mungkin Anda bertanya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">&quot;Apakah perkataan Al-Fudhail ini punya dasar yang kuat dari Al-Qur&#x27;an dan Hadits Nabi ﷺ?&quot;</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jawabannya: <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Sangat kuat.</strong></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Perkataan Al-Fudhail bin &#x27;Iyadh di atas sesungguhnya diambil langsung dari intisari sabda Rasulullah ﷺ dalam hadits shahih riwayat Imam Al-Bukhari dan Imam Muslim.</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>Sahabat Abdullah bin Mas'ud رضي الله عنه menceritakan bahwa para sahabat pernah bertanya kepada Rasulullah ﷺ:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>يَا رَسُولَ اللَّهِ، أَنُؤَاخَذُ بِمَا عَمِلْنَا فِي الْجَاهِلِيَّةِ؟</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Wahai Rasulullah, apakah kami akan disiksa/dihisab atas dosa-dosa yang pernah kami lakukan di masa jahiliyah (masa lalu sebelum masuk Islam)?&quot;</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mendengar pertanyaan itu, Rasulullah ﷺ memberikan kaidah yang menjadi landasan utama perkataan Al-Fudhail:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>مَنْ أَحْسَنَ فِي الإِسْلاَمِ لَمْ يُؤَاخَذْ بِمَا عَمِلَ فِي الجَاهِلِيَّةِ، وَمَنْ أَسَاءَ فِي الإِسْلاَمِ أُخِذَ بِالأَوَّلِ وَالآخِرِ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Barangsiapa yang berbuat baik (memperbaiki dirinya) di dalam Islam, maka dia tidak akan dihisab atas apa yang pernah dia lakukan di masa jahiliyahnya. Dan barangsiapa yang berbuat buruk di dalam Islam, maka dia akan dihisab atas dosa yang terdahulu dan yang belakangan.&quot; (HR. Bukhari No. 6921 dan Muslim No. 120)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Para ulama menjelaskan, kaidah ini berlaku umum:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Siapa yang menyudahi masa lalunya yang buruk dengan berbuat baik (<em class="italic text-gray-800 font-medium">ihsan</em>) di sisa umurnya, maka Allah tidak akan menuntut kelalaian masa lalunya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bahkan lebih dahsyat lagi, Allah ﷻ berjanji di dalam Al-Qur&#x27;an bahwa bagi orang yang bertaubat dan memperbaiki sisa umurnya, seluruh keburukan masa lalunya <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">langsung diganti menjadi tumpukan pahala kebaikan</strong>:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>إِلَّا مَنْ تَابَ وَآمَنَ وَعَمِلَ عَمَلًا صَالِحًا فَأُولَٰئِكَ يُبَدِّلُ اللَّهُ سَيِّئَاتِهِمْ حَسَنَاتٍ ۗ وَكَانَ اللَّهُ غَفُورًا رَحِيمًا</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Kecuali orang-orang yang bertaubat, beriman, dan mengerjakan kebajikan; maka kejahatan mereka itu akan diganti Allah dengan kebaikan. Dan Allah Maha Pengampun, Maha Penyayang.&quot; (QS. Al-Furqan: 70)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bayangkan betapa luasnya kasih sayang Allah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Begitu Anda memperbaiki hubungan dengan Allah di sisa hari yang ada, Allah yang Maha Pengasih memaafkan puluhan tahun kelalaian dan menukar catatan hitam itu menjadi timbangan kebaikan di akhirat.</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Kenapa Allah begitu pemurah?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Karena di hadapan Allah, garis akhir adalah penentu segalanya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Rasulullah ﷺ pernah menceritakan kisah seorang lelaki dari umat terdahulu yang telah membunuh 99 nyawa manusia.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Lelaki ini kemudian ingin bertaubat dan bertanya kepada seorang rahib: &quot;Apakah masih ada pintu taubat untuk saya?&quot;</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Si rahib menjawab: &quot;Tidak ada.&quot;</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mendengar jawaban itu, lelaki tersebut langsung membunuh si rahib hingga genap korbannya menjadi 100 orang.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Namun rasa rindu akan ampunan Allah terus bergejolak di dadanya. Ia lalu mendatangi seorang ulama dan menanyakan hal yang sama.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ulama tersebut menjawab: &quot;Tentu ada. Siapa yang bisa menghalangi engkau dengan taubat? Pergilah ke sebuah negeri di sana, karena penduduknya beribadah kepada Allah, dan jangan kembali ke negerimu yang buruk.&quot;</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Lelaki itu pun berangkat.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Di tengah perjalanan, sebelum dia sempat mendirikan satu rakaat shalat pun, sebelum dia sempat berpuasa atau bersedekah, ajal menjemputnya. Malaikat maut mencabut nyawanya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Malaikat rahmat dan malaikat azab berselisih memperebutkan jiwanya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Malaikat azab berkata: &quot;Dia belum pernah melakukan kebaikan sedikit pun!&quot;</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Lalu Allah mengutus malaikat penengah untuk mengukur jarak tanahnya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ternyata, posisi dadanya hanya lebih condong sejengkal menuju tanah ketaatan daripada tanah maksiatnya yang lama.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Hanya karena niat tulus dan langkah kaki terakhirnya menuju kebaikan, Allah memerintahkan bumi taubat mendekat, dan mengampuni seluruh dosa 100 nyawa yang pernah ia bunuh. (HR. Bukhari No. 3470 &amp; Muslim No. 2716).</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Subhanallah.</p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Jika seorang pembunuh 100 nyawa saja bisa mendapatkan ampunan Allah di langkah terakhir hidupnya, bagaimana mungkin Anda berputus asa dari rahmat-Nya?</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tapi ingat, kaidah emas ini punya dua sisi mata pisau.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Al-Fudhail bin &#x27;Iyadh melanjutkan perkataannya dengan peringatan yang sangat keras:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>فَإِنَّكَ إِنْ أَسَأْتَ فِيمَا بَقِيَ، أُخِذْتَ بِمَا مَضَى وَمَا بَقِيَ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Namun jika engkau tetap berbuat buruk di sisa umurmu, engkau akan disiksa atas dosa masa lalumu dan dosa sisa umurmu sekaligus.&quot;</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jangan sampai kita menjadi orang yang tertipu.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Sudah tahu umur bertambah dan rambut memutih, tapi tontonan maksiat masih dicari, shalat masih sering diremehkan, dan lisan masih gemar menyakiti orang lain.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jika seseorang menutup usianya dalam keadaan tetap santai berbuat dosa, maka seluruh tumpukan dosa dari masa mudanya sampai masa tuanya akan ditagih tanpa ada yang terlewat.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Maka pilihannya ada di tangan Anda hari ini: Menjadikan sisa umur sebagai penghapus dosa masa lalu, atau membiarkannya menjadi bahan bakar penambah siksa di akhirat kelak.</p>
+<hr class='my-8 border-gray-200'>
+<div class='worksheet p-6 my-6 rounded-xl border border-amber-300/80 bg-[#fffdfa] shadow-sm'><h3 class='text-lg font-bold text-amber-900 mb-3'>Lembar Evaluasi Diri (Bab 2)</h3>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mari buat ikrar titik balik hari ini. Ambil pena atau catat di catatan HP Anda:</p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">1.</span><span>Sebutkan <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">1 dosa masa lalu</strong> yang paling sering membuat hati Anda merasa bersalah di hadapan Allah:</span></div>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">(Jawab jujur antara Anda dan Allah)</em></p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">2.</span><span>Tuliskan ikrar taubat Anda hari ini:</span></div>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">&quot;Ya Allah, saya mengakui kelalaian saya di masa lalu. Mulai hari ini, saya berjanji meninggalkan perbuatan tersebut demi mengharap ridha-Mu.&quot;</em></p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">3.</span><span>Tentukan <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">1 kebaikan rutin baru</strong> yang akan Anda jaga istiqomah mulai hari ini sebagai bukti perbaikan sisa usia Anda:</span></div>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">(Contoh: Membaca Al-Qur&#x27;an 1 lembar setelah shalat Subuh / Shalat Witir 1 rakaat sebelum tidur).</em></p>
+                </div>
+            </section>
+            
+            <section class="book-card mb-12">
+                
+                <div class="chapter-cover bg-[#faf9f5] border border-gray-200 rounded-2xl p-8 md:p-14 mb-8 text-center shadow-sm">
+                    <span class="text-xs font-extrabold tracking-widest text-amber-800 uppercase bg-amber-100/80 px-3 py-1 rounded-full inline-block">BAB 03</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-950 tracking-tight mt-4 mb-2">AMALAN RUMAH</h2>
+                    <svg width="180" height="74" viewBox="0 0 180 74" fill="none" class="mx-auto my-6">
+  <circle cx="90" cy="14" r="4" fill="#b45309"/>
+  <circle cx="68" cy="28" r="3.5" fill="#d97706"/>
+  <circle cx="112" cy="28" r="3.5" fill="#d97706"/>
+  <circle cx="46" cy="42" r="3" fill="#cbd5e1"/>
+  <circle cx="134" cy="42" r="3" fill="#cbd5e1"/>
+  <circle cx="46" cy="62" r="3" fill="#cbd5e1"/>
+  <circle cx="134" cy="62" r="3" fill="#cbd5e1"/>
+  <rect x="79" y="42" width="22" height="24" rx="3" fill="#f59e0b" filter="drop-shadow(0 2px 8px rgba(245, 158, 11, 0.45))"/>
+</svg>
+                </div>
+                
+                <div class="bg-white shadow-sm border border-gray-200/80 rounded-2xl p-6 md:p-12">
+                    <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between no-print">
+                        <span class="text-xs font-mono text-gray-500">📄 bab-3.md</span>
+                        <span class="text-xs text-amber-800 font-semibold bg-amber-50 px-2.5 py-1 rounded-full">Selesai Ditulis</span>
+                    </div>
+                    <p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Apakah bekal akhirat harus selalu berupa ibadah berat yang memakan biaya besar?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Coba perhatikan pola pikir kita selama ini.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Seringkali kita merasa pahala akhirat itu hanya milik mereka yang berangkat umroh setiap tahun, orang kaya yang membangun masjid megah, atau ustadz yang ceramah keliling kota.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Lalu kita yang hidupnya biasa-biasa saja—yang gajinya pas-pasan dan tenaganya habis untuk mencari nafkah—merasa minder:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">&quot;Bekal apa yang bisa saya bawa menghadap Allah kalau uang dan waktu saja pas-pasan?&quot;</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Pikiran seperti ini keliru besar.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Islam tidak pernah menyempitkan pintu surga hanya untuk mereka yang berharta melimpah atau berfisik kuat. Justru di sisa usia ini, Allah membentangkan samudera pahala yang luar biasa luas tepat di depan mata Anda, tanpa butuh keluar biaya satu rupiah pun.</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Pernahkah Anda merenungkan kisah seorang wanita pezina dari Bani Israil?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Wanita ini masa lalunya sangat kelam. Bergelimang dosa besar yang menjijikkan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Suatu hari di tengah terik padang pasir, ia melihat seekor anjing yang lidahnya menjulur ke tanah, hampir mati karena kehausan di dekat sebuah sumur.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Melihat kondisi anjing itu, terbit rasa iba dan kasihan di dalam hatinya yang paling dalam.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tanpa pikir panjang, ia melepas sepatunya, mengikatnya dengan kerudungnya, lalu turun ke dalam sumur mengambil air untuk anjing tersebut.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ia tidak memanggil orang untuk pamer. Ia tidak mengumumkan kebaikannya ke seluruh penduduk kota. Tidak ada seorang manusia pun yang melihat aksinya di padang pasir sunyi itu.</p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Apa yang terjadi?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Rasulullah ﷺ menceritakan:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>فَشَكَرَ اللَّهُ لَهُ، فَغَفَرَ لَهُ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Maka Allah berterima kasih kepadanya, lalu mengampuni dosa-dosanya.&quot; (HR. Bukhari No. 3321 dan Muslim No. 2244)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Subhanallah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Dosa zina bertahun-tahun gugur bukan karena perang jihad di medan tempur, bukan pula karena sedekah emas berkarung-karung.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Dosa itu gugur hanya karena seteguk air untuk seekor anjing, yang dilakukan dengan hati yang murni ikhlas karena Allah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Rasulullah ﷺ juga pernah bersabda dengan nada yang sangat tegas:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>اتَّقُوا النَّارَ وَلَوْ بِشِقِّ تَمْرَةٍ، فَإِنْ لَمْ تَجِدُوا فَبِكَلِمَةٍ طَيِّبَةٍ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Takutlah kalian pada siksa api neraka, walau hanya dengan menyedekahkan separuh butir kurma. Jika kalian tidak punya, maka dengan tutur kata yang baik.&quot; (HR. Bukhari No. 1413 dan Muslim No. 1016)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Separuh butir kurma! Bahkan bukan satu butir utuh.</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Sekarang, coba tengok ke dalam rumah Anda sendiri.</p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Berapa banyak orang yang di luar rumah terlihat sangat ramah, di masjid suka menebar senyum, tapi begitu masuk ke pintu rumahnya sendiri, wajahnya langsung terlipat masam?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kepada orang asing di jalanan dia bisa bertutur kata sangat santun, tapi kepada istri atau suaminya bicaranya kasar dan suka membentak.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kepada anak-anaknya selalu menuntut kepatuhan dengan kemarahan, tapi miskin pelukan dan doa kebaikan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Padahal, ladang pahala terbesar di sisa usia Anda justru ada di dalam dinding rumah Anda sendiri.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Rasulullah ﷺ bersabda:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ وَأَنَا خَيْرُكُمْ لِأَهْلِي</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Sebaik-baik kalian adalah yang paling baik kepada keluarganya, dan aku adalah orang yang paling baik kepada keluargaku.&quot; (HR. Tirmidzi No. 3895, dinilai shahih)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Amalan di rumah itu luar biasa istimewa karena satu hal: <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Bebas dari riya&#x27; dan pamer.</strong></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ketika Anda beramal di luar rumah, godaan ingin dipuji orang sangat besar. Tapi ketika Anda menahan amarah di depan anak, membuang sampah sisa makanan istri di dapur, atau menyapa pasangan dengan senyum tulus, tidak ada orang lain yang memuji Anda.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Hanya Allah yang melihat ketulusan Anda.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Maka di sisa usia ini, jadikan rumah Anda sebagai pabrik pahala harian. Amalan yang kelihatannya sepele, tapi timbangannya sangat berat di hadapan Allah ﷻ.</p>
+<hr class='my-8 border-gray-200'>
+<div class='worksheet p-6 my-6 rounded-xl border border-amber-300/80 bg-[#fffdfa] shadow-sm'><h3 class='text-lg font-bold text-amber-900 mb-3'>Lembar Evaluasi Diri (Bab 3)</h3>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Checklist 5 menit kebaikan di rumah hari ini. Beri tanda centang jika sudah Anda lakukan:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- [ ] <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Tatap wajah pasangan dengan senyuman hangat saat pulang ke rumah</strong>, tanpa mengungkit lelahnya seharian bekerja.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- [ ] <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Tahan lisan dari membentak anak</strong> ketika mereka menumpahkan minuman atau berbuat salah, lalu ganti dengan pelukan dan nasehat lembut.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- [ ] <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Singkirkan satu kerepotan pasangan tanpa diminta</strong> (contoh: mencuci piring sendiri sehabis makan, atau merapikan tempat tidur).</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- [ ] <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Kirim satu pesan chat WA penuh doa ke orang tua atau pasangan</strong>: <em class="italic text-gray-800 font-medium">&quot;Terima kasih sudah membersamai dan mendoakan saya selama ini.&quot;</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- [ ] <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Shalat sunnah 2 rakaat di sudut kamar yang sepi</strong>, di mana tidak ada siapa pun yang melihat кроме Allah ﷻ.</p>
+                </div>
+            </section>
+            
+            <section class="book-card mb-12">
+                
+                <div class="chapter-cover bg-[#faf9f5] border border-gray-200 rounded-2xl p-8 md:p-14 mb-8 text-center shadow-sm">
+                    <span class="text-xs font-extrabold tracking-widest text-amber-800 uppercase bg-amber-100/80 px-3 py-1 rounded-full inline-block">BAB 04</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-950 tracking-tight mt-4 mb-2">PELIT WAKTU</h2>
+                    <svg width="90" height="90" viewBox="0 0 90 90" fill="none" class="mx-auto my-6">
+  <circle cx="45" cy="10" r="3.5" fill="#cbd5e1"/>
+  <circle cx="63" cy="15" r="3.5" fill="#cbd5e1"/>
+  <circle cx="75" cy="27" r="3.5" fill="#cbd5e1"/>
+  <circle cx="80" cy="45" r="3.5" fill="#cbd5e1"/>
+  <circle cx="75" cy="63" r="3.5" fill="#cbd5e1"/>
+  <circle cx="63" cy="75" r="3.5" fill="#cbd5e1"/>
+  <circle cx="45" cy="80" r="3.5" fill="#cbd5e1"/>
+  <circle cx="27" cy="75" r="4" fill="#94a3b8"/>
+  <circle cx="15" cy="63" r="4" fill="#94a3b8"/>
+  <circle cx="10" cy="45" r="5" fill="#d97706"/>
+  <circle cx="15" cy="27" r="6" fill="#f59e0b"/>
+  <circle cx="27" cy="15" r="7.5" fill="#b45309" filter="drop-shadow(0 2px 8px rgba(245, 158, 11, 0.45))"/>
+  <circle cx="45" cy="45" r="2.5" fill="#64748b"/>
+  <line x1="45" y1="45" x2="24" y2="24" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+                </div>
+                
+                <div class="bg-white shadow-sm border border-gray-200/80 rounded-2xl p-6 md:p-12">
+                    <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between no-print">
+                        <span class="text-xs font-mono text-gray-500">📄 bab-4.md</span>
+                        <span class="text-xs text-amber-800 font-semibold bg-amber-50 px-2.5 py-1 rounded-full">Selesai Ditulis</span>
+                    </div>
+                    <p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Kenapa umur kita rasanya habis begitu cepat tanpa bekas pahala yang jelas?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Coba buka menu <em class="italic text-gray-800 font-medium">Screen Time</em> atau durasi layar di HP Anda sekarang.</p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Berapa jam angka yang tertera di sana? 4 jam? 5 jam? Atau bahkan tembus 7 jam dalam sehari?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Sekarang bayangkan jika angka itu kita kalikan sebulan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jika dalam sehari kita menghabiskan waktu 4 jam hanya untuk scrolling video pendek dan melihat kehidupan orang lain, itu artinya dalam sebulan ada <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">120 jam</strong> umur kita yang menguap tanpa bekas.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>120 jam itu setara dengan 5 hari penuh kita menatap layar kaca tanpa tidur!</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Padahal, bekal apa yang kita dapatkan dari ratusan jam tersebut? Kebanyakan hanya tawa sesaat, gosip yang menambah dosa lisan, atau rasa iri melihat pencapaian dunia orang lain.</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ulama tabi&#x27;in yang mulia, Al-Hasan Al-Bashri rahimahullah, pernah memberikan sebuah tamparan telak tentang hakikat umur manusia:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>يَا ابْنَ آدَمَ، إِنَّمَا أَنْتَ أَيَّامٌ، كُلَّمَا ذَهَبَ يَوْمٌ ذَهَبَ بَعْضُكَ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Wahai anak Adam, sesungguhnya engkau itu hanyalah kumpulan hari. Setiap kali satu hari berlalu, maka hilang pula sebagian dari dirimu.&quot; (Hilyatul Auliya&#x27;, 2/148)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Setiap detik jam dinding berdetak, sejatinya jatah hidup kita sedang dipotong.</p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Jika seorang pedagang sangat pelit menghitung modal uangnya agar tidak rugi, mengapa kita begitu royal membuang modal umur kita yang tidak akan pernah bisa dibeli kembali?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Di sisa usia ini, Anda harus punya sifat <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">&quot;sangat pelit&quot;</strong> dengan waktu Anda.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Pelit di sini berarti disiplin ketat menjaga setiap helaan nafas agar tidak terbuang percuma tanpa nilai pahala.</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Lalu bagaimana cara melindungi sisa umur kita dari para &quot;pencuri waktu&quot; di zaman modern ini?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ada dua langkah praktis yang bisa Anda mulai terapkan hari ini:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">1. Terapkan Filter 1 Pertanyaan Sebelum Mengklik Konten</strong></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jempol kita seringkali bergerak secara otomatis. Melihat judul video yang menghebohkan, tangan langsung tergiur untuk mengklik.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Mulai hari ini, buat satu jeda 3 detik sebelum mengklik tontonan unfaedah:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tanyakan pada hati kecil Anda:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">&quot;Apakah tontonan 30 menit ini layak saya pertanggungjawabkan di hadapan Allah saat hisab nanti?&quot;</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jika jawabannya tidak ada manfaatnya untuk akhirat dan tidak pula menambah kebaikan dunia Anda, segera kunci layar HP Anda. Tarik nafas dalam-dalam, lalu ganti dengan istighfar.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">2. Berani Keluar dari Grup Chat yang Beracun</strong></p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Berapa banyak grup WhatsApp yang isinya hanya perdebatan kusir, saling sindir masalah politik, atau membagikan berita yang belum jelas kebenarannya?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Obrolan kusir semacam itu menguras habis waktu sekaligus membuat batin mengeras dan gelisah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Anda tidak perlu merasa tidak enak hati.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Pamitlah dengan sopan, lalu tinggalkan grup tersebut. Menjaga kebersihan hati dan sisa umur Anda jauh lebih penting daripada sekadar menjaga perasaan manusia yang gemar menyia-nyiakan waktu.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">3. Putus Begadang yang Sia-Sia</strong></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Banyak orang gagal bangun shalat Subuh tepat waktu karena kebiasaan menghabiskan malam menonton layar HP sampai larut.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tidurlah lebih awal setelah Isya sebagaimana kebiasaan Rasulullah ﷺ.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ketika ritme malam Anda tertata, tubuh Anda akan bangun sebelum Subuh dengan segar, dan Anda punya waktu hening beberapa menit untuk bersujud memohon ampunan Allah di saat manusia lain masih terlelap.</p>
+<hr class='my-8 border-gray-200'>
+<div class='worksheet p-6 my-6 rounded-xl border border-amber-300/80 bg-[#fffdfa] shadow-sm'><h3 class='text-lg font-bold text-amber-900 mb-3'>Lembar Evaluasi Diri (Bab 4)</h3>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Tantangan detoks waktu 7 hari ke depan. Tuliskan komitmen Anda:</p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">1.</span><span>Target pangkas durasi layar HP: Dari yang awalnya ...... jam/hari, saya berkomitmen menurunkannya menjadi maksimal ...... jam/hari.</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">2.</span><span>Nama 1 grup chat yang paling banyak membuang waktu atau memicu ghibah yang akan saya tinggalkan/mute total hari ini:</span></div>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>...........................................................................</p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">3.</span><span>Jam tidur malam yang saya kunci mulai hari ini (maksimal jam 22.00 WIB):</span></div>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Pukul: ................... WIB.</p>
+                </div>
+            </section>
+            
+            <section class="book-card mb-12">
+                
+                <div class="chapter-cover bg-[#faf9f5] border border-gray-200 rounded-2xl p-8 md:p-14 mb-8 text-center shadow-sm">
+                    <span class="text-xs font-extrabold tracking-widest text-amber-800 uppercase bg-amber-100/80 px-3 py-1 rounded-full inline-block">BAB 05</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-950 tracking-tight mt-4 mb-2">BEBAS HISAB</h2>
+                    <svg width="220" height="52" viewBox="0 0 220 52" fill="none" class="mx-auto my-6">
+  <line x1="20" y1="30" x2="200" y2="30" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="40" cy="20" r="5.5" fill="#f59e0b"/>
+  <circle cx="62" cy="20" r="4.5" fill="#fbbf24"/>
+  <circle cx="82" cy="20" r="3.5" fill="#d97706"/>
+  <polygon points="110,18 117,30 103,30" fill="#1e293b"/>
+  <circle cx="110" cy="11" r="3" fill="#1e293b"/>
+  <circle cx="138" cy="20" r="3.5" fill="#d97706"/>
+  <circle cx="158" cy="20" r="4.5" fill="#fbbf24"/>
+  <circle cx="180" cy="20" r="5.5" fill="#f59e0b"/>
+</svg>
+                </div>
+                
+                <div class="bg-white shadow-sm border border-gray-200/80 rounded-2xl p-6 md:p-12">
+                    <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between no-print">
+                        <span class="text-xs font-mono text-gray-500">📄 bab-5.md</span>
+                        <span class="text-xs text-amber-800 font-semibold bg-amber-50 px-2.5 py-1 rounded-full">Selesai Ditulis</span>
+                    </div>
+                    <p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Kenapa orang yang shalat dan puasanya rajin bisa bangkrut total di hari kiamat?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bayangkan sebuah kejadian yang sangat mengerikan ini.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ada seseorang yang di dunia dikenal sebagai ahli ibadah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Di hari kiamat, ia datang menghadap Allah dengan membawa kontainer pahala yang menggunung: pahala shalat malam beribu-ribu rakaat, pahala puasa sunnah, dan tumpukan sedekah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ia tersenyum bangga, yakin dirinya akan langsung melenggang masuk ke surga.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Namun ketika timbangan hendak dipasang, tiba-tiba terdengar teriakan orang-orang yang mencegat jalannya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ada yang berteriak: <em class="italic text-gray-800 font-medium">&quot;Ya Allah, dulu orang ini mencaci maki kehormatan saya di dunia!&quot;</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Yang lain maju: <em class="italic text-gray-800 font-medium">&quot;Ya Allah, orang ini dulu memakan harta saya tanpa hak!&quot;</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Dan yang lain bersaksi: <em class="italic text-gray-800 font-medium">&quot;Ya Allah, lisannya dulu memfitnah dan menyakiti hati saya!&quot;</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Seketika itu juga, Allah memerintahkan agar pahala-pahala shalatnya diambil dan dibagikan kepada para korban kedzalimannya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Satu per satu pahala gunungan itu berpindah tangan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Hingga akhirnya, pahala orang tersebut habis tak bersisa. Sementara orang-orang yang menuntut masih berbaris panjang.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Maka dosa-dosa dari orang yang ia dzalimi diambil, lalu ditimpakan ke atas pundaknya. Setelah itu, ia diseret dengan wajah tertelungkup dan dilemparkan ke dalam kobaran api neraka.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Inilah orang yang oleh Rasulullah ﷺ disebut sebagai <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Al-Muflis</strong> (orang yang bangkrut di hari kiamat). (HR. Muslim No. 2581).</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ketahuilah satu kaidah hisab yang sangat penting:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Dosa antara Anda dengan Allah—seperti lalai shalat, meninggalkan puasa, atau maksiat pribadi—sangat mudah diampuni oleh Allah jika Anda bertaubat dengan tulus. Rahmat Allah jauh lebih luas daripada murka-Nya.</p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Tapi dosa antara Anda dengan sesama manusia?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Allah adalah Hakim Yang Maha Adil. Allah tidak akan membiarkan kedzaliman antar hamba selesai begitu saja tanpa keridhaan dari orang yang Anda dzalimi.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Di padang mahsyar nanti, tidak ada lagi pembayaran dengan transfer uang, emas, atau sertifikat tanah. Mata uang satu-satunya di sana adalah <strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">pahala dan dosa</strong>.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Itulah sebabnya di dalam Al-Qur&#x27;an Allah menggambarkan betapa paniknya manusia di hari kiamat, sampai-sampai seseorang lari dari orang-orang terdekatnya:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>يَوْمَ يَفِرُّ الْمَرْءُ مِنْ أَخِيهِ ۝ وَأُمِّهِ وَأَبِيهِ ۝ وَصَاحِبَتِهِ وَبَنِيهِ ۝ لِكُلِّ امْرِئٍ مِنْهُمْ يَوْمَئِذٍ شَأْنٌ يُغْنِيهِ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Pada hari itu manusia lari dari saudaranya, dan dari ibu dan ayahnya, dan dari istri dan anak-anaknya. Setiap orang dari mereka pada hari itu mempunyai urusan yang menyibukkannya.&quot; (QS. &#x27;Abasa: 34-37)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Para ulama menafsirkan, salah satu alasan mengapa seseorang lari dari istri, anak, dan orang tuanya adalah karena ia takut orang-orang terdekatnya menuntut hak-hak mereka yang belum tertunaikan di dunia.</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Maka di sisa usia yang tinggal sedikit ini, rapikan urusan Anda dengan manusia sebelum nafas sampai di kerongkongan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ada 3 hak sesama manusia yang wajib Anda audit hari ini:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">1. Hak Pasangan dan Anak di Dalam Rumah</strong></p>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Berapa sering kita melukai hati istri dengan kata-kata kasar? Berapa sering nafkah batin keluarga diabaikan karena ego kita?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bagi para ayah, apakah anak-anak sudah diajarkan tauhid dan shalat, atau sekadar diberi makan dan fasilitas dunia? Hak pendidikan agama anak akan ditagih di hadapan Allah. Rendahkan hati Anda, dekap pasangan Anda, dan mintalah maaf yang tulus.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">2. Urusan Hutang dan Pinjaman Barang</strong></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Rasulullah ﷺ bahkan enggan menshalatkan jenazah orang yang masih memiliki tanggungan hutang yang belum diselesaikan.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jika Anda punya hutang, cicillah hari ini. Jika belum mampu melunasi semuanya, temui orangnya, kabari keadaannya, dan tuliskan catatan wasiat hutang tersebut agar keluarga Anda tahu jika sewaktu-waktu ajal menjemput.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jangan sampai barang pinjaman kecil tetangga—seperti obeng, buku, atau uang receh—menjadi penghalang Anda masuk surga.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">3. Ghibah dan Celaan di Belakang Orang</strong></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jika Anda pernah membicarakan aib orang lain, minta maaflah kepadanya jika hal itu tidak menimbulkan mudharat yang lebih besar.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Namun jika meminta maaf langsung justru akan memicu pertumpahan darah atau permusuhan yang lebih parah, para ulama menganjurkan untuk memohonkan ampunan bagi orang tersebut di setiap sujud Anda, dan sebutkan kebaikan-kebaikannya di majelis tempat dulu Anda mencelanya.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bersihkan pundak Anda dari tuntutan manusia sekarang juga.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jangan bawa satu rupiah pun hak orang lain ke liang lahad Anda.</p>
+<hr class='my-8 border-gray-200'>
+<div class='worksheet p-6 my-6 rounded-xl border border-amber-300/80 bg-[#fffdfa] shadow-sm'><h3 class='text-lg font-bold text-amber-900 mb-3'>Lembar Evaluasi Diri (Bab 5)</h3>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Protokol bebas tuntutan hisab manusia. Tuliskan dengan jujur:</p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">1.</span><span><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Daftar Orang yang Pernah Saya Sakiti:</strong></span></div>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- Nama: ......................... (Aksi: Minta maaf / Chat hari ini)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- Nama: ......................... (Aksi: Minta maaf / Doakan di sujud)</p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">2.</span><span><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Daftar Tanggungan Hutang / Barang Pinjaman:</strong></span></div>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- Hutang ke: ......................... Jumlah: Rp ......................... (Status: Sedang dicicil)</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- Barang pinjaman: ......................... Milik: ......................... (Aksi: Kembalikan pekan ini)</p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">3.</span><span><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Komitmen Wasiat Keluarga:</strong></span></div>
+<p class='text-lg font-semibold text-gray-900 my-4 pl-4 border-l-2 border-amber-500 bg-amber-50/40 py-2 pr-3 rounded-r'>Apakah Anda sudah menulis catatan rapi tentang hutang-piutang Anda agar tidak memberatkan ahli waris jika malam ini Anda wafat?</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- [ ] Sudah saya tulis dan simpan di tempat yang diketahui pasangan/keluarga.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>- [ ] Belum, saya akan menuliskannya malam ini juga sebelum tidur.</p>
+                </div>
+            </section>
+            
+            <section class="book-card mb-12">
+                
+                <div class="chapter-cover bg-[#faf9f5] border border-gray-200 rounded-2xl p-6 md:p-10 mb-8 text-center shadow-sm">
+                    <span class="text-xs font-extrabold tracking-widest text-amber-800 uppercase bg-amber-100/80 px-3 py-1 rounded-full inline-block">AKHIR NASKAH</span>
+                    <h2 class="text-2xl md:text-3xl font-black text-gray-950 tracking-tight mt-2">PENUTUP & DOA</h2>
+                </div>
+                
+                <div class="bg-white shadow-sm border border-gray-200/80 rounded-2xl p-6 md:p-12">
+                    <div class="mb-4 pb-3 border-b border-gray-100 flex items-center justify-between no-print">
+                        <span class="text-xs font-mono text-gray-500">📄 penutup.md</span>
+                        <span class="text-xs text-amber-800 font-semibold bg-amber-50 px-2.5 py-1 rounded-full">Selesai Ditulis</span>
+                    </div>
+                    <p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Doa Akhir Hayat</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Alhamdulillah, kita telah sampai di ujung pembahasan buku ini.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Jika Anda membaca halaman ini sampai tuntas, itu tanda bahwa Allah masih menginginkan kebaikan di dalam hati Anda.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Ketahuilah, perjalanan memperbaiki sisa usia ini bukan tentang menjadi manusia yang sempurna tanpa dosa.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Kita semua adalah anak cucu Nabi Adam yang pasti berbuat salah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Namun perbedaannya, orang yang cerdas tidak akan membiarkan dirinya tenggelam dalam penyesalan masa lalu yang sia-sia. Ia segera bangkit, merapikan shaf hidupnya, dan melangkah mantap menuju garis akhir.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Dua sayap yang harus Anda jaga sampai nafas terakhir berhembus:</p>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">1.</span><span><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Rasa Takut (Khauf):</strong> Agar Anda selalu waspada dan tidak tertipu untuk kembali bermaksiat.</span></div>
+<div class="flex items-start my-2"><span class="font-bold text-amber-800 mr-2">2.</span><span><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Rasa Harap (Raja&#x27;):</strong> Agar Anda selalu optimis bahwa rahmat dan ampunan Allah jauh lebih besar daripada tumpukan masa lalu Anda.</span></div>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Sebagai bekal harian Anda, amalkan doa-doa ma&#x27;tsur yang senantiasa dipanjatkan oleh Rasulullah ﷺ dan para sahabat mulia:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">1. Doa Diteguhkan Hati di Atas Ketaatan</strong></p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">Yaa Muqallibal quluub, tsabbit qalbii &#x27;alaa diinik.</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Wahai Dzat yang membolak-balikkan hati, teguhkanlah hatiku di atas agama-Mu.&quot; (HR. Tirmidzi No. 3522)</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">2. Doa Memohon Sebaik-Baik Akhir Usia</strong></p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>Doa yang senantiasa dibaca oleh Sahabat Abu Bakar Ash-Shiddiq رضي الله عنه setiap kali selesai shalat:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>اللَّهُمَّ اجْعَلْ خَيْرَ عُمُرِي آخِرَهُ، وَخَيْرَ عَمَلِي خَوَاتِمَهُ، وَخَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">Allahummaj&#x27;al khoiro &#x27;umurii aakhirahu, wa khoiro &#x27;amalii khowaatimahu, wa khoiro ayyaamii yawma alqook.</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Ya Allah, jadikanlah sebaik-baik umurku adalah pada akhirnya, sebaik-baik amalku adalah pada penutupnya, dan sebaik-baik hariku adalah hari saat aku bertemu dengan-Mu.&quot; (HR. Ibnu Abi Syaibah dalam Mushannaf No. 29510)</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">3. Sayyidul Istighfar (Rajanya Istighfar)</strong></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Bacalah di pagi hari dan petang hari. Rasulullah ﷺ menjamin barangsiapa membacanya dengan penuh keyakinan lalu meninggal di hari itu, ia termasuk penghuni surga:</p>
+<p class='arabic-text text-2xl md:text-3xl text-right font-serif leading-loose my-6 text-gray-900 bg-[#fdfbf7] p-5 rounded-xl border border-amber-200/60' dir='rtl'>اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><em class="italic text-gray-800 font-medium">Allahumma anta rabbii laa ilaaha illaa anta, khalaqtanii wa ana &#x27;abduka, wa ana &#x27;alaa &#x27;ahdika wa wa&#x27;dika mastatha&#x27;tu, a&#x27;uudzu bika min syarri maa shana&#x27;tu, abuu-u laka bini&#x27;matika &#x27;alayya, wa abuu-u laka bidzanbii, faghfir lii fa-innahu laa yaghfirudz-dzunuuba illaa anta.</em></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Artinya:</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>&quot;Ya Allah, Engkau adalah Rabbku, tidak ada sesembahan yang berhak disembah selain Engkau. Engkau yang menciptakanku dan aku adalah hamba-Mu. Aku berada di atas perjanjian-Mu dan janji-Mu semampuku. Aku berlindung kepada-Mu dari keburukan yang telah kuperbuat. Aku mengakui nikmat-Mu kepadaku dan aku mengakui dosaku kepada-Mu, maka ampunilah aku, sesungguhnya tidak ada yang mengampuni dosa selain Engkau.&quot; (HR. Bukhari No. 6306)</p>
+<hr class='my-8 border-gray-200'>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Semoga Allah memberkahi sisa umur kita, mengampuni kelalaian masa muda kita, dan mengumpulkan kita bersama orang-orang sholeh di surga-Nya kelak. Aamiin.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Selamat mengamalkan, dan jangan pernah berhenti berjalan menuju Allah.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>Barakallahu fiikum.</p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'><strong class="text-gray-950 font-bold bg-amber-100/50 px-1 rounded">Fadil Muhammad</strong></p>
+<p class='text-gray-700 text-base md:text-lg leading-relaxed my-3'>EduMuslim</p>
+                </div>
             </section>
             
 
-        <!-- Bottom Footer -->
-        <footer class="text-center text-xs text-gray-600 py-8 no-print border-t border-gray-200 mt-12">
-            File naskah tersimpan di folder: <code class="bg-gray-100 px-2 py-1 rounded text-gray-700">edumuslim-team/ebooks/sisa-usia/</code><br>
-            Halaman ini otomatis me-render teks Arab, cetak tebal (bold), miring (italic), dan kotak evaluasi amal.
+        <footer class="text-center text-xs text-gray-500 py-8 no-print border-t border-gray-300 mt-12">
+            Naskah Ebook: <code class="bg-gray-200/70 px-2 py-1 rounded text-gray-700">edumuslim-team/ebooks/sisa-usia/</code>
         </footer>
     </main>
 </body>
