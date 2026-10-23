@@ -1,10 +1,10 @@
 {
-    "updated_at": "2026-10-20 09:25:06",
+    "updated_at": "2026-10-21 21:32:00",
     "segment": "Customer eBook DaQo (121 Kontak non-Qila - Live cPanel)",
     "sorting_rule": "ORDER BY p.id ASC (Sesuai modul broadcast PixelCRM)",
     "total_contacts": 121,
-    "total_sent": 30,
-    "remaining_contacts": 91,
+    "total_sent": 80,
+    "remaining_contacts": 41,
     "batches": {
         "1": {
             "name": "Batch 1 (No. Urut 1 - 10)",
@@ -27,32 +27,32 @@
         "4": {
             "name": "Batch 4 (No. Urut 31 - 40)",
             "contacts": "Ali Mufrod (1190), Nining (1195), Irawadi (1266), SITI KOMARIYAH (1295), Siti aliyah (1318), Ahmad Taufik (1333), Muflikhun (1418), Nurhayati (1446), Rara (1453), Asmini Yuddin (1536)",
-            "completed": false,
-            "completed_at": null
+            "completed": true,
+            "completed_at": "2026-10-21 21:32:00"
         },
         "5": {
             "name": "Batch 5 (No. Urut 41 - 50)",
             "contacts": "Sidik Aprizar (1616), Agus Riyanto (1628), Tati Sumiarti (1764), Nurdien (1880), Kayamuddin (1965), Iriawan (2117), Ahmad Wahyudi (2167), Fikri Zaenudin (2175), Muhammad Mahyudin (2203), Gilang Ardiana Putri (2224)",
-            "completed": false,
-            "completed_at": null
+            "completed": true,
+            "completed_at": "2026-10-21 21:32:00"
         },
         "6": {
             "name": "Batch 6 (No. Urut 51 - 60)",
             "contacts": "Yanita Savitri (2283), Endang (2286), Abdul Rahman (2365), Eli Rusnilawati (2387), Suparno Yazid (3210), M,Syaghir (3251), Noegroho Eko Widiharjo (3376), Muhammad Syukri Mahmud (3433), Priyono (3478), Desrias (3479)",
-            "completed": false,
-            "completed_at": null
+            "completed": true,
+            "completed_at": "2026-10-21 21:32:00"
         },
         "7": {
             "name": "Batch 7 (No. Urut 61 - 70)",
             "contacts": "Zainul (3485), Azmi athoilah (3497), Mar atussholeha (3498), Nur Aini (3502), RAYAN (3509), Maya (3510), Fitriani (3511), Suhartono (3513), Zam (3514), Afriyeni (3521)",
-            "completed": false,
-            "completed_at": null
+            "completed": true,
+            "completed_at": "2026-10-21 21:32:00"
         },
         "8": {
             "name": "Batch 8 (No. Urut 71 - 80)",
             "contacts": "ilham wahyu (3524), Suryo Suratman (3525), Prawoto (3527), Lely Amelia (3530), Elke (3531), Indah (3553), Istyanto Gunawan (3554), Lutfia (3567), Rini A (3568), Siti hawa (3569)",
-            "completed": false,
-            "completed_at": null
+            "completed": true,
+            "completed_at": "2026-10-21 21:32:00"
         },
         "9": {
             "name": "Batch 9 (No. Urut 81 - 90)",

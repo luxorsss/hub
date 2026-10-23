@@ -10,21 +10,23 @@ $remoteHost = 'wegqxcgv@digitalprofit.my.id';
 $remotePort = 30524;
 $remotePath = '/home/wegqxcgv/subdomains/app.edumuslim.my.id/hub';
 
-// 1. Tarik daftar naskah yang dihapus Owner di cPanel (Tombstone synchronization)
-$remoteDeletedJson = shell_exec("ssh -o ConnectTimeout=2 -o BatchMode=yes -p $remotePort $remoteHost 'cat $remotePath/data/deleted_ids.json 2>/dev/null' 2>/dev/null");
-if (!empty($remoteDeletedJson)) {
-    $remoteDeleted = json_decode($remoteDeletedJson, true);
-    if (is_array($remoteDeleted)) {
-        foreach ($remoteDeleted as $dId) {
-            HubDB::addDeletedId($dId);
-        }
-    }
-}
+// 1. Tarik daftar naskah yang dihapus & status live dari cPanel via HTTP sync
+shell_exec("python3 /home/fadil/edumuslim-team/audit/cpanel_sync.py >/dev/null 2>&1");
 
 $cpanelEndpoint = 'https://app.edumuslim.my.id/hub/api_push.php';
 $secret = DEFAULT_PIN;
 
 $contents = HubDB::getContents();
+
+// HARD GATE: Pastikan seluruh naskah 100% lolos uji Anti-Slop Linter sebelum dikirim ke cPanel!
+$outLinter = [];
+$retLinter = 0;
+exec("python3 /home/fadil/edumuslim-team/audit/antislop_linter.py", $outLinter, $retLinter);
+if ($retLinter !== 0) {
+    echo "🛑 [HARD GATE REJECTED] Naskah gagal uji Anti-Slop Linter! Pengiriman ke cPanel DIBATALKAN:\n";
+    echo implode("\n", $outLinter) . "\n";
+    exit(1);
+}
 
 if (empty($contents)) {
     echo "Tidak ada data konten lokal untuk dikirim.\n";

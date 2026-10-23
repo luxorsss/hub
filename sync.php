@@ -47,11 +47,68 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
+        'file' => $kontenDir . '/reels-kamis.md',
+        'channel' => 'Reels 2-Slide',
+        'day' => 'Kamis',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/story-kamis.md',
+        'channel' => 'Instagram Story',
+        'day' => 'Kamis',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/threads-kamis.md',
+        'channel' => 'Threads',
+        'day' => 'Kamis',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa-kamis.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Kamis',
+        'funnel' => 'COMMUNITY',
+        'target_product' => 'Komunitas (Faedah Murni)'
+    ],
+    [
         'file' => $kontenDir . '/carousel-jumat.md',
         'channel' => 'Carousel',
         'day' => 'Jumat',
         'funnel' => 'BOFU',
         'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/reels-jumat.md',
+        'channel' => 'Reels 2-Slide',
+        'day' => 'Jumat',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/story-jumat.md',
+        'channel' => 'Instagram Story',
+        'day' => 'Jumat',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/threads-jumat.md',
+        'channel' => 'Threads',
+        'day' => 'Jumat',
+        'funnel' => 'BOFU (Utas)',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+
+    [
+        'file' => $kontenDir . '/grup-wa-jumat.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Jumat',
+        'funnel' => 'COMMUNITY',
+        'target_product' => 'Komunitas (Faedah Murni)'
     ],
     [
         'file' => $kontenDir . '/reels-1-slide-senin.md',
@@ -63,7 +120,7 @@ $allMasterFiles = [
     [
         'file' => $kontenDir . '/story-jualan-hari-ini.md',
         'channel' => 'Instagram Story',
-        'day' => 'Harian',
+        'day' => 'Arsip',
         'funnel' => 'BOFU (Direct)',
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
@@ -74,13 +131,7 @@ $allMasterFiles = [
         'funnel' => 'MOFU/BOFU (Utas)',
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
-    [
-        'file' => $kontenDir . '/threads-jumat.md',
-        'channel' => 'Threads',
-        'day' => 'Jumat',
-        'funnel' => 'BOFU (Utas)',
-        'target_product' => 'eBook Qila (Rp47rb)'
-    ],
+
     [
         'file' => $kontenDir . '/threads-sabtu.md',
         'channel' => 'Threads',
@@ -103,32 +154,42 @@ $allMasterFiles = [
         'target_product' => 'Komunitas (Faedah Murni)'
     ],
     [
-        'file' => $kontenDir . '/grup-wa-salaf.md',
-        'channel' => 'Grup WhatsApp',
-        'day' => 'Bank',
-        'funnel' => 'Nurturing (Turath)',
-        'target_product' => 'Komunitas (Faedah Murni)'
-    ],
-    [
-        'file' => $kontenDir . '/grup-wa-hasan.md',
-        'channel' => 'Grup WhatsApp',
-        'day' => 'Bank',
-        'funnel' => 'Nurturing (Turath)',
-        'target_product' => 'Komunitas (Faedah Murni)'
-    ],
-    [
         'file' => $crmDir . '/broadcast-wa-senin.md',
         'channel' => 'CRM Outreach',
-        'day' => 'Senin',
+        'day' => 'Arsip',
         'funnel' => 'BOFU (Direct Outreach)',
         'target_product' => 'Alumni Ihfadz/DaQo'
+    ],
+    [
+        'file' => '/home/fadil/edumuslim-team/ebooks/sisa-usia/cover_prompt.md',
+        'channel' => 'eBook Prompt & Asset',
+        'day' => 'Arsip',
+        'funnel' => 'PRODUCT (Asset Cover)',
+        'target_product' => 'eBook Sisa Usia',
+        'custom_id' => 'cover-ebook-sisa-usia'
+    ],
+    [
+        'file' => '/home/fadil/edumuslim-team/ebooks/sisa-usia/chapter_prompts.md',
+        'channel' => 'eBook Prompt & Asset',
+        'day' => 'Arsip',
+        'funnel' => 'PRODUCT (Asset Bab)',
+        'target_product' => 'eBook Sisa Usia',
+        'custom_id' => 'chapter-prompts-sisa-usia'
+    ],
+    [
+        'file' => '/home/fadil/edumuslim-team/ebooks/sisa-usia/bonus_plan.md',
+        'channel' => 'Offer & Bonus',
+        'day' => 'Arsip',
+        'funnel' => 'BOFU (Offer Stack)',
+        'target_product' => 'eBook Sisa Usia',
+        'custom_id' => 'bonus-ebook-sisa-usia'
     ]
 ];
 
-// ATURAN MUTLAK: Proses naskah HARI INI + Bank WA cadangan
+// ATURAN MUTLAK: Hanya proses naskah HARI INI atau Harian
 $filesToProcess = [];
 foreach ($allMasterFiles as $m) {
-    if ($m['day'] === 'Harian' || stripos($m['day'], $hariIni) !== false || $m['day'] === 'Bank') {
+    if ($m['day'] === 'Harian' || stripos($m['day'], $hariIni) !== false) {
         $filesToProcess[] = $m;
     }
 }
@@ -144,20 +205,22 @@ foreach ($filesToProcess as $meta) {
 
     $raw = file_get_contents($filePath);
     $filename = basename($filePath, '.md');
-    $id = $filename;
+    $id = $meta['custom_id'] ?? $filename;
+    if (preg_match('/\*\*ID Konten:\*\*\s*`?([a-zA-Z0-9_-]+)`?/i', $raw, $idMatch)) {
+        $id = trim($idMatch[1]);
+    }
 
-    // Anti-Slop Linter Gate (ERR-006 & ERR-011)
-    $slopPatterns = [
-        'Bukan X tapi Y' => '/\bBukan\s+[^\n.,!?]+,\s*(?:tapi|melainkan)\s+[^\n.,!?]+/iu',
-        'Formula Trio Tanpa' => '/Tanpa\s+[^,]+,\s*tanpa\s+[^,]+,\s*tanpa\s+/iu',
-        'Kosakata Hampa AI' => '/\b(unlock|elevate|empower|delve|game-changer|robust|revolutionize|next-level)\b/iu',
-        'Klise Pembuka AI' => '/\b(Tahukah Anda|Di era (?:modern )?yang serba cepat|Mari kita renungkan|Tanpa berlama-lama)\b/iu'
-    ];
-
-    foreach ($slopPatterns as $ruleName => $pattern) {
-        if (preg_match($pattern, $raw, $slopMatch)) {
-            echo "⚠️ [ANTI-SLOP WARNING] Berkas $filename melanggar aturan '$ruleName': \"{$slopMatch[0]}\"\n";
-        }
+    // HARD GATE ANTI-SLOP & QUALITY CHECK (ERR-006, ERR-011, ERR-022)
+    // Naskah yang melanggar aturan WAJIB MEMUTUSKAN PROSES (EXIT 1), TIDAK BOLEH MASUK HUB!
+    $cmd = "python3 /home/fadil/edumuslim-team/audit/antislop_linter.py " . escapeshellarg($filePath);
+    $linterOutput = [];
+    $linterStatus = 0;
+    exec($cmd, $linterOutput, $linterStatus);
+    if ($linterStatus !== 0) {
+        echo "🛑 [HARD GATE REJECTED] Berkas $filename DITOLAK oleh Anti-Slop Linter:\n";
+        echo implode("\n", $linterOutput) . "\n";
+        echo "❌ Sinkronisasi Hub DIBATALKAN sampai naskah diperbaiki 100%.\n";
+        exit(1);
     }
 
     // Ekstraksi Topik / Title
@@ -170,7 +233,9 @@ foreach ($filesToProcess as $meta) {
 
     // Ekstraksi Hook
     $hook = $title;
-    if (preg_match('/\[Slide 1[^\]]*\][\s\S]*?\*([^*]+)\*/i', $raw, $m)) {
+    if (preg_match('/\*\*Hook:\*\*\s*(.+)/i', $raw, $m)) {
+        $hook = trim($m[1]);
+    } elseif (preg_match('/\[Slide 1[^\]]*\][\s\S]*?\*([^*]+)\*/i', $raw, $m)) {
         $hook = trim($m[1]);
     } elseif (preg_match('/Teks Utama di Tengah Layar:\s*> \*([^*]+)\*/i', $raw, $m)) {
         $hook = trim($m[1]);
