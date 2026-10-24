@@ -1025,16 +1025,22 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                         <span class="metric-val"><?= $igCache['profile']['followers_count'] ?? 476 ?></span>
                     </div>
                     <div class="metric-row">
-                        <span style="color: var(--text-muted);">Post Terakhir (Baseline)</span>
-                        <span class="metric-val">16 Okt (Reach: <?= $igCache['latest_post']['insights']['reach'] ?? 14 ?>)</span>
+                        <span style="color: var(--text-muted);">Post Terakhir</span>
+                        <span class="metric-val"><?= !empty($igCache['latest_post']['timestamp']) ? date('d M H:i', strtotime($igCache['latest_post']['timestamp'])) : '-' ?> (Reach: <?= $igCache['latest_post']['insights']['reach'] ?? 0 ?>)</span>
                     </div>
                     <div class="metric-row">
                         <span style="color: var(--text-muted);">Interaksi Terakhir</span>
-                        <span class="metric-val">Save: <?= $igCache['latest_post']['insights']['saved'] ?? 0 ?> | Share: <?= $igCache['latest_post']['insights']['shares'] ?? 1 ?></span>
+                        <span class="metric-val">Save: <?= $igCache['latest_post']['insights']['saved'] ?? 0 ?> | Share: <?= $igCache['latest_post']['insights']['shares'] ?? 0 ?></span>
                     </div>
-                    <div style="margin-top: 0.75rem; font-size: 0.78rem; color: #fbbf24; background: rgba(245, 158, 11, 0.1); padding: 0.5rem; border-radius: 6px;">
-                        ⚠️ Tidak ada postingan feed 24 jam terakhir. Pancing interaksi via IG Story & Reels.
-                    </div>
+                    <?php if (empty($igCache['posts_last_24h'])): ?>
+                        <div style="margin-top: 0.75rem; font-size: 0.78rem; color: #fbbf24; background: rgba(245, 158, 11, 0.1); padding: 0.5rem; border-radius: 6px;">
+                            ⚠️ Tidak ada postingan feed 24 jam terakhir. Pancing interaksi via IG Story & Reels.
+                        </div>
+                    <?php else: ?>
+                        <div style="margin-top: 0.75rem; font-size: 0.78rem; color: #34d399; background: rgba(16, 185, 129, 0.1); padding: 0.5rem; border-radius: 6px;">
+                            ✅ Ada <?= count($igCache['posts_last_24h']) ?> postingan aktif dalam 24 jam terakhir. Pantau akumulasi Save & Share.
+                        </div>
+                    <?php endif; ?>
                 </div>
 
                 <!-- Evaluasi Threads & Input Form -->
