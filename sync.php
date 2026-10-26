@@ -147,11 +147,34 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $kontenDir . '/grup-wa-hatim.md',
+        'file' => $kontenDir . '/story-minggu.md',
+        'channel' => 'Instagram Story',
+        'day' => 'Minggu',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa-20261025.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Minggu',
+        'funnel' => 'COMMUNITY',
+        'target_product' => 'Komunitas (Faedah Murni)',
+        'custom_id' => 'grup-wa-20261025'
+    ],
+    [
+        'file' => $kontenDir . '/story-senin.md',
+        'channel' => 'Instagram Story',
+        'day' => 'Senin',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa-20261026.md',
         'channel' => 'Grup WhatsApp',
         'day' => 'Senin',
-        'funnel' => 'Nurturing (Turath)',
-        'target_product' => 'Komunitas (Faedah Murni)'
+        'funnel' => 'COMMUNITY',
+        'target_product' => 'Komunitas (Faedah Murni)',
+        'custom_id' => 'grup-wa-20261026'
     ],
     [
         'file' => $crmDir . '/broadcast-wa-senin.md',
@@ -317,7 +340,7 @@ foreach ($filesToProcess as $meta) {
     // 3. Ekstraksi Stories (Instagram Story)
     $stories = [];
     if (stripos($meta['channel'], 'Story') !== false || stripos($filename, 'story') !== false) {
-        preg_match_all('/###\s*Story\s*(\d+)[^:\r\n]*[:\]]?[ \t]*([^\r\n]*)\n+([\s\S]*?)(?=(?:###\s*Story|\Z|---))/i', $raw, $stMatches, PREG_SET_ORDER);
+        preg_match_all('/###\s*(?:Story|Slide)\s*(\d+)[^:\r\n]*[:\]]?[ \t]*([^\r\n]*)\n+([\s\S]*?)(?=(?:###\s*(?:Story|Slide)|\Z|---))/i', $raw, $stMatches, PREG_SET_ORDER);
         foreach ($stMatches as $stm) {
             $stNum = (int)$stm[1];
             $stTitle = trim($stm[2]);

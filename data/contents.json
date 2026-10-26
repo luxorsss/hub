@@ -1,203 +1,232 @@
 [
     {
-        "id": "carousel-jumat",
+        "id": "carousel-senin",
         "channel": "Carousel",
-        "day": "Jumat",
-        "funnel": "BOFU",
+        "day": "Senin",
+        "funnel": "TOFU",
         "target_product": "eBook Qila (Rp47rb)",
-        "title": "Bahaya Social Jetlag Akhir Pekan & Menjaga Berkah Waktu Pagi (HR. Abu Dawud no. 2606)",
-        "hook": "Jumat Berkah Ditutup Begadang?",
+        "title": "Kerja Keras Usia 25+ Tapi Merasa Tertinggal?",
+        "hook": "Kerja keras tiap hari, tapi rasanya jalan di tempat?",
         "slides": [
             {
                 "slide_number": 1,
                 "header": "",
                 "title": "",
-                "content": "Jumat Berkah Ditutup Begadang?",
+                "content": "Kerja keras tiap hari, tapi rasanya jalan di tempat?",
+                "design_note": "Pria muda menatap layar laptop di malam hari, raut wajah letih dan bingung, nuansa Midnight Slate tenang."
+            },
+            {
+                "slide_number": 2,
+                "header": "",
+                "title": "",
+                "content": "Buka sosmed, lihat teman seangkatan sudah beli rumah atau naik jabatan.\n\nHati langsung mencelos: \"Kapan giliran saya?\"\n\nSiang hari dihabiskan melayani tuntutan orang lain, sampai lupa menata arah hidup sendiri.",
+                "design_note": "Suasana hiruk pikuk kantor, tumpukan tugas, nuansa visual agak redup menggambarkan kekacauan batin."
+            },
+            {
+                "slide_number": 3,
+                "header": "",
+                "title": "",
+                "content": "Kepala yang berkabut tiap pagi itu akibat kita langsung terjun ke keramaian dunia.\n\nPadahal Allah siapkan jalan tol buat naik kelas:\n\nوَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَّكَ عَسَىٰ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا\n\n\"Dan pada sebagian malam, bertahajudlah kamu... mudah-mudahan Rabb-mu mengangkatmu ke tempat yang terpuji.\" (QS. Al-Isra: 79)",
+                "design_note": "Teks Arab khat rapi berharakat, nuansa hening sepertiga malam, sajadah, cahaya lembut fajar."
+            },
+            {
+                "slide_number": 4,
+                "header": "",
+                "title": "",
+                "content": "Maqaman Mahmuda itu kedudukan terhormat.\n\nOrang yang bangun jam 3 pagi dapat 2 jam hening sebelum dunia bising.\n\nDi jam itu pikiran paling jernih, doa paling tembus ke langit, dan arah hidup kembali tegak.",
+                "design_note": "Jam menunjukkan pukul 03.15, secangkir air hangat, buku catatan kecil di samping mushaf."
+            },
+            {
+                "slide_number": 5,
+                "header": "",
+                "title": "",
+                "content": "Masalahnya: niat bangun malam sering kalah sama rasa ngantuk berat.\n\nBadan lemas karena jam tidur malamnya berantakan.\n\nMenata karir itu dimulai dari menata jam tidur malam, bukan modal pasang alarm banyak-banyak.",
+                "design_note": "Ilustrasi sederhana rutinitas malam yang tenang, lampu kamar temaram, cut-off layar HP."
+            },
+            {
+                "slide_number": 6,
+                "header": "",
+                "title": "",
+                "content": "Ambil wudhu dingin sebelum fajar, shalat 2 rakaat khusyuk.\n\nMinta arah hidup langsung ke Pemilik Kerajaan Langit dan Bumi.\n\nSaat orang lain baru bangun panik, mentalmu sudah tenang dan siap melangkah jauh.",
+                "design_note": "Siluet berdiri shalat malam dengan latar jendela hening, warna Warm Gold fajar di ufuk timur."
+            },
+            {
+                "slide_number": 7,
+                "header": "",
+                "title": "",
+                "content": "Panduan menata jam tidur sunnah agar melek jam 3 pagi dengan kepala jernih sudah saya rangkum di eBook Qila.\n\nKetik \"ARAH\" di komentar, aksesnya langsung saya kirim ke DM kamu.",
+                "design_note": "Mockup eBook Qila elegan, teks CTA \"ARAH\" kontras Warm Gold tebal."
+            }
+        ],
+        "posts": [],
+        "stories": [],
+        "wa_message": "",
+        "outreach_messages": [],
+        "caption": "Kerja keras tiap hari tapi merasa tertinggal? Baca 7 slide ini, lalu ketik \"ARAH\" di komentar ya.",
+        "raw_markdown": "# Naskah Carousel Hari Senin — Pekan 2 (@edumuslimin)\n\n- **Topik:** Kerja Keras Usia 25+ Tapi Merasa Tertinggal?\n- **Format:** Seamless Storytelling Carousel (1080x1350 \/ 7 Slide Model Kuro)\n- **Funnel:** TOFU (Klaster Karir & Quarter-Life Crisis)\n- **Produk Terkait:** eBook Qila\n- **CTA Trigger:** \"ARAH\"\n\n---\n\n## 📱 NASKAH 7 SLIDE CAROUSEL\n\n### Slide 1\n- **[Teks Isi]:**\nKerja keras tiap hari, tapi rasanya jalan di tempat?\n- **[Catatan Desain]:** Pria muda menatap layar laptop di malam hari, raut wajah letih dan bingung, nuansa Midnight Slate tenang.\n\n### Slide 2\n- **[Teks Isi]:**\nBuka sosmed, lihat teman seangkatan sudah beli rumah atau naik jabatan.\n\nHati langsung mencelos: \"Kapan giliran saya?\"\n\nSiang hari dihabiskan melayani tuntutan orang lain, sampai lupa menata arah hidup sendiri.\n- **[Catatan Desain]:** Suasana hiruk pikuk kantor, tumpukan tugas, nuansa visual agak redup menggambarkan kekacauan batin.\n\n### Slide 3\n- **[Teks Isi]:**\nKepala yang berkabut tiap pagi itu akibat kita langsung terjun ke keramaian dunia.\n\nPadahal Allah siapkan jalan tol buat naik kelas:\n\nوَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَّكَ عَسَىٰ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا\n\n\"Dan pada sebagian malam, bertahajudlah kamu... mudah-mudahan Rabb-mu mengangkatmu ke tempat yang terpuji.\" (QS. Al-Isra: 79)\n- **[Catatan Desain]:** Teks Arab khat rapi berharakat, nuansa hening sepertiga malam, sajadah, cahaya lembut fajar.\n\n### Slide 4\n- **[Teks Isi]:**\nMaqaman Mahmuda itu kedudukan terhormat.\n\nOrang yang bangun jam 3 pagi dapat 2 jam hening sebelum dunia bising.\n\nDi jam itu pikiran paling jernih, doa paling tembus ke langit, dan arah hidup kembali tegak.\n- **[Catatan Desain]:** Jam menunjukkan pukul 03.15, secangkir air hangat, buku catatan kecil di samping mushaf.\n\n### Slide 5\n- **[Teks Isi]:**\nMasalahnya: niat bangun malam sering kalah sama rasa ngantuk berat.\n\nBadan lemas karena jam tidur malamnya berantakan.\n\nMenata karir itu dimulai dari menata jam tidur malam, bukan modal pasang alarm banyak-banyak.\n- **[Catatan Desain]:** Ilustrasi sederhana rutinitas malam yang tenang, lampu kamar temaram, cut-off layar HP.\n\n### Slide 6\n- **[Teks Isi]:**\nAmbil wudhu dingin sebelum fajar, shalat 2 rakaat khusyuk.\n\nMinta arah hidup langsung ke Pemilik Kerajaan Langit dan Bumi.\n\nSaat orang lain baru bangun panik, mentalmu sudah tenang dan siap melangkah jauh.\n- **[Catatan Desain]:** Siluet berdiri shalat malam dengan latar jendela hening, warna Warm Gold fajar di ufuk timur.\n\n### Slide 7\n- **[Teks Isi]:**\nPanduan menata jam tidur sunnah agar melek jam 3 pagi dengan kepala jernih sudah saya rangkum di eBook Qila.\n\nKetik \"ARAH\" di komentar, aksesnya langsung saya kirim ke DM kamu.\n- **[Catatan Desain]:** Mockup eBook Qila elegan, teks CTA \"ARAH\" kontras Warm Gold tebal.\n\n---\n\n## 📝 CAPTION FEED INSTAGRAM (1 BARIS MODEL KURO)\n\n```text\nKerja keras tiap hari tapi merasa tertinggal? Baca 7 slide ini, lalu ketik \"ARAH\" di komentar ya.\n```\n",
+        "status": "ready_to_design",
+        "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
+    },
+    {
+        "id": "reels-1-slide-senin",
+        "channel": "Reels 1-Slide",
+        "day": "Senin\/Selasa",
+        "funnel": "TOFU\/BOFU",
+        "target_product": "eBook Qila (Rp47rb)",
+        "title": "Naskah Reels 2-Slide (Model Format Kuro) @edumuslimin — Pekan 2",
+        "hook": "Teks di Layar (Font Raksasa Tebal di Tengah):\n\"Kerja keras tapi stuck?\"",
+        "slides": [
+            {
+                "slide_number": 1,
+                "header": "Hook \/ Headline (0 – 3 Detik)",
+                "title": "Hook \/ Headline (0 – 3 Detik)",
+                "content": "Teks di Layar (Font Raksasa Tebal di Tengah):\n\"Kerja keras tapi stuck?\"\n\n- Visual: Background hening meja kerja gelap, laptop tertutup di samping mushaf Al-Qur'an (nuansa charcoal slate tenang).\n- Safe Zone: Margin aman 250px atas & bawah, font sans-serif tebal krem hangat (54–64 pt).\n- Audio: Suara hening malam \/ detak jarum jam halus.",
+                "design_note": ""
+            },
+            {
+                "slide_number": 2,
+                "header": "Poin-Poin Solusi Konkret (Detik 4 – 15)",
+                "title": "Poin-Poin Solusi Konkret (Detik 4 – 15)",
+                "content": "Teks di Layar (Rapi 3 Poin Solusi):\n\"Siang harimu terlalu ramai buat cari arah hidup.  \nMulai besok coba 3 hal ini:  \n1. Matikan layar HP 1 jam sebelum tidur.  \n2. Bangun jam 3 pagi pas dunia masih senyap.  \n3. Sujud panjang, minta petunjuk langsung ke Langit.  \n(Panduan jam tidur sunnah ada di bio @edumuslimin)\"\n\n- Visual: Transisi geser halus ke foto sajadah terlipat rapi dan secangkir air putih hangat.\n- Audio: Nada reflektif tenang.\n\n## 📝 Copywriting Caption (Model Kuro: Tajam, Bernapas & Relatable)\n\n```text\nSiang hari tenaga kita habis dipakai kerja, malam hari pikiran kalut mikirin masa depan.\n\nKalau mau naik kelas, biasakan punya jam hening sebelum matahari terbit. Allah janjikan tempat terpuji (Maqaman Mahmuda) bagi mereka yang meluangkan waktu tahajud di sepertiga malam.\n\nLangkah menata jam tidur biar melek jam 3 pagi tanpa drama lemas sudah saya rangkum di eBook Qila.\n\nKetik \"ARAH\" di komentar, nanti intisarinya saya kirim langsung ke DM kamu 🙌\n\n#tahajud #qiyamullail #karirberkah #produktivitasmuslim #edumuslimin #arahhidup\n```",
+                "design_note": ""
+            }
+        ],
+        "posts": [],
+        "stories": [],
+        "wa_message": "",
+        "outreach_messages": [],
+        "caption": "Siang hari tenaga kita habis dipakai kerja, malam hari pikiran kalut mikirin masa depan.\n\nKalau mau naik kelas, biasakan punya jam hening sebelum matahari terbit. Allah janjikan tempat terpuji (Maqaman Mahmuda) bagi mereka yang meluangkan waktu tahajud di sepertiga malam.\n\nLangkah menata jam tidur biar melek jam 3 pagi tanpa drama lemas sudah saya rangkum di eBook Qila.\n\nKetik \"ARAH\" di komentar, nanti intisarinya saya kirim langsung ke DM kamu 🙌\n\n#tahajud #qiyamullail #karirberkah #produktivitasmuslim #edumuslimin #arahhidup",
+        "raw_markdown": "# Naskah Reels 2-Slide (Model Format Kuro) @edumuslimin — Pekan 2\n**Disusun oleh:** Rembuk Tim (`voice-copywriter`, `growth-planner`, & `CEO`)  \n**Format:** Reels 2-Slide Ringkas (Slide 1: Headline 3 Kata, Slide 2: Poin Solusi)  \n**Tujuan Algoritma:** Retensi tontonan >200% & Save Rate tinggi  \n**Target Penjualan:** Trigger komentar \"ARAH\" untuk dialirkan ke DM sales\n\n---\n\n### Slide 1: Hook \/ Headline (0 – 3 Detik)\n**Teks di Layar (Font Raksasa Tebal di Tengah):**\n> *\"Kerja keras tapi stuck?\"*\n\n- **Visual:** Background hening meja kerja gelap, laptop tertutup di samping mushaf Al-Qur'an (nuansa charcoal slate tenang).\n- **Safe Zone:** Margin aman 250px atas & bawah, font sans-serif tebal krem hangat (54–64 pt).\n- **Audio:** Suara hening malam \/ detak jarum jam halus.\n\n---\n\n### Slide 2: Poin-Poin Solusi Konkret (Detik 4 – 15)\n**Teks di Layar (Rapi 3 Poin Solusi):**\n> *\"Siang harimu terlalu ramai buat cari arah hidup.*  \n>  \n> *Mulai besok coba 3 hal ini:*  \n> *1. Matikan layar HP 1 jam sebelum tidur.*  \n> *2. Bangun jam 3 pagi pas dunia masih senyap.*  \n> *3. Sujud panjang, minta petunjuk langsung ke Langit.*  \n>  \n> *(Panduan jam tidur sunnah ada di bio @edumuslimin)\"*\n\n- **Visual:** Transisi geser halus ke foto sajadah terlipat rapi dan secangkir air putih hangat.\n- **Audio:** Nada reflektif tenang.\n\n---\n\n## 📝 Copywriting Caption (Model Kuro: Tajam, Bernapas & Relatable)\n\n```text\nSiang hari tenaga kita habis dipakai kerja, malam hari pikiran kalut mikirin masa depan.\n\nKalau mau naik kelas, biasakan punya jam hening sebelum matahari terbit. Allah janjikan tempat terpuji (Maqaman Mahmuda) bagi mereka yang meluangkan waktu tahajud di sepertiga malam.\n\nLangkah menata jam tidur biar melek jam 3 pagi tanpa drama lemas sudah saya rangkum di eBook Qila.\n\nKetik \"ARAH\" di komentar, nanti intisarinya saya kirim langsung ke DM kamu 🙌\n\n#tahajud #qiyamullail #karirberkah #produktivitasmuslim #edumuslimin #arahhidup\n```\n",
+        "status": "ready_to_design",
+        "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
+    },
+    {
+        "id": "threads-senin",
+        "channel": "Threads",
+        "day": "Senin",
+        "funnel": "MOFU\/BOFU (Utas)",
+        "target_product": "eBook Qila (Rp47rb)",
+        "title": "Usia 25+ Kerja Keras Tiap Hari Tapi Ngerasa Jalan di Tempat?",
+        "hook": "Usia 25+ Kerja Keras Tiap Hari Tapi Ngerasa Jalan di Tempat?",
+        "slides": [],
+        "posts": [
+            {
+                "post_number": 1,
+                "header": "",
+                "content": "Usia 25 ke atas itu masa-masa kepala paling berisik: kerjaan jalan terus, tapi hati sering nanya \"arah hidup saya sebenarnya mau ke mana?\""
+            },
+            {
+                "post_number": 2,
+                "header": "",
+                "content": "Buka media sosial, lihat teman seangkatan seolah hidupnya sudah mapan semua. Ada yang baru beli rumah, ada yang promosi jabatan.\n\nSementara kita tiap hari banting tulang dari pagi sampai malam, energinya habis cuma buat bertahan hidup.\n\nWajar kalau dada terasa sesak dan pikiran gampang berkabut."
+            },
+            {
+                "post_number": 3,
+                "header": "Jam Hening)",
+                "content": "Siang hari itu terlalu bising buat memikirkan keputusan besar. Semua orang berebut minta perhatian kita.\n\nMakanya Allah sediakan satu waktu istimewa untuk mengangkat derajat hamba-Nya:\n\nوَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَّكَ عَسَىٰ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا\n\n\"Dan pada sebagian malam, bertahajudlah kamu... mudah-mudahan Rabb-mu mengangkatmu ke tempat yang terpuji.\" (QS. Al-Isra: 79)"
+            },
+            {
+                "post_number": 4,
+                "header": "",
+                "content": "Orang yang punya rutinitas bangun jam 3 pagi punya privilese luar biasa: 2 jam hening sebelum dunia bangun.\n\nDi waktu itu, pikiran tenang, sujud terasa dalam, dan arah hidup yang tadinya buram pelan-pelan kelihatan jalannya.\n\nMulai pekan dengan batin kokoh bersama Allah, tinggalkan rasa panik mengejar dunia."
+            },
+            {
+                "post_number": 5,
+                "header": "",
+                "content": "Kalau kamu mau bisa bangun jam 3 pagi dengan badan segar tanpa perang sama alarm, panduan adab tidurnya sudah saya rangkum di eBook Qila.\n\nPagi ini, apa hal terbesar yang bikin pikiranmu paling kalut soal karir atau masa depan?\n\nYang mau panduan jam tidurnya, balas ketik \"ARAH\" di bawah, saya kirim aksesnya ke DM 🙌"
+            }
+        ],
+        "stories": [],
+        "wa_message": "",
+        "outreach_messages": [],
+        "caption": "",
+        "raw_markdown": "# Utas Threads Hari Senin — Pekan 2 (@edumuslimin)\n\n- **Topik:** Usia 25+ Kerja Keras Tiap Hari Tapi Ngerasa Jalan di Tempat?\n- **Format:** Utas Bersambung (5 Post Balasan)\n- **Tujuan:** Edukasi kejernihan arah karir & pembukaan jalur konversi eBook Qila via keyword DM \"ARAH\"\n- **Status Link:** TANPA LINK EKSTERNAL (Sesuai Aturan Algoritma Threads ERR-010)\n- **Catatan Suara:** Gaya santai warkop Owner, bebas formula klise AI, tanpa nominal rupiah.\n\n---\n\n### Post 1 (Hook Utama)\nUsia 25 ke atas itu masa-masa kepala paling berisik: kerjaan jalan terus, tapi hati sering nanya \"arah hidup saya sebenarnya mau ke mana?\"\n\n---\n\n### Post 2 (Fenomena Nyata)\nBuka media sosial, lihat teman seangkatan seolah hidupnya sudah mapan semua. Ada yang baru beli rumah, ada yang promosi jabatan.\n\nSementara kita tiap hari banting tulang dari pagi sampai malam, energinya habis cuma buat bertahan hidup.\n\nWajar kalau dada terasa sesak dan pikiran gampang berkabut.\n\n---\n\n### Post 3 (Solusi Langit: Jam Hening)\nSiang hari itu terlalu bising buat memikirkan keputusan besar. Semua orang berebut minta perhatian kita.\n\nMakanya Allah sediakan satu waktu istimewa untuk mengangkat derajat hamba-Nya:\n\nوَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَّكَ عَسَىٰ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا\n\n\"Dan pada sebagian malam, bertahajudlah kamu... mudah-mudahan Rabb-mu mengangkatmu ke tempat yang terpuji.\" (QS. Al-Isra: 79)\n\n---\n\n### Post 4 (Efek Kejernihan Pikiran)\nOrang yang punya rutinitas bangun jam 3 pagi punya privilese luar biasa: 2 jam hening sebelum dunia bangun.\n\nDi waktu itu, pikiran tenang, sujud terasa dalam, dan arah hidup yang tadinya buram pelan-pelan kelihatan jalannya.\n\nMulai pekan dengan batin kokoh bersama Allah, tinggalkan rasa panik mengejar dunia.\n\n---\n\n### Post 5 (CTA Pemicu Balasan Kata Kunci)\nKalau kamu mau bisa bangun jam 3 pagi dengan badan segar tanpa perang sama alarm, panduan adab tidurnya sudah saya rangkum di eBook Qila.\n\nPagi ini, apa hal terbesar yang bikin pikiranmu paling kalut soal karir atau masa depan?\n\nYang mau panduan jam tidurnya, balas ketik \"ARAH\" di bawah, saya kirim aksesnya ke DM 🙌\n",
+        "status": "ready_to_design",
+        "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
+    },
+    {
+        "id": "story-senin",
+        "channel": "Instagram Story",
+        "day": "Senin",
+        "funnel": "MOFU",
+        "target_product": "eBook Qila",
+        "title": "Instagram Story Hari Senin — Pekan 2 (@edumuslimin)",
+        "hook": "📅 Posting: 07.30 WIB",
+        "slides": [
+            {
+                "slide_number": 1,
+                "header": "",
+                "title": "",
+                "content": "📅 Posting: 07.30 WIB\n\n🗳️ Memulai pekan ini, kepalamu paling sering mikirin apa?\n💼 Arah karir & masa depan\n🥱 Capek fisik & burnout\n\n(Polling interaktif. Biarkan audiens jawab sendiri — tidak perlu teks tambahan.)",
                 "design_note": ""
             },
             {
                 "slide_number": 2,
                 "header": "",
                 "title": "",
-                "content": "Dari Senin sampai Kamis ritme bangun sudah rapi. Pas Jumat malam, mulai nyeletuk: \"Kan besok libur, tidur jam 2 pagi santai lah.\"",
+                "content": "📅 Posting: 12.00 WIB\n\nSiang hari pikiran gampang buntu karena kita langsung diserbu tuntutan kerjaan.\nLuangkan waktu hening sejenak sebelum dunia bising.\n\n(Visual: meja kerja sederhana, secangkir kopi, suasana rapi. Maksimal 22 kata pada teks.)",
                 "design_note": ""
             },
             {
                 "slide_number": 3,
                 "header": "",
                 "title": "",
-                "content": "Di dunia medis, fenomena ini disebut Social Jetlag. Menggeser jam tidur lebih dari 2 jam bikin ritme biologis tubuh kaget.",
+                "content": "📅 Posting: 16.30 WIB\n\nAllah siapkan jalan naik kelas di sepertiga malam:\nوَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَّكَ عَسَىٰ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا\n\"Dan pada sebagian malam, bertahajudlah kamu... mudah-mudahan Rabb-mu mengangkatmu ke tempat yang terpuji.\"\n(QS. Al-Isra: 79)\nKedudukan terhormat dijemput saat dunia masih lelap.\n\n(Teks putih di background gelap hangat. Total teks slide ≤ 25 kata.)",
                 "design_note": ""
             },
             {
                 "slide_number": 4,
                 "header": "",
                 "title": "",
-                "content": "Efeknya terasa ke hari Sabtu. Subuh kesiangan, kepala berdenyut, dan seharian bawaannya lemas sambil nahan rasa bersalah di dada.",
-                "design_note": ""
-            },
-            {
-                "slide_number": 5,
-                "header": "",
-                "title": "",
-                "content": "اللَّهُمَّ بَارِكْ لِأُمَّتِي فِي بُكُورِهَا\n\nNabi ﷺ mendoakan: \"Ya Allah, berkahilah umatku di waktu pagi mereka.\" (HR. Abu Dawud no. 2606, Hasan Shahih).",
-                "design_note": ""
-            },
-            {
-                "slide_number": 6,
-                "header": "",
-                "title": "",
-                "content": "Doa keberkahan pagi ini berlaku tiap hari, termasuk akhir pekan. Liburan tetap bisa dinikmati tanpa harus merusak jam istirahat tubuh.",
-                "design_note": ""
-            },
-            {
-                "slide_number": 7,
-                "header": "",
-                "title": "",
-                "content": "Langkah praktis tata jam tidur biologis dan adab bangun malam saya rangkum di eBook Qila. Ketik QILA di komentar, nanti linknya saya kirim ke DM kamu.",
+                "content": "📅 Posting: 20.00 WIB\n\nMau besok bangun jam 3 pagi dengan kepala jernih tanpa disiksa alarm?\nKetik ARAH di DM — saya kirim panduan adab tidurnya buat kamu 🤍\n\n(Visual: lampu meja kamar hangat redup, suasana hening malam. Tanpa harga, tanpa link eksternal.)",
                 "design_note": ""
             }
         ],
-        "posts": [],
-        "stories": [],
-        "wa_message": "",
-        "outreach_messages": [],
-        "caption": "Jumat seharian ngejar berkah, jangan sampai ditutup begadang malam ini. Geser 7 slide, lalu ketik \"QILA\" di komentar ya.",
-        "raw_markdown": "# Naskah Carousel Hari Jumat (@edumuslimin)\n\n- **Topik:** Bahaya Social Jetlag Akhir Pekan & Menjaga Berkah Waktu Pagi (HR. Abu Dawud no. 2606)\n- **Format:** Seamless Storytelling Carousel (1080x1350 \/ 7 Slide)\n- **Funnel:** TOFU to MOFU (Edukasi Rutinitas Akhir Pekan & Solusi Qila)\n- **Produk Terkait:** eBook Qila\n- **CTA Trigger:** \"QILA\"\n\n---\n\n## 🎯 PILIHAN HEADLINE SLIDE 1 (GAYA KHAS OWNER)\n\n1. **Opsi 1 (Rekomendasi Utama):**\n   > ***Jumat Berkah Ditutup Begadang?***\n   *(Menyentuh kontras kebiasaan umum menjelang libur).*\n\n2. **Opsi 2:**\n   > ***Kenapa Sabtu Pagi Sering Lemas?***\n   *(Langsung to the point ke efek bangun tidur).*\n\n3. **Opsi 3:**\n   > ***Jebakan Santai Malam Akhir Pekan?***\n   *(Relatable untuk pekerja kantoran).*\n\n---\n\n## 📱 NASKAH SLIDE-BY-SLIDE (7 SLIDE MENGALIR)\n\n### Slide 1\n***Jumat Berkah Ditutup Begadang?***\n\n- **Catatan Desain:** Deep Emerald Night polos, tipografi warna gading hangat, negative space 55%+. Tanpa gambar bernyawa.\n\n### Slide 2\nDari Senin sampai Kamis ritme bangun sudah rapi. Pas Jumat malam, mulai nyeletuk: \"Kan besok libur, tidur jam 2 pagi santai lah.\"\n\n- **Catatan Desain:** Tipografi santai berjarak lega, nyaman dibaca di layar HP. Baris akhir sebagai jembatan swipe.\n\n### Slide 3\nDi dunia medis, fenomena ini disebut Social Jetlag. Menggeser jam tidur lebih dari 2 jam bikin ritme biologis tubuh kaget.\n\n- **Catatan Desain:** Ruang baca lega, visual minimalis aksen abu-abu tenang.\n\n### Slide 4\nEfeknya terasa ke hari Sabtu. Subuh kesiangan, kepala berdenyut, dan seharian bawaannya lemas sambil nahan rasa bersalah di dada.\n\n- **Catatan Desain:** Refleksi jujur kondisi fisik yang sering dialami audiens.\n\n### Slide 5\nاللَّهُمَّ بَارِكْ لِأُمَّتِي فِي بُكُورِهَا\n\nNabi ﷺ mendoakan: \"Ya Allah, berkahilah umatku di waktu pagi mereka.\" (HR. Abu Dawud no. 2606, Hasan Shahih).\n\n- **Catatan Desain:** Teks Arab rapi dengan aksen emas lembut di atas narasi santai.\n\n### Slide 6\nDoa keberkahan pagi ini berlaku tiap hari, termasuk akhir pekan. Liburan tetap bisa dinikmati tanpa harus merusak jam istirahat tubuh.\n\n- **Catatan Desain:** Pesan solutif membumi, tanpa nada menggurui.\n\n### Slide 7\nLangkah praktis tata jam tidur biologis dan adab bangun malam saya rangkum di eBook Qila. Ketik QILA di komentar, nanti linknya saya kirim ke DM kamu.\n\n- **Catatan Desain:** Slide penutup hangat, aksen kata QILA kontras jelas.\n\n---\n\n## 📝 CAPTION FEED INSTAGRAM (1 BARIS MODEL KURO)\n\n```text\nJumat seharian ngejar berkah, jangan sampai ditutup begadang malam ini. Geser 7 slide, lalu ketik \"QILA\" di komentar ya.\n```\n",
-        "status": "ready_to_design",
-        "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
-    },
-    {
-        "id": "reels-jumat",
-        "channel": "Reels 2-Slide",
-        "day": "Jumat",
-        "funnel": "MOFU",
-        "target_product": "eBook Qila",
-        "title": "Kenapa Deretan Alarm Malah Bikin Tubuh Remuk (Sleep Inertia & Hormon Adenosin)",
-        "hook": "Makin Banyak Alarm, Makin Remuk.",
-        "slides": [
-            {
-                "slide_number": 1,
-                "header": "",
-                "title": "",
-                "content": "Makin Banyak Alarm, Makin Remuk.\n\n- Catatan Visual: Font bold raksasa di tengah layar gelap. Waktu tayang 1,5 detik. Menghentikan scrolling seketika.",
-                "design_note": ""
-            },
-            {
-                "slide_number": 2,
-                "header": "",
-                "title": "",
-                "content": "Menekan tombol snooze berulang kali memicu fenomena medis bernama sleep inertia. Otak dipaksa bangun saat hormon adenosin masih tinggi.\n\n3 langkah praktis memutus kebiasaan ini:\n\n1. Jarak 3 Meter: Pasang 1 alarm saja jam 03.15, letakkan HP jauh dari jangkauan kasur.\n2. Tegakkan Punggung: Begitu dering bunyi, langsung duduk tegak dan hindari rebahan lagi.\n3. Air Dingin: Langsung basuh muka ke kamar mandi agar saraf sadar aktif seketika.\n\n- Catatan Visual: Teks ringkas, kontras putih-emas di atas background charcoal gelap. Durasi 5-7 detik.\n\n## 📝 CAPTION MODEL KURO (1 BARIS UTAMA + SPACING LEGA)\n\n```text\nTombol snooze yang ditekan berulang kali adalah penyebab utama kepala terasa berat saat bangun.\n\nTidur yang terputus alarm lalu lanjut merem memaksa otak masuk siklus tidur baru yang belum tuntas. Tubuh kebanjiran adenosin dan lemas seharian.\n\nPanduan ritme tidur biologis dan adab bangun malam sudah dirangkum di eBook Qila.\n\nKetik \"QILA\" di komentar, nanti link panduannya saya kirim ke DM kamu.\n```",
-                "design_note": ""
-            }
-        ],
-        "posts": [],
-        "stories": [],
-        "wa_message": "",
-        "outreach_messages": [],
-        "caption": "Tombol snooze yang ditekan berulang kali adalah penyebab utama kepala terasa berat saat bangun.\n\nTidur yang terputus alarm lalu lanjut merem memaksa otak masuk siklus tidur baru yang belum tuntas. Tubuh kebanjiran adenosin dan lemas seharian.\n\nPanduan ritme tidur biologis dan adab bangun malam sudah dirangkum di eBook Qila.\n\nKetik \"QILA\" di komentar, nanti link panduannya saya kirim ke DM kamu.",
-        "raw_markdown": "# Naskah Reels 2-Slide: Hari Jumat (@edumuslimin)\n\n- **Topik:** Kenapa Deretan Alarm Malah Bikin Tubuh Remuk (Sleep Inertia & Hormon Adenosin)\n- **Format:** Reels 2-Slide Visual Teks (1080x1920)\n- **Funnel:** MOFU (Sains Sirkadian & Solusi Biologis)\n- **Produk Terkait:** eBook Qila\n- **Target Pembeli:** Profesional & pebisnis muslim yang sering lemas dan snooze alarm\n\n---\n\n## 📱 NASKAH REELS 2-SLIDE\n\n### Slide 1 (Hook Raksasa)\nMakin Banyak Alarm, Makin Remuk.\n\n- **Catatan Visual:** Font bold raksasa di tengah layar gelap. Waktu tayang 1,5 detik. Menghentikan scrolling seketika.\n\n### Slide 2 (Sains & Solusi Mikro)\nMenekan tombol snooze berulang kali memicu fenomena medis bernama sleep inertia. Otak dipaksa bangun saat hormon adenosin masih tinggi.\n\n3 langkah praktis memutus kebiasaan ini:\n\n1. **Jarak 3 Meter:** Pasang 1 alarm saja jam 03.15, letakkan HP jauh dari jangkauan kasur.\n2. **Tegakkan Punggung:** Begitu dering bunyi, langsung duduk tegak dan hindari rebahan lagi.\n3. **Air Dingin:** Langsung basuh muka ke kamar mandi agar saraf sadar aktif seketika.\n\n- **Catatan Visual:** Teks ringkas, kontras putih-emas di atas background charcoal gelap. Durasi 5-7 detik.\n\n---\n\n## 📝 CAPTION MODEL KURO (1 BARIS UTAMA + SPACING LEGA)\n\n```text\nTombol snooze yang ditekan berulang kali adalah penyebab utama kepala terasa berat saat bangun.\n\nTidur yang terputus alarm lalu lanjut merem memaksa otak masuk siklus tidur baru yang belum tuntas. Tubuh kebanjiran adenosin dan lemas seharian.\n\nPanduan ritme tidur biologis dan adab bangun malam sudah dirangkum di eBook Qila.\n\nKetik \"QILA\" di komentar, nanti link panduannya saya kirim ke DM kamu.\n```\n",
-        "status": "ready_to_design",
-        "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
-    },
-    {
-        "id": "story-jumat",
-        "channel": "Instagram Story",
-        "day": "Jumat",
-        "funnel": "MOFU",
-        "target_product": "eBook Qila",
-        "title": "Polling Energi Pagi & Sunnah Jumat (Solusi Qailulah & Qila)",
-        "hook": "Gimana Kondisi Badan Pagi Ini Setelah Bangun Tidur?",
-        "slides": [],
         "posts": [],
         "stories": [
             {
                 "story_number": 1,
                 "title": "",
-                "content": "**Visual:** Foto secangkir air hangat di meja kerja atau pemandangan jendela fajar tenang.\n**Teks:**\nJumat berkah.\nGimana kondisi badan pagi ini setelah bangun tidur?\n\n**Stiker Polling:**\n- Pilihan A: Segar bertenaga ☀️\n- Pilihan B: Masih lemas & berat 🥱"
+                "content": "📅 **Posting: 07.30 WIB**\n\n> 🗳️ Memulai pekan ini, kepalamu paling sering mikirin apa?\n>\n> 💼 Arah karir & masa depan\n> 🥱 Capek fisik & burnout\n\n*(Polling interaktif. Biarkan audiens jawab sendiri — tidak perlu teks tambahan.)*"
             },
             {
                 "story_number": 2,
                 "title": "",
-                "content": "**Visual:** Interior masjid yang tenang atau sudut sajadah rapi.\n**Teks:**\nHari Jumat punya keutamaan besar.\n\nSempatkan mandi sunnah, kenakan pakaian terbaik, dan berangkat lebih awal ke masjid.\n\nKalo badan terasa mengantuk, ambil qailulah 15 menit sebelum atau sesudah Jumatan agar stamina kembali prima."
+                "content": "📅 **Posting: 12.00 WIB**\n\n> Siang hari pikiran gampang buntu karena kita langsung diserbu tuntutan kerjaan.\n> Luangkan waktu hening sejenak sebelum dunia bising.\n\n*(Visual: meja kerja sederhana, secangkir kopi, suasana rapi. Maksimal 22 kata pada teks.)*"
             },
             {
                 "story_number": 3,
                 "title": "",
-                "content": "**Visual:** Langit senja keemasan yang tenang.\n**Teks:**\nHari Jumat menyimpan waktu istimewa di mana doa dikabulkan: antara ba'da Ashar sampai Maghrib.\n\nLuangkan 10 menit sore ini. Titipkan semua beban pikiran, hajat rezeki, dan doa keluarga kepada Allah."
+                "content": "📅 **Posting: 16.30 WIB**\n\n> Allah siapkan jalan naik kelas di sepertiga malam:\n>\n> وَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَّكَ عَسَىٰ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا\n>\n> *\"Dan pada sebagian malam, bertahajudlah kamu... mudah-mudahan Rabb-mu mengangkatmu ke tempat yang terpuji.\"*\n> (QS. Al-Isra: 79)\n>\n> Kedudukan terhormat dijemput saat dunia masih lelap.\n\n*(Teks putih di background gelap hangat. Total teks slide ≤ 25 kata.)*"
             },
             {
                 "story_number": 4,
                 "title": "",
-                "content": "**Visual:** Suasana kamar tidur temaram, buku catatan kecil di meja samping kasur.\n**Teks:**\nMalam Sabtu waktunya mengistirahatkan tubuh lebih awal.\n\nTutup HP jam 21.30, ambil wudhu, lalu niatkan bangun menjumpai Rabb-mu di sepertiga malam.\n\nBuat yang ingin merapikan ritme tidur biologis dan panduan adab bangun malam:\n\n**Stiker Link \/ DM:**\nStiker tautan ke `https:\/\/lp.edumuslim.my.id\/lpqila` (Label: Baca Panduan Qila)  \nAtau ketik \"QILA\" lewat DM, kami kirim akses eBook Qila sekarang."
+                "content": "📅 **Posting: 20.00 WIB**\n\n> Mau besok bangun jam 3 pagi dengan kepala jernih tanpa disiksa alarm?\n>\n> Ketik **ARAH** di DM — saya kirim panduan adab tidurnya buat kamu 🤍\n\n*(Visual: lampu meja kamar hangat redup, suasana hening malam. Tanpa harga, tanpa link eksternal.)*"
             }
         ],
         "wa_message": "",
         "outreach_messages": [],
         "caption": "",
-        "raw_markdown": "# Skenario 4-Slide Instagram Story (Jumat)\n\n- **Akun:** @edumuslimin\n- **Topik:** Polling Energi Pagi & Sunnah Jumat (Solusi Qailulah & Qila)\n- **Hook:** Gimana Kondisi Badan Pagi Ini Setelah Bangun Tidur?\n- **Format:** Instagram Story Interaktif (1080x1920)\n- **Funnel:** MOFU to BOFU\n- **Produk:** eBook Qila\n\n---\n\n### Story 1 (Pagi 07.30 WIB) — Polling Interaksi\n**Visual:** Foto secangkir air hangat di meja kerja atau pemandangan jendela fajar tenang.\n**Teks:**\nJumat berkah.\nGimana kondisi badan pagi ini setelah bangun tidur?\n\n**Stiker Polling:**\n- Pilihan A: Segar bertenaga ☀️\n- Pilihan B: Masih lemas & berat 🥱\n\n---\n\n### Story 2 (Siang 11.30 WIB) — Sunnah Jumat & Qailulah\n**Visual:** Interior masjid yang tenang atau sudut sajadah rapi.\n**Teks:**\nHari Jumat punya keutamaan besar.\n\nSempatkan mandi sunnah, kenakan pakaian terbaik, dan berangkat lebih awal ke masjid.\n\nKalo badan terasa mengantuk, ambil qailulah 15 menit sebelum atau sesudah Jumatan agar stamina kembali prima.\n\n---\n\n### Story 3 (Sore 16.30 WIB) — Waktu Mustajab Ba'da Ashar\n**Visual:** Langit senja keemasan yang tenang.\n**Teks:**\nHari Jumat menyimpan waktu istimewa di mana doa dikabulkan: antara ba'da Ashar sampai Maghrib.\n\nLuangkan 10 menit sore ini. Titipkan semua beban pikiran, hajat rezeki, dan doa keluarga kepada Allah.\n\n---\n\n### Story 4 (Malam 20.30 WIB) — Call to Action Qila\n**Visual:** Suasana kamar tidur temaram, buku catatan kecil di meja samping kasur.\n**Teks:**\nMalam Sabtu waktunya mengistirahatkan tubuh lebih awal.\n\nTutup HP jam 21.30, ambil wudhu, lalu niatkan bangun menjumpai Rabb-mu di sepertiga malam.\n\nBuat yang ingin merapikan ritme tidur biologis dan panduan adab bangun malam:\n\n**Stiker Link \/ DM:**\nStiker tautan ke `https:\/\/lp.edumuslim.my.id\/lpqila` (Label: Baca Panduan Qila)  \nAtau ketik \"QILA\" lewat DM, kami kirim akses eBook Qila sekarang.\n",
+        "raw_markdown": "# Instagram Story Hari Senin — Pekan 2 (@edumuslimin)\n\n- **Tanggal:** 26 Oktober 2026\n- **Tema:** Quarter-Life Crisis, Kejernihan Karir & Sepertiga Malam\n- **Format:** 4-Slide Instagram Story Harian\n- **Status Link:** TANPA LINK EKSTERNAL\n- **Catatan Suara:** Gaya santai warkop Owner, bebas klise AI, tanpa nominal harga.\n\n---\n\n### Slide 1 — Polling Pagi\n📅 **Posting: 07.30 WIB**\n\n> 🗳️ Memulai pekan ini, kepalamu paling sering mikirin apa?\n>\n> 💼 Arah karir & masa depan\n> 🥱 Capek fisik & burnout\n\n*(Polling interaktif. Biarkan audiens jawab sendiri — tidak perlu teks tambahan.)*\n\n---\n\n### Slide 2 — Edukasi Singkat\n📅 **Posting: 12.00 WIB**\n\n> Siang hari pikiran gampang buntu karena kita langsung diserbu tuntutan kerjaan.\n> Luangkan waktu hening sejenak sebelum dunia bising.\n\n*(Visual: meja kerja sederhana, secangkir kopi, suasana rapi. Maksimal 22 kata pada teks.)*\n\n---\n\n### Slide 3 — Quotes \/ Dalil\n📅 **Posting: 16.30 WIB**\n\n> Allah siapkan jalan naik kelas di sepertiga malam:\n>\n> وَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَّكَ عَسَىٰ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا\n>\n> *\"Dan pada sebagian malam, bertahajudlah kamu... mudah-mudahan Rabb-mu mengangkatmu ke tempat yang terpuji.\"*\n> (QS. Al-Isra: 79)\n>\n> Kedudukan terhormat dijemput saat dunia masih lelap.\n\n*(Teks putih di background gelap hangat. Total teks slide ≤ 25 kata.)*\n\n---\n\n### Slide 4 — CTA Lembut\n📅 **Posting: 20.00 WIB**\n\n> Mau besok bangun jam 3 pagi dengan kepala jernih tanpa disiksa alarm?\n>\n> Ketik **ARAH** di DM — saya kirim panduan adab tidurnya buat kamu 🤍\n\n*(Visual: lampu meja kamar hangat redup, suasana hening malam. Tanpa harga, tanpa link eksternal.)*\n",
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
     },
     {
-        "id": "threads-jumat",
-        "channel": "Threads",
-        "day": "Jumat",
-        "funnel": "BOFU (Utas)",
-        "target_product": "eBook Qila (Rp47rb)",
-        "title": "Siklus Begadang Akhir Pekan & Jebakan Penyesalan Pagi",
-        "hook": "Siklus Begadang Akhir Pekan & Jebakan Penyesalan Pagi",
-        "slides": [],
-        "posts": [
-            {
-                "post_number": 1,
-                "header": "",
-                "content": "Malam Sabtu biasanya jadi alasan paling gampang buat tidur larut.\n\nNiat awalnya santai 15 menit scroll medsos atau nonton video, tau-tau jarum jam sudah lewat tengah malam.\n\nTidur larut selalu terasa nagih di awal, lalu bayarannya mahal begitu pagi tiba."
-            },
-            {
-                "post_number": 2,
-                "header": "",
-                "content": "Pas alarm subuh bunyi, rasanya kayak ada beban berat nindih kepala.\n\nMata perih, badan kaku, kepala berdenyut.\nJempol langsung reflek cari tombol snooze, lalu lanjut merem sampai jam 7 lewat.\n\nWaktu melek kedua kali, badan justru kerasa remuk dan lemas seharian."
-            },
-            {
-                "post_number": 3,
-                "header": "",
-                "content": "Selain badan loyo, rasa bersalah ikut nimbun di dada.\n\nSubuh telat, rencana pagi buyar, dan seharian bawaannya gampang uring-uringan.\nUjungnya kita nyalahin diri sendiri atau nyalahin dering alarm.\n\nPenyebab utamanya ada di jam masuk kasur yang kita korbankan."
-            },
-            {
-                "post_number": 4,
-                "header": "",
-                "content": "Tubuh kita punya ritme biologis yang jujur.\n\nKalo malamnya kita kasih hak istirahat sebelum jam 10, bangun jam 3 atau jam 4 pagi rasanya enteng.\nGak perlu adu otot lawan rasa kantuk.\n\nKetenangan sepanjang hari dimulai dari cara kita mengakhiri malam sebelumnya."
-            },
-            {
-                "post_number": 5,
-                "header": "",
-                "content": "Malam ini, coba uji satu hal: jauhkan HP dari jangkauan tangan sebelum jam 10 malam, lalu matikan lampu kamar.\n\nRasain bedanya pas melek besok pagi.\n\nBuat yang mau mulai merapikan ritme tidur dan adab bangun sepertiga malam, panduan lengkapnya ada di link bio profil ini ya.\n\nBiasanya apa yang paling bikin kamu susah tidur awal pas malam akhir pekan?"
-            }
-        ],
-        "stories": [],
-        "wa_message": "",
-        "outreach_messages": [],
-        "caption": "",
-        "raw_markdown": "# Utas Threads Hari Jumat (@edumuslimin)\n\n- **Topik:** Siklus Begadang Akhir Pekan & Jebakan Penyesalan Pagi\n- **Format:** Utas Bersambung (5 Post Balasan)\n- **Tujuan:** Edukasi psikologis & kesadaran jam biologis\n- **Catatan Suara:** Gaya obrolan santai Owner, bebas tautan luar.\n\n---\n\n### Post 1 (Hook Masalah Riil)\nMalam Sabtu biasanya jadi alasan paling gampang buat tidur larut.\n\nNiat awalnya santai 15 menit scroll medsos atau nonton video, tau-tau jarum jam sudah lewat tengah malam.\n\nTidur larut selalu terasa nagih di awal, lalu bayarannya mahal begitu pagi tiba.\n\n---\n\n### Post 2 (Konsekuensi Fisik & Mental)\nPas alarm subuh bunyi, rasanya kayak ada beban berat nindih kepala.\n\nMata perih, badan kaku, kepala berdenyut.\nJempol langsung reflek cari tombol snooze, lalu lanjut merem sampai jam 7 lewat.\n\nWaktu melek kedua kali, badan justru kerasa remuk dan lemas seharian.\n\n---\n\n### Post 3 (Siklus Rasa Bersalah)\nSelain badan loyo, rasa bersalah ikut nimbun di dada.\n\nSubuh telat, rencana pagi buyar, dan seharian bawaannya gampang uring-uringan.\nUjungnya kita nyalahin diri sendiri atau nyalahin dering alarm.\n\nPenyebab utamanya ada di jam masuk kasur yang kita korbankan.\n\n---\n\n### Post 4 (Menghargai Hak Tubuh)\nTubuh kita punya ritme biologis yang jujur.\n\nKalo malamnya kita kasih hak istirahat sebelum jam 10, bangun jam 3 atau jam 4 pagi rasanya enteng.\nGak perlu adu otot lawan rasa kantuk.\n\nKetenangan sepanjang hari dimulai dari cara kita mengakhiri malam sebelumnya.\n\n---\n\n### Post 5 (CTA Halus & Diskusi)\nMalam ini, coba uji satu hal: jauhkan HP dari jangkauan tangan sebelum jam 10 malam, lalu matikan lampu kamar.\n\nRasain bedanya pas melek besok pagi.\n\nBuat yang mau mulai merapikan ritme tidur dan adab bangun sepertiga malam, panduan lengkapnya ada di link bio profil ini ya.\n\nBiasanya apa yang paling bikin kamu susah tidur awal pas malam akhir pekan?\n",
-        "status": "ready_to_design",
-        "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
-    },
-    {
-        "id": "grup-wa-20261023",
+        "id": "grup-wa-20261026",
         "channel": "Grup WhatsApp",
-        "day": "Jumat",
+        "day": "Senin",
         "funnel": "COMMUNITY",
         "target_product": "Komunitas (Faedah Murni)",
-        "title": "Kamu Itu Cuma Kumpulan Hari (Atsar Al-Hasan Al-Bashri)",
-        "hook": "Kamu Itu Cuma Kumpulan Hari (Atsar Al-Hasan Al-Bashri)",
+        "title": "Rumus Salaf Biar Hati Bersih dari Iri Dengki (Hasad)",
+        "hook": "Rumus Salaf Biar Hati Bersih dari Iri Dengki (Hasad)",
         "slides": [],
         "posts": [],
         "stories": [],
-        "wa_message": "*Kamu Itu Cuma Kumpulan Hari...*\n\nPerkataan dari *Al-Hasan Al-Bashri* رحمه الله yang selalu menggetarkan hati kalau direnungi pelan-pelan:\n\n> _\"Wahai anak Adam, sesungguhnya engkau ini hanyalah kumpulan hari. Setiap kali satu hari berlalu, maka hilanglah sebagian dari dirimu.\"_\n\nKita sering menunda:\n\"Nanti saja kalau sudah santai...\"\n\"Nanti saja kalau sudah mapan...\"\n\"Nanti saja kalau sudah tua...\"\n\nPadahal waktu gak pernah menunggu.\nSatu hari yang lewat tadi pagi gak akan pernah bisa kita beli kembali, berapapun uang yang kita punya.\n\nGak perlu menunggu momen sempurna untuk mulai memperbaiki diri atau menambah amal kebaikan.\nMulai dari langkah kecil, hari ini juga.",
+        "wa_message": "*Rumus Biar Gak Capek Iri Sama Pencapaian Orang Lain...*\n\nMelihat pencapaian atau rezeki orang lain lewat di depan mata kadang bikin hati kita mendadak sesak. Muncul bisikan halus: _\"Kok dia bisa dapat itu, sementara aku belum ya?\"_\n\nPenyakit hasad atau iri hati ini kalau dibiarkan bakal menguras energi batin kita sampai habis.\n\nUlama tabi'in terkemuka, *Muhammad bin Sirin* رحمه الله, punya cara pandang yang jernih banget dalam membedah rasa iri ini:\n\n«مَا حَسَدْتُ أَحَدًا عَلَى شَيْءٍ مِنْ أَمْرِ الدُّنْيَا؛ لِأَنَّهُ إِنْ كَانَ مِنْ أَهْلِ الْجَنَّةِ فَكَيْفَ أَحْسُدُهُ عَلَى شَيْءٍ مِنَ الدُّنْيَا وَهُوَ يَصِيرُ إِلَى الْجَنَّةِ؟! وَإِنْ كَانَ مِنْ أَهْلِ النَّارِ فَكَيْفَ أَحْسُدُهُ عَلَى أَمْرِ الدُّنْيَا وَهُوَ يَصِيرُ إِلَى النَّارِ؟!»\n\n> _\"Aku tidak pernah merasa iri kepada siapapun atas perkara duniawi._\n> \n> _Karena jika dia memang calon penghuni surga, untuk apa aku mengirinya atas secuil perkara dunia, padahal tempat kembalinya adalah surga?_\n> \n> _Dan jika dia calon penghuni neraka, untuk apa aku mengirinya atas kesenangan dunia, padahal tempat kembalinya adalah neraka?\"_\n> *(Siyar A'lam An-Nubala 4\/611 & Az-Zuhd Al-Kabir karya Al-Baihaqi no. 845)*\n\nDunia ini terlampau sempit buat dijadikan ajang perbandingan yang bikin dada sakit.\n\nRezeki orang lain gak akan mengurangi jatah rezeki kita. Takdir yang Allah tetapkan buat kita juga gak bakal salah alamat.\n\nFokus jaga langkah sendiri, syukuri apa yang ada di tangan, dan doakan keberkahan buat saudara kita.\n\nHati yang lapang selalu melahirkan hidup yang tenang 🤍",
         "outreach_messages": [],
         "caption": "",
-        "raw_markdown": "# Faidah Grup WhatsApp: Mengingat Waktu (@edumuslimin)\n\n**ID Konten:** `grup-wa-20261023`\n- **Kanal:** Grup WhatsApp (Komunitas EduMuslim)\n- **Topik:** Kamu Itu Cuma Kumpulan Hari (Atsar Al-Hasan Al-Bashri)\n- **Sumber Turath:** Az-Zuhd karya Imam Ahmad & Hilyatul Auliya' karya Abu Nu'aim\n- **Format:** WhatsApp Markdown (`*teks*`, `_teks_`, `> teks`)\n- **Tujuan:** Nurturing komunitas \/ Faedah murni 100% tanpa jualan\n\n---\n\n### Teks Pesan WhatsApp (Siap Kirim)\n\n```whatsapp\n*Kamu Itu Cuma Kumpulan Hari...*\n\nPerkataan dari *Al-Hasan Al-Bashri* رحمه الله yang selalu menggetarkan hati kalau direnungi pelan-pelan:\n\n> _\"Wahai anak Adam, sesungguhnya engkau ini hanyalah kumpulan hari. Setiap kali satu hari berlalu, maka hilanglah sebagian dari dirimu.\"_\n\nKita sering menunda:\n\"Nanti saja kalau sudah santai...\"\n\"Nanti saja kalau sudah mapan...\"\n\"Nanti saja kalau sudah tua...\"\n\nPadahal waktu gak pernah menunggu.\nSatu hari yang lewat tadi pagi gak akan pernah bisa kita beli kembali, berapapun uang yang kita punya.\n\nGak perlu menunggu momen sempurna untuk mulai memperbaiki diri atau menambah amal kebaikan.\nMulai dari langkah kecil, hari ini juga.\n```\n",
+        "raw_markdown": "# Konten Edukasi Grup WhatsApp (26 Oktober 2026)\n\n- **ID Naskah:** `grup-wa-20261026`\n- **Topik:** Rumus Salaf Biar Hati Bersih dari Iri Dengki (Hasad)\n- **Kategori \/ Pilar:** Penyakit Hati & Kebersihan Batin (Pilar 3)\n- **Sumber Dalil:** Atsar Muhammad bin Sirin rahimahullah (Siyar A'lam An-Nubala 4\/611 & Az-Zuhd Al-Kabir no. 845)\n- **Status:** 100% Pure Sharing Turath (Bebas sebutan produk Qila\/DaQo\/Ihfadz & Bebas Jembatan Jualan)\n- **Kepatuhan Waktu:** 100% Timeless \/ Netral Waktu (Bebas sebutan hari dan jam — Sesuai Standar ERR-030)\n\n---\n\n### Teks Siap Kirim WhatsApp:\n\n```whatsapp\n*Rumus Biar Gak Capek Iri Sama Pencapaian Orang Lain...*\n\nMelihat pencapaian atau rezeki orang lain lewat di depan mata kadang bikin hati kita mendadak sesak. Muncul bisikan halus: _\"Kok dia bisa dapat itu, sementara aku belum ya?\"_\n\nPenyakit hasad atau iri hati ini kalau dibiarkan bakal menguras energi batin kita sampai habis.\n\nUlama tabi'in terkemuka, *Muhammad bin Sirin* رحمه الله, punya cara pandang yang jernih banget dalam membedah rasa iri ini:\n\n«مَا حَسَدْتُ أَحَدًا عَلَى شَيْءٍ مِنْ أَمْرِ الدُّنْيَا؛ لِأَنَّهُ إِنْ كَانَ مِنْ أَهْلِ الْجَنَّةِ فَكَيْفَ أَحْسُدُهُ عَلَى شَيْءٍ مِنَ الدُّنْيَا وَهُوَ يَصِيرُ إِلَى الْجَنَّةِ؟! وَإِنْ كَانَ مِنْ أَهْلِ النَّارِ فَكَيْفَ أَحْسُدُهُ عَلَى أَمْرِ الدُّنْيَا وَهُوَ يَصِيرُ إِلَى النَّارِ؟!»\n\n> _\"Aku tidak pernah merasa iri kepada siapapun atas perkara duniawi._\n> \n> _Karena jika dia memang calon penghuni surga, untuk apa aku mengirinya atas secuil perkara dunia, padahal tempat kembalinya adalah surga?_\n> \n> _Dan jika dia calon penghuni neraka, untuk apa aku mengirinya atas kesenangan dunia, padahal tempat kembalinya adalah neraka?\"_\n> *(Siyar A'lam An-Nubala 4\/611 & Az-Zuhd Al-Kabir karya Al-Baihaqi no. 845)*\n\nDunia ini terlampau sempit buat dijadikan ajang perbandingan yang bikin dada sakit.\n\nRezeki orang lain gak akan mengurangi jatah rezeki kita. Takdir yang Allah tetapkan buat kita juga gak bakal salah alamat.\n\nFokus jaga langkah sendiri, syukuri apa yang ada di tangan, dan doakan keberkahan buat saudara kita.\n\nHati yang lapang selalu melahirkan hidup yang tenang 🤍\n```\n",
         "status": "ready_to_design",
         "audit_badge": "Audit Lolos (Marketing & CEO Approved)"
     }

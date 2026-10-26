@@ -678,8 +678,8 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                     <span>📋 Brief Harian & Riset</span>
                 </a>
                 <a href="index.php?tab=cover" class="nav-item <?= ($currentTab === 'cover') ? 'active' : '' ?>">
-                    <span>🎨 Asset & 3 Bonus Ebook</span>
-                    <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">3 Bonus Aktif</span>
+                    <span>🎨 Asset & 4 Bonus Ebook</span>
+                    <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">4 Bonus Aktif</span>
                 </a>
             </nav>
 
@@ -687,6 +687,9 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             <nav class="nav-links">
                 <a href="ebook.php" class="nav-item" target="_blank">
                     <span>📖 Draft Ebook Live</span>
+                </a>
+                <a href="bonus-4-mini-ebook.html" class="nav-item" target="_blank" style="color: #fbbf24;">
+                    <span>📗 Bonus 4: Mini Ebook (HTML) ↗</span>
                 </a>
                 <a href="https://app.edumuslim.my.id/pixelcrm/" class="nav-item" target="_blank">
                     <span>📊 PixelCRM ↗</span>
@@ -1373,11 +1376,11 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 </div>
             </div>
 
-            <!-- PAKET 3 BONUS EBOOK SISA USIA -->
+            <!-- PAKET 4 BONUS EBOOK SISA USIA -->
             <div style="margin-top: 2rem; margin-bottom: 1.5rem;">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem;">
                     <h3 style="font-size: 1.15rem; color: #f8fafc; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
-                        🎁 Paket 3 Bonus Alat Bantu Eksekusi (Nilai Rp105.000 — Gratis)
+                        🎁 Paket 4 Bonus Spesial Ebook Sisa Usia (Nilai Rp150.000 — Gratis)
                     </h3>
                     <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-weight: 700; font-size: 0.82rem; padding: 0.3rem 0.7rem; border-radius: 999px;">
                         100% Zero Teori Tambahan
@@ -1400,8 +1403,9 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                                 Matriks dzikir, amalan lisan, dan amalan hati shahih 60–180 detik dengan keutamaan berlipat ganda. Menghilangkan alasan "saya capek/sibuk kerja".
                             </p>
                         </div>
-                        <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid #1e2436; font-size: 0.75rem; color: #34d399; font-weight: 600;">
-                            GRATIS dalam Bundle eBook Sisa Usia
+                        <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid #1e2436; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.75rem; color: #34d399; font-weight: 600;">GRATIS Bundle</span>
+                            <a href="bonus-1-katalog-amalan.html" target="_blank" style="font-size: 0.75rem; color: #fbbf24; text-decoration: underline; font-weight: 600;">Preview HTML ↗</a>
                         </div>
                     </div>
 
@@ -1414,11 +1418,12 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                             </div>
                             <h4 style="font-size: 0.95rem; color: #f1f5f9; font-weight: 700; margin-bottom: 0.4rem;">📋 Checklist Bebas Hisab &amp; Audit Urusan Manusia</h4>
                             <p style="font-size: 0.8rem; color: #94a3b8; line-height: 1.5;">
-                                Tabel pendataan tanggungan hutang uang/barang, hutang puasa/fidyah masa lalu, dan sengketa sesama manusia sampai tercentang "TUNTAS". Memberi ketenangan batin sebelum ajal tiba.
+                                Tabel pendataan tanggungan hutang uang/barang, hutang puasa/fidyah masa lalu, dan sengketa sesama manusia sampai tercentang "TUNTAS".
                             </p>
                         </div>
-                        <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid #1e2436; font-size: 0.75rem; color: #34d399; font-weight: 600;">
-                            GRATIS dalam Bundle eBook Sisa Usia
+                        <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid #1e2436; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.75rem; color: #34d399; font-weight: 600;">GRATIS Bundle</span>
+                            <a href="bonus-2-checklist-bebas-hisab.html" target="_blank" style="font-size: 0.75rem; color: #38bdf8; text-decoration: underline; font-weight: 600;">Preview HTML ↗</a>
                         </div>
                     </div>
 
@@ -1431,11 +1436,30 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                             </div>
                             <h4 style="font-size: 0.95rem; color: #f1f5f9; font-weight: 700; margin-bottom: 0.4rem;">🎯 30-Day Habit Tracker "Sisa Waktu"</h4>
                             <p style="font-size: 0.8rem; color: #94a3b8; line-height: 1.5;">
-                                Lembar kalender visual 30 hari bergaya <em>Atomic Habits</em> untuk menjaga konsistensi: shalat di awal waktu, 1 amalan ringan harian, dan 1 kebaikan rahasia di rumah.
+                                Lembar kalender visual 30 hari bergaya <em>Atomic Habits</em> untuk menjaga konsistensi: shalat di awal waktu, 1 amalan harian, dan amal rahasia di rumah.
                             </p>
                         </div>
-                        <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid #1e2436; font-size: 0.75rem; color: #34d399; font-weight: 600;">
-                            GRATIS dalam Bundle eBook Sisa Usia
+                        <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid #1e2436; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.75rem; color: #34d399; font-weight: 600;">GRATIS Bundle</span>
+                            <a href="bonus-3-habit-tracker-30-hari.html" target="_blank" style="font-size: 0.75rem; color: #c084fc; text-decoration: underline; font-weight: 600;">Preview HTML ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Bonus 4 -->
+                    <div style="background: #111422; border: 1px solid #f59e0b; border-radius: 12px; padding: 1.1rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.1);">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                                <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.2); color: #fbbf24; padding: 0.2rem 0.5rem; border-radius: 6px; font-weight: 700;">Bonus 4 · Mini Ebook (HTML &amp; PDF)</span>
+                                <span style="font-size: 0.75rem; color: #64748b; text-decoration: line-through;">Rp45.000</span>
+                            </div>
+                            <h4 style="font-size: 0.95rem; color: #f1f5f9; font-weight: 700; margin-bottom: 0.4rem;">📗 3 Amalan yang Menunggu Kamu di Kubur</h4>
+                            <p style="font-size: 0.8rem; color: #94a3b8; line-height: 1.5;">
+                                Panduan menanam kran pahala abadi (sedekah jariyah, ilmu bermanfaat, anak shalih) sebelum nafas terakhir. Dilengkapi lembar audit &amp; takhrij dalil shahih.
+                            </p>
+                        </div>
+                        <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px solid #1e2436; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.75rem; color: #34d399; font-weight: 600;">GRATIS Bundle</span>
+                            <a href="bonus-4-mini-ebook.html" target="_blank" style="font-size: 0.8rem; color: #fbbf24; text-decoration: underline; font-weight: 700;">📖 Buka Mini Ebook HTML ↗</a>
                         </div>
                     </div>
                 </div>
@@ -1449,13 +1473,14 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                     </div>
                     <div class="card-title" style="margin-top: 0.5rem;">Draf Penawaran Bundle Bonus Ebook Sisa Usia</div>
                     <div class="script-box" id="bonus-copy-text" style="max-height: none; font-size: 0.85rem; font-family: 'JetBrains Mono', monospace; background: #07090e; color: #e2e8f0; border-color: #2a3147;">Spesial Pemesanan Hari Ini (Cuma Rp47.000):
-Dapatkan buku utama eBook Sisa Usia + 3 Alat Bantu Pengaman Akhirat GRATIS:
+Dapatkan buku utama eBook Sisa Usia + 4 Alat Bantu Pengaman Akhirat GRATIS:
 
 1. ⚡ Katalog Amalan Ringan Pahala Raksasa (&lt; 3 Menit) (Senilai Rp35.000)
 2. 📋 Checklist Bebas Hisab &amp; Audit Urusan Manusia (Senilai Rp35.000)
 3. 🎯 30-Day Habit Tracker "Sisa Waktu" (Senilai Rp35.000)
+4. 📗 Mini eBook "3 Amalan yang Menunggu Kamu di Kubur" (Senilai Rp45.000)
 
-(Total Nilai Bonus Rp105.000 — Semuanya Rp0 khusus pemesanan sekarang).</div>
+(Total Nilai Bonus Rp150.000 — Semuanya Rp0 khusus pemesanan sekarang).</div>
                     <div class="card-bottom-actions">
                         <button class="btn-copy" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border-color: rgba(16, 185, 129, 0.4); font-weight: 700;" onclick="copyText(document.getElementById('bonus-copy-text').innerText, this, 'Teks penawaran bonus berhasil disalin!')">
                             📋 Salin Teks Penawaran Bonus
