@@ -1376,6 +1376,41 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 </div>
             </div>
 
+            <!-- PROMPT COVER BONUS 4 MINI EBOOK -->
+            <div class="content-card" style="margin-bottom: 1.5rem; border-left: 4px solid #f59e0b;">
+                <div class="card-top">
+                    <div>
+                        <span class="channel-pill" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: rgba(245, 158, 11, 0.4);">
+                            Cover Mini Ebook (Bonus 4)
+                        </span>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); margin-left: 0.5rem;">
+                            Konsep: <strong>3 Aliran Cahaya Keemasan (Kran Pahala Abadi)</strong>
+                        </span>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.78rem; background: rgba(16, 185, 129, 0.1); padding: 0.25rem 0.5rem; border-radius: 5px; color: #4ade80; font-weight: 600;">
+                            ✨ Gemini Web / Ideogram Ready
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-title" style="margin-top: 0.5rem;">3 Aliran Emas Pahala di Keheningan Malam</div>
+                <div class="card-hook" style="margin-bottom: 0.8rem;">Visual 3 pancaran emas melambangkan sedekah jariyah, ilmu bermanfaat, dan anak shalih yang menembus alam kubur.</div>
+
+                <div class="script-box" id="prompt-bonus-4" style="max-height: none; font-size: 0.82rem; font-family: 'JetBrains Mono', monospace; background: #07090e; color: #e2e8f0; border-color: #2a3147;">A premium, bestselling book cover design for an Islamic spiritual guide. Deep midnight obsidian and rich textured slate background with three subtle glowing streams of warm golden amber light flowing downwards in harmony, symbolizing perpetual streams of reward in the dark. Minimalist luxury aesthetic, calm and dignified. Typography perfectly legible: at the top in prominent bold clean white modern font reads "3 AMALAN YANG MENUNGGU KAMU DI KUBUR", below it in refined warm gold sans-serif reads "Panduan Menanam Kran Pahala Abadi Sebelum Terlambat", and at the bottom center cleanly typeset "Fadil Muhammad". Strictly no living beings, no human faces, no animal figures, no publisher logos. High-end editorial book cover mockup, photorealistic 8k, aspect ratio 2:3.</div>
+
+                <div class="card-bottom-actions">
+                    <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+                        <button class="btn-copy" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: rgba(245, 158, 11, 0.4); font-weight: 700;" onclick="copyText(document.getElementById('prompt-bonus-4').innerText, this, 'Prompt Cover Bonus 4 berhasil disalin!')">
+                            📋 Salin Prompt Cover Bonus 4
+                        </button>
+                        <a href="https://gemini.google.com/app" target="_blank" class="btn-action" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); font-weight: 600;">
+                            🚀 Buka Gemini Web ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- PAKET 4 BONUS EBOOK SISA USIA -->
             <div style="margin-top: 2rem; margin-bottom: 1.5rem;">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem;">
