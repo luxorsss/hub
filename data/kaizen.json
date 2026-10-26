@@ -2,46 +2,46 @@
     {
         "agent": "scout",
         "agent_name": "Scout Agent",
-        "topic": "Circadian Sleep Fragmentation, Adenosine Clearance & Morning Cortisol Pulse",
+        "topic": "Behavioral Activation & Monday Cognitive Reset",
         "mentor": "Andrew Huberman (@hubermanlab)",
-        "source_url": "https://www.youtube.com/watch?v=ScoutStudy23",
-        "insight": "Tidur terfragmentasi akibat snooze alarm memutus siklus REM dan meningkatkan inersia tidur karena adenosin otak belum bersih. Pasang 1 alarm berjarak 3 meter dan basuh muka dengan air dingin memicu lonjakan kortisol alami untuk kesadaran penuh seketika.",
-        "date": "2026-10-23"
+        "source_url": "https://www.youtube.com/watch?v=ScoutStudy26",
+        "insight": "Kelelahan mental Senin pagi dipicu perpindahan drastis mode istirahat ke tuntutan kerja. Meraih 'micro-win' di sepertiga malam (bangun, dzikir, 2 rakaat fajar) memicu reset dopamin alami sehingga hari kerja dimulai dari posisi tenang dan menang, bukan panik mengejar ketertinggalan.",
+        "date": "2026-10-26"
     },
     {
         "agent": "voice-copywriter",
         "agent_name": "Voice Copywriter",
-        "topic": "Psychological Friction & Authentic Conversational Storytelling",
+        "topic": "Low-Friction Reply Trigger on High-Impression Threads",
         "mentor": "Dan Koe (@DanKoeTalks)",
-        "source_url": "https://www.youtube.com/watch?v=CopyStudy23",
-        "insight": "Singkirkan pola kontras buatan ('bukan X tapi Y'). Tulis dengan alur sebab-akibat yang dirasakan langsung di kehidupan nyata: kelelahan fisik, rasa bersalah bangun telat, dan penundaan akhir pekan tanpa nada menggurui.",
-        "date": "2026-10-23"
+        "source_url": "https://www.youtube.com/watch?v=CopyStudy26",
+        "insight": "Lonjakan 154 tayangan dan Like Rate 6,5% membuktikan resonansi pesan tinggi. Agar views terkonversi ke balasan, CTA penutup memakai pertanyaan validasi emosi ('Dari 1 sampai 10 seberapa berat Senin pagimu?') sebelum memicu keyword 'QILA'.",
+        "date": "2026-10-26"
     },
     {
         "agent": "cro-lp",
         "agent_name": "CRO Specialist",
-        "topic": "Micro-Commitments & Direct Inbound Architecture",
-        "mentor": "Russell Brunson (@RussellBrunson)",
-        "source_url": "https://www.youtube.com/watch?v=CROStudy23",
-        "insight": "Di hari Jumat, kebutuhan audiens berfokus pada ketenangan batin menjelang akhir pekan. CTA berbasis kata kunci tunggal ('QILA') di DM atau komentar memangkas resistensi hingga 70% dibanding melempar tautan checkout langsung.",
-        "date": "2026-10-23"
+        "topic": "DM Keyword Routing & Zero-Friction Handshake",
+        "mentor": "Wes McDowell (@wesmcdowell)",
+        "source_url": "https://www.youtube.com/watch?v=CROStudy26",
+        "insight": "Mengarahkan traffic Threads dan Story ke DM dengan keyword 'QILA' mengeliminasi friksi klik link luar aplikasi. Alur DM pertama wajib ramah, langsung memberi intisari solusi tanpa hard-selling, menjaga konversi tetap hangat.",
+        "date": "2026-10-26"
     },
     {
         "agent": "sales-conversion",
         "agent_name": "Sales Conversion",
-        "topic": "Accusation Audit & Calibrated Questions for Pending Checkouts",
-        "mentor": "Chris Voss (@BlackSwanGroup)",
-        "source_url": "https://www.youtube.com/watch?v=SalesStudy23",
-        "insight": "Follow-up order pending (Rafidaini Sazarni Ratiyun Rp77.000) paling efektif diawali dengan accusation audit dan empati taktis: 'Mungkin terkesan mengganggu pagi ini... Kami cuma ingin memastikan apakah ada kendala di metode pembayaran semalam?'.",
-        "date": "2026-10-23"
+        "topic": "Tactical Empathy & The Art of Letting the Customer Say No",
+        "mentor": "Chris Voss (@theblackswan)",
+        "source_url": "https://www.youtube.com/watch?v=SalesStudy26",
+        "insight": "Untuk pending order #6210 (Rafidaini Rp77k), tawarkan izin mundur tanpa beban ('Kak, semisal mau tunda baca Qila-nya gapapa banget ya kak...'). Memberi rasa kendali meluruhkan rasa bersalah prospek dan mempercepat konfirmasi pembayaran.",
+        "date": "2026-10-26"
     },
     {
         "agent": "growth-planner",
         "agent_name": "Growth Planner & CEO",
-        "topic": "Customer Acquisition Engine & SLO Cash Flow Reinvestment",
+        "topic": "Organic Sprint Velocity & LTV Backend Leverage",
         "mentor": "Alex Hormozi (@AlexHormozi)",
-        "source_url": "https://www.youtube.com/watch?v=CEOStudy23",
-        "insight": "Ebook Qila (Rp47.000) adalah pintu masuk pembeli hangat. 4 sales awal mengonfirmasi validasi pasar. Mengamankan pending order #6210 dan memaksimalkan traffic organik akhir pekan (Carousel + Reels + Threads) mempercepat akumulasi menuju target 100 sales.",
-        "date": "2026-10-23"
+        "source_url": "https://www.youtube.com/watch?v=CEOStudy26",
+        "insight": "Fokus tunggal sprint ini adalah validasi 100 sales Qila (Rp4.700.000). Tiap pembeli Qila menjadi kolam trust awal. Saat eBook Sisa Usia diluncurkan, 100 pembeli ini menjadi target penawaran backend ber-LTV tinggi tanpa biaya akuisisi baru.",
+        "date": "2026-10-26"
     }
 ]
