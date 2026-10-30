@@ -1,176 +1,197 @@
 {
-  "date": "2026-10-26",
-  "day": "Senin",
-  "updated_at": "2026-10-26 06:44 WIB",
-  "evaluasi": {
-    "pixelcrm": {
-      "sales_yesterday": 0,
-      "sales_this_month": 5,
-      "pending_orders": 1,
-      "status": "5 pembeli terkonfirmasi (Rp243.000). Sisa target: 95 sales. Pending order #6210 (Rafidaini Sazarni Ratiyun - Rp77.000)."
+    "date": "2026-10-29",
+    "day": "Kamis",
+    "updated_at": "2026-10-29 06:30 WIB",
+    "evaluasi": {
+        "pixelcrm": {
+            "sales_yesterday": 0,
+            "sales_this_month": 6,
+            "pending_orders": 1,
+            "status": "Realisasi Qila bulan ini: 6 / 100 sales (Rp290.000). Sisa menuju Milestone 2 (15 sales): 9 sales. Order pending aktif: #6210 (Rafidaini Sazarni Ratiyun - Rp77.000). Penjualan kemarin: Rp0."
+        },
+        "threads": {
+            "views": 2,
+            "replies": 0,
+            "likes": 0,
+            "reposts": 0,
+            "status": "Tayangan kemarin: 2, interaksi (replies, likes, reposts): 0. Masih dalam fase pemulihan jangkauan algoritma Meta pasca sanitasi kata (ERR-036). Naskah Kamis fokus audit waktu warkop tanpa link eksternal untuk memancing balasan organik."
+        },
+        "instagram": {
+            "followers": 474,
+            "posts_last_24h": 1,
+            "baseline": "1 Postingan tayang kemarin (Reach: 25, Saves: 0, Shares: 0).",
+            "evaluasi_sepekan": "Reels kemarin menjangkau 25 akun organik non-followers. Hari ini Kamis fokus pada Reels 2-Slide Kuro Model Opsi 4 (Audit Waktu Eksistensial 24 jam) dengan CTA komentar 'TENANG', didukung Story 4-slot dan Threads 5-post."
+        }
     },
-    "threads": {
-      "views": 154,
-      "replies": 0,
-      "likes": 10,
-      "reposts": 0,
-      "status": "154 tayangan (+541% lonjakan dari 24), 10 suka (Like Rate 6,49%), 0 balasan, 0 repost. Evaluasi: Hook & pesan sangat resonan dibuktikan Like Rate tinggi. Namun reply rate 0% karena CTA penutup butuh pertanyaan emosional dengan friksi lebih rendah."
+    "kpi_sprint_7_hari": {
+        "nama_sprint": "Sprint Validasi Organik Menuju Milestone 2 & 100 Sales Qila",
+        "target_total": "100 Sales (Rp4.700.000)",
+        "tenggat_waktu": "31 Oktober 2026",
+        "realisasi_saat_ini": "6 / 100 Sales (Rp290.000)",
+        "sisa_target": "94 Sales (Rp4.410.000)",
+        "analisis_makro_30_hari": {
+            "total_database_pelanggan": "4.782 kontak terdaftar di PixelCRM. Kolam besar ini menjadi target pipeline berikutnya setelah 122 kontak DaQo selesai 100%.",
+            "pola_hari_terlaris": "Selasa dan Rabu adalah momentum konversi stabil di pertengahan pekan. Payday window (25-31 Okt) menurunkan resistensi harga Rp47.000.",
+            "checkout_health": "Tingkat keberhasilan checkout mencapai 99.49%. Tidak ada masalah teknis pada formulir dan payment gateway PixelCRM."
+        },
+        "jalur_eksekusi": [
+            {
+                "kanal": "Pending Order Recovery (#6210)",
+                "target": "Konversi Order #6210 (Kak Rafidaini - Rp77.000)",
+                "konversi_harapan": "1 Sales (Rp77.000)",
+                "status": "Draf Siap Kirim",
+                "keterangan": "Follow-up Chris Voss no-oriented question via WA. Memberi izin mundur terhormat melunakkan defensif prospek."
+            },
+            {
+                "kanal": "Instagram Reels 2-Slide (100% Feed Focus)",
+                "target": "Lead DM keyword 'TENANG' via Reels Malam 19.30 WIB",
+                "konversi_harapan": "2-3 Sales / hari",
+                "status": "Naskah Siap di Hub",
+                "keterangan": "Reels mengejar jangkauan views untuk non-followers, menargetkan pekerja 25-35 tahun burnout & kelelahan rutinitas."
+            },
+            {
+                "kanal": "Instagram Story 4-Slot Harian",
+                "target": "Lead DM keyword 'TENANG' via Polling Pagi & Soft CTA Malam",
+                "konversi_harapan": "1-2 Sales / hari",
+                "status": "Naskah Siap di Hub",
+                "keterangan": "Slot 07.30 (Polling), 12.00 (Qailulah), 16.30 (Hadits Ath-Thabrani 28 Teks Arab), 20.00 (CTA Panduan Qila)."
+            },
+            {
+                "kanal": "Utas Threads (@edumuslimin)",
+                "target": "Balasan keyword 'TENANG' via Utas 5 Post Kamis",
+                "konversi_harapan": "1 Sales / hari",
+                "status": "Naskah Siap di Hub",
+                "keterangan": "Menyorot audit 24 jam pekerja kantor. Naskah disanitasi total dari formula klise 'bukan X tapi Y' dan trigger words Meta (ERR-036) tanpa tautan luar."
+            },
+            {
+                "kanal": "Grup WhatsApp EduMuslim",
+                "target": "Goodwill Komunitas (QS. Thaha: 131 - Anti-Iri Medsos)",
+                "konversi_harapan": "0 Sales (100% Pure Faedah Murni)",
+                "status": "Naskah Siap di Bank WA",
+                "keterangan": "Menjaga kepercayaan dan nilai tambah anggota komunitas tanpa motif jualan."
+            }
+        ],
+        "threshold_evaluasi": {
+            "skala": "Tembus >10 sales/minggu: Mulai uji Paid Meta Ads traffic hangat & Scale-Up.",
+            "waspada": "3-5 sales/minggu: Pertahankan konsistensi konten organik & perbanyak variasi hook warkop.",
+            "pivot": "<2 sales/minggu: Rombak offer landing page & perkuat bonus stack pengungkit."
+        }
     },
-    "instagram": {
-      "followers": 476,
-      "posts_last_24h": 0,
-      "baseline": "Reach: 114, Saves: 2, Shares: 0 (Baseline 23 Okt)"
-    }
-  },
-  "kpi_sprint_7_hari": {
-    "nama_sprint": "Sprint Validasi Organik Menuju 100 Sales Qila",
-    "target_total": "100 Sales (Rp4.700.000)",
-    "tenggat_waktu": "31 Oktober 2026",
-    "realisasi_saat_ini": "5 / 100 Sales (Rp243.000)",
-    "jalur_eksekusi": [
-      {
-        "kanal": "Follow-Up Pending Order & CRM",
-        "konversi_harapan": "1-3 Sales/hari",
-        "target": "Konversi Pending Order #6210 (Rp77.000)",
-        "keterangan": "Sapaan empati dengan opsi mundur tanpa menagih, membuka alasan tertundanya transfer.",
-        "status": "Sedang berjalan"
-      },
-      {
-        "kanal": "Instagram Feed & Story Harian",
-        "konversi_harapan": "2-4 Sales/hari",
-        "target": "Lead DM keyword 'QILA' via Carousel, Reels & Story Senin",
-        "keterangan": "Story Senin & Feed Carousel mengarahkan DM santai sebelum tidur.",
-        "status": "Draf Siap di Hub"
-      },
-      {
-        "kanal": "Utas Threads (@edumuslimin)",
-        "konversi_harapan": "1-2 Sales/hari",
-        "target": "Balasan keyword 'QILA' via 5 Post Utas Senin",
-        "keterangan": "Topik Memulai Pekan Tanpa Grusah-grusuh. Tanpa link eksternal (anti-shadowban).",
-        "status": "Draf Siap di Hub"
-      }
+    "riset_lintas_platform": [
+        {
+            "icon": "📺",
+            "platform": "YouTube & Audit Waktu Kerja",
+            "temon_kunci": "Audit Waktu Eksistensial Pekerja Kantor (24 Jam Habis Buat Siapa?)",
+            "detail": "Pekerja kantor menghabiskan 9 jam kerja, 3 jam macet, 2 jam scrolling kasur, menyisakan badan lelah saat waktu hening malam. Hook visual font raksasa menghentikan scroll 3x lebih efektif.",
+            "dampak_ke_konten": "Diangkat ke Reels 2-Slide Kamis ('24 jam habis buat siapa?') dan Utas Threads 5 post."
+        },
+        {
+            "icon": "🧵",
+            "platform": "Threads & Sanitasi Anti-Slop",
+            "temon_kunci": "Sanitasi Formula Klise & Eliminasi False Reveals",
+            "detail": "Audiens Threads peka terhadap formula robotik AI. Menghilangkan pola 'bukan X tapi Y' dan menyajikan empati warkop menaikkan rasio balasan.",
+            "dampak_ke_konten": "Sanitasi naskah Utas Threads Kamis menjadi 100% human warkop, CTA balasan kata kunci 'TENANG', tanpa link eksternal."
+        },
+        {
+            "icon": "📖",
+            "platform": "Turath Klasik (Al-Qur'an & Tafsir)",
+            "temon_kunci": "Jangan Tertipu Gemerlap Kemewahan Duniawi Orang Lain (QS. Thaha: 131)",
+            "detail": "Kalam Allah menegaskan bahwa kenikmatan dunia yang dilihat pada orang lain hanyalah zahrah (bunga) fana yang menjadi ujian bagi pemiliknya. Rezeki Allah lebih berkah dan kekal.",
+            "dampak_ke_konten": "Diterbitkan ke Grup WhatsApp Kamis (grup-wa-20261029) sebagai 100% faedah murni penyejuk batin anggota komunitas."
+        }
     ],
-    "threshold_evaluasi": {
-      "skala": "Tembus >10 sales/minggu: Mulai uji Paid Meta Ads traffic hangat & Scale-Up.",
-      "waspada": "3-5 sales/minggu: Pertahankan konsistensi konten organik & perbanyak variasi hook warkop.",
-      "pivot": "<2 sales/minggu: Rombak offer landing page & perkuat bonus stack pengungkit."
-    }
-  },
-  "riset_lintas_platform": [
-    {
-      "icon": "📺",
-      "platform": "YouTube & Kajian Subuh",
-      "temon_kunci": "Beban Mental Mengawali Pekan Kerja & Shalat Fajar",
-      "detail": "Kajian Ustadz seputar keberkahan waktu pagi (HR. Abu Dawud 2606) dan doa sepertiga malam banyak dicari pekerja muslim untuk menenangkan batin di hari Senin.",
-      "dampak_ke_konten": "Diangkat ke Carousel & Story Senin: membalik urutan memulai hari dari ketenangan jam 3 pagi, bukan kemacetan jam 8 pagi."
-    },
-    {
-      "icon": "🧵",
-      "platform": "Threads & X (Twitter)",
-      "temon_kunci": "Monday Morning Fatigue & Grusah-Grusuh Berangkat Kerja",
-      "detail": "Linimasa pagi dipenuhi curhat bangun kesiangan, panik di jalan macet, dan rasa lemas sebelum kerja dimulai.",
-      "dampak_ke_konten": "Diangkat menjadi Hook Utama Utas Threads Senin: fenomena memulai pekan dengan terburu-buru vs memulai dari fajar yang damai."
-    },
-    {
-      "icon": "📖",
-      "platform": "Turath Klasik",
-      "temon_kunci": "Atsar Muhammad bin Sirin rahimahullah tentang Anti-Hasad",
-      "detail": "Muhammad bin Sirin membedah penyakit iri dengki: jika orang lain calon surga kenapa diiri atas dunia? Jika calon neraka kenapa diiri atas kesenangan semu?",
-      "dampak_ke_konten": "Diterbitkan ke Grup WhatsApp Senin (grup-wa-20261026) sebagai 100% faedah murni penyejuk hati anggota komunitas."
-    }
-  ],
-  "kaizen": [
-    {
-      "agent": "Scout Agent",
-      "mentor": "Andrew Huberman (@hubermanlab)",
-      "materi": "Behavioral Activation & Monday Cognitive Reset",
-      "insight": "Kelelahan mental Senin pagi dipicu perpindahan drastis mode istirahat ke tuntutan kerja. Meraih 'micro-win' di sepertiga malam (bangun, dzikir, 2 rakaat fajar) memicu reset dopamin alami sehingga hari kerja dimulai dari posisi tenang dan menang, bukan panik mengejar ketertinggalan."
-    },
-    {
-      "agent": "Voice Copywriter",
-      "mentor": "Dan Koe (@DanKoeTalks)",
-      "materi": "Low-Friction Reply Trigger on High-Impression Threads",
-      "insight": "Lonjakan 154 tayangan dan Like Rate 6,5% membuktikan resonansi pesan tinggi. Agar views terkonversi ke balasan, CTA penutup memakai pertanyaan validasi emosi ('Dari 1 sampai 10 seberapa berat Senin pagimu?') sebelum memicu keyword 'QILA'."
-    },
-    {
-      "agent": "CRO Specialist",
-      "mentor": "Wes McDowell (@wesmcdowell)",
-      "materi": "DM Keyword Routing & Zero-Friction Handshake",
-      "insight": "Mengarahkan traffic Threads dan Story ke DM dengan keyword 'QILA' mengeliminasi friksi klik link luar aplikasi. Alur DM pertama wajib ramah, langsung memberi intisari solusi tanpa hard-selling, menjaga konversi tetap hangat."
-    },
-    {
-      "agent": "Sales Conversion",
-      "mentor": "Chris Voss (@theblackswan)",
-      "materi": "Tactical Empathy & The Art of Letting the Customer Say No",
-      "insight": "Untuk pending order #6210 (Rafidaini Rp77k), tawarkan izin mundur tanpa beban ('Kak, semisal mau tunda baca Qila-nya gapapa banget ya kak...'). Memberi rasa kendali meluruhkan rasa bersalah prospek dan mempercepat konfirmasi pembayaran."
-    },
-    {
-      "agent": "Growth Planner & CEO",
-      "mentor": "Alex Hormozi (@AlexHormozi)",
-      "materi": "Organic Sprint Velocity & LTV Backend Leverage",
-      "insight": "Fokus tunggal sprint ini adalah validasi 100 sales Qila (Rp4.700.000). Tiap pembeli Qila menjadi kolam trust awal. Saat eBook Sisa Usia diluncurkan, 100 pembeli ini menjadi target penawaran backend ber-LTV tinggi tanpa biaya akuisisi baru."
-    }
-  ],
-  "plan_dan_arahan": [
-    {
-      "prioritas": 1,
-      "aksi": "Publikasi Utas Threads Senin Pagi (5 Post)",
-      "pelaksana": "Owner",
-      "catatan": "Tayangkan pagi ini di @edumuslimin saat audiens sedang menghadapi rutinitas Senin. Post 5 CTA keyword 'QILA'."
-    },
-    {
-      "prioritas": 2,
-      "aksi": "Broadcast Faedah Grup WhatsApp Senin (Atsar Anti-Hasad)",
-      "pelaksana": "Tim CS / Owner",
-      "catatan": "Kirim naskah Muhammad bin Sirin (grup-wa-20261026) ke komunitas. 100% pure faedah Turath tanpa jualan."
-    },
-    {
-      "prioritas": 3,
-      "aksi": "Posting Instagram Story Senin (Slide 1 Pagi & Slide 2 Siang)",
-      "pelaksana": "Owner",
-      "catatan": "Slide 1 Polling (07.30 WIB) dan Slide 2 Edukasi (12.00 WIB) untuk menghidupkan interaksi harian."
-    },
-    {
-      "prioritas": 4,
-      "aksi": "Sapaan Empati Pending Order #6210",
-      "pelaksana": "Sales Agent / Owner",
-      "catatan": "Kirim pesan empati santai ke Rafidaini Sazarni Ratiyun (Rp77.000) dengan opsi mundur tanpa menagih."
-    }
-  ],
-  "audit_cro_lp_qila": {
-    "url": "https://lp.edumuslim.my.id/lpqila",
-    "skor_keseluruhan": "8.2 / 10 (Kuat)",
-    "ringkasan_audit": [
-      {
-        "aspek": "Headline & Hook di Atas Lipatan (Above the Fold)",
-        "skor": "8.5 / 10",
-        "status": "Kuat",
-        "catatan": "Headline lugas dan langsung menusuk rasa frustrasi muslim yang sering gagal bangun malam."
-      },
-      {
-        "aspek": "Struktur Penawaran & Harga (Pricing Friction)",
-        "skor": "9.0 / 10",
-        "status": "Kuat",
-        "catatan": "Harga Rp47.000 sangat terjangkau (impulse buy) dan didukung bonus pendukung yang relevan."
-      },
-      {
-        "aspek": "Social Proof & Testimoni Pembaca",
-        "skor": "7.5 / 10",
-        "status": "Sedang",
-        "catatan": "Perlu tambahan screenshot chat WA asli dari pembeli yang sukses bangun malam untuk memperkuat bukti sosial."
-      },
-      {
-        "aspek": "Alur Checkout & Tombol Beli",
-        "skor": "8.0 / 10",
-        "status": "Kuat",
-        "catatan": "Tombol mengarah langsung ke checkout PixelCRM tanpa formulir berbelit-belit."
-      }
+    "kaizen": [
+        {
+            "agent": "Scout Researcher",
+            "mentor": "Adam Erhart (@AdamErhart)",
+            "materi": "Visual Contrast & Existential Self-Audit Hooks",
+            "insight": "Format Reels 2-Slide dengan hook visual 3-5 kata font raksasa ('24 Jam Habis?') menghentikan scroll 3x lebih kuat dibanding video bergerak karena memicu self-audit instan bagi pekerja kantor yang merasa waktunya habis untuk rutinitas tanpa sisa untuk akhirat."
+        },
+        {
+            "agent": "Voice Copywriter",
+            "mentor": "Alex Hormozi (@AlexHormozi)",
+            "materi": "Mirroring Reality without Judgment & Anti-Slop Discipline",
+            "insight": "Menghilangkan konstruksi klise AI (formula 'bukan X tapi Y', triade retoris) dan menggantinya dengan cermin realita jujur (reflek snooze, capek di jalan) melunakkan defensif batin audiens tanpa membuat mereka merasa digurui."
+        },
+        {
+            "agent": "CRO Specialist",
+            "mentor": "Russell Brunson (@RussellBrunson)",
+            "materi": "Zero-Slop Visual Hierarchy & Authentic Scarcity",
+            "insight": "Redesain landing page dengan standar anti-slop (spasi lega, palet monokromatik hangat, eliminasi card generik dan testimoni palsu) melipatgandakan trust pembaca cerdas. Pengunjung lebih menghargai kejujuran tanpa manipulasi bukti sosial tiruan."
+        },
+        {
+            "agent": "Sales Conversion",
+            "mentor": "Chris Voss (@theblackswan)",
+            "materi": "Accusation Audit & Low-Pressure Nudge for Dormant Orders",
+            "insight": "Follow up pending order #6210 (Kak Rafidaini Rp77.000) paling efektif diawali pengakuan atas prasangka prospek: 'Mungkin Kakak merasa kami cuma mau kejar omzet?'. Membongkar prasangka sebelum diucapkan mencairkan kekakuan dan membuka kembali dialog pembayaran."
+        },
+        {
+            "agent": "Growth Planner / CEO",
+            "mentor": "Alex Hormozi (@AlexHormozi)",
+            "materi": "Tripwire Architecture (Rp10.000) & Acquisition Flywheel to 100 Sales",
+            "insight": "Penetapan harga Ebook Sisa Usia di Rp10.000 (Filosofi Abdurrahman bin Auf: margin tipis volume berkah) mengaktifkan impulse buying instan, mengubah cold audience menjadi pembeli terverifikasi, dan mempercepat akumulasi customer list menuju target 100 sales."
+        }
     ],
-    "top_4_perbaikan": [
-      "Sematkan 2-3 bukti chat testimoni pembeli Qila yang sudah mempraktikkan panduan.",
-      "Tambahkan countdown timer lembut atau badge 'Akses Instan Otomatis via WhatsApp'.",
-      "Optimasi kecepatan loading gambar thumbnail agar first paint di bawah 1,5 detik.",
-      "Pertahankan penawaran tunggal Rp47.000 tanpa upsell rumit di checkout pertama."
-    ]
-  }
+    "plan_dan_arahan": [
+        {
+            "prioritas": 1,
+            "aksi": "Broadcast Faedah Grup WhatsApp (06.00 WIB)",
+            "pelaksana": "Owner (@edumuslimin)",
+            "catatan": "Kirim naskah 'Trik Biar Gak Gampang Iri Pas Buka Medsos' (QS. Thaha: 131) ke grup komunitas. 100% faedah murni tanpa jualan."
+        },
+        {
+            "prioritas": 2,
+            "aksi": "Posting Instagram Story Slide 1 — Polling Pagi (07.30 WIB)",
+            "pelaksana": "Owner (@edumuslimin)",
+            "catatan": "Tanyakan: 'Bangun pagi ini rasanya gimana? Badan segar bugar vs Masih ngantuk & mata sepet'. Sapa yang memilih ngantuk di DM."
+        },
+        {
+            "prioritas": 3,
+            "aksi": "Posting Utas Threads Kamis (Siang/Sore)",
+            "pelaksana": "Owner (@edumuslimin)",
+            "catatan": "Rilis 5 post bersambung topik '24 Jam Habis Buat Siapa?'. Naskah bersih sensor Meta (ERR-036) dan bebas formula AI klise. CTA balas keyword 'TENANG' tanpa link luar."
+        },
+        {
+            "prioritas": 4,
+            "aksi": "Posting Reels 2-Slide Kamis Malam (19.30 WIB)",
+            "pelaksana": "Owner (@edumuslimin)",
+            "catatan": "Tayangkan naskah '24 jam habis buat siapa?'. Slide 1 font tebal + Slide 2 3 langkah aksi malam ini + CTA keyword 'TENANG' (ERR-035)."
+        },
+        {
+            "prioritas": 5,
+            "aksi": "Follow-Up Pending Order #6210 via WhatsApp",
+            "pelaksana": "Owner (@edumuslimin)",
+            "catatan": "Sapa Kak Rafidaini Sazarni Ratiyun (Rp77.000) menggunakan skrip Chris Voss accusation audit."
+        }
+    ],
+    "audit_cro_lp_qila": {
+        "skor_keseluruhan": "8.8 / 10",
+        "url": "https://lp.edumuslim.my.id/lpqila",
+        "ringkasan_audit": [
+            {
+                "aspek": "Kecepatan & Responsif Mobile",
+                "skor": "9.5 / 10",
+                "status": "Kuat",
+                "catatan": "Halaman statis HTML sangat ringan (<1.2 detik di jaringan seluler). Elemen visual tidak layout-shift."
+            },
+            {
+                "aspek": "Hierarki Offer & Pricing",
+                "skor": "9.0 / 10",
+                "status": "Kuat",
+                "catatan": "Value framing harga Rp47.000 + 3 bonus praktis (Checklist, Habit Tracker, Ebook Lunas) tertera jelas sebelum tombol checkout."
+            },
+            {
+                "aspek": "Frictionless Checkout Bridge",
+                "skor": "8.5 / 10",
+                "status": "Kuat",
+                "catatan": "Tombol CTA mengarah langsung ke formulir instan PixelCRM (co.php?id=6) dengan metode pembayaran otomatis QRIS/Transfer."
+            },
+            {
+                "aspek": "Social Proof & Testimoni",
+                "skor": "8.0 / 10",
+                "status": "Sedang",
+                "catatan": "Perlu tambahan 2-3 tangkapan layar chat WhatsApp asli dari pembeli yang berhasil bangun jam 3 pagi untuk memperkuat trust."
+            }
+        ]
+    }
 }

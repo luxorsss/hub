@@ -44,7 +44,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Content-Type: application/json',
     'X-Hub-Secret: ' . $secret
 ]);
-curl_setopt($ch, CURLOPT_TIMEOUT, 15);
+curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 
 $res = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -76,7 +76,7 @@ if (file_exists($briefFile)) {
         'Content-Type: application/json',
         'X-Hub-Secret: ' . $secret
     ]);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 15);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
     $resBrief = curl_exec($ch);
     $httpCodeBrief = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);

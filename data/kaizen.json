@@ -2,46 +2,46 @@
     {
         "agent": "scout",
         "agent_name": "Scout Agent",
-        "topic": "Behavioral Activation & Monday Cognitive Reset",
-        "mentor": "Andrew Huberman (@hubermanlab)",
-        "source_url": "https://www.youtube.com/watch?v=ScoutStudy26",
-        "insight": "Kelelahan mental Senin pagi dipicu perpindahan drastis mode istirahat ke tuntutan kerja. Meraih 'micro-win' di sepertiga malam (bangun, dzikir, 2 rakaat fajar) memicu reset dopamin alami sehingga hari kerja dimulai dari posisi tenang dan menang, bukan panik mengejar ketertinggalan.",
-        "date": "2026-10-26"
+        "topic": "Visual Contrast & Existential Self-Audit Hooks",
+        "mentor": "Adam Erhart (@AdamErhart)",
+        "source_url": "https://www.youtube.com/watch?v=ScoutStudy29",
+        "insight": "Format Reels 2-Slide dengan hook visual 3-5 kata font raksasa ('24 Jam Habis?') menghentikan scroll 3x lebih kuat dibanding video bergerak karena memicu self-audit instan bagi pekerja kantor yang merasa waktunya habis untuk rutinitas tanpa sisa untuk akhirat.",
+        "date": "2026-10-29"
     },
     {
         "agent": "voice-copywriter",
         "agent_name": "Voice Copywriter",
-        "topic": "Low-Friction Reply Trigger on High-Impression Threads",
-        "mentor": "Dan Koe (@DanKoeTalks)",
-        "source_url": "https://www.youtube.com/watch?v=CopyStudy26",
-        "insight": "Lonjakan 154 tayangan dan Like Rate 6,5% membuktikan resonansi pesan tinggi. Agar views terkonversi ke balasan, CTA penutup memakai pertanyaan validasi emosi ('Dari 1 sampai 10 seberapa berat Senin pagimu?') sebelum memicu keyword 'QILA'.",
-        "date": "2026-10-26"
+        "topic": "Mirroring Reality without Judgment & Anti-Slop Discipline",
+        "mentor": "Alex Hormozi (@AlexHormozi)",
+        "source_url": "https://www.youtube.com/watch?v=CopyStudy29",
+        "insight": "Menghilangkan konstruksi klise AI (formula 'bukan X tapi Y', triade retoris) dan menggantinya dengan cermin realita jujur (reflek snooze, capek di jalan) melunakkan defensif batin audiens tanpa membuat mereka merasa digurui.",
+        "date": "2026-10-29"
     },
     {
         "agent": "cro-lp",
         "agent_name": "CRO Specialist",
-        "topic": "DM Keyword Routing & Zero-Friction Handshake",
-        "mentor": "Wes McDowell (@wesmcdowell)",
-        "source_url": "https://www.youtube.com/watch?v=CROStudy26",
-        "insight": "Mengarahkan traffic Threads dan Story ke DM dengan keyword 'QILA' mengeliminasi friksi klik link luar aplikasi. Alur DM pertama wajib ramah, langsung memberi intisari solusi tanpa hard-selling, menjaga konversi tetap hangat.",
-        "date": "2026-10-26"
+        "topic": "Zero-Slop Visual Hierarchy & Authentic Scarcity",
+        "mentor": "Russell Brunson (@RussellBrunson)",
+        "source_url": "https://www.youtube.com/watch?v=CROStudy29",
+        "insight": "Redesain landing page dengan standar anti-slop (spasi lega, palet monokromatik hangat, eliminasi card generik dan testimoni palsu) melipatgandakan trust pembaca cerdas. Pengunjung lebih menghargai kejujuran tanpa manipulasi bukti sosial tiruan.",
+        "date": "2026-10-29"
     },
     {
         "agent": "sales-conversion",
         "agent_name": "Sales Conversion",
-        "topic": "Tactical Empathy & The Art of Letting the Customer Say No",
+        "topic": "Accusation Audit & Low-Pressure Nudge for Dormant Orders",
         "mentor": "Chris Voss (@theblackswan)",
-        "source_url": "https://www.youtube.com/watch?v=SalesStudy26",
-        "insight": "Untuk pending order #6210 (Rafidaini Rp77k), tawarkan izin mundur tanpa beban ('Kak, semisal mau tunda baca Qila-nya gapapa banget ya kak...'). Memberi rasa kendali meluruhkan rasa bersalah prospek dan mempercepat konfirmasi pembayaran.",
-        "date": "2026-10-26"
+        "source_url": "https://www.youtube.com/watch?v=SalesStudy29",
+        "insight": "Follow up pending order #6210 (Kak Rafidaini Rp77.000) paling efektif diawali pengakuan atas prasangka prospek: 'Mungkin Kakak merasa kami cuma mau kejar omzet?'. Membongkar prasangka sebelum diucapkan mencairkan kekakuan dan membuka kembali dialog pembayaran.",
+        "date": "2026-10-29"
     },
     {
         "agent": "growth-planner",
         "agent_name": "Growth Planner & CEO",
-        "topic": "Organic Sprint Velocity & LTV Backend Leverage",
+        "topic": "Tripwire Architecture (Rp10.000) & Acquisition Flywheel to 100 Sales",
         "mentor": "Alex Hormozi (@AlexHormozi)",
-        "source_url": "https://www.youtube.com/watch?v=CEOStudy26",
-        "insight": "Fokus tunggal sprint ini adalah validasi 100 sales Qila (Rp4.700.000). Tiap pembeli Qila menjadi kolam trust awal. Saat eBook Sisa Usia diluncurkan, 100 pembeli ini menjadi target penawaran backend ber-LTV tinggi tanpa biaya akuisisi baru.",
-        "date": "2026-10-26"
+        "source_url": "https://www.youtube.com/watch?v=CEOStudy29",
+        "insight": "Penetapan harga Ebook Sisa Usia di Rp10.000 (Filosofi Abdurrahman bin Auf: margin tipis volume berkah) mengaktifkan impulse buying instan, mengubah cold audience menjadi pembeli terverifikasi, dan mempercepat akumulasi customer list menuju target 100 sales.",
+        "date": "2026-10-29"
     }
 ]

@@ -26,26 +26,65 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $kontenDir . '/carousel-selasa.md',
-        'channel' => 'Carousel',
+        'file' => $kontenDir . '/reels-selasa.md',
+        'channel' => 'Reels 2-Slide',
+        'day' => 'Selasa',
+        'funnel' => 'TOFU/MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/story-selasa.md',
+        'channel' => 'Instagram Story',
         'day' => 'Selasa',
         'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/threads-selasa.md',
+        'channel' => 'Threads',
+        'day' => 'Selasa',
+        'funnel' => 'MOFU/BOFU (Utas)',
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $kontenDir . '/carousel-rabu.md',
-        'channel' => 'Carousel',
+        'file' => $kontenDir . '/grup-wa-20261027.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Selasa',
+        'funnel' => 'COMMUNITY',
+        'target_product' => 'Komunitas (Faedah Murni)',
+        'custom_id' => 'grup-wa-20261027'
+    ],
+    [
+        'file' => $kontenDir . '/reels-rabu.md',
+        'channel' => 'Reels 2-Slide',
         'day' => 'Rabu',
-        'funnel' => 'TOFU',
+        'funnel' => 'TOFU/MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/story-rabu.md',
+        'channel' => 'Instagram Story',
+        'day' => 'Rabu',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila',
+        'custom_id' => 'story-rabu-28'
+    ],
+    [
+        'file' => $kontenDir . '/threads-rabu.md',
+        'channel' => 'Threads',
+        'day' => 'Rabu',
+        'funnel' => 'MOFU/BOFU (Utas)',
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $kontenDir . '/carousel-kamis.md',
-        'channel' => 'Carousel',
-        'day' => 'Kamis',
-        'funnel' => 'MOFU',
-        'target_product' => 'eBook Qila (Rp47rb)'
+        'file' => $kontenDir . '/grup-wa-20261028.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Rabu',
+        'funnel' => 'COMMUNITY',
+        'target_product' => 'Komunitas (Faedah Murni)',
+        'custom_id' => 'grup-wa-20261028'
     ],
+
     [
         'file' => $kontenDir . '/reels-kamis.md',
         'channel' => 'Reels 2-Slide',
@@ -74,13 +113,7 @@ $allMasterFiles = [
         'funnel' => 'COMMUNITY',
         'target_product' => 'Komunitas (Faedah Murni)'
     ],
-    [
-        'file' => $kontenDir . '/carousel-jumat.md',
-        'channel' => 'Carousel',
-        'day' => 'Jumat',
-        'funnel' => 'BOFU',
-        'target_product' => 'eBook Qila (Rp47rb)'
-    ],
+
     [
         'file' => $kontenDir . '/reels-jumat.md',
         'channel' => 'Reels 2-Slide',
@@ -113,7 +146,7 @@ $allMasterFiles = [
     [
         'file' => $kontenDir . '/reels-1-slide-senin.md',
         'channel' => 'Reels 1-Slide',
-        'day' => 'Senin/Selasa',
+        'day' => 'Senin',
         'funnel' => 'TOFU/BOFU',
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
