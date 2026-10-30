@@ -10,9 +10,15 @@ if (!$item) {
     exit;
 }
 
-// Format full text untuk "Salin Semua Naskah" yang 100% bersih untuk Canva
+// Format full text untuk "Salin Semua Naskah" yang 100% bersih untuk Canva / YouTube
 if (!empty($item['wa_message'])) {
     $fullTextForCanva = $item['wa_message'];
+} elseif (stripos($item['channel'] ?? '', 'shorts') !== false || stripos($item['channel'] ?? '', 'youtube') !== false) {
+    $fullTextForCanva = "JUDUL VIDEO:\n" . ($item['video_title'] ?? $item['title']) . "\n\n";
+    $fullTextForCanva .= "[DESKRIPSI / CAPTION YOUTUBE SHORTS]\n" . trim($item['caption'] ?? '') . "\n\n";
+    if (!empty($item['pinned_comment'])) {
+        $fullTextForCanva .= "[KOMENTAR SEMATAN / PINNED COMMENT]\n" . trim($item['pinned_comment']) . "\n";
+    }
 } elseif (!empty($item['posts'])) {
     $fullTextForCanva = $item['title'] . "\n\n";
     foreach ($item['posts'] as $p) {

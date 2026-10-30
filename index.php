@@ -348,6 +348,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
         .channel-pill.threads { border-color: rgba(59, 130, 246, 0.4); color: #60a5fa; }
         .channel-pill.story { border-color: rgba(245, 158, 11, 0.4); color: #fbbf24; }
         .channel-pill.carousel { border-color: rgba(16, 185, 129, 0.4); color: #34d399; }
+        .channel-pill.shorts { border-color: rgba(239, 68, 68, 0.4); color: #f87171; background: rgba(239, 68, 68, 0.1); }
 
         .card-title {
             font-size: 1.1rem;
@@ -748,6 +749,7 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                                     if (strpos($ch, 'threads') !== false) $chClass = 'threads';
                                     elseif (strpos($ch, 'story') !== false) $chClass = 'story';
                                     elseif (strpos($ch, 'whatsapp') !== false || strpos($ch, 'outreach') !== false) $chClass = 'whatsapp';
+                                    elseif (strpos($ch, 'shorts') !== false || strpos($ch, 'youtube') !== false) $chClass = 'shorts';
                                 ?>
                                 <span class="channel-pill <?= $chClass ?>">
                                     <?= htmlspecialchars($c['channel']) ?>
@@ -832,15 +834,65 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
             </div>
         <?php endif; ?>
 
-        <?php if (!empty($c['slides'])): ?>
-            <!-- 7 SLIDE CAROUSEL VIEW DI HUB -->
+        <?php if (stripos($ch, 'shorts') !== false || stripos($ch, 'youtube') !== false): ?>
+            <!-- YOUTUBE SHORTS VIEW DI HUB -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem;">
+                <!-- Ringkasan Repurpose Video -->
+                <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); padding: 0.65rem 0.85rem; border-radius: 8px;">
+                    <div style="font-size: 0.8rem; color: #f87171; font-weight: 700; margin-bottom: 0.25rem;">
+                        🎬 Format: Video Repurpose Pasif dari Reels 2-Slide (Maks 15 Detik)
+                    </div>
+                    <div style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">
+                        Tanpa syuting baru / tanpa edit ulang. Upload video Reels yang sama ke YouTube Shorts, lalu salin judul, deskripsi, dan sematkan komentar dengan link LP di bawah.
+                    </div>
+                </div>
+
+                <!-- 1. Box Judul Video YouTube -->
+                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 0.85rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                        <strong style="font-size: 0.8rem; color: #f87171; font-weight: 700;">📌 Judul Video YouTube Shorts:</strong>
+                        <button class="btn-copy" style="font-size: 0.72rem; padding: 0.2rem 0.5rem; background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);" onclick="copyShortsTitle('<?= htmlspecialchars($c['id']) ?>', this)">
+                            📋 Salin Judul
+                        </button>
+                    </div>
+                    <div style="font-size: 0.85rem; color: #e5e7eb; font-weight: 600; font-family: inherit;">
+                        <?= htmlspecialchars($c['video_title'] ?? $c['hook'] ?? $c['title']) ?>
+                    </div>
+                </div>
+
+                <!-- 2. Box Deskripsi / Caption YouTube Shorts -->
+                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 0.85rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                        <strong style="font-size: 0.8rem; color: #34d399; font-weight: 700;">📝 Deskripsi / Caption YouTube Shorts:</strong>
+                        <button class="btn-copy" style="font-size: 0.72rem; padding: 0.2rem 0.5rem; background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.3);" onclick="copyCaptionDirect('<?= htmlspecialchars($c['id']) ?>', this)">
+                            📋 Salin Deskripsi
+                        </button>
+                    </div>
+                    <div style="font-size: 0.82rem; white-space: pre-wrap; color: var(--text); line-height: 1.5; background: rgba(0,0,0,0.25); padding: 0.6rem; border-radius: 6px; font-family: inherit;"><?= htmlspecialchars(trim($c['caption'] ?? '')) ?></div>
+                </div>
+
+                <!-- 3. Box Komentar Sematan (Pinned Comment) -->
+                <?php if (!empty($c['pinned_comment'])): ?>
+                    <div style="background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 8px; padding: 0.75rem 0.85rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                            <strong style="font-size: 0.8rem; color: #fbbf24; font-weight: 700;">📌 Komentar Sematan (Wajib Di-Pin dengan Link LP):</strong>
+                            <button class="btn-copy" style="font-size: 0.72rem; padding: 0.2rem 0.5rem; background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3);" onclick="copyPinnedComment('<?= htmlspecialchars($c['id']) ?>', this)">
+                                📋 Salin Komentar Pin
+                            </button>
+                        </div>
+                        <div style="font-size: 0.82rem; white-space: pre-wrap; color: #fde68a; line-height: 1.5; background: rgba(0,0,0,0.25); padding: 0.6rem; border-radius: 6px; font-family: inherit;"><?= htmlspecialchars(trim($c['pinned_comment'])) ?></div>
+                    </div>
+                <?php endif; ?>
+            </div>
+        <?php elseif (!empty($c['slides'])): ?>
+            <!-- SLIDE CAROUSEL / REELS VIEW DI HUB -->
             <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); padding: 0.6rem 0.85rem; border-radius: 8px;">
                     <span style="font-size: 0.82rem; color: #93c5fd; font-weight: 700;">
-                        📸 Format: 7 Slide Seamless Carousel (1080x1350)
+                        📸 Format: <?= count($c['slides']) ?> Slide <?= htmlspecialchars($c['channel']) ?>
                     </span>
                     <button class="btn-copy" style="font-size: 0.75rem; padding: 0.25rem 0.65rem;" onclick="copyFullCarousel('<?= htmlspecialchars($c['id']) ?>', this)">
-                        📋 Salin Semua 7 Slide
+                        📋 Salin Semua Slide
                     </button>
                 </div>
 
@@ -1609,6 +1661,8 @@ Dapatkan buku utama eBook Sisa Usia + 4 Alat Bantu Pengaman Akhirat GRATIS:
             let full = '';
             if (item.wa_message) {
                 full = item.wa_message;
+            } else if (item.channel && (item.channel.toLowerCase().includes('shorts') || item.channel.toLowerCase().includes('youtube'))) {
+                full = (item.video_title || item.hook || item.title) + "\n\n[DESKRIPSI YOUTUBE]\n" + (item.caption || '') + "\n\n[KOMENTAR SEMATAN / PIN]\n" + (item.pinned_comment || '');
             } else if (item.posts && item.posts.length > 0) {
                 item.posts.forEach(p => full += `[Post ${p.post_number}]\n${p.content || p.text || ''}\n\n`);
             } else if (item.stories && item.stories.length > 0) {
@@ -1651,6 +1705,19 @@ Dapatkan buku utama eBook Sisa Usia + 4 Alat Bantu Pengaman Akhirat GRATIS:
 
         function copyCaptionDirect(id, btn) {
             copyCaption(id, btn);
+        }
+
+        function copyShortsTitle(id, btn) {
+            const item = getHubItem(id);
+            if (!item) return;
+            const title = item.video_title || item.hook || item.title || '';
+            copyText(title.trim(), btn, 'Judul YouTube Shorts berhasil disalin!');
+        }
+
+        function copyPinnedComment(id, btn) {
+            const item = getHubItem(id);
+            if (!item || !item.pinned_comment) return;
+            copyText(item.pinned_comment.trim(), btn, 'Komentar sematan berhasil disalin!');
         }
 
         function copyFullThreads(id, btn) {

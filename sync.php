@@ -115,11 +115,25 @@ $allMasterFiles = [
     ],
 
     [
+        'file' => $kontenDir . '/carousel-jumat.md',
+        'channel' => 'Carousel',
+        'day' => 'Jumat',
+        'funnel' => 'MOFU/BOFU',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
         'file' => $kontenDir . '/reels-jumat.md',
         'channel' => 'Reels 2-Slide',
         'day' => 'Jumat',
         'funnel' => 'MOFU',
         'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/shorts-jumat.md',
+        'channel' => 'YouTube Shorts',
+        'day' => 'Jumat',
+        'funnel' => 'TOFU (Repurpose)',
+        'target_product' => 'eBook Qila (Link di Komentar Pin)'
     ],
     [
         'file' => $kontenDir . '/story-jumat.md',
@@ -310,9 +324,23 @@ foreach ($filesToProcess as $meta) {
         $caption = trim($m[1]);
     }
 
-    // 1. Ekstraksi Slides (Carousel)
+    // Ekstraksi Pinned Comment (YouTube Shorts / IG)
+    $pinnedComment = '';
+    if (preg_match('/(?:##[^\n]*(?:Pinned\s*Comment|Komentar\s*Sematan))[\s\S]*?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $pm)) {
+        $pinnedComment = trim($pm[1]);
+    } elseif (preg_match('/(?:##[^\n]*(?:Pinned\s*Comment|Komentar\s*Sematan)[^\n]*\n+)([\s\S]*?)(?:\n---|\Z)/iu', $raw, $pm)) {
+        $pinnedComment = trim($pm[1]);
+    }
+
+    // Ekstraksi Judul Video (YouTube Shorts / Reels)
+    $videoTitle = '';
+    if (preg_match('/(?:\*\*(?:Judul Video|Video Title):\*\*|\bJudul Video:\b)\s*`?([^\n`]+)`?/iu', $raw, $vm)) {
+        $videoTitle = trim($vm[1]);
+    }
+
+    // 1. Ekstraksi Slides (Carousel / Reels / Shorts)
     $slides = [];
-    preg_match_all('/###\s*(?:\[)?Slide\s*(\d+)[^:\r\n\]]*[:\]]?[ \t]*([^\r\n]*)([\s\S]*?)(?=(?:###\s*(?:\[)?Slide|\Z|##\s*Caption))/i', $raw, $matches, PREG_SET_ORDER);
+    preg_match_all('/###\s*(?:\[)?Slide\s*(\d+)[^:\r\n\]]*[:\]]?[ \t]*([^\r\n]*)([\s\S]*?)(?=(?:###\s*(?:\[)?Slide|\Z|##|\n---\n))/i', $raw, $matches, PREG_SET_ORDER);
     
     if (!empty($matches)) {
         foreach ($matches as $sMatch) {
@@ -420,6 +448,8 @@ foreach ($filesToProcess as $meta) {
         'target_product' => $meta['target_product'],
         'title' => $title,
         'hook' => $hook,
+        'video_title' => $videoTitle,
+        'pinned_comment' => $pinnedComment,
         'slides' => $slides,
         'posts' => $posts,
         'stories' => $stories,
