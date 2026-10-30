@@ -425,9 +425,9 @@ foreach ($filesToProcess as $meta) {
         }
     }
 
-    // 5. Ekstraksi Pesan CRM Outreach
+    // 5. Ekstraksi Pesan CRM Outreach / Copywriting Shorts (3 Box Terpisah)
     $outreachMessages = [];
-    if (stripos($filename, 'broadcast') !== false || stripos($meta['channel'], 'Outreach') !== false) {
+    if (stripos($filename, 'broadcast') !== false || stripos($meta['channel'], 'Outreach') !== false || stripos($meta['channel'], 'Shorts') !== false || stripos($filename, 'shorts') !== false) {
         preg_match_all('/(?:###|##)\s*([^\n\r]+)\n+(?:[^\n`]*\n+)?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $omMatches, PREG_SET_ORDER);
         foreach ($omMatches as $om) {
             $outreachMessages[] = [
@@ -435,6 +435,12 @@ foreach ($filesToProcess as $meta) {
                 'content' => trim($om[2])
             ];
         }
+    }
+
+    // Khusus YouTube Shorts: Mutlak tanpa slide dan tanpa caption IG agar tidak bentrok dengan layout Carousel
+    if (stripos($meta['channel'], 'Shorts') !== false || stripos($filename, 'shorts') !== false) {
+        $slides = [];
+        $caption = '';
     }
 
     $existing = HubDB::findContentById($id);
