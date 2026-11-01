@@ -26,10 +26,12 @@ $igCacheFile = DATA_DIR . '/ig_cache.json';
 $igCache = file_exists($igCacheFile) ? json_decode(file_get_contents($igCacheFile), true) : null;
 $crmBatchFile = DATA_DIR . '/crm_batch_status.json';
 $crmBatchData = file_exists($crmBatchFile) ? json_decode(file_get_contents($crmBatchFile), true) : null;
+$launchFile = DATA_DIR . '/launch_sisa_usia.json';
+$launchSisaUsia = file_exists($launchFile) ? json_decode(file_get_contents($launchFile), true) : [];
 
 // Tab aktif (default: 'today')
 $currentTab = $_GET['tab'] ?? 'today';
-$validTabs = ['today', 'wa', 'brief', 'cover'];
+$validTabs = ['today', 'wa', 'brief', 'cover', 'sisa_usia'];
 if (!in_array($currentTab, $validTabs)) {
     $currentTab = 'today';
 }
@@ -677,6 +679,10 @@ $totalRevenue = number_format($sales['total_revenue'] ?? ($currentSales * 47000)
                 </a>
                 <a href="index.php?tab=brief" class="nav-item <?= ($currentTab === 'brief') ? 'active' : '' ?>">
                     <span>📋 Brief Harian & Riset</span>
+                </a>
+                <a href="index.php?tab=sisa_usia" class="nav-item <?= ($currentTab === 'sisa_usia') ? 'active' : '' ?>">
+                    <span>🚀 Launch Sisa Usia</span>
+                    <span class="badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc;"><?= count($launchSisaUsia) ?> Pesan</span>
                 </a>
                 <a href="index.php?tab=cover" class="nav-item <?= ($currentTab === 'cover') ? 'active' : '' ?>">
                     <span>🎨 Asset & 4 Bonus Ebook</span>
@@ -1588,6 +1594,94 @@ Dapatkan buku utama eBook Sisa Usia + 4 Alat Bantu Pengaman Akhirat GRATIS:
                 </ol>
             </div>
 
+        <?php elseif ($currentTab === 'sisa_usia'): ?>
+            <!-- TAB LAUNCH: RANGKAIAN LAUNCHING EBOOK SISA USIA -->
+            <div class="page-header">
+                <div class="page-title">
+                    <h2>🚀 Rangkaian Launching eBook Sisa Usia</h2>
+                    <p>Urutan 6 naskah siaran Grup WhatsApp EduMuslim lengkap dengan jadwal kirim, target funnel, dan tombol salin instan. Corong 100% transparan melalui Landing Page.</p>
+                </div>
+                <div class="header-actions">
+                    <a href="https://lp.edumuslim.my.id/sisa-usia" target="_blank" class="btn-action" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.4); font-weight: 600;">
+                        🔗 Buka Landing Page Sisa Usia ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ringkasan Paket & Penawaran -->
+            <div class="content-card" style="border-left: 4px solid var(--purple); margin-bottom: 1.5rem; background: linear-gradient(180deg, rgba(168, 85, 247, 0.05) 0%, rgba(24, 27, 40, 0.9) 100%);">
+                <div class="card-top">
+                    <div>
+                        <span class="channel-pill" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">
+                            Kampanye Komunitas Grup WhatsApp
+                        </span>
+                        <span style="font-size: 0.85rem; color: #fff; font-weight: 700; margin-left: 0.5rem;">
+                            eBook Sisa Usia (Rp10.000) + 4 Bonus Lengkap (Rp140.000)
+                        </span>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.78rem; background: rgba(34, 197, 94, 0.15); padding: 0.3rem 0.6rem; border-radius: 6px; color: #4ade80; font-weight: 700;">
+                            ⏳ Durasi: 4 Hari (Senin 2 Nov – Kamis 5 Nov 2026)
+                        </span>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; margin-top: 1rem; font-size: 0.78rem;">
+                    <div style="background: rgba(0,0,0,0.25); padding: 0.6rem 0.8rem; border-radius: 6px;">
+                        <span style="color: var(--text-muted); display: block;">Target URL Corong:</span>
+                        <strong style="color: #38bdf8; word-break: break-all;">https://lp.edumuslim.my.id/sisa-usia</strong>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.25); padding: 0.6rem 0.8rem; border-radius: 6px;">
+                        <span style="color: var(--text-muted); display: block;">Mahar Rilis Perdana:</span>
+                        <strong style="color: #fbbf24;">Rp10.000 (Tripwire No-Brainer)</strong>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.25); padding: 0.6rem 0.8rem; border-radius: 6px;">
+                        <span style="color: var(--text-muted); display: block;">Paket Bonus:</span>
+                        <strong style="color: #34d399;">4 Alat Bantu Pengaman Akhirat</strong>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.25); padding: 0.6rem 0.8rem; border-radius: 6px;">
+                        <span style="color: var(--text-muted); display: block;">Total Pesan:</span>
+                        <strong style="color: #c084fc;">6 Pesan (1 Woro-Woro + 5 Rilis)</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List Naskah Launching -->
+            <?php foreach ($launchSisaUsia as $idx => $msg): ?>
+                <div class="content-card" id="card-<?= htmlspecialchars($msg['id']) ?>" style="margin-bottom: 1.5rem;">
+                    <div class="card-top">
+                        <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+                            <span class="channel-pill" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3); font-weight: 700;">
+                                <?= ($idx === 0) ? '📢 Woro-Woro Pra-Rilis' : 'Pesan ' . $idx ?>
+                            </span>
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">
+                                <?= htmlspecialchars($msg['title']) ?>
+                            </span>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <span style="font-size: 0.78rem; background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); padding: 0.2rem 0.6rem; border-radius: 5px; font-weight: 600;">
+                                🗓️ <?= htmlspecialchars($msg['jadwal']) ?>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 0.6rem 0; font-size: 0.76rem; color: var(--text-muted);">
+                        <span>🎯 Tahap: <strong><?= htmlspecialchars($msg['funnel']) ?></strong></span>
+                        <span>📱 Kanal: <strong><?= htmlspecialchars($msg['kanal']) ?></strong></span>
+                    </div>
+
+                    <div class="script-box" id="script-<?= htmlspecialchars($msg['id']) ?>" style="white-space: pre-wrap; line-height: 1.6; font-size: 0.88rem; max-height: 400px; overflow-y: auto; background: #0d0f17; border: 1px solid #1e2436; border-radius: 8px; padding: 1rem; color: #e2e8f0;"><?= htmlspecialchars(trim($msg['wa_message'])) ?></div>
+
+                    <div class="card-bottom-actions" style="margin-top: 1rem;">
+                        <button class="btn-copy" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; border-color: rgba(168, 85, 247, 0.4); font-weight: 700; padding: 0.5rem 1rem;" onclick="copyLaunchMsg('<?= htmlspecialchars($msg['id']) ?>', this)">
+                            📋 Salin Naskah Pesan
+                        </button>
+                        <a href="<?= htmlspecialchars($msg['target_url'] ?? 'https://lp.edumuslim.my.id/sisa-usia') ?>" target="_blank" class="btn-action" style="font-size: 0.78rem;">
+                            Uji Link Landing Page ↗
+                        </a>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+
         <?php endif; ?>
 
     </main>
@@ -1822,6 +1916,30 @@ Dapatkan buku utama eBook Sisa Usia + 4 Alat Bantu Pengaman Akhirat GRATIS:
                 showToast('❌ Gagal menghubungi server');
                 btn.disabled = false;
                 btn.innerText = '🗑️ Sudah Dishare (Hapus dari Hub)';
+            });
+        }
+
+        function copyLaunchMsg(id, btn) {
+            const el = document.getElementById('script-' + id);
+            if (!el) return;
+            const textToCopy = el.innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast('📋 Naskah berhasil disalin!');
+                const orig = btn.innerText;
+                btn.innerText = '✅ Tersalin!';
+                setTimeout(() => btn.innerText = orig, 2000);
+            }).catch(err => {
+                // Fallback for older browsers
+                const ta = document.createElement('textarea');
+                ta.value = textToCopy;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showToast('📋 Naskah berhasil disalin!');
+                const orig = btn.innerText;
+                btn.innerText = '✅ Tersalin!';
+                setTimeout(() => btn.innerText = orig, 2000);
             });
         }
     </script>
