@@ -356,25 +356,29 @@ foreach ($filesToProcess as $meta) {
         }
     }
 
-    // Ekstraksi Caption
+    // Ekstraksi Caption / Deskripsi
     $caption = '';
-    if (preg_match('/(?:##[^\n]*Caption|###\s*2\.\s*Copywriting Caption Lengkap)[\s\S]*?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $m)) {
+    if (preg_match('/(?:##[^\n]*(?:Caption|Deskripsi)|###\s*(?:\d+\.\s*)?(?:Copywriting\s*)?(?:Caption|Deskripsi)[^\n]*)[\s\S]*?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $m)) {
         $caption = trim($m[1]);
-    } elseif (preg_match('/(?:##[^\n]*Caption[^\n]*\n+)([\s\S]*?)(?:\n---|\Z)/iu', $raw, $m)) {
+    } elseif (preg_match('/(?:##[^\n]*(?:Caption|Deskripsi)[^\n]*\n+|###\s*(?:\d+\.\s*)?(?:Deskripsi\s*Video|Caption)[^\n]*\n+)([\s\S]*?)(?:\n---|\Z)/iu', $raw, $m)) {
         $caption = trim($m[1]);
     }
 
     // Ekstraksi Pinned Comment (YouTube Shorts / IG)
     $pinnedComment = '';
-    if (preg_match('/(?:##[^\n]*(?:Pinned\s*Comment|Komentar\s*Sematan))[\s\S]*?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $pm)) {
+    if (preg_match('/(?:##[^\n]*(?:Pinned\s*Comment|Komentar\s*(?:Sematan|Tersemat))|###\s*(?:\d+\.\s*)?(?:Pinned\s*Comment|Komentar\s*(?:Sematan|Tersemat))[^\n]*)[\s\S]*?```(?:text)?\s*([\s\S]*?)```/iu', $raw, $pm)) {
         $pinnedComment = trim($pm[1]);
-    } elseif (preg_match('/(?:##[^\n]*(?:Pinned\s*Comment|Komentar\s*Sematan)[^\n]*\n+)([\s\S]*?)(?:\n---|\Z)/iu', $raw, $pm)) {
+    } elseif (preg_match('/(?:##[^\n]*(?:Pinned\s*Comment|Komentar\s*(?:Sematan|Tersemat))[^\n]*\n+|###\s*(?:\d+\.\s*)?(?:Pinned\s*Comment|Komentar\s*(?:Sematan|Tersemat))[^\n]*\n+)([\s\S]*?)(?:\n---|\Z)/iu', $raw, $pm)) {
         $pinnedComment = trim($pm[1]);
     }
 
     // Ekstraksi Judul Video (YouTube Shorts / Reels)
     $videoTitle = '';
     if (preg_match('/(?:\*\*(?:Judul Video|Video Title):\*\*|\bJudul Video:\b)\s*`?([^\n`]+)`?/iu', $raw, $vm)) {
+        $videoTitle = trim($vm[1]);
+    } elseif (preg_match('/(?:###|##)\s*(?:\d+\.\s*)?Judul Video[^\n]*\n+```(?:text)?\s*([\s\S]*?)```/iu', $raw, $vm)) {
+        $videoTitle = trim($vm[1]);
+    } elseif (preg_match('/(?:###|##)\s*(?:\d+\.\s*)?Judul Video[^\n]*\n+([^\n#\r]+)/iu', $raw, $vm)) {
         $videoTitle = trim($vm[1]);
     }
 
@@ -477,10 +481,34 @@ foreach ($filesToProcess as $meta) {
         }
     }
 
-    // Khusus YouTube Shorts: Mutlak tanpa slide dan tanpa caption IG agar tidak bentrok dengan layout Carousel
+    // Khusus YouTube Shorts: Mutlak tanpa slide agar tidak bentrok dengan layout Carousel
     if (stripos($meta['channel'], 'Shorts') !== false || stripos($filename, 'shorts') !== false) {
         $slides = [];
-        $caption = '';
+        // Jangan kosongkan $caption, pastikan fallback dari outreach_messages jika masih belum terisi
+        if (empty($caption) && !empty($outreachMessages)) {
+            foreach ($outreachMessages as $om) {
+                if (stripos($om['title'], 'Deskripsi') !== false || stripos($om['title'], 'Caption') !== false) {
+                    $caption = $om['content'];
+                    break;
+                }
+            }
+        }
+        if (empty($videoTitle) && !empty($outreachMessages)) {
+            foreach ($outreachMessages as $om) {
+                if (stripos($om['title'], 'Judul') !== false) {
+                    $videoTitle = $om['content'];
+                    break;
+                }
+            }
+        }
+        if (empty($pinnedComment) && !empty($outreachMessages)) {
+            foreach ($outreachMessages as $om) {
+                if (stripos($om['title'], 'Pinned') !== false || stripos($om['title'], 'Sematan') !== false) {
+                    $pinnedComment = $om['content'];
+                    break;
+                }
+            }
+        }
     }
 
     $existing = HubDB::findContentById($id);
