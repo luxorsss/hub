@@ -88,37 +88,6 @@ if (file_exists($briefFile)) {
     }
 }
 
-// Push Launch Sisa Usia jika ada
-$launchFile = DATA_DIR . '/launch_sisa_usia.json';
-if (file_exists($launchFile)) {
-    $launchData = json_decode(file_get_contents($launchFile), true);
-    $launchPayload = [
-        'type' => 'launch_sisa_usia',
-        'data' => $launchData
-    ];
-
-    echo "Mengirim data launch_sisa_usia ke $cpanelEndpoint ...\n";
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $cpanelEndpoint);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($launchPayload, JSON_UNESCAPED_UNICODE));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        'Content-Type: application/json',
-        'X-Hub-Secret: ' . $secret
-    ]);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-    $resLaunch = curl_exec($ch);
-    $httpCodeLaunch = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
-
-    if ($httpCodeLaunch === 200) {
-        echo "✅ Berhasil push launch_sisa_usia ke cPanel!\n";
-    } else {
-        echo "⚠️ Gagal mengirim launch_sisa_usia (HTTP $httpCodeLaunch):\nResponse: $resLaunch\n";
-    }
-}
-
 // Direct SSH/SCP sync to guarantee cPanel files & DB match local 100% (hanya jika SSH aktif)
 echo "Mengecek konektivitas SSH ke cPanel...\n";
 $sshCheck = @fsockopen('digitalprofit.my.id', $remotePort, $errno, $errstr, 2);
@@ -165,12 +134,6 @@ foreach ($scpFiles as $src => $dest) {
     if (file_exists($src)) {
         exec("scp -P $remotePort " . escapeshellarg($src) . " " . escapeshellarg("$remoteHost:$dest") . " 2>&1", $output, $code);
     }
-}
-
-// Sync ebook files to cPanel
-$localEbookDir = '/home/fadil/edumuslim-team/ebooks/sisa-usia';
-if (is_dir($localEbookDir)) {
-    exec("scp -P $remotePort $localEbookDir/*.md $localEbookDir/*.html " . escapeshellarg("$remoteHost:$remotePath/data/ebooks/sisa-usia/") . " 2>&1");
 }
 
 // Mirror contents.json to root

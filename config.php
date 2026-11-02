@@ -151,7 +151,6 @@ class HubDB {
     }
 
     public static function deleteContent($id) {
-        self::addDeletedId($id); // Catat permanen di daftar blacklist terhapus
         $contents = self::getContents();
         $new = [];
         $deleted = false;
@@ -163,6 +162,7 @@ class HubDB {
             $new[] = $item;
         }
         if ($deleted) {
+            self::addDeletedId($id); // Catat permanen di daftar blacklist terhapus
             self::saveContents($new);
         }
         return $deleted;

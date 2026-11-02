@@ -158,11 +158,18 @@ $allMasterFiles = [
         'target_product' => 'Komunitas (Faedah Murni)'
     ],
     [
-        'file' => $kontenDir . '/reels-1-slide-senin.md',
-        'channel' => 'Reels 1-Slide',
+        'file' => $kontenDir . '/reels-senin.md',
+        'channel' => 'Reels 2-Slide',
         'day' => 'Senin',
-        'funnel' => 'TOFU/BOFU',
-        'target_product' => 'eBook Qila (Rp47rb)'
+        'funnel' => 'TOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/shorts-senin.md',
+        'channel' => 'YouTube Shorts',
+        'day' => 'Senin',
+        'funnel' => 'TOFU (Repurpose)',
+        'target_product' => 'eBook Qila (Link di Komentar Pin)'
     ],
     [
         'file' => $kontenDir . '/story-jualan-hari-ini.md',
@@ -180,6 +187,34 @@ $allMasterFiles = [
     ],
 
     [
+        'file' => $kontenDir . '/carousel-sabtu.md',
+        'channel' => 'Carousel',
+        'day' => 'Sabtu',
+        'funnel' => 'TOFU/MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/reels-sabtu.md',
+        'channel' => 'Reels 2-Slide',
+        'day' => 'Sabtu',
+        'funnel' => 'TOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/shorts-sabtu.md',
+        'channel' => 'YouTube Shorts',
+        'day' => 'Sabtu',
+        'funnel' => 'TOFU (Repurpose)',
+        'target_product' => 'eBook Qila (Link di Komentar Pin)'
+    ],
+    [
+        'file' => $kontenDir . '/story-sabtu.md',
+        'channel' => 'Instagram Story',
+        'day' => 'Sabtu',
+        'funnel' => 'MOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
         'file' => $kontenDir . '/threads-sabtu.md',
         'channel' => 'Threads',
         'day' => 'Sabtu',
@@ -187,11 +222,33 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
-        'file' => $kontenDir . '/threads-minggu.md',
-        'channel' => 'Threads',
+        'file' => $kontenDir . '/grup-wa-20261031.md',
+        'channel' => 'Grup WhatsApp',
+        'day' => 'Sabtu',
+        'funnel' => 'COMMUNITY',
+        'target_product' => 'Komunitas (Faedah Murni)',
+        'custom_id' => 'grup-wa-20261031'
+    ],
+    [
+        'file' => $kontenDir . '/carousel-minggu.md',
+        'channel' => 'Carousel',
         'day' => 'Minggu',
-        'funnel' => 'MOFU/BOFU (Utas)',
-        'target_product' => 'eBook Qila (Rp47rb)'
+        'funnel' => 'TOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/reels-minggu.md',
+        'channel' => 'Reels 2-Slide',
+        'day' => 'Minggu',
+        'funnel' => 'TOFU',
+        'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/shorts-minggu.md',
+        'channel' => 'YouTube Shorts',
+        'day' => 'Minggu',
+        'funnel' => 'TOFU (Repurpose)',
+        'target_product' => 'eBook Qila (Link di Komentar Pin)'
     ],
     [
         'file' => $kontenDir . '/story-minggu.md',
@@ -201,12 +258,19 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila'
     ],
     [
-        'file' => $kontenDir . '/grup-wa-20261025.md',
+        'file' => $kontenDir . '/threads-minggu.md',
+        'channel' => 'Threads',
+        'day' => 'Minggu',
+        'funnel' => 'MOFU/BOFU (Utas)',
+        'target_product' => 'eBook Qila (Rp47rb)'
+    ],
+    [
+        'file' => $kontenDir . '/grup-wa-20261101.md',
         'channel' => 'Grup WhatsApp',
         'day' => 'Minggu',
         'funnel' => 'COMMUNITY',
         'target_product' => 'Komunitas (Faedah Murni)',
-        'custom_id' => 'grup-wa-20261025'
+        'custom_id' => 'grup-wa-20261101'
     ],
     [
         'file' => $kontenDir . '/story-senin.md',
@@ -216,12 +280,12 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila'
     ],
     [
-        'file' => $kontenDir . '/grup-wa-20261026.md',
+        'file' => $kontenDir . '/grup-wa-20261102.md',
         'channel' => 'Grup WhatsApp',
         'day' => 'Senin',
         'funnel' => 'COMMUNITY',
         'target_product' => 'Komunitas (Faedah Murni)',
-        'custom_id' => 'grup-wa-20261026'
+        'custom_id' => 'grup-wa-20261102'
     ],
     [
         'file' => $crmDir . '/broadcast-wa-senin.md',
@@ -229,30 +293,6 @@ $allMasterFiles = [
         'day' => 'Arsip',
         'funnel' => 'BOFU (Direct Outreach)',
         'target_product' => 'Alumni Ihfadz/DaQo'
-    ],
-    [
-        'file' => '/home/fadil/edumuslim-team/ebooks/sisa-usia/cover_prompt.md',
-        'channel' => 'eBook Prompt & Asset',
-        'day' => 'Arsip',
-        'funnel' => 'PRODUCT (Asset Cover)',
-        'target_product' => 'eBook Sisa Usia',
-        'custom_id' => 'cover-ebook-sisa-usia'
-    ],
-    [
-        'file' => '/home/fadil/edumuslim-team/ebooks/sisa-usia/chapter_prompts.md',
-        'channel' => 'eBook Prompt & Asset',
-        'day' => 'Arsip',
-        'funnel' => 'PRODUCT (Asset Bab)',
-        'target_product' => 'eBook Sisa Usia',
-        'custom_id' => 'chapter-prompts-sisa-usia'
-    ],
-    [
-        'file' => '/home/fadil/edumuslim-team/ebooks/sisa-usia/bonus_plan.md',
-        'channel' => 'Offer & Bonus',
-        'day' => 'Arsip',
-        'funnel' => 'BOFU (Offer Stack)',
-        'target_product' => 'eBook Sisa Usia',
-        'custom_id' => 'bonus-ebook-sisa-usia'
     ]
 ];
 

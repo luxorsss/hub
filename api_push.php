@@ -43,12 +43,6 @@ if (isset($payload['type']) && $payload['type'] === 'daily_brief') {
     exit;
 }
 
-if (isset($payload['type']) && $payload['type'] === 'launch_sisa_usia') {
-    file_put_contents(DATA_DIR . '/launch_sisa_usia.json', json_encode($payload['data'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-    echo json_encode(['status' => 'success', 'message' => 'Launch Sisa Usia berhasil disimpan']);
-    exit;
-}
-
 $items = isset($payload[0]) ? $payload : [$payload];
 $updatedCount = 0;
 
