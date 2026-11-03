@@ -26,11 +26,25 @@ $allMasterFiles = [
         'target_product' => 'eBook Qila (Rp47rb)'
     ],
     [
+        'file' => $kontenDir . '/carousel-selasa.md',
+        'channel' => 'Carousel',
+        'day' => 'Selasa',
+        'funnel' => 'TOFU (Save Engine)',
+        'target_product' => 'Komunitas (Pure Value)'
+    ],
+    [
         'file' => $kontenDir . '/reels-selasa.md',
         'channel' => 'Reels 2-Slide',
         'day' => 'Selasa',
-        'funnel' => 'TOFU/MOFU',
+        'funnel' => 'TOFU',
         'target_product' => 'eBook Qila'
+    ],
+    [
+        'file' => $kontenDir . '/shorts-selasa.md',
+        'channel' => 'YouTube Shorts',
+        'day' => 'Selasa',
+        'funnel' => 'TOFU (Repurpose)',
+        'target_product' => 'eBook Qila (Link di Komentar Pin)'
     ],
     [
         'file' => $kontenDir . '/story-selasa.md',
@@ -44,15 +58,15 @@ $allMasterFiles = [
         'channel' => 'Threads',
         'day' => 'Selasa',
         'funnel' => 'MOFU/BOFU (Utas)',
-        'target_product' => 'eBook Qila (Rp47rb)'
+        'target_product' => 'eBook Qila'
     ],
     [
-        'file' => $kontenDir . '/grup-wa-20261027.md',
+        'file' => $kontenDir . '/grup-wa-20261103.md',
         'channel' => 'Grup WhatsApp',
         'day' => 'Selasa',
         'funnel' => 'COMMUNITY',
         'target_product' => 'Komunitas (Faedah Murni)',
-        'custom_id' => 'grup-wa-20261027'
+        'custom_id' => 'grup-wa-20261103'
     ],
     [
         'file' => $kontenDir . '/reels-rabu.md',
